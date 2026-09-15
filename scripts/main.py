@@ -69,6 +69,7 @@ def main():
     alertas_sector = escanear_titulares(titulares)
     riesgo_pais, riesgo_pais_ayer, brecha = traer_contexto_macro()  # ArgentinaDatos -- real
     contexto_macro = evaluar_contexto_macro(riesgo_pais, riesgo_pais_ayer, brecha)
+    log.info(f"Contexto macro-local: {contexto_macro}")
 
     # 7. Recomendación final -- ahora también ajustada por el régimen de mercado (VIX)
     recomendaciones = []
