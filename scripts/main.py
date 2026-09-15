@@ -17,6 +17,7 @@ from regimen_mercado import evaluar_regimen_mercado
 from historial import cargar_historial, guardar_historial
 from telegram_bot import notificar_alertas
 from macro_local import traer_contexto_macro
+from frescura import evaluar_frescura
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 log = logging.getLogger("radar.main")
@@ -52,6 +53,12 @@ def main():
     regimen = evaluar_regimen_mercado(vix_actual)
     log.info(f"Régimen de mercado: {regimen}")
 
+    # 2b. Frescura del dato -- detecta si el gap desde el último dato es
+    # más grande que un feriado común (podría indicar una fuente rota)
+    ultima_fecha_benchmark = precios[BENCHMARK].dropna().index[-1] if not precios[BENCHMARK].dropna().empty else None
+    frescura = evaluar_frescura(ultima_fecha_benchmark)
+    log.info(f"Frescura del dato: {frescura}")
+
     # 3. RS Score
     df_rs = calcular_rs_score(precios, TICKERS, BENCHMARK)
     rs_por_sector = df_rs.groupby("Sector")["RS_Score"].mean().to_dict() if not df_rs.empty else {}
@@ -86,6 +93,7 @@ def main():
         "generado_utc": timestamp,
         "tickers_ok": len(precios) - 2,  # -1 benchmark, -1 VIX
         "tickers_fallidos": fallidos,
+        "frescura_dato": frescura,
         "ranking": df_rs.to_dict(orient="records") if not df_rs.empty else [],
         "rs_por_sector": rs_por_sector,
         "regimen_mercado": regimen,
