@@ -1,0 +1,118 @@
+"""
+Punto de entrada principal del Radar de Mercado (v2).
+Suma al pipeline original: historial persistente, régimen de mercado (VIX),
+estados narrativos con confirmación con demora, VCP, RSI semanal, stop-loss.
+"""
+import json
+import logging
+from datetime import datetime, timezone
+
+from config import TICKERS, BENCHMARK, SCORE_MINIMO_ALERTA, MODO, VIX_TICKER
+from datos import traer_datos
+from rs_score import calcular_rs_score
+from alertas import detectar_alertas
+from contexto import escanear_titulares, evaluar_contexto_macro, recomendacion_final
+from regimen_mercado import evaluar_regimen_mercado
+from historial import cargar_historial, guardar_historial
+
+logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
+log = logging.getLogger("radar.main")
+
+
+def traer_titulares_ejemplo():
+    """Placeholder -- se conecta Finnhub /news más adelante."""
+    return []
+
+
+def traer_contexto_macro_ejemplo():
+    """Placeholder -- se conecta ArgentinaDatos/BCRA más adelante."""
+    return None, None, None
+
+
+def traer_vix(precios: dict):
+    """El VIX ya viene traído junto con el resto en datos.py si se agrega
+    al diccionario de tickers a pedir -- ver main() más abajo."""
+    if VIX_TICKER in precios and not precios[VIX_TICKER].empty:
+        return float(precios[VIX_TICKER].iloc[-1])
+    return None
+
+
+def main():
+    log.info(f"=== Radar de Mercado — corrida iniciada (modo={MODO}) ===")
+    timestamp = datetime.now(timezone.utc).isoformat()
+    fecha_hoy = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+    # 1. Datos (se pide también el VIX, sumándolo como si fuera un ticker más)
+    tickers_a_pedir = {**TICKERS}
+    precios, volumenes, fallidos = traer_datos({**tickers_a_pedir, VIX_TICKER: "Índice"}, BENCHMARK)
+    if BENCHMARK not in precios:
+        log.error("El benchmark no se pudo traer -- abortando la corrida")
+        return
+
+    # 2. Régimen de mercado (VIX)
+    vix_actual = traer_vix(precios)
+    regimen = evaluar_regimen_mercado(vix_actual)
+    log.info(f"Régimen de mercado: {regimen}")
+
+    # 3. RS Score
+    df_rs = calcular_rs_score(precios, TICKERS, BENCHMARK)
+    rs_por_sector = df_rs.groupby("Sector")["RS_Score"].mean().to_dict() if not df_rs.empty else {}
+
+    # 4. Historial persistente (para confirmación con demora y stop-loss)
+    historial = cargar_historial()
+
+    # 5. Alertas técnicas (v2: score 0-7, estados narrativos, VCP, RSI semanal)
+    df_alertas, historial = detectar_alertas(precios, volumenes, TICKERS, BENCHMARK,
+                                              rs_por_sector, historial, fecha_hoy)
+    guardar_historial(historial)
+
+    # 6. Contexto (noticias + macro-local) -- placeholders por ahora
+    titulares = traer_titulares_ejemplo()
+    alertas_sector = escanear_titulares(titulares)
+    riesgo_pais, riesgo_pais_ayer, brecha = traer_contexto_macro_ejemplo()
+    contexto_macro = evaluar_contexto_macro(riesgo_pais, riesgo_pais_ayer, brecha)
+
+    # 7. Recomendación final -- ahora también ajustada por el régimen de mercado (VIX)
+    recomendaciones = []
+    for _, fila in df_alertas.iterrows():
+        rec = recomendacion_final(fila["Sector"], fila["Score_num"], fila["Estado"],
+                                   alertas_sector, contexto_macro)
+        if not regimen.get("sin_datos") and not regimen.get("sano") and rec["Recomendación final"] == "COMPRA":
+            rec["Recomendación final"] = "MANTENER"
+            rec["Ajustado por"] += f"; régimen de mercado volátil ({regimen['motivo']})"
+        recomendaciones.append({**fila.to_dict(), **rec})
+
+    # 8. Guardar resultado para el dashboard
+    salida = {
+        "generado_utc": timestamp,
+        "tickers_ok": len(precios) - 2,  # -1 benchmark, -1 VIX
+        "tickers_fallidos": fallidos,
+        "ranking": df_rs.to_dict(orient="records") if not df_rs.empty else [],
+        "rs_por_sector": rs_por_sector,
+        "regimen_mercado": regimen,
+        "alertas": recomendaciones,
+        "contexto_macro": contexto_macro,
+    }
+
+    with open("data/ultimo.json", "w", encoding="utf-8") as f:
+        json.dump(salida, f, ensure_ascii=False, indent=2)
+    log.info("Guardado en data/ultimo.json")
+
+    # 9. Notificaciones
+    alertas_relevantes = [a for a in recomendaciones if a.get("Score_num") and a["Score_num"] >= SCORE_MINIMO_ALERTA]
+    if alertas_relevantes:
+        log.info(f"{len(alertas_relevantes)} alerta(s) relevante(s) detectada(s)")
+        if MODO == "produccion":
+            log.info("MODO=produccion -- acá se dispararía el envío a Telegram (pendiente de conectar)")
+        else:
+            log.info("MODO=test -- NO se envían notificaciones reales, solo se loguea")
+            for a in alertas_relevantes:
+                log.info(f"  [TEST] {a['Ticker']}: {a['Estado']} ({a['Score']}) — {a['Recomendación final']}")
+    else:
+        log.info("Sin alertas relevantes en esta corrida")
+
+    log.info("=== Corrida finalizada ===")
+
+
+if __name__ == "__main__":
+    main()
