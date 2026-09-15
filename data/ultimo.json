@@ -1,5 +1,5 @@
 {
-  "generado_utc": "2026-09-15T22:54:16.313759+00:00",
+  "generado_utc": "2026-09-15T23:25:19.719018+00:00",
   "tickers_ok": 21,
   "tickers_fallidos": [],
   "ranking": [
@@ -294,7 +294,7 @@
       "SMA21": 355.93,
       "Señal técnica": "MANTENER",
       "Recomendación final": "MANTENER",
-      "Ajustado por": "contexto macro no disponible hoy — recomendación basada solo en lo técnico",
+      "Ajustado por": "sin ajustes",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión."
     },
     {
@@ -336,15 +336,16 @@
       "SMA21": 1920.16,
       "Señal técnica": "VENTA",
       "Recomendación final": "VENTA",
-      "Ajustado por": "contexto macro no disponible hoy — recomendación basada solo en lo técnico",
+      "Ajustado por": "sin ajustes",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión."
     }
   ],
   "contexto_macro": {
-    "estable": null,
-    "sin_datos": true,
-    "motivos": [
-      "fuente de contexto macro no disponible hoy"
-    ]
+    "estable": true,
+    "sin_datos": false,
+    "riesgo_pais": 490.0,
+    "variacion_riesgo_%": 1.0,
+    "brecha_cambiaria_%": 0.0,
+    "motivos": []
   }
 }
