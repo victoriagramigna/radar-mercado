@@ -63,7 +63,12 @@ VIX_UMBRAL_ALTO = 25          # VIX > 25 se considera mercado nervioso/volátil
 
 # --- Umbrales de contexto macro-local (Argentina) ---
 RIESGO_PAIS_VARIACION_ALERTA = 0.08   # 8% de salto diario dispara "inestable"
-BRECHA_CAMBIARIA_ALERTA_PCT = 30      # brecha oficial/blue > 30% dispara "inestable"
+# Desde la salida del cepo cambiario (abril 2025), la brecha oficial/blue
+# ronda 1-3% en condiciones normales -- un umbral de 30% (pensado para la
+# época de controles cambiarios) casi nunca se dispararía. Se baja a 10%
+# para que siga siendo una alerta útil si la brecha empieza a ensancharse
+# de nuevo (ej. ante una eventual reimposición de controles).
+BRECHA_CAMBIARIA_ALERTA_PCT = 10
 
 # --- Historial persistente (necesario para confirmación con demora y stop-loss) ---
 ARCHIVO_HISTORIAL = "data/historial_alertas.json"
