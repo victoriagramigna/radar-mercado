@@ -124,5 +124,8 @@
     "estado": null,
     "dias_verdes_consecutivos": 0,
     "precio": 183.74
+  },
+  "_notificaciones": {
+    "JPM": "2026-09-15|🔨 Recién cruzó, sin confirmar"
   }
 }
