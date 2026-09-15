@@ -16,6 +16,7 @@ from contexto import escanear_titulares, evaluar_contexto_macro, recomendacion_f
 from regimen_mercado import evaluar_regimen_mercado
 from historial import cargar_historial, guardar_historial
 from telegram_bot import notificar_alertas
+from macro_local import traer_contexto_macro
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 log = logging.getLogger("radar.main")
@@ -24,11 +25,6 @@ log = logging.getLogger("radar.main")
 def traer_titulares_ejemplo():
     """Placeholder -- se conecta Finnhub /news más adelante."""
     return []
-
-
-def traer_contexto_macro_ejemplo():
-    """Placeholder -- se conecta ArgentinaDatos/BCRA más adelante."""
-    return None, None, None
 
 
 def traer_vix(precios: dict):
@@ -68,10 +64,10 @@ def main():
                                               rs_por_sector, historial, fecha_hoy)
     guardar_historial(historial)
 
-    # 6. Contexto (noticias + macro-local) -- placeholders por ahora
-    titulares = traer_titulares_ejemplo()
+    # 6. Contexto (noticias + macro-local)
+    titulares = traer_titulares_ejemplo()  # Finnhub -- pendiente de conectar
     alertas_sector = escanear_titulares(titulares)
-    riesgo_pais, riesgo_pais_ayer, brecha = traer_contexto_macro_ejemplo()
+    riesgo_pais, riesgo_pais_ayer, brecha = traer_contexto_macro()  # ArgentinaDatos -- real
     contexto_macro = evaluar_contexto_macro(riesgo_pais, riesgo_pais_ayer, brecha)
 
     # 7. Recomendación final -- ahora también ajustada por el régimen de mercado (VIX)
