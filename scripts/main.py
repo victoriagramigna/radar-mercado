@@ -5,6 +5,7 @@ estados narrativos con confirmación con demora, VCP, RSI semanal, stop-loss.
 """
 import json
 import logging
+import os
 from datetime import datetime, timezone
 
 from config import TICKERS, BENCHMARK, SCORE_MINIMO_ALERTA, MODO, VIX_TICKER
@@ -14,6 +15,7 @@ from alertas import detectar_alertas
 from contexto import escanear_titulares, evaluar_contexto_macro, recomendacion_final
 from regimen_mercado import evaluar_regimen_mercado
 from historial import cargar_historial, guardar_historial
+from telegram_bot import notificar_alertas
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 log = logging.getLogger("radar.main")
@@ -103,7 +105,10 @@ def main():
     if alertas_relevantes:
         log.info(f"{len(alertas_relevantes)} alerta(s) relevante(s) detectada(s)")
         if MODO == "produccion":
-            log.info("MODO=produccion -- acá se dispararía el envío a Telegram (pendiente de conectar)")
+            token = os.environ.get("TELEGRAM_BOT_TOKEN")
+            chat_id = os.environ.get("TELEGRAM_CHAT_ID")
+            enviados = notificar_alertas(token, chat_id, alertas_relevantes, fecha_hoy)
+            log.info(f"MODO=produccion -- {enviados} mensaje(s) enviado(s) a Telegram")
         else:
             log.info("MODO=test -- NO se envían notificaciones reales, solo se loguea")
             for a in alertas_relevantes:
