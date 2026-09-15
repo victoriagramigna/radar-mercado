@@ -35,10 +35,11 @@ jobs:
 
       - name: Correr el radar
         env:
-          # Por defecto "test" -- solo el disparo MANUAL puede pasar a "produccion".
-          # Los crons automáticos SIEMPRE corren en modo test hasta que decidamos
-          # activarlo a mano acá (ver punto de dry-run acordado en el diseño).
-          RADAR_MODO: ${{ github.event.inputs.modo || 'test' }}
+          # Los crons automáticos (schedule) corren en PRODUCCIÓN -- ya validamos
+          # el pipeline completo a mano, incluida la deduplicación de alertas.
+          # El disparo manual sigue permitiendo elegir "test" para seguir probando
+          # cambios sin mandar mensajes reales.
+          RADAR_MODO: ${{ github.event_name == 'schedule' && 'produccion' || (github.event.inputs.modo || 'test') }}
           # Secrets -- se cargan desde GitHub Settings > Secrets, nunca hardcodeados
           FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}

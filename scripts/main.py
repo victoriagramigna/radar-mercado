@@ -100,21 +100,35 @@ def main():
         json.dump(salida, f, ensure_ascii=False, indent=2)
     log.info("Guardado en data/ultimo.json")
 
-    # 9. Notificaciones
+    # 9. Notificaciones (con deduplicación: no repetir la misma alerta/estado el mismo día)
     alertas_relevantes = [a for a in recomendaciones if a.get("Score_num") and a["Score_num"] >= SCORE_MINIMO_ALERTA]
+    historial.setdefault("_notificaciones", {})
+    alertas_nuevas = []
+    for a in alertas_relevantes:
+        ticker = a["Ticker"]
+        clave_estado = f"{fecha_hoy}|{a['Estado']}"
+        ya_notificado = historial["_notificaciones"].get(ticker) == clave_estado
+        if not ya_notificado:
+            alertas_nuevas.append(a)
+            historial["_notificaciones"][ticker] = clave_estado
+
     if alertas_relevantes:
-        log.info(f"{len(alertas_relevantes)} alerta(s) relevante(s) detectada(s)")
+        log.info(f"{len(alertas_relevantes)} alerta(s) relevante(s), {len(alertas_nuevas)} nueva(s) (no notificadas aún hoy)")
+
+    if alertas_nuevas:
         if MODO == "produccion":
             token = os.environ.get("TELEGRAM_BOT_TOKEN")
             chat_id = os.environ.get("TELEGRAM_CHAT_ID")
-            enviados = notificar_alertas(token, chat_id, alertas_relevantes, fecha_hoy)
+            enviados = notificar_alertas(token, chat_id, alertas_nuevas, fecha_hoy)
             log.info(f"MODO=produccion -- {enviados} mensaje(s) enviado(s) a Telegram")
         else:
             log.info("MODO=test -- NO se envían notificaciones reales, solo se loguea")
-            for a in alertas_relevantes:
+            for a in alertas_nuevas:
                 log.info(f"  [TEST] {a['Ticker']}: {a['Estado']} ({a['Score']}) — {a['Recomendación final']}")
     else:
-        log.info("Sin alertas relevantes en esta corrida")
+        log.info("Sin alertas nuevas para notificar en esta corrida")
+
+    guardar_historial(historial)
 
     log.info("=== Corrida finalizada ===")
 
