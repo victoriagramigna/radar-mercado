@@ -3,217 +3,220 @@
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 165.03
+    "precio": 164.84
   },
   "CVX": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 213.35
+    "precio": 213.08
   },
   "VIST": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 75.81
+    "precio": 75.37
   },
   "YPF": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 55.94
+    "precio": 55.35
   },
   "AAPL": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 333.42
+    "precio": 333.23
   },
   "MSFT": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 492.77
+    "precio": 493.44
   },
   "NVDA": {
     "ultima_fecha": "2026-09-16",
     "estado": "recien_cruzo",
     "dias_verdes_consecutivos": 1,
-    "precio": 214.99
+    "precio": 214.93
   },
   "GOOGL": {
     "ultima_fecha": "2026-09-16",
     "estado": "confirmado",
     "dias_verdes_consecutivos": 2,
-    "precio": 344.99
+    "precio": 344.77
   },
   "JPM": {
     "ultima_fecha": "2026-09-16",
     "estado": "sacudon",
     "dias_verdes_consecutivos": 0,
-    "precio": 349.35
+    "precio": 352.03
   },
   "BMA": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 76.03
+    "precio": 76.35
   },
   "GGAL": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 42.08
+    "precio": 42.3
   },
   "WFC": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 88.13
+    "precio": 88.68
   },
   "JNJ": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 266.39
+    "precio": 267.71
   },
   "PFE": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 27.51
+    "precio": 27.52
   },
   "MRK": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 143.99
+    "precio": 144.53
   },
   "WMT": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 108.07
+    "precio": 108.53
   },
   "KO": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 88.22
+    "precio": 88.42
   },
   "MELI": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 1817.9
+    "precio": 1824.44
   },
   "EWZ": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 37.51
+    "precio": 37.62
   },
   "XLE": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 64.42
+    "precio": 64.7
   },
   "XLK": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 185.41
+    "precio": 185.19
   },
   "_notificaciones": {
     "JPM": "2026-09-16|⚠️ Sacudón, sin definición clara",
     "GOOGL": "2026-09-16|✅ Confirmado",
     "NVDA": "2026-09-16|🔨 Recién cruzó, sin confirmar",
-    "TSM": "2026-09-16|🔨 Recién cruzó, sin confirmar"
+    "TSM": "2026-09-16|🔨 Recién cruzó, sin confirmar",
+    "SATL": "2026-09-16|🔻 Rompió piso (SMA200)",
+    "DOW": "2026-09-16|🔨 Recién cruzó, sin confirmar",
+    "TGS": "2026-09-16|🔻 Rompió piso (SMA200)"
   },
   "TSLA": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 364.12
+    "precio": 360.5
   },
   "QQQ": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 709.69
+    "precio": 709.08
   },
   "BABA": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 107.6
+    "precio": 108.06
   },
   "OKLO": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 35.56
+    "precio": 35.41
   },
   "JMIA": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 7.34
+    "precio": 7.47
   },
   "SATL": {
     "ultima_fecha": "2026-09-16",
     "estado": "deterioro",
     "dias_verdes_consecutivos": 0,
-    "precio": 4.95
+    "precio": 4.89
   },
   "CRWV": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 83.65
+    "precio": 83.64
   },
   "TEM": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 69.4
+    "precio": 70.55
   },
   "LAC": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 2.79
+    "precio": 2.8
   },
   "AMD": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 526.06
+    "precio": 521.15
   },
   "TSM": {
     "ultima_fecha": "2026-09-16",
     "estado": "recien_cruzo",
     "dias_verdes_consecutivos": 1,
-    "precio": 418.11
+    "precio": 417.73
   },
   "QCOM": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 188.9
+    "precio": 187.16
   },
   "GLOB": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 38.6
+    "precio": 39.08
   },
   "ADBE": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 253.41
+    "precio": 252.48
   },
   "SHOP": {
     "ultima_fecha": "2026-09-16",
@@ -225,85 +228,85 @@
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 92.81
+    "precio": 92.97
   },
   "AMZN": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 247.33
+    "precio": 247.63
   },
   "UBER": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 71.03
+    "precio": 71.65
   },
   "NFLX": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 77.38
+    "precio": 77.15
   },
   "TGT": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 153.91
+    "precio": 156.11
   },
   "ABNB": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 169.44
+    "precio": 168.61
   },
   "HOOD": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 105.96
+    "precio": 104.89
   },
   "PYPL": {
     "ultima_fecha": "2026-09-16",
-    "estado": null,
+    "estado": "deterioro",
     "dias_verdes_consecutivos": 0,
-    "precio": 53.47
+    "precio": 53.08
   },
   "V": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 373.39
+    "precio": 371.24
   },
   "XYZ": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 78.02
+    "precio": 77.71
   },
   "SPGI": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 412.44
+    "precio": 411.27
   },
   "C": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 134.79
+    "precio": 135.6
   },
   "GM": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 84.7
+    "precio": 84.81
   },
   "F": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 13.41
+    "precio": 13.48
   },
   "VALE": {
     "ultima_fecha": "2026-09-16",
@@ -315,174 +318,174 @@
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 42.88
+    "precio": 43.01
   },
   "TEN": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 52.26
+    "precio": 52.72
   },
   "T": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 26.55
+    "precio": 26.18
   },
   "AAL": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 12.81
+    "precio": 12.84
   },
   "BIOX": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 0.39
+    "precio": 0.4
   },
   "ARKK": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 83.89
+    "precio": 83.54
   },
   "BRK-B": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 519.46
+    "precio": 521.72
   },
   "DOW": {
     "ultima_fecha": "2026-09-16",
-    "estado": null,
-    "dias_verdes_consecutivos": 0,
-    "precio": 29.51
+    "estado": "recien_cruzo",
+    "dias_verdes_consecutivos": 1,
+    "precio": 30.36
   },
   "LAR": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 5.74
+    "precio": 5.66
   },
   "BBD": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 3.46
+    "precio": 3.48
   },
   "FSLR": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 197.7
+    "precio": 192.15
   },
   "GPRK": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 11.38
+    "precio": 11.3
   },
   "LLY": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 1143.31
+    "precio": 1139.59
   },
   "NIO": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 3.62
+    "precio": 3.6
   },
   "NU": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 13.81
+    "precio": 13.7
   },
   "PAGS": {
     "ultima_fecha": "2026-09-16",
     "estado": "deterioro",
     "dias_verdes_consecutivos": 0,
-    "precio": 9.3
+    "precio": 9.34
   },
   "PEP": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 135.11
+    "precio": 135.33
   },
   "PLTR": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 170.28
+    "precio": 172.71
   },
   "RIO": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 97.28
+    "precio": 97.11
   },
   "SPCE": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 3.01
+    "precio": 2.93
   },
   "SPOT": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 558.25
+    "precio": 552.51
   },
   "SPXL": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 276.89
+    "precio": 277.51
   },
   "UNH": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 379.68
+    "precio": 378.23
   },
   "URA": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 41.57
+    "precio": 41.53
   },
   "TGS": {
     "ultima_fecha": "2026-09-16",
     "estado": "deterioro",
     "dias_verdes_consecutivos": 0,
-    "precio": 28.83
+    "precio": 29.14
   },
   "PAM": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 84.64
+    "precio": 84.54
   },
   "SUPV": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 8.22
+    "precio": 8.36
   },
   "BBAR": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 14.46
+    "precio": 14.58
   },
   "BBVA": {
     "ultima_fecha": "2026-09-16",
     "estado": null,
     "dias_verdes_consecutivos": 0,
-    "precio": 28.53
+    "precio": 28.5
   }
 }
