@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radar de Mercado</title>
+    
+    <!-- Carga de Tailwind CSS sin build step -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tipografías utilitarias -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Configuración exacta de la paleta del terminal financiero -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        base: '#0B0E14',
+                        surface: '#121722',
+                        accent: '#E0A458',
+                        pos: '#6FCF97',
+                        neg: '#D9694F'
+                    },
+                    fontFamily: {
+                        sans: ['Space Grotesk', 'sans-serif'],
+                        mono: ['IBM Plex Mono', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Estilos de scrollbar y utilidades visuales */
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #0B0E14; }
+        ::-webkit-scrollbar-thumb { background: #121722; border: 1px solid #E0A458; }
+        ::-webkit-scrollbar-corner { background: #0B0E14; }
+        
+        .dot { height: 10px; width: 10px; border-radius: 50%; display: inline-block; }
+        .dot-pos { background-color: #6FCF97; box-shadow: 0 0 5px rgba(111, 207, 151, 0.4); }
+        .dot-neg { background-color: #D9694F; box-shadow: 0 0 5px rgba(217, 105, 79, 0.4); }
+        .bar-bg { background-color: #1a2233; }
+    </style>
+</head>
+<body class="bg-base text-gray-300 font-sans p-4 md:p-8 min-h-screen">
+    
+    <!-- Banner de errores de fetch -->
+    <div id="error-message" class="hidden bg-neg/20 text-neg border border-neg p-4 mb-6 font-mono text-sm rounded-sm"></div>
+
+    <!-- 1. Encabezado -->
+    <header class="mb-8 border-b border-surface pb-4 flex flex-col md:flex-row justify-between md:items-end gap-4">
+        <div>
+            <h1 class="text-3xl font-bold text-white tracking-tight uppercase">Radar de Mercado</h1>
+            <p class="font-mono text-sm text-gray-500 mt-1" id="last-update">Sincronizando datos...</p>
+        </div>
+        <!-- 2. Badges de estado -->
+        <div id="badges" class="flex flex-wrap gap-2 font-mono text-xs uppercase"></div>
+    </header>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+        <div class="lg:col-span-2 space-y-6">
+            
+            <!-- 3. Sección Alertas -->
+            <section>
+                <h2 class="text-accent uppercase text-sm font-bold tracking-widest mb-4 border-b border-surface pb-1">Alertas Activas</h2>
+                <div id="alerts-container" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+            </section>
+
+            <!-- 5. Detalle por Sector (Ranking) -->
+            <section>
+                <h2 class="text-accent uppercase text-sm font-bold tracking-widest mb-4 border-b border-surface pb-1">Universo Técnico</h2>
+                <div id="sectors-detail" class="space-y-6"></div>
+            </section>
+        </div>
+
+        <div class="space-y-6">
+            <!-- 4. Rotación Sectorial -->
+            <section>
+                <h2 class="text-accent uppercase text-sm font-bold tracking-widest mb-4 border-b border-surface pb-1">Rotación Sectorial (RS)</h2>
+                <div id="sector-rotation" class="bg-surface p-5 space-y-5 rounded-sm border border-surface"></div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        // Apuntando directo a los datos crudos en tu rama main
+        const DATA_URL = 'https://raw.githubusercontent.com/victoriagramigna/radar-mercado/main/data/ultimo.json';
+
+        async function fetchRadarData() {
+            try {
+                // cache: 'no-store' asegura que siempre se pida el último archivo
+                const response = await fetch(DATA_URL, { cache: 'no-store' });
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                
+                const data = await response.json();
+                document.getElementById('error-message').classList.add('hidden');
+                renderDashboard(data);
+            } catch (error) {
+                const errorEl = document.getElementById('error-message');
+                errorEl.textContent = `[ FALLO DE CONEXIÓN ] No se pudieron obtener los datos de GitHub: ${error.message}`;
+                errorEl.classList.remove('hidden');
+            }
+        }
+
+        function renderDashboard(data) {
+            // Actualización del reloj de timestamp
+            const date = new Date(data.generado_utc);
+            document.getElementById('last-update').innerHTML = `T-0: <span class="text-white">${date.toLocaleString('es-AR')}</span>`;
+
+            // Renderizado de Badges (VIX, Macro, Frescura)
+            const badgesHtml = [];
+            
+            if (data.frescura_dato.sospechoso) {
+                badgesHtml.push(`<span class="bg-accent text-base px-2 py-1 font-bold rounded-sm animate-pulse">⚠️ DATO VIEJO / SOSPECHOSO</span>`);
+            }
+            
+            const vixColor = data.regimen_mercado.sano ? 'border-pos text-pos' : 'border-neg text-neg';
+            badgesHtml.push(`<span class="border ${vixColor} px-2 py-1 rounded-sm bg-surface">VIX: ${data.regimen_mercado.vix}</span>`);
+
+            const macroStable = data.contexto_macro.estable;
+            const macroColor = macroStable ? 'border-pos text-pos' : 'border-neg text-neg';
+            badgesHtml.push(`<span class="border ${macroColor} px-2 py-1 rounded-sm bg-surface">RIESGO PAÍS: ${data.contexto_macro.riesgo_pais}</span>`);
+            badgesHtml.push(`<span class="border ${macroColor} px-2 py-1 rounded-sm bg-surface">BRECHA: ${data.contexto_macro['brecha_cambiaria_%']}%</span>`);
+
+            document.getElementById('badges').innerHTML = badgesHtml.join('');
+
+            // Renderizado de Alertas
+            const alertsContainer = document.getElementById('alerts-container');
+            alertsContainer.innerHTML = '';
+            
+            if (!data.alertas || data.alertas.length === 0) {
+                alertsContainer.innerHTML = '<div class="text-gray-500 font-mono text-sm p-4 border border-dashed border-surface rounded-sm">Sin señales técnicas recientes.</div>';
+            } else {
+                data.alertas.forEach(alerta => {
+                    let recColor = 'text-accent border-accent'; 
+                    if (alerta['Recomendación final'] === 'COMPRA') recColor = 'bg-pos text-base border-pos';
+                    if (alerta['Recomendación final'] === 'VENTA') recColor = 'bg-neg text-base border-neg';
+                    if (alerta['Recomendación final'] === 'MANTENER') recColor = 'bg-accent text-base border-accent';
+
+                    alertsContainer.innerHTML += `
+                        <div class="bg-surface p-4 border-l-2 border-surface hover:border-l-accent transition-colors rounded-r-sm">
+                            <div class="flex justify-between items-start mb-3">
+                                <div>
+                                    <span class="text-xl font-bold text-white">${alerta.Ticker}</span>
+                                    <span class="text-xs font-mono text-gray-500 ml-2 uppercase">${alerta.Sector}</span>
+                                </div>
+                                <span class="font-mono text-xs px-2 py-1 font-bold rounded-sm ${recColor}">${alerta['Recomendación final']}</span>
+                            </div>
+                            <div class="font-mono text-sm text-gray-300 mb-3">${alerta.Estado}</div>
+                            <div class="flex justify-between font-mono text-xs text-gray-500 border-t border-base pt-2">
+                                <span>SCORE: <span class="text-white">${alerta.Score}</span></span>
+                                <span>ADJ: ${alerta['Ajustado por']}</span>
+                            </div>
+                        </div>
+                    `;
+                });
+            }
+
+            // Renderizado de Rotación Sectorial
+            const sectorRot = document.getElementById('sector-rotation');
+            const sortedSectors = Object.entries(data.rs_por_sector).sort((a, b) => b[1] - a[1]);
+            const maxRs = Math.max(...sortedSectors.map(s => s[1]));
+
+            sectorRot.innerHTML = sortedSectors.map(([sector, rs]) => {
+                const width = (rs / maxRs) * 100;
+                return `
+                    <div>
+                        <div class="flex justify-between font-mono text-xs mb-1 uppercase">
+                            <span class="text-gray-300">${sector}</span>
+                            <span class="text-accent">${rs.toFixed(1)}</span>
+                        </div>
+                        <div class="h-1.5 w-full bar-bg rounded-full overflow-hidden">
+                            <div class="h-full bg-accent" style="width: ${width}%"></div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            // Renderizado de Detalle por Sector
+            const sectorsDetail = document.getElementById('sectors-detail');
+            const groupedBySector = data.ranking.reduce((acc, item) => {
+                if (!acc[item.Sector]) acc[item.Sector] = [];
+                acc[item.Sector].push(item);
+                return acc;
+            }, {});
+
+            sectorsDetail.innerHTML = Object.keys(groupedBySector).sort().map(sector => {
+                const rows = groupedBySector[sector].sort((a, b) => b.RS_Score - a.RS_Score).map(ticker => {
+                    const dotClass = ticker.Sobre_SMA50 ? 'dot-pos' : 'dot-neg';
+                    // Color de la barra de RS según la fuerza
+                    const rsColor = ticker.RS_Score > 80 ? 'bg-pos' : (ticker.RS_Score > 40 ? 'bg-accent' : 'bg-neg');
+                    
+                    return `
+                        <div class="flex flex-wrap md:flex-nowrap items-center py-2 border-b border-base/50 font-mono text-sm hover:bg-base/40 px-2 -mx-2 transition-colors">
+                            <div class="w-16 font-bold text-white">${ticker.Ticker}</div>
+                            <div class="w-20 text-right text-gray-400 mr-4 md:mr-8">${ticker['Precio'].toFixed(2)}</div>
+                            
+                            <div class="flex-grow flex items-center gap-3 w-full md:w-auto mt-2 md:mt-0 order-last md:order-none">
+                                <div class="w-full bar-bg h-1.5 max-w-[200px] rounded-full overflow-hidden">
+                                    <div class="h-full ${rsColor}" style="width: ${Math.min(ticker.RS_Score, 100)}%"></div>
+                                </div>
+                                <div class="w-10 text-right text-xs text-gray-500">${ticker.RS_Score.toFixed(0)}</div>
+                            </div>
+                            
+                            <div class="w-24 text-right flex justify-end items-center gap-2 text-xs text-gray-400 ml-auto">
+                                SMA50 <span class="dot ${dotClass}"></span>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+
+                return `
+                    <div class="bg-surface p-4 rounded-sm border border-surface">
+                        <h3 class="font-bold text-white mb-3 flex items-center justify-between uppercase">
+                            ${sector}
+                            <span class="text-xs font-mono text-accent bg-base px-2 py-1 rounded-sm">RS ${data.rs_por_sector[sector].toFixed(1)}</span>
+                        </h3>
+                        ${rows}
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // 7. Refresco automático: Inicia inmediatamente y luego corre cada 5 minutos
+        fetchRadarData();
+        setInterval(fetchRadarData, 5 * 60 * 1000); // 300.000 milisegundos
+    </script>
+</body>
+</html>
