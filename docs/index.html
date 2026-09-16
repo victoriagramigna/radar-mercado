@@ -21,7 +21,9 @@
                         surface: '#121722',
                         accent: '#E0A458',
                         pos: '#6FCF97',
-                        neg: '#D9694F'
+                        neg: '#D9694F',
+                        blueAlert: '#3b82f6', // Celeste/Azul para lider_soporte
+                        blueBg: '#1e3a8a'
                     },
                     fontFamily: {
                         sans: ['Space Grotesk', 'sans-serif'],
@@ -39,10 +41,18 @@
         ::-webkit-scrollbar-thumb { background: #121722; border: 1px solid #E0A458; }
         ::-webkit-scrollbar-corner { background: #0B0E14; }
         
-        .dot { height: 10px; width: 10px; border-radius: 50%; display: inline-block; }
+        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #1a2233; border: none; border-radius: 2px;}
+
+        .dot { height: 10px; width: 10px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
         .dot-pos { background-color: #6FCF97; box-shadow: 0 0 5px rgba(111, 207, 151, 0.4); }
         .dot-neg { background-color: #D9694F; box-shadow: 0 0 5px rgba(217, 105, 79, 0.4); }
+        .dot-null { background-color: #374151; } /* Gris para valores null */
+        
         .bar-bg { background-color: #1a2233; }
+        
+        /* Tooltip custom para el Universo Técnico */
+        .ticker-row { position: relative; cursor: crosshair; }
     </style>
 </head>
 <body class="bg-base text-gray-300 font-sans p-4 md:p-8 min-h-screen">
@@ -51,22 +61,42 @@
     <div id="error-message" class="hidden bg-neg/20 text-neg border border-neg p-4 mb-6 font-mono text-sm rounded-sm"></div>
 
     <!-- 1. Encabezado -->
-    <header class="mb-8 border-b border-surface pb-4 flex flex-col md:flex-row justify-between md:items-end gap-4">
+    <header class="mb-8 border-b border-surface pb-4 flex flex-col xl:flex-row justify-between xl:items-end gap-6">
         <div>
             <h1 class="text-3xl font-bold text-white tracking-tight uppercase">Radar de Mercado</h1>
-            <p class="font-mono text-sm text-gray-500 mt-1" id="last-update">Sincronizando datos...</p>
+            <div id="last-update" class="font-mono text-sm text-gray-500 mt-1 leading-relaxed">Sincronizando datos...</div>
+            <!-- Badges de estado -->
+            <div id="badges" class="flex flex-wrap gap-2 font-mono text-xs uppercase mt-3"></div>
         </div>
-        <!-- 2. Badges de estado -->
-        <div id="badges" class="flex flex-wrap gap-2 font-mono text-xs uppercase"></div>
+
+        <!-- 6. Calculadora CCL Manual -->
+        <div class="bg-surface border border-surface p-3 rounded-sm flex flex-col sm:flex-row items-start sm:items-center gap-4 font-mono text-xs">
+            <div class="flex items-center gap-2">
+                <span class="text-gray-400">CCL RADAR:</span>
+                <span id="ccl-auto" class="text-white font-bold text-sm">—</span>
+            </div>
+            <div class="hidden sm:block text-gray-600">|</div>
+            <div class="flex items-center gap-2">
+                <span class="text-gray-400">TU BRÓKER:</span>
+                <div class="flex items-center bg-base border border-gray-700 rounded-sm focus-within:border-accent transition-colors overflow-hidden">
+                    <span class="px-2 text-gray-500">$</span>
+                    <input type="number" id="ccl-manual" class="bg-transparent text-white w-20 py-1.5 focus:outline-none" placeholder="1590">
+                </div>
+                <span id="ccl-diff" class="font-bold text-gray-500 w-16 text-right">—</span>
+            </div>
+        </div>
     </header>
 
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
         <div class="lg:col-span-2 space-y-6">
             
-            <!-- 3. Sección Alertas -->
+            <!-- 3. Sección Alertas (Con Scroll y Contador) -->
             <section>
-                <h2 class="text-accent uppercase text-sm font-bold tracking-widest mb-4 border-b border-surface pb-1">Alertas Activas</h2>
-                <div id="alerts-container" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+                <div class="flex justify-between items-end border-b border-surface pb-1 mb-4">
+                    <h2 id="alert-title" class="text-accent uppercase text-sm font-bold tracking-widest">Alertas Activas (0)</h2>
+                </div>
+                <!-- 4. Contenedor de Alertas -->
+                <div id="alerts-container" class="grid grid-cols-1 gap-4 max-h-[360px] overflow-y-auto pr-2 custom-scrollbar"></div>
             </section>
 
             <!-- 5. Detalle por Sector (Ranking) -->
@@ -77,6 +107,12 @@
         </div>
 
         <div class="space-y-6">
+            <!-- Sección Nueva: Top 10 -->
+            <section>
+                <h2 class="text-accent uppercase text-sm font-bold tracking-widest mb-4 border-b border-surface pb-1">Top 10 Fuerza Relativa</h2>
+                <div id="top10-container" class="bg-surface p-4 space-y-3 rounded-sm border border-surface"></div>
+            </section>
+
             <!-- 4. Rotación Sectorial -->
             <section>
                 <h2 class="text-accent uppercase text-sm font-bold tracking-widest mb-4 border-b border-surface pb-1">Rotación Sectorial (RS)</h2>
@@ -86,12 +122,13 @@
     </div>
 
     <script>
-        // Apuntando directo a los datos crudos en tu rama main
         const DATA_URL = 'https://raw.githubusercontent.com/victoriagramigna/radar-mercado/main/data/ultimo.json';
+        
+        // Variable global para el cálculo de CCL
+        let currentAutoCcl = null;
 
         async function fetchRadarData() {
             try {
-                // cache: 'no-store' asegura que siempre se pida el último archivo
                 const response = await fetch(DATA_URL, { cache: 'no-store' });
                 if (!response.ok) throw new Error(`HTTP ${response.status}`);
                 
@@ -105,20 +142,54 @@
             }
         }
 
-        function renderDashboard(data) {
-            // Actualización del reloj de timestamp
-            const fechaGenerado = data?.generado_utc;
-            const dateStr = fechaGenerado ? new Date(fechaGenerado).toLocaleString('es-AR') : 'Fecha desconocida';
-            document.getElementById('last-update').innerHTML = `T-0: <span class="text-white">${dateStr}</span>`;
-
-            // Renderizado de Badges (VIX, Macro, Frescura)
-            const badgesHtml = [];
+        // Lógica del Input CCL
+        document.getElementById('ccl-manual').addEventListener('input', (e) => {
+            const diffSpan = document.getElementById('ccl-diff');
+            const manualVal = parseFloat(e.target.value);
             
+            if (!currentAutoCcl || isNaN(manualVal) || manualVal <= 0) {
+                diffSpan.textContent = '—';
+                diffSpan.className = 'font-bold text-gray-500 w-16 text-right';
+                return;
+            }
+            
+            const diffPct = ((manualVal - currentAutoCcl) / currentAutoCcl) * 100;
+            const isPos = diffPct > 0;
+            diffSpan.textContent = `${isPos ? '+' : ''}${diffPct.toFixed(2)}%`;
+            diffSpan.className = `font-bold w-16 text-right ${isPos ? 'text-pos' : 'text-neg'}`;
+        });
+
+        function renderDashboard(data) {
+            // Timestamp y 24hs format
+            const fechaGenerado = data?.generado_utc;
+            const formatOpts = { hour12: false, hour: '2-digit', minute: '2-digit', day: '2-digit', month: '2-digit', year: 'numeric' };
+            const dateStr = fechaGenerado ? new Date(fechaGenerado).toLocaleString('es-AR', formatOpts) : 'Fecha desconocida';
+            
+            // Próxima corrida
+            const proxima = data?.proxima_corrida_estimada_utc;
+            let proximaStr = '';
+            if (proxima) {
+                const pxDate = new Date(proxima);
+                const diaMes = pxDate.toLocaleDateString('es-AR', {day: '2-digit', month: '2-digit'});
+                const hora = pxDate.toLocaleTimeString('es-AR', {hour12: false, hour: '2-digit', minute: '2-digit'});
+                proximaStr = `<br><span class="text-xs text-gray-500 border-b border-dashed border-gray-600 cursor-help" title="GitHub Actions corre los crons de forma automática pero no garantiza el horario exacto -- puede demorarse en momentos de alta demanda.">Próxima corrida estimada: ${diaMes} ${hora} (hora ARG)</span>`;
+            }
+
+            document.getElementById('last-update').innerHTML = `T-0: <span class="text-white">${dateStr}</span>${proximaStr}`;
+
+            // CCL Update
+            currentAutoCcl = data?.cedears_pricing?.ccl ?? null;
+            document.getElementById('ccl-auto').textContent = currentAutoCcl ? `$${currentAutoCcl.toFixed(2)}` : '—';
+            // Disparamos evento input artificial para re-calcular si el usuario ya tenía algo escrito
+            document.getElementById('ccl-manual').dispatchEvent(new Event('input'));
+
+            // Renderizado de Badges
+            const badgesHtml = [];
             if (data?.frescura_dato?.sospechoso) {
                 badgesHtml.push(`<span class="bg-accent text-base px-2 py-1 font-bold rounded-sm animate-pulse">⚠️ DATO VIEJO / SOSPECHOSO</span>`);
             }
             
-            const vixSano = data?.regimen_mercado?.sano ?? true; // fallback por si no existe
+            const vixSano = data?.regimen_mercado?.sano ?? true;
             const vixColor = vixSano ? 'border-pos text-pos' : 'border-neg text-neg';
             const vixValue = data?.regimen_mercado?.vix ?? '—';
             badgesHtml.push(`<span class="border ${vixColor} px-2 py-1 rounded-sm bg-surface">VIX: ${vixValue}</span>`);
@@ -126,50 +197,101 @@
             const macroStable = data?.contexto_macro?.estable ?? true;
             const macroColor = macroStable ? 'border-pos text-pos' : 'border-neg text-neg';
             const riesgoPais = data?.contexto_macro?.riesgo_pais ?? '—';
-            const brecha = data?.contexto_macro?.['brecha_cambiaria_%'] ?? '—';
             badgesHtml.push(`<span class="border ${macroColor} px-2 py-1 rounded-sm bg-surface">RIESGO PAÍS: ${riesgoPais}</span>`);
-            badgesHtml.push(`<span class="border ${macroColor} px-2 py-1 rounded-sm bg-surface">BRECHA: ${brecha}%</span>`);
 
             document.getElementById('badges').innerHTML = badgesHtml.join('');
 
-            // Renderizado de Alertas
+            // Renderizado de Alertas (Ordenadas y Filtradas)
             const alertsContainer = document.getElementById('alerts-container');
-            alertsContainer.innerHTML = '';
-            
             const alertas = data?.alertas ?? [];
+            
+            document.getElementById('alert-title').textContent = `Alertas Activas (${alertas.length})`;
+            
             if (alertas.length === 0) {
-                alertsContainer.innerHTML = '<div class="text-gray-500 font-mono text-sm p-4 border border-dashed border-surface rounded-sm">Sin señales técnicas recientes.</div>';
+                alertsContainer.innerHTML = '<div class="text-gray-500 font-mono text-sm p-4 border border-dashed border-surface rounded-sm">Sin señales técnicas en las últimas 48hs.</div>';
             } else {
-                alertas.forEach(alerta => {
+                // Ordenar: COMPRA (1), VENTA (2), MANTENER (3)
+                alertas.sort((a, b) => {
+                    const getRank = (alerta) => {
+                        const rec = alerta?.['Recomendación final'];
+                        if (rec === 'COMPRA' || alerta?.Tipo === 'lider_soporte') return 1;
+                        if (rec === 'VENTA') return 2;
+                        return 3;
+                    };
+                    return getRank(a) - getRank(b);
+                });
+
+                alertsContainer.innerHTML = alertas.map(alerta => {
                     const recomendacion = alerta?.['Recomendación final'] ?? '—';
                     const ticker = alerta?.Ticker ?? '—';
                     const sector = alerta?.Sector ?? '—';
                     const estado = alerta?.Estado ?? '—';
                     const score = alerta?.Score ?? '—';
                     const ajustado = alerta?.['Ajustado por'] ?? '—';
+                    const tipo = alerta?.Tipo ?? 'tecnico';
 
+                    // Estilos base
                     let recColor = 'text-accent border-accent'; 
-                    if (recomendacion === 'COMPRA') recColor = 'bg-pos text-base border-pos';
-                    if (recomendacion === 'VENTA') recColor = 'bg-neg text-base border-neg';
-                    if (recomendacion === 'MANTENER') recColor = 'bg-accent text-base border-accent';
+                    let containerBorder = 'border-l-2 border-surface hover:border-l-accent';
+                    let bgCustom = 'bg-surface';
+                    let titleIcon = '';
 
-                    alertsContainer.innerHTML += `
-                        <div class="bg-surface p-4 border-l-2 border-surface hover:border-l-accent transition-colors rounded-r-sm">
+                    // Lógica Tipo lider_soporte vs tecnico
+                    if (tipo === 'lider_soporte') {
+                        recColor = 'bg-blueAlert/20 text-blueAlert border border-blueAlert';
+                        containerBorder = 'border-l-4 border-blueAlert shadow-[inset_0_0_20px_rgba(59,130,246,0.05)]';
+                        bgCustom = 'bg-[#151b2b]'; // Apenas más claro que surface para destacar
+                        titleIcon = '🎯 ';
+                    } else {
+                        if (recomendacion === 'COMPRA') recColor = 'bg-pos text-base border-pos';
+                        if (recomendacion === 'VENTA') recColor = 'bg-neg text-base border-neg';
+                        if (recomendacion === 'MANTENER') recColor = 'bg-accent text-base border-accent';
+                    }
+
+                    return `
+                        <div class="${bgCustom} p-4 ${containerBorder} transition-colors rounded-r-sm">
                             <div class="flex justify-between items-start mb-3">
                                 <div>
-                                    <span class="text-xl font-bold text-white">${ticker}</span>
+                                    <span class="text-xl font-bold text-white">${titleIcon}${ticker}</span>
                                     <span class="text-xs font-mono text-gray-500 ml-2 uppercase">${sector}</span>
                                 </div>
                                 <span class="font-mono text-xs px-2 py-1 font-bold rounded-sm ${recColor}">${recomendacion}</span>
                             </div>
                             <div class="font-mono text-sm text-gray-300 mb-3">${estado}</div>
-                            <div class="flex justify-between font-mono text-xs text-gray-500 border-t border-base pt-2">
+                            <div class="flex justify-between font-mono text-xs text-gray-500 border-t border-base pt-2 mt-auto">
                                 <span>SCORE: <span class="text-white">${score}</span></span>
                                 <span>ADJ: ${ajustado}</span>
                             </div>
                         </div>
                     `;
-                });
+                }).join('');
+            }
+
+            const rankingArray = data?.ranking ?? [];
+
+            // Renderizado Top 10
+            const top10Container = document.getElementById('top10-container');
+            if (rankingArray.length === 0) {
+                top10Container.innerHTML = '<div class="text-gray-500 font-mono text-xs">Sin datos.</div>';
+            } else {
+                const top10 = [...rankingArray].sort((a, b) => (b?.RS_Score ?? 0) - (a?.RS_Score ?? 0)).slice(0, 10);
+                top10Container.innerHTML = top10.map((ticker, index) => {
+                    const rsScore = ticker?.RS_Score ?? 0;
+                    const dotClass = ticker?.Sobre_SMA50 ? 'dot-pos' : 'dot-neg';
+                    return `
+                        <div class="flex justify-between items-center border-b border-base/50 pb-2 mb-2 last:border-0 last:pb-0 last:mb-0">
+                            <div class="flex items-center gap-2">
+                                <span class="text-gray-600 font-mono text-xs w-4">${index + 1}.</span>
+                                <span class="font-bold text-white w-14">${ticker?.Ticker ?? '—'}</span>
+                                <span class="text-[10px] uppercase text-gray-500 truncate w-24 hidden 2xl:inline-block">${ticker?.Sector ?? '—'}</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="font-mono text-accent text-sm w-8 text-right">${rsScore.toFixed(0)}</span>
+                                <span class="dot ${dotClass}"></span>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
             }
 
             // Renderizado de Rotación Sectorial
@@ -181,7 +303,6 @@
                 sectorRot.innerHTML = '<div class="text-gray-500 font-mono text-sm">Sin datos de rotación.</div>';
             } else {
                 const maxRs = Math.max(...sortedSectors.map(s => s[1] ?? 0));
-
                 sectorRot.innerHTML = sortedSectors.map(([sector, rs]) => {
                     const currentRs = rs ?? 0;
                     const width = maxRs > 0 ? (currentRs / maxRs) * 100 : 0;
@@ -203,8 +324,6 @@
 
             // Renderizado de Detalle por Sector
             const sectorsDetail = document.getElementById('sectors-detail');
-            const rankingArray = data?.ranking ?? [];
-
             if (rankingArray.length === 0) {
                 sectorsDetail.innerHTML = '<div class="text-gray-500 font-mono text-sm p-4 border border-dashed border-surface rounded-sm">Universo técnico vacío.</div>';
             } else {
@@ -221,15 +340,28 @@
                         const precio = ticker?.Precio ?? 0;
                         const tickerName = ticker?.Ticker ?? '—';
                         
-                        const dotClass = ticker?.Sobre_SMA50 ? 'dot-pos' : 'dot-neg';
-                        const rsColor = rsScore > 80 ? 'bg-pos' : (rsScore > 40 ? 'bg-accent' : 'bg-neg');
+                        // Lógica Puntos Medias Móviles
+                        const dot50Class = ticker?.Sobre_SMA50 ? 'dot-pos' : 'dot-neg';
+                        const dist200 = ticker?.['Dist_SMA200_%'];
+                        let dot200Class = 'dot-null'; // fallback gris
+                        if (dist200 != null) {
+                            dot200Class = dist200 > 0 ? 'dot-pos' : 'dot-neg';
+                        }
                         
-                        // toFixed seguro
+                        const rsColor = rsScore > 80 ? 'bg-pos' : (rsScore > 40 ? 'bg-accent' : 'bg-neg');
                         const displayPrecio = typeof precio === 'number' ? precio.toFixed(2) : '—';
                         const displayRs = typeof rsScore === 'number' ? rsScore.toFixed(0) : '—';
                         
+                        // Lógica Tooltip Hover
+                        const s50V = ticker?.SMA50 != null ? `$${ticker.SMA50.toFixed(2)} (${ticker['Dist_SMA50_%'] > 0 ? '+' : ''}${ticker['Dist_SMA50_%'].toFixed(1)}%)` : 'sin datos';
+                        const s200V = ticker?.SMA200 != null ? `$${ticker.SMA200.toFixed(2)} (${ticker['Dist_SMA200_%'] > 0 ? '+' : ''}${ticker['Dist_SMA200_%'].toFixed(1)}%)` : 'sin datos aún';
+                        const rsiV = ticker?.RSI != null ? ticker.RSI.toFixed(1) : '—';
+                        const volV = ticker?.Vol_rel != null ? ticker.Vol_rel.toFixed(2) + 'x' : '—';
+                        
+                        const tooltipText = `SMA50: ${s50V} · SMA200: ${s200V} · RSI: ${rsiV} · Vol: ${volV}`;
+
                         return `
-                            <div class="flex flex-wrap md:flex-nowrap items-center py-2 border-b border-base/50 font-mono text-sm hover:bg-base/40 px-2 -mx-2 transition-colors">
+                            <div class="ticker-row flex flex-wrap md:flex-nowrap items-center py-2 border-b border-base/50 font-mono text-sm hover:bg-base/40 px-2 -mx-2 transition-colors" title="${tooltipText}">
                                 <div class="w-16 font-bold text-white">${tickerName}</div>
                                 <div class="w-20 text-right text-gray-400 mr-4 md:mr-8">${displayPrecio}</div>
                                 
@@ -240,8 +372,9 @@
                                     <div class="w-10 text-right text-xs text-gray-500">${displayRs}</div>
                                 </div>
                                 
-                                <div class="w-24 text-right flex justify-end items-center gap-2 text-xs text-gray-400 ml-auto">
-                                    SMA50 <span class="dot ${dotClass}"></span>
+                                <div class="w-32 text-right flex justify-end items-center gap-2 text-[10px] text-gray-400 ml-auto tracking-widest">
+                                    <span>50</span><span class="dot ${dot50Class} mr-1"></span>
+                                    <span>200</span><span class="dot ${dot200Class}"></span>
                                 </div>
                             </div>
                         `;
@@ -263,7 +396,7 @@
             }
         }
 
-        // 7. Refresco automático: Inicia inmediatamente y luego corre cada 5 minutos
+        // Refresco automático
         fetchRadarData();
         setInterval(fetchRadarData, 5 * 60 * 1000); // 300.000 milisegundos
     </script>
