@@ -1,262 +1,928 @@
 {
-  "generado_utc": "2026-09-16T00:30:23.025563+00:00",
-  "tickers_ok": 21,
-  "tickers_fallidos": [],
+  "generado_utc": "2026-09-16T14:29:26.899628+00:00",
+  "tickers_ok": 80,
+  "tickers_fallidos": [
+    {
+      "ticker": "TXR",
+      "motivo": "datos insuficientes (0 filas, se necesitan >=200)"
+    },
+    {
+      "ticker": "NTCO",
+      "motivo": "datos insuficientes (0 filas, se necesitan >=200)"
+    }
+  ],
   "frescura_dato": {
-    "fecha_ultimo_dato": "2026-09-14",
-    "gap_dias_habiles": 2,
+    "fecha_ultimo_dato": "2026-09-16",
+    "gap_dias_habiles": 0,
     "sospechoso": false
   },
   "ranking": [
     {
+      "Ticker": "AMD",
+      "Sector": "Tecnología",
+      "Precio": 526.06,
+      "Ret_1m_%": 8.6,
+      "Ret_3m_%": 2.6,
+      "Ret_6m_%": 163.7,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -9.4,
+      "RS_Score": 100.0
+    },
+    {
+      "Ticker": "TEM",
+      "Sector": "Salud",
+      "Precio": 69.4,
+      "Ret_1m_%": 40.6,
+      "Ret_3m_%": 42.2,
+      "Ret_6m_%": 42.5,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -32.8,
+      "RS_Score": 98.8
+    },
+    {
+      "Ticker": "TEN",
+      "Sector": "Energía",
+      "Precio": 52.26,
+      "Ret_1m_%": 24.3,
+      "Ret_3m_%": 41.8,
+      "Ret_6m_%": 49.9,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": 0.0,
+      "RS_Score": 97.5
+    },
+    {
       "Ticker": "YPF",
       "Sector": "Energía",
-      "Precio": 56.33,
-      "Ret_1m_%": 12.5,
-      "Ret_3m_%": 7.1,
-      "Ret_6m_%": 50.4,
+      "Precio": 55.94,
+      "Ret_1m_%": 10.4,
+      "Ret_3m_%": 10.0,
+      "Ret_6m_%": 41.7,
       "Sobre_SMA50": true,
-      "Dist_Max52w_%": -0.0,
-      "RS_Score": 100.0
+      "Dist_Max52w_%": -2.9,
+      "RS_Score": 96.2
+    },
+    {
+      "Ticker": "HOOD",
+      "Sector": "Fintech",
+      "Precio": 105.96,
+      "Ret_1m_%": 15.8,
+      "Ret_3m_%": 0.7,
+      "Ret_6m_%": 41.5,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -30.5,
+      "RS_Score": 95.0
     },
     {
       "Ticker": "MRK",
       "Sector": "Salud",
-      "Precio": 144.85,
-      "Ret_1m_%": 6.6,
-      "Ret_3m_%": 26.1,
-      "Ret_6m_%": 26.4,
+      "Precio": 143.99,
+      "Ret_1m_%": 7.2,
+      "Ret_3m_%": 25.5,
+      "Ret_6m_%": 27.4,
       "Sobre_SMA50": true,
       "Dist_Max52w_%": -7.4,
-      "RS_Score": 95.2
+      "RS_Score": 93.8
+    },
+    {
+      "Ticker": "QCOM",
+      "Sector": "Tecnología",
+      "Precio": 188.9,
+      "Ret_1m_%": 18.6,
+      "Ret_3m_%": -10.8,
+      "Ret_6m_%": 46.1,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -24.1,
+      "RS_Score": 92.5
     },
     {
       "Ticker": "MSFT",
       "Sector": "Tecnología",
-      "Precio": 505.41,
-      "Ret_1m_%": 2.2,
-      "Ret_3m_%": 26.7,
-      "Ret_6m_%": 26.9,
+      "Precio": 492.77,
+      "Ret_1m_%": 2.5,
+      "Ret_3m_%": 30.3,
+      "Ret_6m_%": 26.3,
       "Sobre_SMA50": true,
-      "Dist_Max52w_%": -6.0,
-      "RS_Score": 90.5
+      "Dist_Max52w_%": -8.3,
+      "RS_Score": 91.2
+    },
+    {
+      "Ticker": "TGT",
+      "Sector": "Consumo",
+      "Precio": 153.91,
+      "Ret_1m_%": 0.9,
+      "Ret_3m_%": 21.3,
+      "Ret_6m_%": 36.1,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -9.4,
+      "RS_Score": 90.0
+    },
+    {
+      "Ticker": "BBVA",
+      "Sector": "Bancos",
+      "Precio": 28.53,
+      "Ret_1m_%": -0.9,
+      "Ret_3m_%": 16.6,
+      "Ret_6m_%": 41.6,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -3.7,
+      "RS_Score": 88.8
     },
     {
       "Ticker": "AAPL",
       "Sector": "Tecnología",
-      "Precio": 333.08,
-      "Ret_1m_%": 8.9,
-      "Ret_3m_%": 12.5,
-      "Ret_6m_%": 32.0,
+      "Precio": 333.42,
+      "Ret_1m_%": 7.5,
+      "Ret_3m_%": 12.8,
+      "Ret_6m_%": 33.6,
       "Sobre_SMA50": true,
-      "Dist_Max52w_%": -2.0,
-      "RS_Score": 85.7
+      "Dist_Max52w_%": -1.9,
+      "RS_Score": 87.5
     },
     {
-      "Ticker": "VIST",
+      "Ticker": "GPRK",
       "Sector": "Energía",
-      "Precio": 76.41,
-      "Ret_1m_%": 11.9,
-      "Ret_3m_%": 11.4,
-      "Ret_6m_%": 16.3,
+      "Precio": 11.38,
+      "Ret_1m_%": 21.8,
+      "Ret_3m_%": 10.4,
+      "Ret_6m_%": 15.4,
       "Sobre_SMA50": true,
-      "Dist_Max52w_%": -3.6,
-      "RS_Score": 81.0
+      "Dist_Max52w_%": -4.9,
+      "RS_Score": 86.2
+    },
+    {
+      "Ticker": "V",
+      "Sector": "Fintech",
+      "Precio": 373.39,
+      "Ret_1m_%": 2.5,
+      "Ret_3m_%": 13.2,
+      "Ret_6m_%": 25.4,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -2.8,
+      "RS_Score": 85.0
+    },
+    {
+      "Ticker": "SPXL",
+      "Sector": "ETF",
+      "Precio": 276.89,
+      "Ret_1m_%": -4.1,
+      "Ret_3m_%": 4.7,
+      "Ret_6m_%": 42.4,
+      "Sobre_SMA50": false,
+      "Dist_Max52w_%": -8.1,
+      "RS_Score": 83.8
+    },
+    {
+      "Ticker": "SPOT",
+      "Sector": "Tecnología",
+      "Precio": 558.25,
+      "Ret_1m_%": 8.1,
+      "Ret_3m_%": 22.5,
+      "Ret_6m_%": 8.0,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -24.4,
+      "RS_Score": 82.5
+    },
+    {
+      "Ticker": "PLTR",
+      "Sector": "Tecnología",
+      "Precio": 170.28,
+      "Ret_1m_%": -0.7,
+      "Ret_3m_%": 30.4,
+      "Ret_6m_%": 11.5,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -17.8,
+      "RS_Score": 81.2
+    },
+    {
+      "Ticker": "ABNB",
+      "Sector": "Consumo",
+      "Precio": 169.44,
+      "Ret_1m_%": -7.5,
+      "Ret_3m_%": 20.6,
+      "Ret_6m_%": 29.2,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -11.1,
+      "RS_Score": 80.0
+    },
+    {
+      "Ticker": "XYZ",
+      "Sector": "Fintech",
+      "Precio": 78.02,
+      "Ret_1m_%": -1.8,
+      "Ret_3m_%": 7.1,
+      "Ret_6m_%": 34.9,
+      "Sobre_SMA50": false,
+      "Dist_Max52w_%": -8.0,
+      "RS_Score": 78.8
     },
     {
       "Ticker": "CVX",
       "Sector": "Energía",
-      "Precio": 212.17,
-      "Ret_1m_%": 7.0,
-      "Ret_3m_%": 18.6,
-      "Ret_6m_%": 9.7,
+      "Precio": 213.35,
+      "Ret_1m_%": 4.6,
+      "Ret_3m_%": 21.2,
+      "Ret_6m_%": 9.4,
       "Sobre_SMA50": true,
-      "Dist_Max52w_%": -0.9,
+      "Dist_Max52w_%": -2.0,
+      "RS_Score": 77.5
+    },
+    {
+      "Ticker": "JMIA",
+      "Sector": "Consumo",
+      "Precio": 7.34,
+      "Ret_1m_%": 15.9,
+      "Ret_3m_%": 7.4,
+      "Ret_6m_%": 6.3,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -49.7,
       "RS_Score": 76.2
-    },
-    {
-      "Ticker": "XLE",
-      "Sector": "ETF",
-      "Precio": 64.53,
-      "Ret_1m_%": 4.2,
-      "Ret_3m_%": 17.0,
-      "Ret_6m_%": 13.0,
-      "Sobre_SMA50": true,
-      "Dist_Max52w_%": -1.2,
-      "RS_Score": 71.4
-    },
-    {
-      "Ticker": "XOM",
-      "Sector": "Energía",
-      "Precio": 165.08,
-      "Ret_1m_%": 3.8,
-      "Ret_3m_%": 17.9,
-      "Ret_6m_%": 6.4,
-      "Sobre_SMA50": true,
-      "Dist_Max52w_%": -2.4,
-      "RS_Score": 66.7
-    },
-    {
-      "Ticker": "MELI",
-      "Sector": "Consumo",
-      "Precio": 1900.24,
-      "Ret_1m_%": 3.0,
-      "Ret_3m_%": 15.4,
-      "Ret_6m_%": 9.7,
-      "Sobre_SMA50": true,
-      "Dist_Max52w_%": -24.3,
-      "RS_Score": 61.9
-    },
-    {
-      "Ticker": "JPM",
-      "Sector": "Bancos",
-      "Precio": 350.13,
-      "Ret_1m_%": -3.5,
-      "Ret_3m_%": 10.1,
-      "Ret_6m_%": 23.5,
-      "Sobre_SMA50": false,
-      "Dist_Max52w_%": -4.1,
-      "RS_Score": 57.1
-    },
-    {
-      "Ticker": "KO",
-      "Sector": "Consumo",
-      "Precio": 89.35,
-      "Ret_1m_%": 1.9,
-      "Ret_3m_%": 10.4,
-      "Ret_6m_%": 15.6,
-      "Sobre_SMA50": true,
-      "Dist_Max52w_%": -2.9,
-      "RS_Score": 52.4
-    },
-    {
-      "Ticker": "EWZ",
-      "Sector": "ETF",
-      "Precio": 37.72,
-      "Ret_1m_%": 11.2,
-      "Ret_3m_%": 8.9,
-      "Ret_6m_%": 4.2,
-      "Sobre_SMA50": true,
-      "Dist_Max52w_%": -8.7,
-      "RS_Score": 47.6
-    },
-    {
-      "Ticker": "JNJ",
-      "Sector": "Salud",
-      "Precio": 266.32,
-      "Ret_1m_%": 2.8,
-      "Ret_3m_%": 13.6,
-      "Ret_6m_%": 10.7,
-      "Sobre_SMA50": true,
-      "Dist_Max52w_%": -4.3,
-      "RS_Score": 42.9
-    },
-    {
-      "Ticker": "WFC",
-      "Sector": "Bancos",
-      "Precio": 88.71,
-      "Ret_1m_%": -0.1,
-      "Ret_3m_%": 7.3,
-      "Ret_6m_%": 18.5,
-      "Sobre_SMA50": true,
-      "Dist_Max52w_%": -6.5,
-      "RS_Score": 38.1
     },
     {
       "Ticker": "XLK",
       "Sector": "ETF",
-      "Precio": 184.28,
-      "Ret_1m_%": -3.0,
-      "Ret_3m_%": -3.8,
-      "Ret_6m_%": 33.1,
+      "Precio": 185.41,
+      "Ret_1m_%": -0.1,
+      "Ret_3m_%": -0.1,
+      "Ret_6m_%": 34.7,
       "Sobre_SMA50": true,
-      "Dist_Max52w_%": -6.9,
-      "RS_Score": 33.3
+      "Dist_Max52w_%": -6.3,
+      "RS_Score": 75.0
     },
     {
-      "Ticker": "PFE",
-      "Sector": "Salud",
-      "Precio": 27.72,
-      "Ret_1m_%": 3.5,
-      "Ret_3m_%": 8.5,
-      "Ret_6m_%": 7.7,
-      "Sobre_SMA50": true,
-      "Dist_Max52w_%": -4.5,
-      "RS_Score": 28.6
+      "Ticker": "PYPL",
+      "Sector": "Fintech",
+      "Precio": 53.47,
+      "Ret_1m_%": -11.3,
+      "Ret_3m_%": 27.4,
+      "Ret_6m_%": 20.6,
+      "Sobre_SMA50": false,
+      "Dist_Max52w_%": -29.0,
+      "RS_Score": 73.8
     },
     {
-      "Ticker": "GOOGL",
+      "Ticker": "ARKK",
+      "Sector": "ETF",
+      "Precio": 83.89,
+      "Ret_1m_%": 6.0,
+      "Ret_3m_%": 6.9,
+      "Ret_6m_%": 17.5,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -9.3,
+      "RS_Score": 72.5
+    },
+    {
+      "Ticker": "XLE",
+      "Sector": "ETF",
+      "Precio": 64.42,
+      "Ret_1m_%": 1.2,
+      "Ret_3m_%": 18.7,
+      "Ret_6m_%": 11.8,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -2.3,
+      "RS_Score": 71.2
+    },
+    {
+      "Ticker": "VIST",
+      "Sector": "Energía",
+      "Precio": 75.81,
+      "Ret_1m_%": 8.7,
+      "Ret_3m_%": 10.6,
+      "Ret_6m_%": 9.2,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -4.3,
+      "RS_Score": 70.0
+    },
+    {
+      "Ticker": "EWZ",
+      "Sector": "ETF",
+      "Precio": 37.51,
+      "Ret_1m_%": 11.3,
+      "Ret_3m_%": 10.0,
+      "Ret_6m_%": 4.4,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -9.3,
+      "RS_Score": 68.8
+    },
+    {
+      "Ticker": "SATL",
       "Sector": "Tecnología",
-      "Precio": 349.39,
-      "Ret_1m_%": 1.1,
-      "Ret_3m_%": -5.3,
-      "Ret_6m_%": 14.5,
+      "Precio": 4.95,
+      "Ret_1m_%": -13.9,
+      "Ret_3m_%": -19.9,
+      "Ret_6m_%": 67.1,
       "Sobre_SMA50": true,
-      "Dist_Max52w_%": -13.1,
-      "RS_Score": 23.8
+      "Dist_Max52w_%": -54.0,
+      "RS_Score": 67.5
+    },
+    {
+      "Ticker": "KO",
+      "Sector": "Consumo",
+      "Precio": 88.22,
+      "Ret_1m_%": -0.1,
+      "Ret_3m_%": 11.0,
+      "Ret_6m_%": 17.6,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -3.5,
+      "RS_Score": 66.2
+    },
+    {
+      "Ticker": "T",
+      "Sector": "Telecomunicaciones",
+      "Precio": 26.55,
+      "Ret_1m_%": 6.6,
+      "Ret_3m_%": 19.9,
+      "Ret_6m_%": -0.8,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -6.6,
+      "RS_Score": 65.0
+    },
+    {
+      "Ticker": "ADBE",
+      "Sector": "Tecnología",
+      "Precio": 253.41,
+      "Ret_1m_%": -3.7,
+      "Ret_3m_%": 29.1,
+      "Ret_6m_%": 3.0,
+      "Sobre_SMA50": false,
+      "Dist_Max52w_%": -31.0,
+      "RS_Score": 63.7
+    },
+    {
+      "Ticker": "UNH",
+      "Sector": "Salud",
+      "Precio": 379.68,
+      "Ret_1m_%": -3.0,
+      "Ret_3m_%": -4.4,
+      "Ret_6m_%": 35.1,
+      "Sobre_SMA50": false,
+      "Dist_Max52w_%": -12.5,
+      "RS_Score": 62.5
+    },
+    {
+      "Ticker": "JNJ",
+      "Sector": "Salud",
+      "Precio": 266.39,
+      "Ret_1m_%": -1.3,
+      "Ret_3m_%": 14.3,
+      "Ret_6m_%": 13.5,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -4.3,
+      "RS_Score": 61.3
+    },
+    {
+      "Ticker": "BBD",
+      "Sector": "Bancos",
+      "Precio": 3.46,
+      "Ret_1m_%": 14.1,
+      "Ret_3m_%": 3.3,
+      "Ret_6m_%": 2.3,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -15.6,
+      "RS_Score": 60.0
+    },
+    {
+      "Ticker": "GM",
+      "Sector": "Automotriz",
+      "Precio": 84.7,
+      "Ret_1m_%": 1.4,
+      "Ret_3m_%": 6.7,
+      "Ret_6m_%": 15.7,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -6.0,
+      "RS_Score": 58.8
+    },
+    {
+      "Ticker": "WFC",
+      "Sector": "Bancos",
+      "Precio": 88.13,
+      "Ret_1m_%": 0.8,
+      "Ret_3m_%": 5.8,
+      "Ret_6m_%": 17.0,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -7.1,
+      "RS_Score": 57.5
+    },
+    {
+      "Ticker": "XOM",
+      "Sector": "Energía",
+      "Precio": 165.03,
+      "Ret_1m_%": -0.3,
+      "Ret_3m_%": 18.0,
+      "Ret_6m_%": 6.1,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -2.5,
+      "RS_Score": 56.2
+    },
+    {
+      "Ticker": "JPM",
+      "Sector": "Bancos",
+      "Precio": 349.35,
+      "Ret_1m_%": -3.8,
+      "Ret_3m_%": 5.2,
+      "Ret_6m_%": 22.6,
+      "Sobre_SMA50": false,
+      "Dist_Max52w_%": -4.3,
+      "RS_Score": 55.0
     },
     {
       "Ticker": "NVDA",
       "Sector": "Tecnología",
-      "Precio": 210.96,
-      "Ret_1m_%": -6.2,
-      "Ret_3m_%": -0.6,
-      "Ret_6m_%": 15.4,
+      "Precio": 214.99,
+      "Ret_1m_%": -2.1,
+      "Ret_3m_%": 5.2,
+      "Ret_6m_%": 19.4,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -8.6,
+      "RS_Score": 53.8
+    },
+    {
+      "Ticker": "MELI",
+      "Sector": "Consumo",
+      "Precio": 1817.9,
+      "Ret_1m_%": 2.2,
+      "Ret_3m_%": 11.4,
+      "Ret_6m_%": 7.6,
       "Sobre_SMA50": false,
-      "Dist_Max52w_%": -10.3,
-      "RS_Score": 19.0
+      "Dist_Max52w_%": -27.6,
+      "RS_Score": 52.5
+    },
+    {
+      "Ticker": "TSM",
+      "Sector": "Tecnología",
+      "Precio": 418.11,
+      "Ret_1m_%": 1.1,
+      "Ret_3m_%": -3.2,
+      "Ret_6m_%": 23.4,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -12.5,
+      "RS_Score": 51.2
+    },
+    {
+      "Ticker": "LLY",
+      "Sector": "Salud",
+      "Precio": 1143.31,
+      "Ret_1m_%": -6.7,
+      "Ret_3m_%": 3.0,
+      "Ret_6m_%": 24.9,
+      "Sobre_SMA50": false,
+      "Dist_Max52w_%": -10.7,
+      "RS_Score": 50.0
+    },
+    {
+      "Ticker": "BRK-B",
+      "Sector": "Diversificado",
+      "Precio": 519.46,
+      "Ret_1m_%": 3.3,
+      "Ret_3m_%": 5.7,
+      "Ret_6m_%": 7.2,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -1.9,
+      "RS_Score": 48.8
+    },
+    {
+      "Ticker": "C",
+      "Sector": "Bancos",
+      "Precio": 134.79,
+      "Ret_1m_%": -2.1,
+      "Ret_3m_%": -5.8,
+      "Ret_6m_%": 25.3,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -7.0,
+      "RS_Score": 47.5
+    },
+    {
+      "Ticker": "PAGS",
+      "Sector": "Fintech",
+      "Precio": 9.3,
+      "Ret_1m_%": 10.1,
+      "Ret_3m_%": 4.3,
+      "Ret_6m_%": -1.2,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -20.7,
+      "RS_Score": 46.2
+    },
+    {
+      "Ticker": "QQQ",
+      "Sector": "ETF",
+      "Precio": 709.69,
+      "Ret_1m_%": -1.1,
+      "Ret_3m_%": -1.7,
+      "Ret_6m_%": 19.6,
+      "Sobre_SMA50": false,
+      "Dist_Max52w_%": -4.8,
+      "RS_Score": 45.0
+    },
+    {
+      "Ticker": "AMZN",
+      "Sector": "Consumo",
+      "Precio": 247.33,
+      "Ret_1m_%": -4.7,
+      "Ret_3m_%": 4.1,
+      "Ret_6m_%": 17.8,
+      "Sobre_SMA50": false,
+      "Dist_Max52w_%": -12.9,
+      "RS_Score": 43.8
+    },
+    {
+      "Ticker": "B",
+      "Sector": "Materiales",
+      "Precio": 42.88,
+      "Ret_1m_%": 2.3,
+      "Ret_3m_%": 4.3,
+      "Ret_6m_%": 6.8,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -17.7,
+      "RS_Score": 42.5
+    },
+    {
+      "Ticker": "PFE",
+      "Sector": "Salud",
+      "Precio": 27.51,
+      "Ret_1m_%": 1.0,
+      "Ret_3m_%": 8.0,
+      "Ret_6m_%": 4.2,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -5.2,
+      "RS_Score": 41.2
+    },
+    {
+      "Ticker": "ZM",
+      "Sector": "Tecnología",
+      "Precio": 92.81,
+      "Ret_1m_%": -11.4,
+      "Ret_3m_%": 6.2,
+      "Ret_6m_%": 21.4,
+      "Sobre_SMA50": false,
+      "Dist_Max52w_%": -17.0,
+      "RS_Score": 40.0
+    },
+    {
+      "Ticker": "SHOP",
+      "Sector": "Tecnología",
+      "Precio": 130.82,
+      "Ret_1m_%": -10.8,
+      "Ret_3m_%": 21.0,
+      "Ret_6m_%": 5.7,
+      "Sobre_SMA50": false,
+      "Dist_Max52w_%": -26.9,
+      "RS_Score": 38.8
+    },
+    {
+      "Ticker": "RIO",
+      "Sector": "Materiales",
+      "Precio": 97.28,
+      "Ret_1m_%": 0.6,
+      "Ret_3m_%": -3.2,
+      "Ret_6m_%": 13.3,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -11.3,
+      "RS_Score": 37.5
+    },
+    {
+      "Ticker": "F",
+      "Sector": "Automotriz",
+      "Precio": 13.41,
+      "Ret_1m_%": -3.7,
+      "Ret_3m_%": -2.9,
+      "Ret_6m_%": 16.5,
+      "Sobre_SMA50": false,
+      "Dist_Max52w_%": -22.2,
+      "RS_Score": 36.2
+    },
+    {
+      "Ticker": "GOOGL",
+      "Sector": "Tecnología",
+      "Precio": 344.99,
+      "Ret_1m_%": 0.3,
+      "Ret_3m_%": -5.1,
+      "Ret_6m_%": 12.3,
+      "Sobre_SMA50": false,
+      "Dist_Max52w_%": -14.2,
+      "RS_Score": 35.0
+    },
+    {
+      "Ticker": "PAM",
+      "Sector": "Energía",
+      "Precio": 84.64,
+      "Ret_1m_%": 7.1,
+      "Ret_3m_%": -1.6,
+      "Ret_6m_%": -0.7,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -8.3,
+      "RS_Score": 33.8
+    },
+    {
+      "Ticker": "SPGI",
+      "Sector": "Fintech",
+      "Precio": 412.44,
+      "Ret_1m_%": -1.1,
+      "Ret_3m_%": 4.5,
+      "Ret_6m_%": 2.6,
+      "Sobre_SMA50": false,
+      "Dist_Max52w_%": -19.7,
+      "RS_Score": 32.5
+    },
+    {
+      "Ticker": "GLOB",
+      "Sector": "Tecnología",
+      "Precio": 38.6,
+      "Ret_1m_%": 3.5,
+      "Ret_3m_%": 11.5,
+      "Ret_6m_%": -12.8,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -45.8,
+      "RS_Score": 31.2
+    },
+    {
+      "Ticker": "VALE",
+      "Sector": "Materiales",
+      "Precio": 14.35,
+      "Ret_1m_%": 4.9,
+      "Ret_3m_%": -5.0,
+      "Ret_6m_%": 0.4,
+      "Sobre_SMA50": false,
+      "Dist_Max52w_%": -17.2,
+      "RS_Score": 30.0
+    },
+    {
+      "Ticker": "NU",
+      "Sector": "Fintech",
+      "Precio": 13.81,
+      "Ret_1m_%": -3.8,
+      "Ret_3m_%": 7.1,
+      "Ret_6m_%": -1.2,
+      "Sobre_SMA50": false,
+      "Dist_Max52w_%": -26.4,
+      "RS_Score": 28.7
     },
     {
       "Ticker": "BMA",
       "Sector": "Bancos",
-      "Precio": 77.02,
-      "Ret_1m_%": -0.8,
-      "Ret_3m_%": -22.5,
-      "Ret_6m_%": 20.9,
+      "Precio": 76.03,
+      "Ret_1m_%": -0.1,
+      "Ret_3m_%": -22.4,
+      "Ret_6m_%": 18.2,
       "Sobre_SMA50": false,
-      "Dist_Max52w_%": -23.8,
-      "RS_Score": 14.3
+      "Dist_Max52w_%": -24.8,
+      "RS_Score": 27.5
+    },
+    {
+      "Ticker": "TSLA",
+      "Sector": "Automotriz",
+      "Precio": 364.12,
+      "Ret_1m_%": 8.1,
+      "Ret_3m_%": -8.1,
+      "Ret_6m_%": -7.3,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -25.7,
+      "RS_Score": 26.2
+    },
+    {
+      "Ticker": "SPCE",
+      "Sector": "Aeroespacial",
+      "Precio": 3.01,
+      "Ret_1m_%": -5.8,
+      "Ret_3m_%": -13.9,
+      "Ret_6m_%": 16.5,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -60.0,
+      "RS_Score": 25.0
+    },
+    {
+      "Ticker": "BIOX",
+      "Sector": "Agro",
+      "Precio": 0.39,
+      "Ret_1m_%": -7.1,
+      "Ret_3m_%": -1.9,
+      "Ret_6m_%": 4.4,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -80.9,
+      "RS_Score": 23.8
+    },
+    {
+      "Ticker": "AAL",
+      "Sector": "Transporte",
+      "Precio": 12.81,
+      "Ret_1m_%": -8.8,
+      "Ret_3m_%": -16.9,
+      "Ret_6m_%": 18.6,
+      "Sobre_SMA50": false,
+      "Dist_Max52w_%": -29.4,
+      "RS_Score": 22.5
+    },
+    {
+      "Ticker": "UBER",
+      "Sector": "Consumo",
+      "Precio": 71.03,
+      "Ret_1m_%": -4.9,
+      "Ret_3m_%": 0.2,
+      "Ret_6m_%": -7.4,
+      "Sobre_SMA50": false,
+      "Dist_Max52w_%": -29.0,
+      "RS_Score": 21.2
+    },
+    {
+      "Ticker": "TGS",
+      "Sector": "Energía",
+      "Precio": 28.83,
+      "Ret_1m_%": 4.1,
+      "Ret_3m_%": -8.8,
+      "Ret_6m_%": -10.6,
+      "Sobre_SMA50": false,
+      "Dist_Max52w_%": -18.4,
+      "RS_Score": 20.0
+    },
+    {
+      "Ticker": "SUPV",
+      "Sector": "Bancos",
+      "Precio": 8.22,
+      "Ret_1m_%": 6.4,
+      "Ret_3m_%": -26.7,
+      "Ret_6m_%": 1.5,
+      "Sobre_SMA50": false,
+      "Dist_Max52w_%": -36.1,
+      "RS_Score": 18.8
+    },
+    {
+      "Ticker": "PEP",
+      "Sector": "Consumo",
+      "Precio": 135.11,
+      "Ret_1m_%": -2.6,
+      "Ret_3m_%": -3.6,
+      "Ret_6m_%": -10.1,
+      "Sobre_SMA50": false,
+      "Dist_Max52w_%": -18.3,
+      "RS_Score": 17.5
+    },
+    {
+      "Ticker": "NFLX",
+      "Sector": "Consumo",
+      "Precio": 77.38,
+      "Ret_1m_%": -0.5,
+      "Ret_3m_%": 0.5,
+      "Ret_6m_%": -18.3,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -37.7,
+      "RS_Score": 16.2
+    },
+    {
+      "Ticker": "BBAR",
+      "Sector": "Bancos",
+      "Precio": 14.46,
+      "Ret_1m_%": -2.0,
+      "Ret_3m_%": -30.7,
+      "Ret_6m_%": 12.3,
+      "Sobre_SMA50": false,
+      "Dist_Max52w_%": -33.4,
+      "RS_Score": 15.0
     },
     {
       "Ticker": "GGAL",
       "Sector": "Bancos",
-      "Precio": 42.96,
-      "Ret_1m_%": -0.8,
-      "Ret_3m_%": -23.1,
-      "Ret_6m_%": 7.8,
+      "Precio": 42.08,
+      "Ret_1m_%": 0.0,
+      "Ret_3m_%": -24.1,
+      "Ret_6m_%": 2.7,
       "Sobre_SMA50": false,
-      "Dist_Max52w_%": -26.7,
-      "RS_Score": 9.5
+      "Dist_Max52w_%": -28.2,
+      "RS_Score": 13.8
     },
     {
       "Ticker": "WMT",
       "Sector": "Consumo",
-      "Precio": 109.08,
-      "Ret_1m_%": -5.1,
-      "Ret_3m_%": -9.5,
-      "Ret_6m_%": -12.9,
+      "Precio": 108.07,
+      "Ret_1m_%": -6.0,
+      "Ret_3m_%": -8.3,
+      "Ret_6m_%": -10.8,
       "Sobre_SMA50": false,
-      "Dist_Max52w_%": -18.5,
-      "RS_Score": 4.8
+      "Dist_Max52w_%": -19.3,
+      "RS_Score": 12.5
+    },
+    {
+      "Ticker": "URA",
+      "Sector": "Energía",
+      "Precio": 41.57,
+      "Ret_1m_%": -4.7,
+      "Ret_3m_%": -11.7,
+      "Ret_6m_%": -15.3,
+      "Sobre_SMA50": false,
+      "Dist_Max52w_%": -32.7,
+      "RS_Score": 11.2
+    },
+    {
+      "Ticker": "DOW",
+      "Sector": "Materiales",
+      "Precio": 29.51,
+      "Ret_1m_%": -4.3,
+      "Ret_3m_%": -8.1,
+      "Ret_6m_%": -20.0,
+      "Sobre_SMA50": false,
+      "Dist_Max52w_%": -28.0,
+      "RS_Score": 10.0
+    },
+    {
+      "Ticker": "FSLR",
+      "Sector": "Energía",
+      "Precio": 197.7,
+      "Ret_1m_%": -10.1,
+      "Ret_3m_%": -22.4,
+      "Ret_6m_%": -0.1,
+      "Sobre_SMA50": false,
+      "Dist_Max52w_%": -37.9,
+      "RS_Score": 8.8
+    },
+    {
+      "Ticker": "CRWV",
+      "Sector": "Tecnología",
+      "Precio": 83.65,
+      "Ret_1m_%": -10.2,
+      "Ret_3m_%": -27.4,
+      "Ret_6m_%": 1.0,
+      "Sobre_SMA50": false,
+      "Dist_Max52w_%": -41.5,
+      "RS_Score": 7.5
+    },
+    {
+      "Ticker": "BABA",
+      "Sector": "Consumo",
+      "Precio": 107.6,
+      "Ret_1m_%": -16.0,
+      "Ret_3m_%": 0.2,
+      "Ret_6m_%": -19.2,
+      "Sobre_SMA50": false,
+      "Dist_Max52w_%": -42.6,
+      "RS_Score": 6.2
+    },
+    {
+      "Ticker": "LAR",
+      "Sector": "Materiales",
+      "Precio": 5.74,
+      "Ret_1m_%": -6.7,
+      "Ret_3m_%": -39.5,
+      "Ret_6m_%": -6.4,
+      "Sobre_SMA50": false,
+      "Dist_Max52w_%": -51.3,
+      "RS_Score": 5.0
+    },
+    {
+      "Ticker": "LAC",
+      "Sector": "Materiales",
+      "Precio": 2.79,
+      "Ret_1m_%": -5.7,
+      "Ret_3m_%": -36.9,
+      "Ret_6m_%": -34.8,
+      "Sobre_SMA50": false,
+      "Dist_Max52w_%": -72.2,
+      "RS_Score": 3.8
+    },
+    {
+      "Ticker": "NIO",
+      "Sector": "Automotriz",
+      "Precio": 3.62,
+      "Ret_1m_%": -20.1,
+      "Ret_3m_%": -28.3,
+      "Ret_6m_%": -37.8,
+      "Sobre_SMA50": false,
+      "Dist_Max52w_%": -54.1,
+      "RS_Score": 2.5
+    },
+    {
+      "Ticker": "OKLO",
+      "Sector": "Energía",
+      "Precio": 35.56,
+      "Ret_1m_%": -14.0,
+      "Ret_3m_%": -39.5,
+      "Ret_6m_%": -37.3,
+      "Sobre_SMA50": false,
+      "Dist_Max52w_%": -79.6,
+      "RS_Score": 1.2
     }
   ],
   "rs_por_sector": {
-    "Bancos": 29.75,
-    "Consumo": 39.699999999999996,
-    "ETF": 50.76666666666667,
-    "Energía": 80.975,
-    "Salud": 55.56666666666666,
-    "Tecnología": 54.75
+    "Aeroespacial": 25.0,
+    "Agro": 23.8,
+    "Automotriz": 30.925,
+    "Bancos": 42.65555555555555,
+    "Consumo": 43.845454545454544,
+    "Diversificado": 48.8,
+    "ETF": 69.38333333333334,
+    "Energía": 50.78181818181818,
+    "Fintech": 62.857142857142854,
+    "Materiales": 21.46666666666667,
+    "Salud": 67.93333333333334,
+    "Tecnología": 61.57333333333334,
+    "Telecomunicaciones": 65.0,
+    "Transporte": 22.5
   },
   "regimen_mercado": {
     "sano": true,
     "sin_datos": false,
-    "vix": 17.2,
+    "vix": 16.87,
     "motivo": null
   },
   "alertas": [
     {
-      "Ticker": "GOOGL",
+      "Ticker": "NVDA",
       "Sector": "Tecnología",
       "Estado": "🔨 Recién cruzó, sin confirmar",
       "Score": "3/7",
@@ -264,8 +930,6 @@
       "Señales": [
         "cruce SMA50",
         "RSI diario sano",
-        "base ordenada",
-        "sector+mercado ok",
         "VCP válido (2 contracciones)"
       ],
       "VCP": {
@@ -274,30 +938,76 @@
         "olas": [
           {
             "ola": 1,
-            "rango_%": 12.1,
-            "vol_prom": 36475100.0
+            "rango_%": 11.6,
+            "vol_prom": 133143400.0
           },
           {
             "ola": 2,
-            "rango_%": 9.93,
-            "vol_prom": 25477900.0
+            "rango_%": 3.59,
+            "vol_prom": 107505570.0
           },
           {
             "ola": 3,
-            "rango_%": 2.18,
-            "vol_prom": 22804320.0
+            "rango_%": 9.35,
+            "vol_prom": 145400500.0
           },
           {
             "ola": 4,
-            "rango_%": 5.67,
-            "vol_prom": 25156019.0
+            "rango_%": 9.07,
+            "vol_prom": 106898234.0
           }
         ],
         "motivo": null
       },
-      "RSI": 51.2,
-      "Vol_rel": 0.9,
-      "SMA21": 341.3,
+      "RSI": 53.9,
+      "Vol_rel": 0.17,
+      "SMA21": 218.44,
+      "Señal técnica": "MANTENER",
+      "Recomendación final": "MANTENER",
+      "Ajustado por": "sin ajustes",
+      "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión."
+    },
+    {
+      "Ticker": "GOOGL",
+      "Sector": "Tecnología",
+      "Estado": "✅ Confirmado",
+      "Score": "3/7",
+      "Score_num": 3,
+      "Señales": [
+        "RSI diario sano",
+        "base ordenada",
+        "VCP válido (2 contracciones)"
+      ],
+      "VCP": {
+        "valido": true,
+        "contracciones_detectadas": 2,
+        "olas": [
+          {
+            "ola": 1,
+            "rango_%": 18.87,
+            "vol_prom": 37708690.0
+          },
+          {
+            "ola": 2,
+            "rango_%": 5.5,
+            "vol_prom": 23832210.0
+          },
+          {
+            "ola": 3,
+            "rango_%": 3.89,
+            "vol_prom": 23213710.0
+          },
+          {
+            "ola": 4,
+            "rango_%": 5.67,
+            "vol_prom": 23237377.0
+          }
+        ],
+        "motivo": null
+      },
+      "RSI": 52.6,
+      "Vol_rel": 0.16,
+      "SMA21": 341.32,
       "Señal técnica": "MANTENER",
       "Recomendación final": "MANTENER",
       "Ajustado por": "sin ajustes",
@@ -307,10 +1017,9 @@
       "Ticker": "JPM",
       "Sector": "Bancos",
       "Estado": "⚠️ Sacudón, sin definición clara",
-      "Score": "3/7",
-      "Score_num": 3,
+      "Score": "2/7",
+      "Score_num": 2,
       "Señales": [
-        "volumen fuerte",
         "RSI diario sano",
         "base ordenada"
       ],
@@ -320,32 +1029,213 @@
         "olas": [
           {
             "ola": 1,
-            "rango_%": 5.44,
-            "vol_prom": 7581980.0
+            "rango_%": 3.72,
+            "vol_prom": 7828170.0
           },
           {
             "ola": 2,
-            "rango_%": 3.56,
-            "vol_prom": 5384770.0
+            "rango_%": 2.49,
+            "vol_prom": 5089560.0
           },
           {
             "ola": 3,
-            "rango_%": 3.33,
-            "vol_prom": 5870930.0
+            "rango_%": 1.73,
+            "vol_prom": 5826320.0
           },
           {
             "ola": 4,
-            "rango_%": 3.41,
-            "vol_prom": 6487536.0
+            "rango_%": 3.64,
+            "vol_prom": 6201098.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
       },
       "RSI": 41.2,
-      "Vol_rel": 2.11,
-      "SMA21": 356.42,
+      "Vol_rel": 0.21,
+      "SMA21": 355.38,
       "Señal técnica": "MANTENER",
       "Recomendación final": "MANTENER",
+      "Ajustado por": "sin ajustes",
+      "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión."
+    },
+    {
+      "Ticker": "SATL",
+      "Sector": "Tecnología",
+      "Estado": "🔻 Rompió piso (SMA200)",
+      "Score": "2/7",
+      "Score_num": 2,
+      "Señales": [
+        "RSI diario sano",
+        "base ordenada"
+      ],
+      "VCP": {
+        "valido": false,
+        "contracciones_detectadas": 1,
+        "olas": [
+          {
+            "ola": 1,
+            "rango_%": 35.65,
+            "vol_prom": 4275280.0
+          },
+          {
+            "ola": 2,
+            "rango_%": 24.07,
+            "vol_prom": 7493530.0
+          },
+          {
+            "ola": 3,
+            "rango_%": 24.35,
+            "vol_prom": 3914170.0
+          },
+          {
+            "ola": 4,
+            "rango_%": 15.55,
+            "vol_prom": 3763454.0
+          }
+        ],
+        "motivo": "solo 1 contracción(es), se necesitan 2"
+      },
+      "RSI": 46.9,
+      "Vol_rel": 0.2,
+      "SMA21": 5.07,
+      "Señal técnica": "VENTA",
+      "Recomendación final": "VENTA",
+      "Ajustado por": "sin ajustes",
+      "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión."
+    },
+    {
+      "Ticker": "TSM",
+      "Sector": "Tecnología",
+      "Estado": "🔨 Recién cruzó, sin confirmar",
+      "Score": "3/7",
+      "Score_num": 3,
+      "Señales": [
+        "cruce SMA50",
+        "RSI diario sano",
+        "base ordenada",
+        "VCP válido (2 contracciones)"
+      ],
+      "VCP": {
+        "valido": true,
+        "contracciones_detectadas": 2,
+        "olas": [
+          {
+            "ola": 1,
+            "rango_%": 12.42,
+            "vol_prom": 14677850.0
+          },
+          {
+            "ola": 2,
+            "rango_%": 4.25,
+            "vol_prom": 10162100.0
+          },
+          {
+            "ola": 3,
+            "rango_%": 4.19,
+            "vol_prom": 8928000.0
+          },
+          {
+            "ola": 4,
+            "rango_%": 6.1,
+            "vol_prom": 9190948.0
+          }
+        ],
+        "motivo": null
+      },
+      "RSI": 50.2,
+      "Vol_rel": 0.24,
+      "SMA21": 420.32,
+      "Señal técnica": "MANTENER",
+      "Recomendación final": "MANTENER",
+      "Ajustado por": "sin ajustes",
+      "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión."
+    },
+    {
+      "Ticker": "PAGS",
+      "Sector": "Fintech",
+      "Estado": "🔻 Rompió piso (SMA200)",
+      "Score": "1/7",
+      "Score_num": 1,
+      "Señales": [
+        "RSI diario sano"
+      ],
+      "VCP": {
+        "valido": false,
+        "contracciones_detectadas": 1,
+        "olas": [
+          {
+            "ola": 1,
+            "rango_%": 6.96,
+            "vol_prom": 2382090.0
+          },
+          {
+            "ola": 2,
+            "rango_%": 11.37,
+            "vol_prom": 3144810.0
+          },
+          {
+            "ola": 3,
+            "rango_%": 8.29,
+            "vol_prom": 2333530.0
+          },
+          {
+            "ola": 4,
+            "rango_%": 8.98,
+            "vol_prom": 2868771.0
+          }
+        ],
+        "motivo": "solo 1 contracción(es), se necesitan 2"
+      },
+      "RSI": 54.3,
+      "Vol_rel": 0.22,
+      "SMA21": 9.28,
+      "Señal técnica": "VENTA",
+      "Recomendación final": "VENTA",
+      "Ajustado por": "sin ajustes",
+      "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión."
+    },
+    {
+      "Ticker": "TGS",
+      "Sector": "Energía",
+      "Estado": "🔻 Rompió piso (SMA200)",
+      "Score": "2/7",
+      "Score_num": 2,
+      "Señales": [
+        "RSI diario sano",
+        "base ordenada"
+      ],
+      "VCP": {
+        "valido": false,
+        "contracciones_detectadas": 1,
+        "olas": [
+          {
+            "ola": 1,
+            "rango_%": 7.83,
+            "vol_prom": 168760.0
+          },
+          {
+            "ola": 2,
+            "rango_%": 6.79,
+            "vol_prom": 239280.0
+          },
+          {
+            "ola": 3,
+            "rango_%": 5.87,
+            "vol_prom": 201050.0
+          },
+          {
+            "ola": 4,
+            "rango_%": 6.64,
+            "vol_prom": 229320.0
+          }
+        ],
+        "motivo": "solo 1 contracción(es), se necesitan 2"
+      },
+      "RSI": 53.5,
+      "Vol_rel": 0.28,
+      "SMA21": 28.91,
+      "Señal técnica": "VENTA",
+      "Recomendación final": "VENTA",
       "Ajustado por": "sin ajustes",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión."
     }
@@ -353,9 +1243,15 @@
   "contexto_macro": {
     "estable": true,
     "sin_datos": false,
-    "riesgo_pais": 490.0,
-    "variacion_riesgo_%": 1.0,
+    "riesgo_pais": 506.0,
+    "variacion_riesgo_%": 3.3,
     "brecha_cambiaria_%": 0.0,
     "motivos": []
-  }
+  },
+  "cedears_pricing": {
+    "ccl": null,
+    "sin_datos": true,
+    "cedears": []
+  },
+  "movimientos_dia": []
 }
