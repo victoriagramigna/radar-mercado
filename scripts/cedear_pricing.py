@@ -19,7 +19,8 @@ from config import RATIOS_CEDEAR, BRECHA_CEDEAR_ALERTA_PCT
 log = logging.getLogger("radar.cedear_pricing")
 
 BASE = "https://data912.com"
-TIMEOUT = 10
+TIMEOUT = 20   # data912 es gratis/hobby -- a veces tarda; 10s daba falsos timeouts
+REINTENTOS = 2  # un reintento extra si el primero da timeout/error de red
 
 # Nombres de campo candidatos -- no pudimos confirmar el schema exacto de
 # data912 sin poder probarlo en vivo desde este entorno de desarrollo, así
@@ -36,6 +37,22 @@ def _extraer_campo(item: dict, candidatos: list, default=None):
     return default
 
 
+def _get_con_reintento(url: str):
+    """GET con un reintento simple si el primero da timeout/error de red.
+    data912 es gratis/hobby, a veces tarda -- un segundo intento suele alcanzar."""
+    ultimo_error = None
+    for intento in range(REINTENTOS + 1):
+        try:
+            resp = requests.get(url, timeout=TIMEOUT)
+            resp.raise_for_status()
+            return resp
+        except Exception as e:
+            ultimo_error = e
+            if intento < REINTENTOS:
+                log.info(f"  reintentando {url} (intento {intento + 2}/{REINTENTOS + 1})...")
+    raise ultimo_error
+
+
 def traer_ccl():
     """Devuelve el CCL representativo del mercado, o None si falla.
 
@@ -48,8 +65,7 @@ def traer_ccl():
     arg_panel, usa_panel.
     """
     try:
-        resp = requests.get(f"{BASE}/live/ccl", timeout=TIMEOUT)
-        resp.raise_for_status()
+        resp = _get_con_reintento(f"{BASE}/live/ccl")
         data = resp.json()
         filas = data if isinstance(data, list) else [data]
 
@@ -77,8 +93,7 @@ def traer_ccl():
 def traer_precios_cedears(tickers: list):
     """Devuelve {ticker: precio_ars} para los tickers pedidos, o {} si falla todo."""
     try:
-        resp = requests.get(f"{BASE}/live/arg_cedears", timeout=TIMEOUT)
-        resp.raise_for_status()
+        resp = _get_con_reintento(f"{BASE}/live/arg_cedears")
         data = resp.json()
     except Exception as e:
         log.warning(f"No se pudo traer el panel de CEDEARs: {e}")
