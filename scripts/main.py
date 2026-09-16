@@ -1,14 +1,18 @@
 """
-Punto de entrada principal del Radar de Mercado (v2).
-Suma al pipeline original: historial persistente, régimen de mercado (VIX),
-estados narrativos con confirmación con demora, VCP, RSI semanal, stop-loss.
+Punto de entrada principal del Radar de Mercado (v3).
+Suma sobre v2: RSI/RVOL/SMA200 expuestos para todo el universo (no solo
+alertas), fix del bug de expiración de alertas (ventana de 48hs), nueva
+señal "líder apoyando en soporte", y estimación de próxima corrida (para
+que sea más fácil distinguir "no corrió todavía" de "corrió y no hubo
+novedades").
 """
 import json
 import logging
 import os
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
-from config import TICKERS, BENCHMARK, SCORE_MINIMO_ALERTA, MODO, VIX_TICKER, UMBRAL_MOVIMIENTO_DIARIO_PCT
+from config import (TICKERS, BENCHMARK, SCORE_MINIMO_ALERTA, MODO, VIX_TICKER,
+                     UMBRAL_MOVIMIENTO_DIARIO_PCT)
 from datos import traer_datos
 from rs_score import calcular_rs_score
 from alertas import detectar_alertas
@@ -31,17 +35,34 @@ def traer_titulares_ejemplo():
 
 
 def traer_vix(precios: dict):
-    """El VIX ya viene traído junto con el resto en datos.py si se agrega
-    al diccionario de tickers a pedir -- ver main() más abajo."""
     if VIX_TICKER in precios and not precios[VIX_TICKER].empty:
         return float(precios[VIX_TICKER].iloc[-1])
     return None
 
 
+def estimar_proxima_corrida(ahora: datetime) -> str:
+    """
+    Estimación INFORMATIVA de la próxima corrida programada, según el cron
+    (cada hora en punto de 14 a 21 UTC, lunes a viernes). GitHub Actions
+    corre los crons en modo "best effort" -- puede demorarse minutos u
+    horas en momentos de alta demanda de su infraestructura compartida
+    gratuita, así que esto es una referencia, no una garantía exacta.
+    """
+    candidato = ahora.replace(minute=0, second=0, microsecond=0) + timedelta(hours=1)
+    for _ in range(24 * 8):  # tope de seguridad, no debería iterar tanto
+        es_habil = candidato.weekday() < 5  # 0=lunes ... 4=viernes
+        en_horario = 14 <= candidato.hour <= 21
+        if es_habil and en_horario:
+            return candidato.isoformat()
+        candidato += timedelta(hours=1)
+    return None  # no debería pasar nunca, pero mejor no romper si pasa
+
+
 def main():
     log.info(f"=== Radar de Mercado — corrida iniciada (modo={MODO}) ===")
-    timestamp = datetime.now(timezone.utc).isoformat()
-    fecha_hoy = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    ahora = datetime.now(timezone.utc)
+    timestamp = ahora.isoformat()
+    fecha_hoy = ahora.strftime("%Y-%m-%d")
 
     # 1. Datos (se pide también el VIX, sumándolo como si fuera un ticker más)
     tickers_a_pedir = {**TICKERS}
@@ -55,33 +76,34 @@ def main():
     regimen = evaluar_regimen_mercado(vix_actual)
     log.info(f"Régimen de mercado: {regimen}")
 
-    # 2b. Frescura del dato -- detecta si el gap desde el último dato es
-    # más grande que un feriado común (podría indicar una fuente rota)
+    # 2b. Frescura del dato
     ultima_fecha_benchmark = precios[BENCHMARK].dropna().index[-1] if not precios[BENCHMARK].dropna().empty else None
     frescura = evaluar_frescura(ultima_fecha_benchmark)
     log.info(f"Frescura del dato: {frescura}")
 
-    # 3. RS Score
-    df_rs = calcular_rs_score(precios, TICKERS, BENCHMARK)
+    # 3. RS Score + indicadores completos (RSI, RVOL, SMA50/200) para TODO el universo
+    df_rs = calcular_rs_score(precios, TICKERS, BENCHMARK, volumenes)
     rs_por_sector = df_rs.groupby("Sector")["RS_Score"].mean().to_dict() if not df_rs.empty else {}
+    rs_por_ticker = dict(zip(df_rs["Ticker"], df_rs["RS_Score"])) if not df_rs.empty else {}
 
-    # 3b. Señal de CEDEAR caro/barato (solo para los que tienen ratio conocido en config.py)
+    # 3b. Señal de CEDEAR caro/barato
     precios_usd_actuales = dict(zip(df_rs["Ticker"], df_rs["Precio"])) if not df_rs.empty else {}
     cedears_pricing = calcular_brechas_cedear(precios_usd_actuales)
     log.info(f"CEDEARs -- CCL: {cedears_pricing.get('ccl')}, "
              f"{len(cedears_pricing.get('cedears', []))} calculados")
 
-    # 3c. Panel de movimientos diarios inusuales (volatilidad de HOY, no de meses)
+    # 3c. Panel de movimientos diarios inusuales
     movimientos_dia = detectar_movimientos_diarios(precios, TICKERS)
     log.info(f"Movimientos del día: {len(movimientos_dia)} ticker(s) con variación >= "
              f"{UMBRAL_MOVIMIENTO_DIARIO_PCT}%")
 
-    # 4. Historial persistente (para confirmación con demora y stop-loss)
+    # 4. Historial persistente
     historial = cargar_historial()
 
-    # 5. Alertas técnicas (v2: score 0-7, estados narrativos, VCP, RSI semanal)
+    # 5. Alertas técnicas (v3: expiran a las 48hs, + señal "líder en soporte")
     df_alertas, historial = detectar_alertas(precios, volumenes, TICKERS, BENCHMARK,
-                                              rs_por_sector, historial, fecha_hoy)
+                                              rs_por_sector, rs_por_ticker, historial,
+                                              fecha_hoy, timestamp)
     guardar_historial(historial)
 
     # 6. Contexto (noticias + macro-local)
@@ -91,7 +113,7 @@ def main():
     contexto_macro = evaluar_contexto_macro(riesgo_pais, riesgo_pais_ayer, brecha)
     log.info(f"Contexto macro-local: {contexto_macro}")
 
-    # 7. Recomendación final -- ahora también ajustada por el régimen de mercado (VIX)
+    # 7. Recomendación final
     recomendaciones = []
     for _, fila in df_alertas.iterrows():
         rec = recomendacion_final(fila["Sector"], fila["Score_num"], fila["Estado"],
@@ -104,6 +126,7 @@ def main():
     # 8. Guardar resultado para el dashboard
     salida = {
         "generado_utc": timestamp,
+        "proxima_corrida_estimada_utc": estimar_proxima_corrida(ahora),
         "tickers_ok": len(precios) - 2,  # -1 benchmark, -1 VIX
         "tickers_fallidos": fallidos,
         "frescura_dato": frescura,
@@ -120,13 +143,16 @@ def main():
         json.dump(salida, f, ensure_ascii=False, indent=2)
     log.info("Guardado en data/ultimo.json")
 
-    # 9. Notificaciones (con deduplicación: no repetir la misma alerta/estado el mismo día)
-    alertas_relevantes = [a for a in recomendaciones if a.get("Score_num") and a["Score_num"] >= SCORE_MINIMO_ALERTA]
+    # 9. Notificaciones (dedup por día+estado; "líder en soporte" no usa la escala 0-7)
+    alertas_relevantes = [
+        a for a in recomendaciones
+        if (a.get("Score_num") and a["Score_num"] >= SCORE_MINIMO_ALERTA) or a.get("Tipo") == "lider_soporte"
+    ]
     historial.setdefault("_notificaciones", {})
     alertas_nuevas = []
     for a in alertas_relevantes:
         ticker = a["Ticker"]
-        clave_estado = f"{fecha_hoy}|{a['Estado']}"
+        clave_estado = f"{fecha_hoy}|{a['Tipo']}|{a['Estado']}"
         ya_notificado = historial["_notificaciones"].get(ticker) == clave_estado
         if not ya_notificado:
             alertas_nuevas.append(a)

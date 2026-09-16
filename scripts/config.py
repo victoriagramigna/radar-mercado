@@ -109,6 +109,7 @@ ESTADOS = {
     "sacudon":       "⚠️ Sacudón, sin definición clara",
     "deterioro":     "🔻 Rompió piso (SMA200)",
     "stop_loss":     "🛑 Perdió EMA200 tras rebote — stop sugerido",
+    "lider_soporte": "📈 Líder apoyando en soporte",
 }
 
 # --- Medias móviles a calcular ---
@@ -151,6 +152,15 @@ BRECHA_CEDEAR_ALERTA_PCT = 3   # +/- 3% de diferencia se considera una distorsi�
 
 # --- Panel de "Movimientos del día" -- tickers que se movieron fuerte HOY (no en meses) ---
 UMBRAL_MOVIMIENTO_DIARIO_PCT = 5   # +/- 5% en un solo día entra al panel
+
+# --- Ventana de vigencia de una alerta en el dashboard (ver bug de acumulación infinita) ---
+VENTANA_ALERTA_HORAS = 48   # una alerta deja de mostrarse en "Alertas Activas" pasadas estas horas
+                             # desde que ese ESTADO empezó (no desde que se detectó por primera vez
+                             # el ticker) -- el historial completo se sigue guardando igual
+
+# --- Señal "Líder apoyando en soporte" (RS alto + descansando cerca de su SMA50 sin romperla) ---
+UMBRAL_LIDER_RS = 80              # RS Score mínimo para considerarse "líder"
+UMBRAL_LIDER_DIST_SMA50_PCT = 2   # como máximo a este % POR ENCIMA de la SMA50 (no por debajo)
 
 # --- Modo de ejecución: en "test" no se envían notificaciones reales de Telegram ---
 import os

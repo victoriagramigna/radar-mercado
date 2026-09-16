@@ -1,21 +1,23 @@
 """
-Sistema de alertas técnicas v2.
-Score de Confirmación ampliado a 7 puntos posibles:
-  cruce SMA50, volumen fuerte, RSI diario sano, base ordenada,
-  sector+mercado ok, VCP válido (pilar "Setup"), RSI semanal cruzando alcista.
+Sistema de alertas técnicas v3.
 
-Cada señal viene con un ESTADO NARRATIVO (no reemplaza el score, lo acompaña),
-con confirmación con demora: una señal recién detectada no salta a "confirmado"
-de golpe -- necesita sostenerse DIAS_CONFIRMACION días o hacer nuevo máximo.
-Esto requiere el historial persistente (historial.py) entre corridas.
-
-También detecta stop-loss: si un ticker que veníamos confirmando pierde su
-EMA200, se dispara alerta de salida, independientemente del score de entrada.
+Cambios sobre v2:
+- FIX de un bug real: antes, un ticker que llegaba a "confirmado" (u otro
+  estado del flujo cruce/sacudon) se seguía mostrando en "Alertas Activas"
+  todos los días indefinidamente, porque la condición de inclusión miraba
+  el estado anterior sin límite de tiempo. Ahora cada estado tiene una
+  "fecha_evento" (cuándo empezó ESE estado puntual) y solo se muestra en
+  el resultado si esa fecha está dentro de VENTANA_ALERTA_HORAS. El
+  historial completo se sigue guardando siempre, para no perder datos.
+- Nueva señal "Líder apoyando en soporte": RS Score alto (>80) + precio
+  descansando cerca de su SMA50 sin haberla roto -- llena el hueco de
+  "por qué no me avisa de comprar algo que ya viene ganando".
 """
 import pandas as pd
+from datetime import datetime, timezone
 from config import (VOLUMEN_RELATIVO_MINIMO, RSI_ZONA_SANA, VENTANA_BASE_DIAS,
                      SMA_CORTAS, EMA_LARGA, DIAS_CONFIRMACION, SCORE_TECHO_SIN_CONFIRMAR,
-                     ESTADOS)
+                     ESTADOS, VENTANA_ALERTA_HORAS, UMBRAL_LIDER_RS, UMBRAL_LIDER_DIST_SMA50_PCT)
 from vcp import detectar_vcp
 
 
@@ -41,11 +43,28 @@ def rsi_semanal_cruzando(close_diario: pd.Series) -> bool:
     return bool(cruzo)
 
 
+def _horas_desde(fecha_iso: str, ahora: datetime) -> float:
+    """Devuelve cuántas horas pasaron desde fecha_iso hasta ahora. Si la
+    fecha viene corrupta/ausente, devuelve infinito (para que NO se muestre
+    -- más seguro fallar hacia "ocultar" que hacia "mostrar viejo por error")."""
+    if not fecha_iso:
+        return float("inf")
+    try:
+        entonces = datetime.fromisoformat(fecha_iso)
+        if entonces.tzinfo is None:
+            entonces = entonces.replace(tzinfo=timezone.utc)
+        return (ahora - entonces).total_seconds() / 3600
+    except Exception:
+        return float("inf")
+
+
 def detectar_alertas(precios: dict, volumenes: dict, tickers_sector: dict, benchmark: str,
-                      rs_por_sector: dict, historial: dict, fecha_hoy: str):
+                      rs_por_sector: dict, rs_por_ticker: dict, historial: dict, fecha_hoy: str,
+                      timestamp_iso: str):
     bench = precios[benchmark].dropna()
     bench_sma50 = bench.rolling(50).mean()
     bench_sobre_sma50 = bool(bench.iloc[-1] > bench_sma50.iloc[-1])
+    ahora = datetime.fromisoformat(timestamp_iso)
 
     alertas = []
     for ticker, sector in tickers_sector.items():
@@ -69,7 +88,7 @@ def detectar_alertas(precios: dict, volumenes: dict, tickers_sector: dict, bench
         vol_rel_hoy = vol.iloc[-1] / vol_prom20.iloc[-1] if vol_prom20.iloc[-1] > 0 else 1
         rsi_hoy = rsi14.iloc[-1]
 
-        # --- Señales base (ya validadas) ---
+        # --- Señales base ---
         cruzo_sma50_hoy = (precio_ayer <= sma50_ayer) and (precio_hoy > sma50_hoy)
         rompio_piso = (precio_hoy < ema200_hoy) and (precio_ayer >= ema200.iloc[-2])
         volumen_confirma = vol_rel_hoy > VOLUMEN_RELATIVO_MINIMO
@@ -79,7 +98,7 @@ def detectar_alertas(precios: dict, volumenes: dict, tickers_sector: dict, bench
         base_ordenada = vol_reciente < vol_historica * 0.85
         sector_acompana = rs_por_sector.get(sector, 0) > 50 and bench_sobre_sma50
 
-        # --- Señales nuevas ---
+        # --- Señales adicionales ---
         vcp_resultado = detectar_vcp(close, vol)  # pilar "Setup"
         rsi_sem_cruzo = rsi_semanal_cruzando(close)
         nuevo_max_52w = precio_hoy >= max_52w * 0.999  # tolerancia por redondeo
@@ -106,18 +125,18 @@ def detectar_alertas(precios: dict, volumenes: dict, tickers_sector: dict, bench
         if rsi_sem_cruzo:
             score += 1; señales.append("RSI semanal cruzó alcista")
 
-        # --- Confirmación con demora: trackea días verdes consecutivos desde el cruce ---
+        # --- Confirmación con demora ---
         dias_verdes = estado_previo.get("dias_verdes_consecutivos", 0)
         if cruzo_sma50_hoy:
-            dias_verdes = 1  # el cruce mismo cuenta como día 1
+            dias_verdes = 1
         elif estado_previo.get("estado") in ("recien_cruzo", "sacudon") and precio_hoy > precio_ayer:
             dias_verdes += 1
         elif estado_previo.get("estado") in ("recien_cruzo", "sacudon") and precio_hoy <= precio_ayer:
-            dias_verdes = 0  # se cortó la racha -> sacudón
+            dias_verdes = 0
 
         confirmado = dias_verdes >= DIAS_CONFIRMACION or nuevo_max_52w
 
-        # --- Determinar estado narrativo ---
+        # --- Determinar estado narrativo del flujo principal (cruce/sacudón/confirmado) ---
         estado_key = None
         if alerta_stop_loss:
             estado_key = "stop_loss"
@@ -133,30 +152,71 @@ def detectar_alertas(precios: dict, volumenes: dict, tickers_sector: dict, bench
             else:
                 estado_key = "recien_cruzo"
 
-        # Score mostrado: si todavía no confirmó, se topea (evita mostrar 6/7 el mismo
-        # día del cruce sin haber sostenido nada)
         score_mostrado = score
         if estado_key in ("recien_cruzo", "sacudon"):
             score_mostrado = min(score, SCORE_TECHO_SIN_CONFIRMAR)
 
-        # Actualizar historial para la próxima corrida
+        # --- fecha_evento: se renueva SOLO si el estado cambió respecto a ayer ---
+        estado_anterior_txt = estado_previo.get("estado")
+        if estado_key != estado_anterior_txt:
+            fecha_evento = timestamp_iso
+        else:
+            fecha_evento = estado_previo.get("fecha_evento", timestamp_iso)
+
+        # --- Señal "Líder apoyando en soporte" -- independiente del flujo de arriba,
+        # solo se evalúa si hoy no hay ya otro evento más urgente para este ticker ---
+        rs_ticker = rs_por_ticker.get(ticker)
+        lider_soporte_activo = False
+        if estado_key is None and rs_ticker is not None and rs_ticker >= UMBRAL_LIDER_RS:
+            dist_sma50_pct = (precio_hoy / sma50_hoy - 1) * 100 if sma50_hoy else None
+            if dist_sma50_pct is not None and 0 <= dist_sma50_pct <= UMBRAL_LIDER_DIST_SMA50_PCT:
+                lider_soporte_activo = True
+
+        lider_previo = estado_previo.get("lider_soporte_activo", False)
+        if lider_soporte_activo and not lider_previo:
+            fecha_evento_lider = timestamp_iso  # recién arrancó hoy
+        else:
+            fecha_evento_lider = estado_previo.get("fecha_evento_lider", timestamp_iso)
+
+        # --- Actualizar historial (SIEMPRE, tenga o no vigencia de display) ---
         historial[ticker] = {
             "ultima_fecha": fecha_hoy,
             "estado": estado_key,
+            "fecha_evento": fecha_evento,
             "dias_verdes_consecutivos": dias_verdes,
             "precio": round(float(precio_hoy), 2),
+            "lider_soporte_activo": lider_soporte_activo,
+            "fecha_evento_lider": fecha_evento_lider,
         }
 
-        if estado_key:
+        # --- Armar la(s) fila(s) de salida, solo si están dentro de la ventana de vigencia ---
+        if estado_key and _horas_desde(fecha_evento, ahora) <= VENTANA_ALERTA_HORAS:
             alertas.append({
                 "Ticker": ticker, "Sector": sector,
+                "Tipo": "tecnico",
                 "Estado": ESTADOS.get(estado_key, estado_key),
                 "Score": f"{score_mostrado}/7",
                 "Score_num": score_mostrado,
                 "Señales": señales,
                 "VCP": vcp_resultado,
-                "RSI": round(rsi_hoy, 1), "Vol_rel": round(vol_rel_hoy, 2),
+                "RSI": round(rsi_hoy, 1) if pd.notna(rsi_hoy) else None,
+                "Vol_rel": round(vol_rel_hoy, 2),
                 "SMA21": round(sma_cortas[21].iloc[-1], 2) if not pd.isna(sma_cortas[21].iloc[-1]) else None,
+                "fecha_evento": fecha_evento,
+            })
+
+        if lider_soporte_activo and _horas_desde(fecha_evento_lider, ahora) <= VENTANA_ALERTA_HORAS:
+            dist_sma50_pct = round((precio_hoy / sma50_hoy - 1) * 100, 2)
+            alertas.append({
+                "Ticker": ticker, "Sector": sector,
+                "Tipo": "lider_soporte",
+                "Estado": ESTADOS.get("lider_soporte", "📈 Líder apoyando en soporte"),
+                "Score": f"RS {rs_ticker:.0f}",
+                "Score_num": None,
+                "Señales": [f"RS {rs_ticker:.0f}", f"a {dist_sma50_pct}% de su SMA50"],
+                "RSI": round(rsi_hoy, 1) if pd.notna(rsi_hoy) else None,
+                "Vol_rel": round(vol_rel_hoy, 2),
+                "fecha_evento": fecha_evento_lider,
             })
 
     return pd.DataFrame(alertas), historial
