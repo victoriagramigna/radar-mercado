@@ -1,13 +1,8 @@
 {
-  "generado_utc": "2026-09-16T20:19:34.307402+00:00",
+  "generado_utc": "2026-09-16T20:23:05.074321+00:00",
   "proxima_corrida_estimada_utc": "2026-09-16T21:00:00+00:00",
   "tickers_ok": 81,
-  "tickers_fallidos": [
-    {
-      "ticker": "NTCO",
-      "motivo": "datos insuficientes (0 filas, se necesitan >=200)"
-    }
-  ],
+  "tickers_fallidos": [],
   "frescura_dato": {
     "fecha_ultimo_dato": "2026-09-16",
     "gap_dias_habiles": 0,
@@ -1411,7 +1406,7 @@
   "regimen_mercado": {
     "sano": true,
     "sin_datos": false,
-    "vix": 17.56,
+    "vix": 17.7,
     "motivo": null
   },
   "alertas": [
@@ -2024,14 +2019,14 @@
     "motivos": []
   },
   "cedears_pricing": {
-    "ccl": 1596.3746,
+    "ccl": 1596.3502,
     "sin_datos": false,
     "cedears": [
       {
         "Ticker": "TSLA",
         "sin_datos": false,
         "Precio_real_ARS": 38120.0,
-        "Precio_teorico_ARS": 38108.65,
+        "Precio_teorico_ARS": 38108.07,
         "Brecha_%": 0.03,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false
@@ -2040,7 +2035,7 @@
         "Ticker": "QQQ",
         "sin_datos": false,
         "Precio_real_ARS": 56350.0,
-        "Precio_teorico_ARS": 56249.86,
+        "Precio_teorico_ARS": 56249.0,
         "Brecha_%": 0.18,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false
@@ -2049,7 +2044,7 @@
         "Ticker": "NVDA",
         "sin_datos": false,
         "Precio_real_ARS": 14270.0,
-        "Precio_teorico_ARS": 14227.69,
+        "Precio_teorico_ARS": 14227.47,
         "Brecha_%": 0.3,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false
@@ -2058,7 +2053,7 @@
         "Ticker": "BABA",
         "sin_datos": false,
         "Precio_real_ARS": 19060.0,
-        "Precio_teorico_ARS": 19027.01,
+        "Precio_teorico_ARS": 19026.72,
         "Brecha_%": 0.17,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false
@@ -2067,7 +2062,7 @@
         "Ticker": "OKLO",
         "sin_datos": false,
         "Precio_real_ARS": 2020.0,
-        "Precio_teorico_ARS": 2030.82,
+        "Precio_teorico_ARS": 2030.79,
         "Brecha_%": -0.53,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false
@@ -2076,7 +2071,7 @@
         "Ticker": "AAPL",
         "sin_datos": false,
         "Precio_real_ARS": 26540.0,
-        "Precio_teorico_ARS": 26532.54,
+        "Precio_teorico_ARS": 26532.14,
         "Brecha_%": 0.03,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false
@@ -2085,7 +2080,7 @@
         "Ticker": "JMIA",
         "sin_datos": false,
         "Precio_real_ARS": 11470.0,
-        "Precio_teorico_ARS": 11430.04,
+        "Precio_teorico_ARS": 11429.87,
         "Brecha_%": 0.35,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false
@@ -2094,7 +2089,7 @@
         "Ticker": "SATL",
         "sin_datos": false,
         "Precio_real_ARS": 7950.0,
-        "Precio_teorico_ARS": 7902.05,
+        "Precio_teorico_ARS": 7901.93,
         "Brecha_%": 0.61,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false
@@ -2103,7 +2098,7 @@
         "Ticker": "CRWV",
         "sin_datos": false,
         "Precio_real_ARS": 4927.5,
-        "Precio_teorico_ARS": 4928.07,
+        "Precio_teorico_ARS": 4927.99,
         "Brecha_%": -0.01,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false
@@ -2112,8 +2107,8 @@
         "Ticker": "TEM",
         "sin_datos": false,
         "Precio_real_ARS": 9290.0,
-        "Precio_teorico_ARS": 9308.19,
-        "Brecha_%": -0.2,
+        "Precio_teorico_ARS": 9308.05,
+        "Brecha_%": -0.19,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false
       },
@@ -2121,7 +2116,7 @@
         "Ticker": "LAC",
         "sin_datos": false,
         "Precio_real_ARS": 4440.0,
-        "Precio_teorico_ARS": 4437.92,
+        "Precio_teorico_ARS": 4437.85,
         "Brecha_%": 0.05,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false
