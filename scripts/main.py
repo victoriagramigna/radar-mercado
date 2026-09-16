@@ -8,7 +8,7 @@ import logging
 import os
 from datetime import datetime, timezone
 
-from config import TICKERS, BENCHMARK, SCORE_MINIMO_ALERTA, MODO, VIX_TICKER
+from config import TICKERS, BENCHMARK, SCORE_MINIMO_ALERTA, MODO, VIX_TICKER, UMBRAL_MOVIMIENTO_DIARIO_PCT
 from datos import traer_datos
 from rs_score import calcular_rs_score
 from alertas import detectar_alertas
@@ -18,6 +18,8 @@ from historial import cargar_historial, guardar_historial
 from telegram_bot import notificar_alertas
 from macro_local import traer_contexto_macro
 from frescura import evaluar_frescura
+from cedear_pricing import calcular_brechas_cedear
+from movimientos import detectar_movimientos_diarios
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 log = logging.getLogger("radar.main")
@@ -63,6 +65,17 @@ def main():
     df_rs = calcular_rs_score(precios, TICKERS, BENCHMARK)
     rs_por_sector = df_rs.groupby("Sector")["RS_Score"].mean().to_dict() if not df_rs.empty else {}
 
+    # 3b. Señal de CEDEAR caro/barato (solo para los que tienen ratio conocido en config.py)
+    precios_usd_actuales = dict(zip(df_rs["Ticker"], df_rs["Precio"])) if not df_rs.empty else {}
+    cedears_pricing = calcular_brechas_cedear(precios_usd_actuales)
+    log.info(f"CEDEARs -- CCL: {cedears_pricing.get('ccl')}, "
+             f"{len(cedears_pricing.get('cedears', []))} calculados")
+
+    # 3c. Panel de movimientos diarios inusuales (volatilidad de HOY, no de meses)
+    movimientos_dia = detectar_movimientos_diarios(precios, TICKERS)
+    log.info(f"Movimientos del día: {len(movimientos_dia)} ticker(s) con variación >= "
+             f"{UMBRAL_MOVIMIENTO_DIARIO_PCT}%")
+
     # 4. Historial persistente (para confirmación con demora y stop-loss)
     historial = cargar_historial()
 
@@ -99,6 +112,8 @@ def main():
         "regimen_mercado": regimen,
         "alertas": recomendaciones,
         "contexto_macro": contexto_macro,
+        "cedears_pricing": cedears_pricing,
+        "movimientos_dia": movimientos_dia,
     }
 
     with open("data/ultimo.json", "w", encoding="utf-8") as f:

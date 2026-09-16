@@ -12,6 +12,69 @@ TICKERS = {
     "JNJ": "Salud", "PFE": "Salud", "MRK": "Salud",
     "WMT": "Consumo", "KO": "Consumo", "MELI": "Consumo",
     "EWZ": "ETF", "XLE": "ETF", "XLK": "ETF",
+    # --- Sumados desde la cartera de CEDEARs de Victoria (versión en USD del activo real) ---
+    "TSLA": "Automotriz",
+    "QQQ": "ETF",
+    "BABA": "Consumo",       # e-commerce, mismo grupo que MELI
+    "OKLO": "Energía",       # reactores nucleares modulares
+    "JMIA": "Consumo",       # e-commerce africano
+    "SATL": "Tecnología",    # imágenes satelitales
+    "CRWV": "Tecnología",    # cómputo en la nube para IA
+    "TEM": "Salud",          # IA aplicada a diagnóstico/datos de salud
+    "LAC": "Materiales",     # litio, insumo para baterías
+    # --- Lista ampliada pedida por Victoria (ver notas de ajuste de tickers en el chat) ---
+    "AMD": "Tecnología",      # asumido por "AM" -- confirmar si no era esto
+    "TSM": "Tecnología",
+    "QCOM": "Tecnología",
+    "GLOB": "Tecnología",     # Globant, de origen argentino
+    "ADBE": "Tecnología",
+    "SHOP": "Tecnología",
+    "ZM": "Tecnología",
+    "AMZN": "Consumo",
+    "UBER": "Consumo",
+    "NFLX": "Consumo",
+    "TGT": "Consumo",
+    "ABNB": "Consumo",
+    "HOOD": "Fintech",
+    "PYPL": "Fintech",
+    "V": "Fintech",
+    "XYZ": "Fintech",         # antes "Square"
+    "SPGI": "Fintech",        # calificadora/datos financieros
+    "C": "Bancos",
+    "GM": "Automotriz",
+    "F": "Automotriz",
+    "VALE": "Materiales",
+    "B": "Materiales",        # Barrick Gold -- ticker corto, confirmar que no colisione
+    "TXR": "Materiales",      # Ternium, grupo Techint (argentino)
+    "TEN": "Energía",         # Tenaris, grupo Techint (argentino), caños para petróleo/gas
+    "T": "Telecomunicaciones",
+    "AAL": "Transporte",
+    "BIOX": "Agro",           # Bioceres, agrobiotecnología argentina
+    "ARKK": "ETF",
+    "BRK-B": "Diversificado", # Berkshire Hathaway -- BYMA lo llama "BRKB", en Yahoo es "BRK-B"
+    "DOW": "Materiales",      # Dow Inc., química
+    "NTCO": "Consumo",        # Natura (antes NATU3) -- cosmética, mismo grupo que WMT/TGT
+    "LAR": "Materiales",      # Lithium Americas (Argentina) -- distinto de LAC
+    "BBD": "Bancos",          # Banco Bradesco (Brasil)
+    "FSLR": "Energía",        # First Solar
+    "GPRK": "Energía",        # GeoPark
+    "LLY": "Salud",           # Eli Lilly
+    "NIO": "Automotriz",      # NIO, autos eléctricos chinos
+    "NU": "Fintech",          # Nu Holdings (Nubank)
+    "PAGS": "Fintech",        # PagSeguro
+    "PEP": "Consumo",         # PepsiCo
+    "PLTR": "Tecnología",     # Palantir
+    "RIO": "Materiales",      # Rio Tinto
+    "SPCE": "Aeroespacial",   # Virgin Galactic
+    "SPOT": "Tecnología",     # Spotify
+    "SPXL": "ETF",            # Direxion S&P500 Bull 3x -- APALANCADO, más volátil que un ETF normal
+    "UNH": "Salud",           # UnitedHealth
+    "URA": "Energía",         # Global X Uranium ETF, insumo para nuclear (par de OKLO)
+    "TGS": "Energía",         # Transportadora de Gas del Sur -- ADR en NYSE, misma empresa que TGSU2
+    "PAM": "Energía",         # Pampa Energía -- generación eléctrica + oil & gas
+    "SUPV": "Bancos",         # Grupo Supervielle
+    "BBAR": "Bancos",         # Banco BBVA Argentina -- asumí que no era el BBVA español, confirmame
+    "BBVA": "Bancos",         # Banco Bilbao Vizcaya Argentaria (España) -- la matriz, distinta de BBAR
 }
 
 BENCHMARK = "SPY"
@@ -72,6 +135,22 @@ BRECHA_CAMBIARIA_ALERTA_PCT = 10
 
 # --- Historial persistente (necesario para confirmación con demora y stop-loss) ---
 ARCHIVO_HISTORIAL = "data/historial_alertas.json"
+
+# --- Ratios de conversión CEDEAR (BYMA, actualizado 3/2/2026 -- fuente oficial).
+# Formato "N:1" en BYMA significa N CEDEARs = 1 acción real -> valor teórico ARS
+# = (precio_usd * CCL) / ratio. Ninguno de los tuyos usa el formato inverso "1:N".
+# IMPORTANTE: los ratios cambian ocasionalmente por decisiones corporativas
+# (splits) -- conviene re-chequear contra BYMA cada tanto, no son eternos.
+RATIOS_CEDEAR = {
+    "SPY": 20, "TSLA": 15, "QQQ": 20, "NVDA": 24, "BABA": 9, "OKLO": 28,
+    "AAPL": 20, "JMIA": 1, "SATL": 1, "CRWV": 27, "TEM": 12, "LAC": 1,
+}
+
+# --- Umbral para marcar un CEDEAR como "caro" o "barato" respecto a su valor teórico ---
+BRECHA_CEDEAR_ALERTA_PCT = 3   # +/- 3% de diferencia se considera una distorsión a mirar
+
+# --- Panel de "Movimientos del día" -- tickers que se movieron fuerte HOY (no en meses) ---
+UMBRAL_MOVIMIENTO_DIARIO_PCT = 5   # +/- 5% en un solo día entra al panel
 
 # --- Modo de ejecución: en "test" no se envían notificaciones reales de Telegram ---
 import os
