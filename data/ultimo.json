@@ -1,5 +1,5 @@
 {
-  "generado_utc": "2026-09-16T20:23:05.074321+00:00",
+  "generado_utc": "2026-09-16T20:38:20.460496+00:00",
   "proxima_corrida_estimada_utc": "2026-09-16T21:00:00+00:00",
   "tickers_ok": 81,
   "tickers_fallidos": [],
@@ -91,7 +91,7 @@
       "SMA200": 118.45,
       "Dist_SMA200_%": 22.34,
       "RSI": 32.2,
-      "Vol_rel": 0.61,
+      "Vol_rel": 0.65,
       "RS_Score": 95.1
     },
     {
@@ -329,7 +329,7 @@
       "SMA200": 180.56,
       "Dist_SMA200_%": 17.16,
       "RSI": 65.3,
-      "Vol_rel": 0.99,
+      "Vol_rel": 1.01,
       "RS_Score": 77.8
     },
     {
@@ -686,7 +686,7 @@
       "SMA200": 144.85,
       "Dist_SMA200_%": 12.75,
       "RSI": 57.9,
-      "Vol_rel": 0.89,
+      "Vol_rel": 0.97,
       "RS_Score": 51.9
     },
     {
@@ -703,7 +703,7 @@
       "SMA200": 84.38,
       "Dist_SMA200_%": 3.17,
       "RSI": 55.7,
-      "Vol_rel": 0.96,
+      "Vol_rel": 1.02,
       "RS_Score": 50.6
     },
     {
@@ -720,7 +720,7 @@
       "SMA200": 24.74,
       "Dist_SMA200_%": 4.54,
       "RSI": 49.9,
-      "Vol_rel": 1.09,
+      "Vol_rel": 1.13,
       "RS_Score": 49.4
     },
     {
@@ -737,7 +737,7 @@
       "SMA200": 492.63,
       "Dist_SMA200_%": 5.52,
       "RSI": 77.3,
-      "Vol_rel": 1.26,
+      "Vol_rel": 1.29,
       "RS_Score": 48.1
     },
     {
@@ -754,7 +754,7 @@
       "SMA200": 1062.72,
       "Dist_SMA200_%": 7.07,
       "RSI": 26.0,
-      "Vol_rel": 0.55,
+      "Vol_rel": 0.58,
       "RS_Score": 46.9
     },
     {
@@ -805,7 +805,7 @@
       "SMA200": 25.58,
       "Dist_SMA200_%": 7.35,
       "RSI": 36.5,
-      "Vol_rel": 0.77,
+      "Vol_rel": 0.78,
       "RS_Score": 43.2
     },
     {
@@ -822,7 +822,7 @@
       "SMA200": 123.54,
       "Dist_SMA200_%": 7.62,
       "RSI": 48.3,
-      "Vol_rel": 1.04,
+      "Vol_rel": 1.06,
       "RS_Score": 42.0
     },
     {
@@ -890,7 +890,7 @@
       "SMA200": 13.28,
       "Dist_SMA200_%": 0.55,
       "RSI": 41.8,
-      "Vol_rel": 1.11,
+      "Vol_rel": 1.14,
       "RS_Score": 37.0
     },
     {
@@ -907,7 +907,7 @@
       "SMA200": 91.8,
       "Dist_SMA200_%": 4.35,
       "RSI": 18.5,
-      "Vol_rel": 1.09,
+      "Vol_rel": 1.1,
       "RS_Score": 35.8
     },
     {
@@ -1298,7 +1298,7 @@
       "SMA200": 132.91,
       "Dist_SMA200_%": -19.29,
       "RSI": 21.8,
-      "Vol_rel": 0.53,
+      "Vol_rel": 0.54,
       "RS_Score": 7.4
     },
     {
@@ -1406,7 +1406,7 @@
   "regimen_mercado": {
     "sano": true,
     "sin_datos": false,
-    "vix": 17.7,
+    "vix": 17.71,
     "motivo": null
   },
   "alertas": [
@@ -2019,14 +2019,14 @@
     "motivos": []
   },
   "cedears_pricing": {
-    "ccl": 1596.3502,
+    "ccl": 1596.3838,
     "sin_datos": false,
     "cedears": [
       {
         "Ticker": "TSLA",
         "sin_datos": false,
         "Precio_real_ARS": 38120.0,
-        "Precio_teorico_ARS": 38108.07,
+        "Precio_teorico_ARS": 38108.87,
         "Brecha_%": 0.03,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false
@@ -2035,7 +2035,7 @@
         "Ticker": "QQQ",
         "sin_datos": false,
         "Precio_real_ARS": 56350.0,
-        "Precio_teorico_ARS": 56249.0,
+        "Precio_teorico_ARS": 56250.18,
         "Brecha_%": 0.18,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false
@@ -2044,7 +2044,7 @@
         "Ticker": "NVDA",
         "sin_datos": false,
         "Precio_real_ARS": 14270.0,
-        "Precio_teorico_ARS": 14227.47,
+        "Precio_teorico_ARS": 14227.77,
         "Brecha_%": 0.3,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false
@@ -2053,7 +2053,7 @@
         "Ticker": "BABA",
         "sin_datos": false,
         "Precio_real_ARS": 19060.0,
-        "Precio_teorico_ARS": 19026.72,
+        "Precio_teorico_ARS": 19027.12,
         "Brecha_%": 0.17,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false
@@ -2062,7 +2062,7 @@
         "Ticker": "OKLO",
         "sin_datos": false,
         "Precio_real_ARS": 2020.0,
-        "Precio_teorico_ARS": 2030.79,
+        "Precio_teorico_ARS": 2030.83,
         "Brecha_%": -0.53,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false
@@ -2071,7 +2071,7 @@
         "Ticker": "AAPL",
         "sin_datos": false,
         "Precio_real_ARS": 26540.0,
-        "Precio_teorico_ARS": 26532.14,
+        "Precio_teorico_ARS": 26532.7,
         "Brecha_%": 0.03,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false
@@ -2080,7 +2080,7 @@
         "Ticker": "JMIA",
         "sin_datos": false,
         "Precio_real_ARS": 11470.0,
-        "Precio_teorico_ARS": 11429.87,
+        "Precio_teorico_ARS": 11430.11,
         "Brecha_%": 0.35,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false
@@ -2089,7 +2089,7 @@
         "Ticker": "SATL",
         "sin_datos": false,
         "Precio_real_ARS": 7950.0,
-        "Precio_teorico_ARS": 7901.93,
+        "Precio_teorico_ARS": 7902.1,
         "Brecha_%": 0.61,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false
@@ -2098,7 +2098,7 @@
         "Ticker": "CRWV",
         "sin_datos": false,
         "Precio_real_ARS": 4927.5,
-        "Precio_teorico_ARS": 4927.99,
+        "Precio_teorico_ARS": 4928.1,
         "Brecha_%": -0.01,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false
@@ -2107,8 +2107,8 @@
         "Ticker": "TEM",
         "sin_datos": false,
         "Precio_real_ARS": 9290.0,
-        "Precio_teorico_ARS": 9308.05,
-        "Brecha_%": -0.19,
+        "Precio_teorico_ARS": 9308.25,
+        "Brecha_%": -0.2,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false
       },
@@ -2116,7 +2116,7 @@
         "Ticker": "LAC",
         "sin_datos": false,
         "Precio_real_ARS": 4440.0,
-        "Precio_teorico_ARS": 4437.85,
+        "Precio_teorico_ARS": 4437.95,
         "Brecha_%": 0.05,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false
