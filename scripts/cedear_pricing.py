@@ -37,18 +37,38 @@ def _extraer_campo(item: dict, candidatos: list, default=None):
 
 
 def traer_ccl():
-    """Devuelve el valor del CCL (venta) o None si falla."""
+    """Devuelve el CCL representativo del mercado, o None si falla.
+
+    IMPORTANTE: /live/ccl de data912 no da un único valor -- da una FILA
+    POR TICKER, cada una con su propio CCL implícito (varía según qué ADR/
+    CEDEAR se use para calcularlo). Se toma la mediana de "CCL_close" de
+    todas las filas, más estable que agarrar cualquiera al azar.
+    Campos confirmados en producción (16/9/2026): CCL_bid, CCL_ask,
+    CCL_close, CCL_mark, ticker_usa, ticker_ar, ars_volume, volume_rank,
+    arg_panel, usa_panel.
+    """
     try:
         resp = requests.get(f"{BASE}/live/ccl", timeout=TIMEOUT)
         resp.raise_for_status()
         data = resp.json()
-        # La respuesta puede ser un dict único o una lista con una entrada
-        item = data[0] if isinstance(data, list) else data
-        valor = _extraer_campo(item, ["venta", "ask", "sell"] + CAMPOS_PRECIO_CANDIDATOS)
-        if valor is None:
-            log.warning(f"CCL: no se encontró un campo de precio reconocible. Respuesta cruda: {item}")
+        filas = data if isinstance(data, list) else [data]
+
+        valores = []
+        for fila in filas:
+            valor = _extraer_campo(fila, ["CCL_close", "CCL_mark", "CCL_ask", "CCL_bid"]
+                                    + ["venta", "ask", "sell"] + CAMPOS_PRECIO_CANDIDATOS)
+            if valor is not None:
+                try:
+                    valores.append(float(valor))
+                except (TypeError, ValueError):
+                    continue
+
+        if not valores:
+            log.warning(f"CCL: ninguna fila trajo un valor utilizable. Ejemplo de fila cruda: {filas[0] if filas else None}")
             return None
-        return float(valor)
+
+        valores.sort()
+        return valores[len(valores) // 2]  # mediana
     except Exception as e:
         log.warning(f"No se pudo traer CCL: {e}")
         return None

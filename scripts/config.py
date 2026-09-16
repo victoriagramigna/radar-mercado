@@ -45,7 +45,7 @@ TICKERS = {
     "F": "Automotriz",
     "VALE": "Materiales",
     "B": "Materiales",        # Barrick Gold -- ticker corto, confirmar que no colisione
-    "TXR": "Materiales",      # Ternium, grupo Techint (argentino)
+    "TX": "Materiales",       # Ternium, grupo Techint (argentino) -- el ticker real de NYSE es "TX", no "TXR" (ese es el código interno de BYMA)
     "TEN": "Energía",         # Tenaris, grupo Techint (argentino), caños para petróleo/gas
     "T": "Telecomunicaciones",
     "AAL": "Transporte",
