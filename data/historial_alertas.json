@@ -13,7 +13,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 211.52,
+    "precio": 211.54,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -22,7 +22,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 74.35,
+    "precio": 74.26,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -76,7 +76,7 @@
     "estado": "sacudon",
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 349.08,
+    "precio": 348.92,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -85,7 +85,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 76.24,
+    "precio": 76.15,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -103,7 +103,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 87.07,
+    "precio": 87.05,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -112,7 +112,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 267.34,
+    "precio": 267.28,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -121,7 +121,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 27.49,
+    "precio": 27.46,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -130,7 +130,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 144.97,
+    "precio": 144.91,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -148,7 +148,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 87.86,
+    "precio": 87.87,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -175,7 +175,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 64.07,
+    "precio": 64.03,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -184,7 +184,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 183.98,
+    "precio": 183.93,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -224,7 +224,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 107.26,
+    "precio": 107.27,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -233,7 +233,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 35.64,
+    "precio": 35.62,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -242,7 +242,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 7.18,
+    "precio": 7.16,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -278,7 +278,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 2.79,
+    "precio": 2.78,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -296,7 +296,7 @@
     "estado": "recien_cruzo",
     "fecha_evento": "2026-09-16T20:13:16.167721+00:00",
     "dias_verdes_consecutivos": 1,
-    "precio": 417.98,
+    "precio": 417.72,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -314,7 +314,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 38.43,
+    "precio": 38.37,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -359,7 +359,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 71.0,
+    "precio": 70.97,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -377,7 +377,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 154.63,
+    "precio": 154.68,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -413,7 +413,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 370.94,
+    "precio": 370.93,
     "lider_soporte_activo": true,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -422,7 +422,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 76.69,
+    "precio": 76.63,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -431,7 +431,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 406.79,
+    "precio": 406.76,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -440,7 +440,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 132.96,
+    "precio": 132.95,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -449,7 +449,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 84.28,
+    "precio": 84.29,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -458,7 +458,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 13.36,
+    "precio": 13.35,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -467,7 +467,7 @@
     "estado": "deterioro",
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 14.14,
+    "precio": 14.13,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -485,7 +485,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 52.37,
+    "precio": 52.31,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -494,7 +494,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 25.88,
+    "precio": 25.86,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -521,7 +521,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 83.13,
+    "precio": 83.18,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -530,7 +530,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 520.68,
+    "precio": 519.8,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -548,7 +548,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 5.57,
+    "precio": 5.56,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -557,7 +557,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 3.51,
+    "precio": 3.5,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -575,7 +575,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 11.27,
+    "precio": 11.28,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -584,7 +584,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 1138.8,
+    "precio": 1137.82,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -593,7 +593,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 3.59,
+    "precio": 3.58,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -602,7 +602,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 13.8,
+    "precio": 13.81,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -611,7 +611,7 @@
     "estado": "deterioro",
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 9.48,
+    "precio": 9.47,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -638,7 +638,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 95.82,
+    "precio": 95.79,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -647,7 +647,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 2.92,
+    "precio": 2.93,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -656,7 +656,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 546.91,
+    "precio": 547.43,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -674,7 +674,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 375.37,
+    "precio": 375.26,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -683,7 +683,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 41.35,
+    "precio": 41.37,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -692,7 +692,7 @@
     "estado": "deterioro",
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 29.12,
+    "precio": 29.06,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -701,7 +701,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 84.22,
+    "precio": 84.11,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -710,7 +710,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 8.36,
+    "precio": 8.37,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -719,7 +719,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 14.49,
+    "precio": 14.51,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -728,7 +728,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 28.12,
+    "precio": 28.1,
     "lider_soporte_activo": true,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
@@ -737,7 +737,7 @@
     "estado": null,
     "fecha_evento": "2026-09-16T19:37:52.522165+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 56.94,
+    "precio": 56.98,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:37:52.522165+00:00"
   }
