@@ -53,7 +53,11 @@ TICKERS = {
     "ARKK": "ETF",
     "BRK-B": "Diversificado", # Berkshire Hathaway -- BYMA lo llama "BRKB", en Yahoo es "BRK-B"
     "DOW": "Materiales",      # Dow Inc., química
-    "NTCO": "Consumo",        # Natura (antes NATU3) -- cosmética, mismo grupo que WMT/TGT
+    # "NTCO": "Consumo",       # Natura -- sacado del universo: falló 4 corridas
+    # seguidas en yfinance a pesar de estar realmente listada en NYSE (parece
+    # un problema específico y persistente de Yahoo con este símbolo puntual,
+    # no un error nuestro). Si en algún momento se quiere reintentar, solo
+    # hay que sacarle el comentario a esta línea.
     "LAR": "Materiales",      # Lithium Americas (Argentina) -- distinto de LAC
     "BBD": "Bancos",          # Banco Bradesco (Brasil)
     "FSLR": "Energía",        # First Solar
