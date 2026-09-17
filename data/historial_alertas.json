@@ -1,6 +1,6 @@
 {
   "XOM": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -9,7 +9,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "CVX": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -18,16 +18,16 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "VIST": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 74.26,
+    "precio": 78.36,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "YPF": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -36,7 +36,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "AAPL": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -45,7 +45,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "MSFT": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -54,7 +54,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "NVDA": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": "recien_cruzo",
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 1,
@@ -63,7 +63,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "GOOGL": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": "confirmado",
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 2,
@@ -72,7 +72,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "JPM": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": "sacudon",
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -81,7 +81,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "BMA": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -90,7 +90,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "GGAL": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -99,7 +99,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "WFC": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -108,7 +108,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "JNJ": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -117,7 +117,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "PFE": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -126,7 +126,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "MRK": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -135,7 +135,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "WMT": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -144,7 +144,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "KO": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -153,7 +153,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "MELI": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -162,7 +162,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "EWZ": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -171,7 +171,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "XLE": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -180,7 +180,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "XLK": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -190,19 +190,19 @@
   },
   "_notificaciones": {
     "JPM": "2026-09-16|⚠️ Sacudón, sin definición clara",
-    "GOOGL": "2026-09-16|tecnico|✅ Confirmado",
-    "NVDA": "2026-09-16|tecnico|🔨 Recién cruzó, sin confirmar",
-    "TSM": "2026-09-16|tecnico|🔨 Recién cruzó, sin confirmar",
+    "GOOGL": "2026-09-17|tecnico|✅ Confirmado",
+    "NVDA": "2026-09-17|tecnico|🔨 Recién cruzó, sin confirmar",
+    "TSM": "2026-09-17|tecnico|🔨 Recién cruzó, sin confirmar",
     "SATL": "2026-09-16|🔻 Rompió piso (SMA200)",
     "DOW": "2026-09-16|tecnico|🔨 Recién cruzó, sin confirmar",
     "TGS": "2026-09-16|🔻 Rompió piso (SMA200)",
-    "ABNB": "2026-09-16|lider_soporte|📈 Líder apoyando en soporte",
-    "V": "2026-09-16|lider_soporte|📈 Líder apoyando en soporte",
-    "BBVA": "2026-09-16|lider_soporte|📈 Líder apoyando en soporte",
+    "ABNB": "2026-09-17|lider_soporte|📈 Líder apoyando en soporte",
+    "V": "2026-09-17|lider_soporte|📈 Líder apoyando en soporte",
+    "BBVA": "2026-09-17|lider_soporte|📈 Líder apoyando en soporte",
     "HOOD": "2026-09-16|lider_soporte|📈 Líder apoyando en soporte"
   },
   "TSLA": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -211,7 +211,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "QQQ": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -220,70 +220,70 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "BABA": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 107.27,
+    "precio": 109.34,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "OKLO": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 35.62,
+    "precio": 35.98,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "JMIA": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 7.16,
+    "precio": 7.31,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "SATL": {
-    "ultima_fecha": "2026-09-16",
-    "estado": "deterioro",
-    "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
+    "ultima_fecha": "2026-09-17",
+    "estado": null,
+    "fecha_evento": "2026-09-17T01:55:52.354090+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 4.95,
+    "precio": 5.07,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "CRWV": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 83.35,
+    "precio": 80.92,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "TEM": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 69.97,
+    "precio": 68.85,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "LAC": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 2.78,
+    "precio": 2.81,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "AMD": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -292,7 +292,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "TSM": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": "recien_cruzo",
     "fecha_evento": "2026-09-16T20:13:16.167721+00:00",
     "dias_verdes_consecutivos": 1,
@@ -301,7 +301,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "QCOM": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -310,16 +310,16 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "GLOB": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 38.37,
+    "precio": 40.1,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "ADBE": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -328,25 +328,25 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "SHOP": {
-    "ultima_fecha": "2026-09-16",
-    "estado": null,
-    "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
+    "ultima_fecha": "2026-09-17",
+    "estado": "deterioro",
+    "fecha_evento": "2026-09-17T01:55:52.354090+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 129.96,
+    "precio": 129.86,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "ZM": {
-    "ultima_fecha": "2026-09-16",
-    "estado": "deterioro",
-    "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
+    "ultima_fecha": "2026-09-17",
+    "estado": null,
+    "fecha_evento": "2026-09-17T01:55:52.354090+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 91.94,
+    "precio": 93.07,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "AMZN": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -355,16 +355,16 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "UBER": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 70.97,
+    "precio": 71.43,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "NFLX": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -373,7 +373,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "TGT": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -382,34 +382,34 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "ABNB": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 167.51,
+    "precio": 168.32,
     "lider_soporte_activo": true,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "HOOD": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 104.42,
-    "lider_soporte_activo": true,
+    "precio": 110.45,
+    "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T20:13:16.167721+00:00"
   },
   "PYPL": {
-    "ultima_fecha": "2026-09-16",
-    "estado": "deterioro",
-    "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
+    "ultima_fecha": "2026-09-17",
+    "estado": null,
+    "fecha_evento": "2026-09-17T01:55:52.354090+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 52.71,
+    "precio": 53.81,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "V": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -418,16 +418,16 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "XYZ": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 76.63,
+    "precio": 78.31,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "SPGI": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -436,7 +436,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "C": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -445,7 +445,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "GM": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -454,7 +454,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "F": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -463,7 +463,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "VALE": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": "deterioro",
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -472,7 +472,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "B": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -481,7 +481,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "TEN": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -490,7 +490,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "T": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -499,7 +499,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "AAL": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -508,25 +508,25 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "BIOX": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 0.39,
+    "precio": 0.41,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "ARKK": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 83.18,
+    "precio": 83.49,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "BRK-B": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -535,16 +535,16 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "DOW": {
-    "ultima_fecha": "2026-09-16",
-    "estado": "recien_cruzo",
-    "fecha_evento": "2026-09-16T20:13:16.167721+00:00",
-    "dias_verdes_consecutivos": 1,
-    "precio": 30.08,
+    "ultima_fecha": "2026-09-17",
+    "estado": "confirmado",
+    "fecha_evento": "2026-09-17T01:55:52.354090+00:00",
+    "dias_verdes_consecutivos": 2,
+    "precio": 29.85,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "LAR": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -553,7 +553,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "BBD": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -562,7 +562,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "FSLR": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -571,7 +571,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "GPRK": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -580,7 +580,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "LLY": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -589,34 +589,34 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "NIO": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 3.58,
+    "precio": 3.6,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "NU": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 13.81,
+    "precio": 14.19,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "PAGS": {
-    "ultima_fecha": "2026-09-16",
-    "estado": "deterioro",
-    "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
+    "ultima_fecha": "2026-09-17",
+    "estado": null,
+    "fecha_evento": "2026-09-17T01:55:52.354090+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 9.47,
+    "precio": 9.62,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "PEP": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -625,16 +625,16 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "PLTR": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 174.34,
+    "precio": 172.56,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "RIO": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -643,25 +643,25 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "SPCE": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 2.93,
+    "precio": 3.04,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "SPOT": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 547.43,
+    "precio": 558.26,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "SPXL": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -670,7 +670,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "UNH": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -679,7 +679,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "URA": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -688,7 +688,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "TGS": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": "deterioro",
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -697,7 +697,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "PAM": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -706,16 +706,16 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "SUPV": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 8.37,
+    "precio": 8.34,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "BBAR": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -724,7 +724,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "BBVA": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -733,7 +733,7 @@
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00"
   },
   "TX": {
-    "ultima_fecha": "2026-09-16",
+    "ultima_fecha": "2026-09-17",
     "estado": null,
     "fecha_evento": "2026-09-16T19:37:52.522165+00:00",
     "dias_verdes_consecutivos": 0,
