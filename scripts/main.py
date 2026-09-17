@@ -8,7 +8,9 @@ novedades").
 """
 import json
 import logging
+import math
 import os
+import numpy as np
 from datetime import datetime, timezone, timedelta
 
 from config import (TICKERS, BENCHMARK, SCORE_MINIMO_ALERTA, MODO, VIX_TICKER,
@@ -27,6 +29,32 @@ from movimientos import detectar_movimientos_diarios
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 log = logging.getLogger("radar.main")
+
+
+def limpiar_para_json(obj):
+    """
+    Recorre recursivamente el resultado antes de guardarlo y convierte
+    cualquier NaN/infinito o tipo de NumPy no serializable a algo válido
+    para JSON estándar. Sin esto, un solo NaN suelto en cualquier campo
+    (por ejemplo, un indicador que no se pudo calcular para algún ticker)
+    rompe el parseo en el navegador -- JSON.parse() no acepta el literal
+    NaN, aunque Python lo escriba en el archivo sin quejarse.
+    Idea original: propuesta de Gemini, ampliada acá para cubrir también
+    infinitos y los tipos numéricos propios de NumPy/Pandas (np.float64,
+    np.int64, np.bool_), que tampoco son serializables tal cual.
+    """
+    if isinstance(obj, dict):
+        return {k: limpiar_para_json(v) for k, v in obj.items()}
+    if isinstance(obj, (list, tuple)):
+        return [limpiar_para_json(v) for v in obj]
+    if isinstance(obj, (np.floating, float)):
+        valor = float(obj)
+        return None if (math.isnan(valor) or math.isinf(valor)) else valor
+    if isinstance(obj, np.integer):
+        return int(obj)
+    if isinstance(obj, np.bool_):
+        return bool(obj)
+    return obj
 
 
 def traer_titulares_ejemplo():
@@ -139,8 +167,9 @@ def main():
         "movimientos_dia": movimientos_dia,
     }
 
+    salida_limpia = limpiar_para_json(salida)
     with open("data/ultimo.json", "w", encoding="utf-8") as f:
-        json.dump(salida, f, ensure_ascii=False, indent=2)
+        json.dump(salida_limpia, f, ensure_ascii=False, indent=2)
     log.info("Guardado en data/ultimo.json")
 
     # 9. Notificaciones (dedup por día+estado; "líder en soporte" no usa la escala 0-7)
