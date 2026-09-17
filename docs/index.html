@@ -55,7 +55,7 @@
         .ticker-row { position: relative; cursor: crosshair; }
     </style>
 </head>
-<body class="bg-base text-gray-300 font-sans p-4 md:p-8 min-h-screen">
+<body class="bg-base text-gray-300 font-sans p-4 md:p-8 min-h-screen relative">
     
     <!-- Banner de errores de fetch -->
     <div id="error-message" class="hidden bg-neg/20 text-neg border border-neg p-4 mb-6 font-mono text-sm rounded-sm"></div>
@@ -69,20 +69,28 @@
             <div id="badges" class="flex flex-wrap gap-2 font-mono text-xs uppercase mt-3"></div>
         </div>
 
-        <!-- 6. Calculadora CCL Manual -->
-        <div class="bg-surface border border-surface p-3 rounded-sm flex flex-col sm:flex-row items-start sm:items-center gap-4 font-mono text-xs">
-            <div class="flex items-center gap-2">
-                <span class="text-gray-400">CCL RADAR:</span>
-                <span id="ccl-auto" class="text-white font-bold text-sm">—</span>
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <!-- 2. Buscador de Ticker -->
+            <div class="flex items-center bg-surface border border-surface focus-within:border-accent transition-colors rounded-sm overflow-hidden p-1 shadow-inner">
+                <input type="text" id="ticker-search" class="bg-transparent text-white w-24 sm:w-32 px-3 py-1.5 focus:outline-none uppercase font-mono text-sm placeholder-gray-600" placeholder="TICKER">
+                <button id="ticker-search-btn" class="bg-base hover:bg-accent hover:text-base text-gray-400 px-3 py-1.5 transition-colors font-mono text-xs font-bold rounded-sm border border-gray-800">BUSCAR</button>
             </div>
-            <div class="hidden sm:block text-gray-600">|</div>
-            <div class="flex items-center gap-2">
-                <span class="text-gray-400">TU BRÓKER:</span>
-                <div class="flex items-center bg-base border border-gray-700 rounded-sm focus-within:border-accent transition-colors overflow-hidden">
-                    <span class="px-2 text-gray-500">$</span>
-                    <input type="number" id="ccl-manual" class="bg-transparent text-white w-20 py-1.5 focus:outline-none" placeholder="1590">
+
+            <!-- 6. Calculadora CCL Manual -->
+            <div class="bg-surface border border-surface p-3 rounded-sm flex flex-col sm:flex-row items-start sm:items-center gap-4 font-mono text-xs">
+                <div class="flex items-center gap-2">
+                    <span class="text-gray-400">CCL RADAR:</span>
+                    <span id="ccl-auto" class="text-white font-bold text-sm">—</span>
                 </div>
-                <span id="ccl-diff" class="font-bold text-gray-500 w-16 text-right">—</span>
+                <div class="hidden sm:block text-gray-600">|</div>
+                <div class="flex items-center gap-2">
+                    <span class="text-gray-400">TU BRÓKER:</span>
+                    <div class="flex items-center bg-base border border-gray-700 rounded-sm focus-within:border-accent transition-colors overflow-hidden">
+                        <span class="px-2 text-gray-500">$</span>
+                        <input type="number" id="ccl-manual" class="bg-transparent text-white w-20 py-1.5 focus:outline-none" placeholder="1590">
+                    </div>
+                    <span id="ccl-diff" class="font-bold text-gray-500 w-16 text-right">—</span>
+                </div>
             </div>
         </div>
     </header>
@@ -121,11 +129,21 @@
         </div>
     </div>
 
+    <!-- Modal de Detalle de Ticker Flotante -->
+    <div id="ticker-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-base/90 p-4 backdrop-blur-sm transition-opacity">
+        <div class="bg-surface border border-gray-700 rounded-sm shadow-2xl w-full max-w-lg relative">
+            <button id="close-modal" class="absolute top-3 right-4 text-gray-500 hover:text-white font-mono font-bold text-lg">✕</button>
+            <div id="modal-content" class="p-6">
+                <!-- Contenido dinámico del Ticker se inyecta acá -->
+            </div>
+        </div>
+    </div>
+
     <script>
         const DATA_URL = 'https://raw.githubusercontent.com/victoriagramigna/radar-mercado/main/data/ultimo.json';
         
-        // Variable global para el cálculo de CCL
         let currentAutoCcl = null;
+        let currentRadarData = null; // Guardamos el estado global para búsquedas
 
         async function fetchRadarData() {
             try {
@@ -133,6 +151,7 @@
                 if (!response.ok) throw new Error(`HTTP ${response.status}`);
                 
                 const data = await response.json();
+                currentRadarData = data; // Almacenamos el último JSON en memoria
                 document.getElementById('error-message').classList.add('hidden');
                 renderDashboard(data);
             } catch (error) {
@@ -159,6 +178,145 @@
             diffSpan.className = `font-bold w-16 text-right ${isPos ? 'text-pos' : 'text-neg'}`;
         });
 
+        // Lógica del Buscador
+        function performSearch() {
+            if (!currentRadarData) return;
+            const query = document.getElementById('ticker-search').value.trim().toUpperCase();
+            if (!query) return;
+
+            const modal = document.getElementById('ticker-modal');
+            const content = document.getElementById('modal-content');
+            
+            const rankingArray = currentRadarData?.ranking ?? [];
+            const tickerData = rankingArray.find(t => t?.Ticker?.toUpperCase() === query);
+
+            if (!tickerData) {
+                content.innerHTML = `
+                    <div class="text-neg font-mono text-center py-10 border border-dashed border-neg/30 rounded-sm bg-base mt-4">
+                        [ <span class="font-bold">${query}</span> NO ESTÁ EN EL UNIVERSO DEL RADAR ]
+                    </div>
+                `;
+                modal.classList.remove('hidden');
+                return;
+            }
+
+            // Buscar si tiene alerta activa
+            const alertas = currentRadarData?.alertas ?? [];
+            const alerta = alertas.find(a => a?.Ticker?.toUpperCase() === query);
+            let alertHtml = '';
+
+            if (alerta) {
+                const recomendacion = alerta?.['Recomendación final'] ?? '—';
+                const estado = alerta?.Estado ?? '—';
+                const tipo = alerta?.Tipo ?? 'tecnico';
+                
+                let recColor = 'text-accent border-accent'; 
+                let bgCustom = 'bg-surface border-l-2 border-surface';
+                let titleIcon = '';
+
+                if (tipo === 'lider_soporte') {
+                    recColor = 'bg-blueAlert/20 text-blueAlert border border-blueAlert';
+                    bgCustom = 'bg-[#151b2b] border-l-4 border-blueAlert shadow-[inset_0_0_20px_rgba(59,130,246,0.05)]';
+                    titleIcon = '🎯 ';
+                } else {
+                    if (recomendacion === 'COMPRA') recColor = 'bg-pos text-base border-pos';
+                    if (recomendacion === 'VENTA') recColor = 'bg-neg text-base border-neg';
+                    if (recomendacion === 'MANTENER') recColor = 'bg-accent text-base border-accent';
+                }
+
+                alertHtml = `
+                    <div class="${bgCustom} p-4 rounded-sm mb-6 mt-2 border border-gray-800">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="text-sm font-bold text-white uppercase">${titleIcon}ALERTA TÉCNICA ACTIVA</span>
+                            <span class="font-mono text-xs px-2 py-1 font-bold rounded-sm ${recColor}">${recomendacion}</span>
+                        </div>
+                        <div class="font-mono text-sm text-gray-300">${estado}</div>
+                    </div>
+                `;
+            }
+
+            // Procesar métricas para la tarjeta
+            const rsScore = tickerData?.RS_Score ?? 0;
+            const rsColor = rsScore > 80 ? 'bg-pos' : (rsScore > 40 ? 'bg-accent' : 'bg-neg');
+            const distMax = tickerData?.['Dist_Max52w_%'];
+            const distMaxColor = (distMax != null && distMax > -3) ? 'text-pos font-bold' : 'text-gray-400';
+            const distMaxText = distMax != null ? `${distMax > 0 ? '+' : ''}${distMax.toFixed(2)}% del máx 52w` : '—';
+            
+            const s50Text = tickerData?.SMA50 != null ? `$${tickerData.SMA50.toFixed(2)}` : 'sin datos';
+            const dist50 = tickerData?.['Dist_SMA50_%'];
+            const dist50Text = dist50 != null ? `(${dist50 > 0 ? '+' : ''}${dist50.toFixed(1)}%)` : '';
+            const dist50Color = dist50 > 0 ? 'text-pos' : 'text-neg';
+
+            const s200Text = tickerData?.SMA200 != null ? `$${tickerData.SMA200.toFixed(2)}` : 'sin datos aún';
+            const dist200 = tickerData?.['Dist_SMA200_%'];
+            const dist200Text = dist200 != null ? `(${dist200 > 0 ? '+' : ''}${dist200.toFixed(1)}%)` : '';
+            const dist200Color = dist200 > 0 ? 'text-pos' : 'text-neg';
+
+            content.innerHTML = `
+                ${alertHtml}
+                <div class="${alerta ? '' : 'mt-2'} flex justify-between items-end mb-6">
+                    <div>
+                        <h2 class="text-4xl font-bold text-white uppercase tracking-tight">${tickerData.Ticker}</h2>
+                        <span class="text-sm font-mono text-accent uppercase tracking-widest">${tickerData.Sector ?? '—'}</span>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-3xl font-mono text-white">$${tickerData.Precio?.toFixed(2) ?? '—'}</div>
+                        <div class="text-xs font-mono mt-1 ${distMaxColor}">${distMaxText}</div>
+                    </div>
+                </div>
+                
+                <div class="mb-6 bg-base p-4 rounded-sm border border-gray-800">
+                    <div class="flex justify-between font-mono text-xs mb-2 uppercase">
+                        <span class="text-gray-400 tracking-widest">RS Score</span>
+                        <span class="text-white font-bold">${rsScore.toFixed(0)} / 100</span>
+                    </div>
+                    <div class="h-2 w-full bar-bg rounded-full overflow-hidden">
+                        <div class="h-full ${rsColor}" style="width: ${Math.min(rsScore, 100)}%"></div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3 font-mono text-sm">
+                    <div class="bg-base p-3 rounded-sm border border-gray-800">
+                        <div class="text-gray-500 text-[10px] uppercase mb-1 tracking-widest">SMA 50</div>
+                        <div class="text-white">${s50Text}</div>
+                        <div class="text-[11px] ${dist50Color}">${dist50Text}</div>
+                    </div>
+                    <div class="bg-base p-3 rounded-sm border border-gray-800">
+                        <div class="text-gray-500 text-[10px] uppercase mb-1 tracking-widest">SMA 200</div>
+                        <div class="text-white">${s200Text}</div>
+                        <div class="text-[11px] ${dist200Color}">${dist200Text}</div>
+                    </div>
+                    <div class="bg-base p-3 rounded-sm border border-gray-800">
+                        <div class="text-gray-500 text-[10px] uppercase mb-1 tracking-widest">RSI (14)</div>
+                        <div class="text-white">${tickerData.RSI?.toFixed(1) ?? '—'}</div>
+                    </div>
+                    <div class="bg-base p-3 rounded-sm border border-gray-800">
+                        <div class="text-gray-500 text-[10px] uppercase mb-1 tracking-widest">Volumen Relativo</div>
+                        <div class="text-white">${tickerData.Vol_rel?.toFixed(2) ?? '—'}x</div>
+                    </div>
+                </div>
+            `;
+            
+            modal.classList.remove('hidden');
+        }
+
+        document.getElementById('ticker-search-btn').addEventListener('click', performSearch);
+        document.getElementById('ticker-search').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') performSearch();
+        });
+        
+        // Cerrar Modal con el botón X
+        document.getElementById('close-modal').addEventListener('click', () => {
+            document.getElementById('ticker-modal').classList.add('hidden');
+        });
+
+        // Cerrar Modal al clickear afuera de la tarjeta
+        document.getElementById('ticker-modal').addEventListener('click', (e) => {
+            if (e.target.id === 'ticker-modal') {
+                e.target.classList.add('hidden');
+            }
+        });
+
         function renderDashboard(data) {
             // Timestamp y 24hs format
             const fechaGenerado = data?.generado_utc;
@@ -180,10 +338,9 @@
             // CCL Update
             currentAutoCcl = data?.cedears_pricing?.ccl ?? null;
             document.getElementById('ccl-auto').textContent = currentAutoCcl ? `$${currentAutoCcl.toFixed(2)}` : '—';
-            // Disparamos evento input artificial para re-calcular si el usuario ya tenía algo escrito
             document.getElementById('ccl-manual').dispatchEvent(new Event('input'));
 
-            // Renderizado de Badges
+            // Renderizado de Badges (Sumando la Brecha Cambiaria)
             const badgesHtml = [];
             if (data?.frescura_dato?.sospechoso) {
                 badgesHtml.push(`<span class="bg-accent text-base px-2 py-1 font-bold rounded-sm animate-pulse">⚠️ DATO VIEJO / SOSPECHOSO</span>`);
@@ -198,10 +355,14 @@
             const macroColor = macroStable ? 'border-pos text-pos' : 'border-neg text-neg';
             const riesgoPais = data?.contexto_macro?.riesgo_pais ?? '—';
             badgesHtml.push(`<span class="border ${macroColor} px-2 py-1 rounded-sm bg-surface">RIESGO PAÍS: ${riesgoPais}</span>`);
+            
+            // Badge Brecha Cambiaria recuperado
+            const brecha = data?.contexto_macro?.['brecha_cambiaria_%'] ?? '—';
+            badgesHtml.push(`<span class="border ${macroColor} px-2 py-1 rounded-sm bg-surface">BRECHA: ${brecha}%</span>`);
 
             document.getElementById('badges').innerHTML = badgesHtml.join('');
 
-            // Renderizado de Alertas (Ordenadas y Filtradas)
+            // Renderizado de Alertas
             const alertsContainer = document.getElementById('alerts-container');
             const alertas = data?.alertas ?? [];
             
@@ -210,7 +371,6 @@
             if (alertas.length === 0) {
                 alertsContainer.innerHTML = '<div class="text-gray-500 font-mono text-sm p-4 border border-dashed border-surface rounded-sm">Sin señales técnicas en las últimas 48hs.</div>';
             } else {
-                // Ordenar: COMPRA (1), VENTA (2), MANTENER (3)
                 alertas.sort((a, b) => {
                     const getRank = (alerta) => {
                         const rec = alerta?.['Recomendación final'];
@@ -230,17 +390,15 @@
                     const ajustado = alerta?.['Ajustado por'] ?? '—';
                     const tipo = alerta?.Tipo ?? 'tecnico';
 
-                    // Estilos base
                     let recColor = 'text-accent border-accent'; 
                     let containerBorder = 'border-l-2 border-surface hover:border-l-accent';
                     let bgCustom = 'bg-surface';
                     let titleIcon = '';
 
-                    // Lógica Tipo lider_soporte vs tecnico
                     if (tipo === 'lider_soporte') {
                         recColor = 'bg-blueAlert/20 text-blueAlert border border-blueAlert';
                         containerBorder = 'border-l-4 border-blueAlert shadow-[inset_0_0_20px_rgba(59,130,246,0.05)]';
-                        bgCustom = 'bg-[#151b2b]'; // Apenas más claro que surface para destacar
+                        bgCustom = 'bg-[#151b2b]'; 
                         titleIcon = '🎯 ';
                     } else {
                         if (recomendacion === 'COMPRA') recColor = 'bg-pos text-base border-pos';
@@ -343,11 +501,16 @@
                         // Lógica Puntos Medias Móviles
                         const dot50Class = ticker?.Sobre_SMA50 ? 'dot-pos' : 'dot-neg';
                         const dist200 = ticker?.['Dist_SMA200_%'];
-                        let dot200Class = 'dot-null'; // fallback gris
+                        let dot200Class = 'dot-null'; 
                         if (dist200 != null) {
                             dot200Class = dist200 > 0 ? 'dot-pos' : 'dot-neg';
                         }
                         
+                        // Lógica Distancia Máximos 52w
+                        const distMax = ticker?.['Dist_Max52w_%'];
+                        const distMaxText = distMax != null ? `(${distMax > 0 ? '+' : ''}${distMax.toFixed(1)}% del máx.)` : '';
+                        const distMaxColor = (distMax != null && distMax > -3) ? 'text-pos font-bold' : 'text-gray-500';
+
                         const rsColor = rsScore > 80 ? 'bg-pos' : (rsScore > 40 ? 'bg-accent' : 'bg-neg');
                         const displayPrecio = typeof precio === 'number' ? precio.toFixed(2) : '—';
                         const displayRs = typeof rsScore === 'number' ? rsScore.toFixed(0) : '—';
@@ -363,7 +526,11 @@
                         return `
                             <div class="ticker-row flex flex-wrap md:flex-nowrap items-center py-2 border-b border-base/50 font-mono text-sm hover:bg-base/40 px-2 -mx-2 transition-colors" title="${tooltipText}">
                                 <div class="w-16 font-bold text-white">${tickerName}</div>
-                                <div class="w-20 text-right text-gray-400 mr-4 md:mr-8">${displayPrecio}</div>
+                                
+                                <div class="w-28 flex-shrink-0 text-right mr-4 md:mr-6">
+                                    <div class="text-gray-400">${displayPrecio}</div>
+                                    <div class="text-[10px] ${distMaxColor} tracking-tight">${distMaxText}</div>
+                                </div>
                                 
                                 <div class="flex-grow flex items-center gap-3 w-full md:w-auto mt-2 md:mt-0 order-last md:order-none">
                                     <div class="w-full bar-bg h-1.5 max-w-[200px] rounded-full overflow-hidden">
