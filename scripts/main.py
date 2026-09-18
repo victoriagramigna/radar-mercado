@@ -175,7 +175,7 @@ def main():
     # 9. Notificaciones (dedup por día+estado; "líder en soporte" no usa la escala 0-7)
     alertas_relevantes = [
         a for a in recomendaciones
-        if (a.get("Score_num") and a["Score_num"] >= SCORE_MINIMO_ALERTA) or a.get("Tipo") == "lider_soporte"
+        if (a.get("Score_num") and a["Score_num"] >= SCORE_MINIMO_ALERTA) or a.get("Tipo") in ("lider_soporte", "gap_alcista")
     ]
     historial.setdefault("_notificaciones", {})
     alertas_nuevas = []

@@ -17,7 +17,8 @@ import pandas as pd
 from datetime import datetime, timezone
 from config import (VOLUMEN_RELATIVO_MINIMO, RSI_ZONA_SANA, VENTANA_BASE_DIAS,
                      SMA_CORTAS, EMA_LARGA, DIAS_CONFIRMACION, SCORE_TECHO_SIN_CONFIRMAR,
-                     ESTADOS, VENTANA_ALERTA_HORAS, UMBRAL_LIDER_RS, UMBRAL_LIDER_DIST_SMA50_PCT)
+                     ESTADOS, VENTANA_ALERTA_HORAS, UMBRAL_LIDER_RS, UMBRAL_LIDER_DIST_SMA50_PCT,
+                     UMBRAL_GAP_ALCISTA_PCT, VENTANA_GAP_MAXIMO_DIAS)
 from vcp import detectar_vcp
 
 
@@ -178,6 +179,28 @@ def detectar_alertas(precios: dict, volumenes: dict, tickers_sector: dict, bench
         else:
             fecha_evento_lider = estado_previo.get("fecha_evento_lider", timestamp_iso)
 
+        # --- Señal "Gap alcista + macrotendencia" -- adaptada de un dossier de bot de
+        # trading (ver notas del prompt): el original usa apertura y máximo intradiario
+        # de ayer, que no tenemos -- se adapta con lo que sí hay: variación de cierre a
+        # cierre, macrotendencia confirmada (ayer por encima de su SMA200), y que hoy
+        # sea el cierre más alto de los últimos N días (proxy de "ruptura"). Igual que
+        # "líder en soporte", solo se evalúa si hoy no hay ya otro evento más urgente.
+        gap_alcista_activo = False
+        if estado_key is None and not lider_soporte_activo and len(close) >= 200:
+            sma200_local = close.rolling(200).mean()
+            variacion_dia_pct = (precio_hoy / precio_ayer - 1) * 100 if precio_ayer else 0
+            macrotendencia_ok = precio_ayer > sma200_local.iloc[-2] if pd.notna(sma200_local.iloc[-2]) else False
+            ventana_reciente = close.iloc[-VENTANA_GAP_MAXIMO_DIAS:]
+            es_maximo_reciente = precio_hoy >= ventana_reciente.max() * 0.999  # tolerancia por redondeo
+            if variacion_dia_pct >= UMBRAL_GAP_ALCISTA_PCT and macrotendencia_ok and es_maximo_reciente:
+                gap_alcista_activo = True
+
+        gap_previo = estado_previo.get("gap_alcista_activo", False)
+        if gap_alcista_activo and not gap_previo:
+            fecha_evento_gap = timestamp_iso
+        else:
+            fecha_evento_gap = estado_previo.get("fecha_evento_gap", timestamp_iso)
+
         # --- Actualizar historial (SIEMPRE, tenga o no vigencia de display) ---
         historial[ticker] = {
             "ultima_fecha": fecha_hoy,
@@ -187,6 +210,8 @@ def detectar_alertas(precios: dict, volumenes: dict, tickers_sector: dict, bench
             "precio": round(float(precio_hoy), 2),
             "lider_soporte_activo": lider_soporte_activo,
             "fecha_evento_lider": fecha_evento_lider,
+            "gap_alcista_activo": gap_alcista_activo,
+            "fecha_evento_gap": fecha_evento_gap,
         }
 
         # --- Armar la(s) fila(s) de salida, solo si están dentro de la ventana de vigencia ---
@@ -217,6 +242,21 @@ def detectar_alertas(precios: dict, volumenes: dict, tickers_sector: dict, bench
                 "RSI": round(rsi_hoy, 1) if pd.notna(rsi_hoy) else None,
                 "Vol_rel": round(vol_rel_hoy, 2),
                 "fecha_evento": fecha_evento_lider,
+            })
+
+        if gap_alcista_activo and _horas_desde(fecha_evento_gap, ahora) <= VENTANA_ALERTA_HORAS:
+            stop_sugerido_aprox = round(precio_hoy * 0.99, 2)
+            alertas.append({
+                "Ticker": ticker, "Sector": sector,
+                "Tipo": "gap_alcista",
+                "Estado": ESTADOS.get("gap_alcista", "🚀 Gap alcista con macrotendencia"),
+                "Score": f"+{round(variacion_dia_pct, 1)}%",
+                "Score_num": None,
+                "Señales": [f"variación del día: +{round(variacion_dia_pct, 1)}%",
+                            f"stop sugerido (aprox.): ${stop_sugerido_aprox}"],
+                "RSI": round(rsi_hoy, 1) if pd.notna(rsi_hoy) else None,
+                "Vol_rel": round(vol_rel_hoy, 2),
+                "fecha_evento": fecha_evento_gap,
             })
 
     return pd.DataFrame(alertas), historial

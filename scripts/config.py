@@ -114,6 +114,7 @@ ESTADOS = {
     "deterioro":     "🔻 Rompió piso (SMA200)",
     "stop_loss":     "🛑 Perdió EMA200 tras rebote — stop sugerido",
     "lider_soporte": "📈 Líder apoyando en soporte",
+    "gap_alcista":   "🚀 Gap alcista con macrotendencia",
 }
 
 # --- Medias móviles a calcular ---
@@ -165,6 +166,15 @@ VENTANA_ALERTA_HORAS = 48   # una alerta deja de mostrarse en "Alertas Activas" 
 # --- Señal "Líder apoyando en soporte" (RS alto + descansando cerca de su SMA50 sin romperla) ---
 UMBRAL_LIDER_RS = 80              # RS Score mínimo para considerarse "líder"
 UMBRAL_LIDER_DIST_SMA50_PCT = 2   # como máximo a este % POR ENCIMA de la SMA50 (no por debajo)
+
+# --- Señal "Gap alcista + macrotendencia" (adaptada de un dossier de bot de trading con IA) ---
+# Original: precio de HOY > máximo intradiario de AYER + gap de apertura >=3%.
+# Adaptada porque el pipeline solo trae precio de cierre (no apertura/máximo/mínimo):
+# variación de CIERRE a CIERRE >= umbral, + precio de ayer ya por encima de su SMA200
+# (misma idea de "solo operar a favor de la macrotendencia"), + que hoy sea el cierre
+# más alto de los últimos 10 días (proxy de "ruptura", ya que no tenemos el máximo real).
+UMBRAL_GAP_ALCISTA_PCT = 3       # % mínimo de suba de cierre a cierre para considerarlo "gap"
+VENTANA_GAP_MAXIMO_DIAS = 10     # días hacia atrás para chequear que hoy sea el cierre más alto
 
 # --- Modo de ejecución: en "test" no se envían notificaciones reales de Telegram ---
 import os
