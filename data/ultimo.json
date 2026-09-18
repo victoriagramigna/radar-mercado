@@ -1,5 +1,5 @@
 {
-  "generado_utc": "2026-09-18T03:21:28.851860+00:00",
+  "generado_utc": "2026-09-18T13:21:48.338908+00:00",
   "proxima_corrida_estimada_utc": "2026-09-18T14:00:00+00:00",
   "tickers_ok": 81,
   "tickers_fallidos": [],
@@ -1406,7 +1406,7 @@
   "regimen_mercado": {
     "sano": true,
     "sin_datos": false,
-    "vix": 15.44,
+    "vix": 15.46,
     "motivo": null
   },
   "alertas": [
@@ -1985,107 +1985,63 @@
     "motivos": []
   },
   "cedears_pricing": {
-    "ccl": 1593.0171,
+    "ccl": 1590.7569,
     "sin_datos": false,
     "cedears": [
       {
         "Ticker": "TSLA",
-        "sin_datos": false,
-        "Precio_real_ARS": 38940.0,
-        "Precio_teorico_ARS": 38890.86,
-        "Brecha_%": 0.13,
-        "Estado": "Caro respecto al teórico",
-        "Distorsion_relevante": false
+        "sin_datos": true,
+        "Precio_teorico_ARS": 38835.68
       },
       {
         "Ticker": "QQQ",
-        "sin_datos": false,
-        "Precio_real_ARS": 57225.0,
-        "Precio_teorico_ARS": 57103.29,
-        "Brecha_%": 0.21,
-        "Estado": "Caro respecto al teórico",
-        "Distorsion_relevante": false
+        "sin_datos": true,
+        "Precio_teorico_ARS": 57022.27
       },
       {
         "Ticker": "NVDA",
-        "sin_datos": false,
-        "Precio_real_ARS": 14600.0,
-        "Precio_teorico_ARS": 14558.85,
-        "Brecha_%": 0.28,
-        "Estado": "Caro respecto al teórico",
-        "Distorsion_relevante": false
+        "sin_datos": true,
+        "Precio_teorico_ARS": 14538.19
       },
       {
         "Ticker": "BABA",
-        "sin_datos": false,
-        "Precio_real_ARS": 19260.0,
-        "Precio_teorico_ARS": 19211.79,
-        "Brecha_%": 0.25,
-        "Estado": "Caro respecto al teórico",
-        "Distorsion_relevante": false
+        "sin_datos": true,
+        "Precio_teorico_ARS": 19184.53
       },
       {
         "Ticker": "OKLO",
-        "sin_datos": false,
-        "Precio_real_ARS": 2239.0,
-        "Precio_teorico_ARS": 2255.83,
-        "Brecha_%": -0.75,
-        "Estado": "Barato respecto al teórico",
-        "Distorsion_relevante": false
+        "sin_datos": true,
+        "Precio_teorico_ARS": 2252.63
       },
       {
         "Ticker": "AAPL",
-        "sin_datos": false,
-        "Precio_real_ARS": 26880.0,
-        "Precio_teorico_ARS": 26842.34,
-        "Brecha_%": 0.14,
-        "Estado": "Caro respecto al teórico",
-        "Distorsion_relevante": false
+        "sin_datos": true,
+        "Precio_teorico_ARS": 26804.25
       },
       {
         "Ticker": "JMIA",
-        "sin_datos": false,
-        "Precio_real_ARS": 11380.0,
-        "Precio_teorico_ARS": 11326.35,
-        "Brecha_%": 0.47,
-        "Estado": "Caro respecto al teórico",
-        "Distorsion_relevante": false
+        "sin_datos": true,
+        "Precio_teorico_ARS": 11310.28
       },
       {
         "Ticker": "SATL",
-        "sin_datos": false,
-        "Precio_real_ARS": 8760.0,
-        "Precio_teorico_ARS": 8777.52,
-        "Brecha_%": -0.2,
-        "Estado": "Barato respecto al teórico",
-        "Distorsion_relevante": false
+        "sin_datos": true,
+        "Precio_teorico_ARS": 8765.07
       },
       {
         "Ticker": "CRWV",
-        "sin_datos": false,
-        "Precio_real_ARS": 4732.5,
-        "Precio_teorico_ARS": 4712.97,
-        "Brecha_%": 0.41,
-        "Estado": "Caro respecto al teórico",
-        "Distorsion_relevante": false
+        "sin_datos": true,
+        "Precio_teorico_ARS": 4706.28
       },
       {
         "Ticker": "TEM",
-        "sin_datos": false,
-        "Precio_real_ARS": 10640.0,
-        "Precio_teorico_ARS": 10667.9,
-        "Brecha_%": -0.26,
-        "Estado": "Barato respecto al teórico",
-        "Distorsion_relevante": false
+        "sin_datos": true,
+        "Precio_teorico_ARS": 10652.77
       },
       {
         "Ticker": "LAC",
-        "sin_datos": false,
-        "Precio_real_ARS": 4637.5,
-        "Precio_teorico_ARS": 4603.82,
-        "Brecha_%": 0.73,
-        "Estado": "Caro respecto al teórico",
-        "Distorsion_relevante": false
+        "sin_datos": true,
+        "Precio_teorico_ARS": 4597.29
       }
     ]
   },
