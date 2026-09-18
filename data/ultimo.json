@@ -1,5 +1,5 @@
 {
-  "generado_utc": "2026-09-18T01:19:17.688708+00:00",
+  "generado_utc": "2026-09-18T02:00:32.187840+00:00",
   "proxima_corrida_estimada_utc": "2026-09-18T14:00:00+00:00",
   "tickers_ok": 81,
   "tickers_fallidos": [],
@@ -1902,7 +1902,7 @@
       "Ticker": "VALE",
       "Sector": "Materiales",
       "Tipo": "tecnico",
-      "Estado": "🛑 Perdió EMA200 tras rebote — stop sugerido",
+      "Estado": "🔻 Rompió piso (SMA200)",
       "Score": "0/7",
       "Score_num": 0.0,
       "Señales": [],
@@ -1936,9 +1936,9 @@
       "RSI": 34.4,
       "Vol_rel": 0.93,
       "SMA21": 14.93,
-      "fecha_evento": "2026-09-18T01:19:17.688708+00:00",
-      "Señal técnica": "MANTENER",
-      "Recomendación final": "MANTENER",
+      "fecha_evento": "2026-09-18T02:00:32.187840+00:00",
+      "Señal técnica": "VENTA",
+      "Recomendación final": "VENTA",
       "Ajustado por": "sin ajustes",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión."
     },

@@ -567,8 +567,8 @@
   },
   "VALE": {
     "ultima_fecha": "2026-09-18",
-    "estado": "stop_loss",
-    "fecha_evento": "2026-09-18T01:19:17.688708+00:00",
+    "estado": "deterioro",
+    "fecha_evento": "2026-09-18T02:00:32.187840+00:00",
     "dias_verdes_consecutivos": 2,
     "precio": 14.13,
     "lider_soporte_activo": false,
