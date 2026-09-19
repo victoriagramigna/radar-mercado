@@ -1,5 +1,5 @@
 {
-  "generado_utc": "2026-09-18T23:16:41.368807+00:00",
+  "generado_utc": "2026-09-19T12:50:48.160157+00:00",
   "proxima_corrida_estimada_utc": "2026-09-21T14:00:00+00:00",
   "tickers_ok": 81,
   "tickers_fallidos": [],
@@ -23,7 +23,7 @@
       "SMA200": 354.62,
       "Dist_SMA200_%": 57.86,
       "RSI": 73.1,
-      "Vol_rel": 1.66,
+      "Vol_rel": 1.67,
       "RS_Score": 100.0
     },
     {
@@ -74,7 +74,7 @@
       "SMA200": 35.05,
       "Dist_SMA200_%": 48.6,
       "RSI": 90.9,
-      "Vol_rel": 1.62,
+      "Vol_rel": 1.65,
       "RS_Score": 96.3
     },
     {
@@ -91,7 +91,7 @@
       "SMA200": 44.33,
       "Dist_SMA200_%": 29.1,
       "RSI": 62.5,
-      "Vol_rel": 0.73,
+      "Vol_rel": 0.74,
       "RS_Score": 95.1
     },
     {
@@ -125,7 +125,7 @@
       "SMA200": 430.08,
       "Dist_SMA200_%": 14.81,
       "RSI": 38.9,
-      "Vol_rel": 1.87,
+      "Vol_rel": 1.88,
       "RS_Score": 92.6
     },
     {
@@ -142,7 +142,7 @@
       "SMA200": 124.03,
       "Dist_SMA200_%": 27.54,
       "RSI": 41.6,
-      "Vol_rel": 1.67,
+      "Vol_rel": 1.68,
       "RS_Score": 91.4
     },
     {
@@ -159,7 +159,7 @@
       "SMA200": 285.94,
       "Dist_SMA200_%": 17.55,
       "RSI": 65.4,
-      "Vol_rel": 1.98,
+      "Vol_rel": 1.99,
       "RS_Score": 90.1
     },
     {
@@ -176,7 +176,7 @@
       "SMA200": 118.91,
       "Dist_SMA200_%": 23.51,
       "RSI": 48.3,
-      "Vol_rel": 2.93,
+      "Vol_rel": 2.94,
       "RS_Score": 88.9
     },
     {
@@ -261,7 +261,7 @@
       "SMA200": 162.24,
       "Dist_SMA200_%": 16.87,
       "RSI": 58.5,
-      "Vol_rel": 1.07,
+      "Vol_rel": 1.08,
       "RS_Score": 82.7
     },
     {
@@ -295,7 +295,7 @@
       "SMA200": 198.02,
       "Dist_SMA200_%": 12.25,
       "RSI": 55.0,
-      "Vol_rel": 1.4,
+      "Vol_rel": 1.41,
       "RS_Score": 80.2
     },
     {
@@ -346,7 +346,7 @@
       "SMA200": 236.51,
       "Dist_SMA200_%": 14.15,
       "RSI": 53.0,
-      "Vol_rel": 2.47,
+      "Vol_rel": 2.52,
       "RS_Score": 76.5
     },
     {
@@ -431,7 +431,7 @@
       "SMA200": 350.16,
       "Dist_SMA200_%": 7.64,
       "RSI": 38.8,
-      "Vol_rel": 1.73,
+      "Vol_rel": 1.74,
       "RS_Score": 70.4
     },
     {
@@ -448,7 +448,7 @@
       "SMA200": 9.41,
       "Dist_SMA200_%": -1.62,
       "RSI": 60.7,
-      "Vol_rel": 1.65,
+      "Vol_rel": 1.71,
       "RS_Score": 69.1
     },
     {
@@ -465,7 +465,7 @@
       "SMA200": 240.3,
       "Dist_SMA200_%": 5.58,
       "RSI": 36.2,
-      "Vol_rel": 1.58,
+      "Vol_rel": 1.59,
       "RS_Score": 67.9
     },
     {
@@ -482,7 +482,7 @@
       "SMA200": 181.19,
       "Dist_SMA200_%": 15.63,
       "RSI": 60.5,
-      "Vol_rel": 4.82,
+      "Vol_rel": 4.83,
       "RS_Score": 66.7
     },
     {
@@ -499,7 +499,7 @@
       "SMA200": 78.22,
       "Dist_SMA200_%": 12.83,
       "RSI": 44.1,
-      "Vol_rel": 1.77,
+      "Vol_rel": 1.79,
       "RS_Score": 65.4
     },
     {
@@ -516,7 +516,7 @@
       "SMA200": 318.71,
       "Dist_SMA200_%": 9.71,
       "RSI": 39.0,
-      "Vol_rel": 2.63,
+      "Vol_rel": 2.64,
       "RS_Score": 64.2
     },
     {
@@ -533,7 +533,7 @@
       "SMA200": 4.93,
       "Dist_SMA200_%": 3.76,
       "RSI": 53.9,
-      "Vol_rel": 3.02,
+      "Vol_rel": 3.03,
       "RS_Score": 63.0
     },
     {
@@ -584,7 +584,7 @@
       "SMA200": 661.77,
       "Dist_SMA200_%": 9.02,
       "RSI": 53.9,
-      "Vol_rel": 1.53,
+      "Vol_rel": 1.54,
       "RS_Score": 59.3
     },
     {
@@ -601,7 +601,7 @@
       "SMA200": 50.4,
       "Dist_SMA200_%": 3.99,
       "RSI": 46.0,
-      "Vol_rel": 2.19,
+      "Vol_rel": 2.2,
       "RS_Score": 58.0
     },
     {
@@ -703,7 +703,7 @@
       "SMA200": 42.37,
       "Dist_SMA200_%": 2.27,
       "RSI": 40.8,
-      "Vol_rel": 1.06,
+      "Vol_rel": 1.17,
       "RS_Score": 50.6
     },
     {
@@ -737,7 +737,7 @@
       "SMA200": 264.99,
       "Dist_SMA200_%": -6.06,
       "RSI": 27.6,
-      "Vol_rel": 1.85,
+      "Vol_rel": 1.86,
       "RS_Score": 48.1
     },
     {
@@ -822,7 +822,7 @@
       "SMA200": 1853.0,
       "Dist_SMA200_%": -3.54,
       "RSI": 28.0,
-      "Vol_rel": 2.25,
+      "Vol_rel": 2.35,
       "RS_Score": 42.0
     },
     {
@@ -856,7 +856,7 @@
       "SMA200": 130.35,
       "Dist_SMA200_%": -1.42,
       "RSI": 26.2,
-      "Vol_rel": 1.32,
+      "Vol_rel": 1.4,
       "RS_Score": 39.5
     },
     {
@@ -873,7 +873,7 @@
       "SMA200": 80.18,
       "Dist_SMA200_%": 2.52,
       "RSI": 41.4,
-      "Vol_rel": 2.99,
+      "Vol_rel": 3.0,
       "RS_Score": 38.3
     },
     {
@@ -890,7 +890,7 @@
       "SMA200": 24.74,
       "Dist_SMA200_%": 2.66,
       "RSI": 43.2,
-      "Vol_rel": 2.3,
+      "Vol_rel": 2.32,
       "RS_Score": 37.0
     },
     {
@@ -907,7 +907,7 @@
       "SMA200": 64.0,
       "Dist_SMA200_%": 12.93,
       "RSI": 53.7,
-      "Vol_rel": 0.94,
+      "Vol_rel": 0.95,
       "RS_Score": 35.8
     },
     {
@@ -924,7 +924,7 @@
       "SMA200": 13.28,
       "Dist_SMA200_%": -0.55,
       "RSI": 41.4,
-      "Vol_rel": 2.29,
+      "Vol_rel": 2.32,
       "RS_Score": 34.6
     },
     {
@@ -958,7 +958,7 @@
       "SMA200": 13.92,
       "Dist_SMA200_%": -6.88,
       "RSI": 35.8,
-      "Vol_rel": 0.73,
+      "Vol_rel": 0.74,
       "RS_Score": 32.1
     },
     {
@@ -992,7 +992,7 @@
       "SMA200": 425.89,
       "Dist_SMA200_%": -4.83,
       "RSI": 31.7,
-      "Vol_rel": 1.29,
+      "Vol_rel": 1.31,
       "RS_Score": 29.6
     },
     {
@@ -1026,7 +1026,7 @@
       "SMA200": 14.89,
       "Dist_SMA200_%": -4.56,
       "RSI": 38.2,
-      "Vol_rel": 0.55,
+      "Vol_rel": 0.6,
       "RS_Score": 27.2
     },
     {
@@ -1077,7 +1077,7 @@
       "SMA200": 118.22,
       "Dist_SMA200_%": -9.72,
       "RSI": 63.3,
-      "Vol_rel": 1.73,
+      "Vol_rel": 1.78,
       "RS_Score": 23.5
     },
     {
@@ -1213,7 +1213,7 @@
       "SMA200": 48.27,
       "Dist_SMA200_%": -13.71,
       "RSI": 35.7,
-      "Vol_rel": 1.18,
+      "Vol_rel": 1.19,
       "RS_Score": 13.6
     },
     {
@@ -1230,22 +1230,22 @@
       "SMA200": 145.3,
       "Dist_SMA200_%": -10.7,
       "RSI": 12.1,
-      "Vol_rel": 2.72,
+      "Vol_rel": 2.73,
       "RS_Score": 12.3
     },
     {
       "Ticker": "BIOX",
       "Sector": "Agro",
       "Precio": 0.36,
-      "Ret_1m_%": -19.9,
-      "Ret_3m_%": -5.2,
-      "Ret_6m_%": -3.1,
+      "Ret_1m_%": -20.0,
+      "Ret_3m_%": -5.3,
+      "Ret_6m_%": -3.2,
       "Sobre_SMA50": false,
       "Dist_Max52w_%": -82.3,
       "SMA50": 0.39,
-      "Dist_SMA50_%": -6.75,
+      "Dist_SMA50_%": -6.83,
       "SMA200": 0.64,
-      "Dist_SMA200_%": -43.52,
+      "Dist_SMA200_%": -43.57,
       "RSI": 37.9,
       "Vol_rel": 1.47,
       "RS_Score": 11.1
@@ -1264,7 +1264,7 @@
       "SMA200": 228.1,
       "Dist_SMA200_%": -14.09,
       "RSI": 44.2,
-      "Vol_rel": 1.35,
+      "Vol_rel": 1.36,
       "RS_Score": 9.9
     },
     {
@@ -1281,7 +1281,7 @@
       "SMA200": 85.48,
       "Dist_SMA200_%": -16.02,
       "RSI": 27.8,
-      "Vol_rel": 3.68,
+      "Vol_rel": 3.7,
       "RS_Score": 8.6
     },
     {
@@ -1315,7 +1315,7 @@
       "SMA200": 7.45,
       "Dist_SMA200_%": -22.56,
       "RSI": 25.9,
-      "Vol_rel": 0.96,
+      "Vol_rel": 0.97,
       "RS_Score": 6.2
     },
     {
@@ -1349,7 +1349,7 @@
       "SMA200": 4.36,
       "Dist_SMA200_%": -34.44,
       "RSI": 39.4,
-      "Vol_rel": 1.01,
+      "Vol_rel": 1.02,
       "RS_Score": 3.7
     },
     {
@@ -1383,7 +1383,7 @@
       "SMA200": 5.13,
       "Dist_SMA200_%": -28.6,
       "RSI": 17.4,
-      "Vol_rel": 0.68,
+      "Vol_rel": 0.7,
       "RS_Score": 1.2
     }
   ],
@@ -1445,13 +1445,13 @@
           {
             "ola": 4,
             "rango_%": 9.07,
-            "vol_prom": 113597794.0
+            "vol_prom": 113686690.0
           }
         ],
         "motivo": null
       },
       "RSI": 55.0,
-      "Vol_rel": 1.4,
+      "Vol_rel": 1.41,
       "SMA21": 218.62,
       "fecha_evento": "2026-09-18T03:21:28.851860+00:00",
       "Señal técnica": "COMPRA",
@@ -1494,7 +1494,7 @@
           {
             "ola": 4,
             "rango_%": 5.71,
-            "vol_prom": 27098334.0
+            "vol_prom": 27105000.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
@@ -1541,13 +1541,13 @@
           {
             "ola": 4,
             "rango_%": 2.79,
-            "vol_prom": 8302369.0
+            "vol_prom": 8307220.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
       },
       "RSI": 39.0,
-      "Vol_rel": 2.63,
+      "Vol_rel": 2.64,
       "SMA21": 354.33,
       "fecha_evento": "2026-09-17T17:45:03.300674+00:00",
       "Señal técnica": "MANTENER",
@@ -1591,13 +1591,13 @@
           {
             "ola": 4,
             "rango_%": 2.4,
-            "vol_prom": 32871294.0
+            "vol_prom": 32912550.0
           }
         ],
         "motivo": null
       },
       "RSI": 53.9,
-      "Vol_rel": 1.53,
+      "Vol_rel": 1.54,
       "SMA21": 713.13,
       "fecha_evento": "2026-09-18T13:53:55.679119+00:00",
       "Señal técnica": "COMPRA",
@@ -1640,7 +1640,7 @@
           {
             "ola": 4,
             "rango_%": 6.1,
-            "vol_prom": 11142295.0
+            "vol_prom": 11143420.0
           }
         ],
         "motivo": null
@@ -1688,7 +1688,7 @@
           {
             "ola": 4,
             "rango_%": 14.15,
-            "vol_prom": 3129098.0
+            "vol_prom": 3129530.0
           }
         ],
         "motivo": null
@@ -1734,7 +1734,7 @@
           {
             "ola": 4,
             "rango_%": 9.65,
-            "vol_prom": 4322381.0
+            "vol_prom": 4322500.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
@@ -1781,13 +1781,13 @@
           {
             "ola": 4,
             "rango_%": 6.76,
-            "vol_prom": 8121352.0
+            "vol_prom": 8121690.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
       },
       "RSI": 41.4,
-      "Vol_rel": 2.99,
+      "Vol_rel": 3.0,
       "SMA21": 85.83,
       "fecha_evento": "2026-09-18T13:53:55.679119+00:00",
       "Señal técnica": "MANTENER",
@@ -1828,13 +1828,13 @@
           {
             "ola": 4,
             "rango_%": 10.67,
-            "vol_prom": 52892054.0
+            "vol_prom": 53020790.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
       },
       "RSI": 41.4,
-      "Vol_rel": 2.29,
+      "Vol_rel": 2.32,
       "SMA21": 13.89,
       "fecha_evento": "2026-09-18T16:15:39.975676+00:00",
       "Señal técnica": "VENTA",
@@ -1872,13 +1872,13 @@
           {
             "ola": 4,
             "rango_%": 10.12,
-            "vol_prom": 31472619.0
+            "vol_prom": 31636530.0
           }
         ],
         "motivo": "solo 0 contracción(es), se necesitan 2"
       },
       "RSI": 38.2,
-      "Vol_rel": 0.55,
+      "Vol_rel": 0.6,
       "SMA21": 14.98,
       "fecha_evento": "2026-09-18T16:15:39.975676+00:00",
       "Señal técnica": "VENTA",
@@ -1919,7 +1919,7 @@
           {
             "ola": 4,
             "rango_%": 4.7,
-            "vol_prom": 9491184.0
+            "vol_prom": 9491200.0
           }
         ],
         "motivo": "solo 0 contracción(es), se necesitan 2"
@@ -1966,7 +1966,7 @@
           {
             "ola": 4,
             "rango_%": 4.96,
-            "vol_prom": 27826347.0
+            "vol_prom": 27826350.0
           }
         ],
         "motivo": null
@@ -2014,13 +2014,13 @@
           {
             "ola": 4,
             "rango_%": 6.21,
-            "vol_prom": 3184903.0
+            "vol_prom": 3203360.0
           }
         ],
         "motivo": "solo 0 contracción(es), se necesitan 2"
       },
       "RSI": 60.7,
-      "Vol_rel": 1.65,
+      "Vol_rel": 1.71,
       "SMA21": 9.14,
       "fecha_evento": "2026-09-18T20:09:07.878154+00:00",
       "Señal técnica": "VENTA",
@@ -2060,7 +2060,7 @@
           {
             "ola": 4,
             "rango_%": 8.39,
-            "vol_prom": 1644761.0
+            "vol_prom": 1645320.0
           }
         ],
         "motivo": null
@@ -2109,7 +2109,7 @@
           {
             "ola": 4,
             "rango_%": 7.56,
-            "vol_prom": 6579086.0
+            "vol_prom": 6579600.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
@@ -2158,7 +2158,7 @@
           {
             "ola": 4,
             "rango_%": 6.89,
-            "vol_prom": 1564770.0
+            "vol_prom": 1565430.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
@@ -2197,8 +2197,8 @@
   "contexto_macro": {
     "estable": true,
     "sin_datos": false,
-    "riesgo_pais": 515.0,
-    "variacion_riesgo_%": 1.0,
+    "riesgo_pais": 524.0,
+    "variacion_riesgo_%": 1.7,
     "brecha_cambiaria_%": 0.0,
     "motivos": []
   },
