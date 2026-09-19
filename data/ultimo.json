@@ -1,5 +1,5 @@
 {
-  "generado_utc": "2026-09-19T12:50:48.160157+00:00",
+  "generado_utc": "2026-09-19T23:01:07.518113+00:00",
   "proxima_corrida_estimada_utc": "2026-09-21T14:00:00+00:00",
   "tickers_ok": 81,
   "tickers_fallidos": [],
@@ -1505,53 +1505,6 @@
       "fecha_evento": "2026-09-18T13:53:55.679119+00:00",
       "Señal técnica": "COMPRA",
       "Recomendación final": "COMPRA",
-      "Ajustado por": "sin ajustes",
-      "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión."
-    },
-    {
-      "Ticker": "JPM",
-      "Sector": "Bancos",
-      "Tipo": "tecnico",
-      "Estado": "✅ Confirmado",
-      "Score": "2/7",
-      "Score_num": 2.0,
-      "Señales": [
-        "volumen fuerte",
-        "base ordenada"
-      ],
-      "VCP": {
-        "valido": false,
-        "contracciones_detectadas": 1,
-        "olas": [
-          {
-            "ola": 1,
-            "rango_%": 4.22,
-            "vol_prom": 7041810.0
-          },
-          {
-            "ola": 2,
-            "rango_%": 3.88,
-            "vol_prom": 5330190.0
-          },
-          {
-            "ola": 3,
-            "rango_%": 2.98,
-            "vol_prom": 5552290.0
-          },
-          {
-            "ola": 4,
-            "rango_%": 2.79,
-            "vol_prom": 8307220.0
-          }
-        ],
-        "motivo": "solo 1 contracción(es), se necesitan 2"
-      },
-      "RSI": 39.0,
-      "Vol_rel": 2.64,
-      "SMA21": 354.33,
-      "fecha_evento": "2026-09-17T17:45:03.300674+00:00",
-      "Señal técnica": "MANTENER",
-      "Recomendación final": "MANTENER",
       "Ajustado por": "sin ajustes",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión."
     },
