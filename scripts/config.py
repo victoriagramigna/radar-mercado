@@ -121,7 +121,8 @@ TICKERS = {
     # ticker real de NYSE/NASDAQ -- BA.C, BNY y NOKA eran códigos internos
     # de BYMA que yfinance no reconoce (mismo problema que tuvo Disney) ---
     "AAP": "Automotriz", "ABBV": "Salud", "ABT": "Salud", "ACN": "Tecnología",
-    "ADGO": "Agro", "ADI": "Tecnología", "ADP": "Tecnología", "AEG": "Fintech",
+    "AGRO": "Agro",            # Adecoagro -- ticker real de NYSE, no "ADGO" (código interno de BYMA)
+    "ADI": "Tecnología", "ADP": "Tecnología", "AEG": "Fintech",
     "AEM": "Materiales", "AI": "Tecnología", "AIG": "Fintech", "ALAB": "Tecnología",
     "ASR": "Transporte", "ASTS": "Tecnología", "AVY": "Materiales", "AXP": "Fintech",
     "AZN": "Salud", "BA": "Aeroespacial", "BAC": "Bancos", "BAK": "Materiales",
@@ -243,7 +244,7 @@ RATIOS_CEDEAR = {
     "SBUX": 12, "SHEL": 2, "SLB": 3, "SNAP": 1, "SNOW": 30, "TEAM": 47, "TJX": 22,
     "TTE": 3, "UAL": 5, "UNP": 20, "UPST": 5, "USB": 5, "VRTX": 101, "CVS": 15,
     # --- Tanda 2 (MP, NVO y O quedan afuera: sin ratio confirmado todavía) ---
-    "AAP": 14, "ABBV": 10, "ABT": 4, "ACN": 75, "ADGO": 1, "ADI": 15, "ADP": 6, "AEG": 1,
+    "AAP": 14, "ABBV": 10, "ABT": 4, "ACN": 75, "AGRO": 1, "ADI": 15, "ADP": 6, "AEG": 1,
     "AEM": 6, "AI": 5, "AIG": 5, "ALAB": 44, "ASR": 20, "ASTS": 15, "AVY": 18, "AXP": 15,
     "AZN": 4, "BA": 24, "BAC": 4, "BAK": 2, "BB": 3, "BCS": 1, "BHP": 2, "BIDU": 11,
     "BIIB": 13, "BK": 2, "BKNG": 700, "BKR": 7, "BMNR": 8, "BMY": 3, "BX": 30, "CAH": 3,
@@ -272,6 +273,7 @@ ALIAS_CEDEAR_DATA912 = {
     "BAC": "BA.C",   # Bank of America
     "BK": "BNY",     # Bank of New York Mellon
     "NOK": "NOKA",   # Nokia
+    "AGRO": "ADGO",  # Adecoagro
 }
 
 # --- Umbral para marcar un CEDEAR como "caro" o "barato" respecto a su valor teórico ---
