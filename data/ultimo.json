@@ -1,5 +1,5 @@
 {
-  "generado_utc": "2026-09-20T18:29:04.168475+00:00",
+  "generado_utc": "2026-09-20T18:37:47.004458+00:00",
   "proxima_corrida_estimada_utc": "2026-09-21T14:00:00+00:00",
   "tickers_ok": 266,
   "tickers_fallidos": [
@@ -12,15 +12,11 @@
       "motivo": "datos insuficientes (68 filas, se necesitan >=200)"
     },
     {
-      "ticker": "BK",
-      "motivo": "datos insuficientes (0 filas, se necesitan >=200)"
-    },
-    {
       "ticker": "EA",
       "motivo": "datos insuficientes (1 filas, se necesitan >=200)"
     }
   ],
-  "pct_fallidos": 1.5,
+  "pct_fallidos": 1.1,
   "corrida_degradada": false,
   "frescura_dato": {
     "fecha_ultimo_dato": "2026-09-18",
