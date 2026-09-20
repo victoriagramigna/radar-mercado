@@ -138,7 +138,13 @@ TICKERS = {
     "BMNR": "Tecnología", "BMY": "Salud", "BX": "Fintech", "CAH": "Salud",
     "CAR": "Consumo", "CCJ": "Energía", "CCL": "Consumo", "CDE": "Materiales",
     "CEG": "Energía", "COIN": "Fintech", "COP": "Energía", "DECK": "Consumo",
-    "DEO": "Consumo", "DOCU": "Tecnología", "EA": "Tecnología", "ECL": "Materiales",
+    "DEO": "Consumo", "DOCU": "Tecnología",
+    # "EA": "Tecnología",  # Electronic Arts -- sacado del universo: falló 3
+    # corridas seguidas en yfinance (mismo patrón que NTCO y BK -- ticker
+    # real y muy líquido, problema puntual y persistente de Yahoo con este
+    # símbolo). Si se quiere reintentar, sacarle el comentario a esta línea
+    # Y a la de RATIOS_CEDEAR más abajo.
+    "ECL": "Materiales",
     "EFX": "Fintech", "EQNR": "Energía", "ERIC": "Tecnología", "GLW": "Tecnología",
     "GRMN": "Tecnología", "GSK": "Salud", "GT": "Automotriz", "HAL": "Energía",
     "HD": "Consumo", "HDB": "Bancos", "HL": "Materiales", "HMC": "Automotriz",
@@ -256,7 +262,7 @@ RATIOS_CEDEAR = {
     "AZN": 4, "BA": 24, "BAC": 4, "BAK": 2, "BB": 3, "BCS": 1, "BHP": 2, "BIDU": 11,
     "BIIB": 13, "BKNG": 700, "BKR": 7, "BMNR": 8, "BMY": 3, "BX": 30, "CAH": 3,
     "CAR": 26, "CCJ": 25, "CCL": 3, "CDE": 1, "CEG": 45, "COIN": 27, "COP": 25, "DECK": 25,
-    "DEO": 6, "DOCU": 22, "EA": 14, "ECL": 56, "EFX": 16, "EQNR": 6, "ERIC": 2, "GLW": 4,
+    "DEO": 6, "DOCU": 22, "ECL": 56, "EFX": 16, "EQNR": 6, "ERIC": 2, "GLW": 4,
     "GRMN": 3, "GSK": 4, "GT": 2, "HAL": 2, "HD": 32, "HDB": 2, "HL": 1, "HMC": 1,
     "HMY": 1, "HOG": 3, "HON": 8, "HPQ": 1, "HSBC": 2, "HSY": 21, "HUT": 1, "HWM": 1,
     "IBN": 1, "INFY": 1, "ING": 3, "IP": 4, "JCI": 2, "JD": 4, "KB": 2, "KMB": 6,
