@@ -59,7 +59,8 @@
         .tab-btn.active { color: #E0A458; }
         .tab-btn .tab-dot { display: none; }
         .tab-btn.active .tab-dot { display: inline-block; }
-        body { padding-bottom: 88px; } /* deja lugar para la barra fija de abajo */
+        body { padding-bottom: 120px; } /* deja lugar de sobra para la barra fija de abajo */
+        .tab-content { padding-bottom: 24px; } /* margen extra al final de cada pestaña */
     </style>
 </head>
 <body class="bg-base text-gray-300 font-sans p-4 md:p-8 min-h-screen relative">
@@ -904,12 +905,35 @@
                 }
 
                 const alertaActiva = alertas.find(a => a?.Ticker?.toUpperCase() === p.ticker.toUpperCase());
-                const stopHtml = alertaActiva?.Stop_sugerido != null
-                    ? `<div class="text-accent text-xs mt-1">STOP SUGERIDO (aprox.): $${alertaActiva.Stop_sugerido}</div>`
-                    : `<div class="text-gray-600 text-[10px] mt-1">Sin alerta activa hoy -- sin stop calculado.</div>`;
+                const stop = alertaActiva?.Stop_sugerido;
+
+                let stopHtml = `<div class="text-gray-600 text-[10px] mt-1">Sin alerta activa hoy -- sin stop calculado.</div>`;
+                let cardBorder = 'border-surface';
+                let cardBg = 'bg-surface';
+                let legendHtml = '';
+
+                if (stop != null) {
+                    stopHtml = `<div class="text-accent text-xs mt-1">STOP SUGERIDO (aprox.): $${stop}</div>`;
+
+                    if (precioActual != null) {
+                        // Distancia del precio actual al stop, en % -- positivo = todavía arriba del stop
+                        const distStopPct = ((precioActual - stop) / stop) * 100;
+                        const UMBRAL_CERCA_STOP_PCT = 2; // a esta distancia o menos, se considera "atento"
+
+                        if (distStopPct <= 0) {
+                            cardBorder = 'border-neg';
+                            cardBg = 'bg-neg/10';
+                            legendHtml = `<div class="mt-2 bg-neg/20 border border-neg text-neg font-bold text-xs px-2 py-1.5 rounded-sm">🛑 YA TOCÓ EL STOP SUGERIDO</div>`;
+                        } else if (distStopPct <= UMBRAL_CERCA_STOP_PCT) {
+                            cardBorder = 'border-accent';
+                            cardBg = 'bg-accent/10';
+                            legendHtml = `<div class="mt-2 bg-accent/20 border border-accent text-accent font-bold text-xs px-2 py-1.5 rounded-sm">⚠️ ATENTO AL STOP LOSS (a ${distStopPct.toFixed(1)}%)</div>`;
+                        }
+                    }
+                }
 
                 return `
-                    <div class="bg-surface p-4 rounded-sm border border-surface font-mono text-sm">
+                    <div class="${cardBg} p-4 rounded-sm border ${cardBorder} font-mono text-sm">
                         <div class="flex justify-between items-start">
                             <div>
                                 <span class="font-bold text-white text-lg">${p.ticker}</span>
@@ -919,6 +943,7 @@
                         </div>
                         <div class="mt-2">${variacionHtml}</div>
                         ${stopHtml}
+                        ${legendHtml}
                     </div>`;
             }).join('');
         }
