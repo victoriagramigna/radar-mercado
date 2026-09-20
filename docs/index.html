@@ -76,6 +76,13 @@
                 <button id="ticker-search-btn" class="bg-base hover:bg-accent hover:text-base text-gray-400 px-3 py-1.5 transition-colors font-mono text-xs font-bold rounded-sm border border-gray-800">BUSCAR</button>
             </div>
 
+            <!-- Botón de escaneo manual -->
+            <a href="https://github.com/victoriagramigna/radar-mercado/actions/workflows/radar.yml"
+               target="_blank" rel="noopener"
+               class="flex items-center gap-2 bg-accent text-base hover:bg-white transition-colors px-4 py-2 rounded-sm font-mono text-xs font-bold uppercase whitespace-nowrap">
+                🔄 Correr escaneo ahora
+            </a>
+
             <!-- 6. Calculadora CCL Manual -->
             <div class="bg-surface border border-surface p-3 rounded-sm flex flex-col sm:flex-row items-start sm:items-center gap-4 font-mono text-xs">
                 <div class="flex items-center gap-2">
@@ -125,6 +132,12 @@
             <section>
                 <h2 class="text-accent uppercase text-sm font-bold tracking-widest mb-4 border-b border-surface pb-1">Rotación Sectorial (RS)</h2>
                 <div id="sector-rotation" class="bg-surface p-5 space-y-5 rounded-sm border border-surface"></div>
+            </section>
+
+            <!-- Panel CEDEAR caro/barato -->
+            <section>
+                <h2 class="text-accent uppercase text-sm font-bold tracking-widest mb-4 border-b border-surface pb-1">CEDEAR caro/barato</h2>
+                <div id="cedears-panel" class="bg-surface p-4 space-y-1 rounded-sm border border-surface max-h-[400px] overflow-y-auto custom-scrollbar"></div>
             </section>
         </div>
     </div>
@@ -317,6 +330,37 @@
             }
         });
 
+        function renderCedearPanel(data) {
+            const container = document.getElementById('cedears-panel');
+            const info = data?.cedears_pricing;
+            if (!info || info.sin_datos) {
+                container.innerHTML = '<div class="text-gray-500 font-mono text-xs p-2">Sin datos hoy (falló data912.com).</div>';
+                return;
+            }
+            const items = (info.cedears ?? []).filter(c => !c.sin_datos);
+            if (items.length === 0) {
+                container.innerHTML = '<div class="text-gray-500 font-mono text-xs p-2">Sin datos disponibles.</div>';
+                return;
+            }
+            items.sort((a, b) => Math.abs(b['Brecha_%']) - Math.abs(a['Brecha_%']));
+
+            container.innerHTML = items.map(c => {
+                const brecha = c['Brecha_%'];
+                const esCaro = brecha > 0;
+                const color = esCaro ? 'text-neg border-neg' : 'text-pos border-pos';
+                return `
+                    <div class="flex justify-between items-center py-2 border-b border-gray-800 last:border-0">
+                        <div>
+                            <div class="font-mono text-sm font-bold text-white">${c.Ticker}</div>
+                            <div class="font-mono text-[10px] text-gray-500">real $${c.Precio_real_ARS.toLocaleString('es-AR')} · teórico $${c.Precio_teorico_ARS.toLocaleString('es-AR')}</div>
+                        </div>
+                        <span class="border ${color} px-2 py-1 rounded-sm font-mono text-xs font-bold whitespace-nowrap">
+                            ${esCaro ? 'CARO' : 'BARATO'} ${brecha > 0 ? '+' : ''}${brecha}%
+                        </span>
+                    </div>`;
+            }).join('');
+        }
+
         function renderDashboard(data) {
             // Timestamp y 24hs format
             const fechaGenerado = data?.generado_utc;
@@ -339,6 +383,7 @@
             currentAutoCcl = data?.cedears_pricing?.ccl ?? null;
             document.getElementById('ccl-auto').textContent = currentAutoCcl ? `$${currentAutoCcl.toFixed(2)}` : '—';
             document.getElementById('ccl-manual').dispatchEvent(new Event('input'));
+            renderCedearPanel(data);
 
             // Renderizado de Badges (Sumando la Brecha Cambiaria)
             const badgesHtml = [];

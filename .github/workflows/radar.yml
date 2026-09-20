@@ -5,7 +5,7 @@ on:
   schedule:
     - cron: '15 21 * * 1-5'
     # Corridas livianas intradiarias, cada 1h en horario de mercado (14-21 UTC ≈ 11-18 ARG)
-    - cron: '0 14-21 * * 1-5'
+    - cron: '7 14-21 * * 1-5'
 
   # Permite correrlo a mano desde la pestaña "Actions" de GitHub -- IMPORTANTE:
   # usar esto para probar el pipeline completo antes de confiar en el cron.
