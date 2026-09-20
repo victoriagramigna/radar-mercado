@@ -148,7 +148,7 @@
         </div>
         <!-- 5. Detalle por Sector (Ranking) -->
             <section>
-                <h2 class="text-accent uppercase text-sm font-bold tracking-widest mb-4 border-b border-surface pb-1">Universo Técnico</h2>
+                <h2 class="text-accent uppercase text-sm font-bold tracking-widest mb-4 border-b border-surface pb-1">Universo Técnico <span id="universo-total-count" class="text-gray-500 normal-case"></span></h2>
                 <div id="sectors-detail" class="space-y-6"></div>
             </section>
     </div>
@@ -688,6 +688,7 @@
 
             // Renderizado de Detalle por Sector
             const sectorsDetail = document.getElementById('sectors-detail');
+            document.getElementById('universo-total-count').textContent = `(${rankingArray.length})`;
             if (rankingArray.length === 0) {
                 sectorsDetail.innerHTML = '<div class="text-gray-500 font-mono text-sm p-4 border border-dashed border-surface rounded-sm">Universo técnico vacío.</div>';
             } else {
@@ -755,11 +756,12 @@
 
                     const sectorScoreRaw = rsPorSector[sector];
                     const sectorScoreDisplay = typeof sectorScoreRaw === 'number' ? sectorScoreRaw.toFixed(1) : '—';
+                    const cantidadEnSector = groupedBySector[sector].length;
 
                     return `
                         <div class="bg-surface p-4 rounded-sm border border-surface">
                             <h3 class="font-bold text-white mb-3 flex items-center justify-between uppercase">
-                                ${sector}
+                                <span>${sector} <span class="text-gray-500 normal-case font-mono text-xs">(${cantidadEnSector})</span></span>
                                 <span class="text-xs font-mono text-accent bg-base px-2 py-1 rounded-sm">RS ${sectorScoreDisplay}</span>
                             </h3>
                             <div class="max-h-[280px] overflow-y-auto pr-2 custom-scrollbar">

@@ -105,7 +105,8 @@ TICKERS = {
     # técnico (RS Score, alertas) pero no al panel de CEDEAR caro/barato.
     "BP": "Energía", "CAT": "Materiales", "CL": "Consumo", "COST": "Consumo",
     "CRM": "Tecnología", "CRWD": "Tecnología", "DE": "Materiales", "DHR": "Materiales",
-    "DISN": "Tecnología", "EBAY": "Consumo", "ETSY": "Consumo", "GS": "Bancos",
+    "DIS": "Tecnología",       # Walt Disney -- ticker real de NYSE, no "DISN" (código interno de BYMA)
+    "EBAY": "Consumo", "ETSY": "Consumo", "GS": "Bancos",
     "IBM": "Tecnología", "INTC": "Tecnología", "ISRG": "Salud", "MA": "Fintech",
     "MCD": "Consumo", "MDLZ": "Consumo", "META": "Tecnología", "MMM": "Materiales",
     "MRNA": "Salud", "MRVL": "Tecnología", "MU": "Tecnología", "NKE": "Consumo",
@@ -202,7 +203,7 @@ RATIOS_CEDEAR = {
     # --- Tanda 1 del listado completo (ratios oficiales BYMA, PDF actualizado 3/2/2026,
     # salvo CRWD que se sumó a BYMA después de esa fecha -- ratio de fuentes cruzadas) ---
     "BP": 5, "CAT": 20, "CL": 3, "COST": 48, "CRM": 18, "CRWD": 79, "DE": 40,
-    "DHR": 54, "DISN": 12, "EBAY": 2, "ETSY": 16, "GS": 13, "IBM": 15, "INTC": 5,
+    "DHR": 54, "DIS": 12, "EBAY": 2, "ETSY": 16, "GS": 13, "IBM": 15, "INTC": 5,
     "ISRG": 90, "MA": 33, "MCD": 24, "MDLZ": 15, "META": 24, "MMM": 10, "MRNA": 19,
     "MRVL": 14, "MU": 5, "NKE": 12, "NOW": 172, "ORCL": 3, "OXY": 5, "PANW": 50,
     "PATH": 2, "PG": 15, "PINS": 7, "PSX": 6, "RBLX": 2, "ROKU": 13, "ROST": 4,
