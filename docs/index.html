@@ -53,39 +53,42 @@
         
         /* Tooltip custom para el Universo Técnico */
         .ticker-row { position: relative; cursor: crosshair; }
+
+        /* Solapas -- barra inferior fija + contenido que se muestra/oculta */
+        .tab-content.hidden-tab { display: none; }
+        .tab-btn.active { color: #E0A458; }
+        .tab-btn .tab-dot { display: none; }
+        .tab-btn.active .tab-dot { display: inline-block; }
+        body { padding-bottom: 88px; } /* deja lugar para la barra fija de abajo */
     </style>
 </head>
 <body class="bg-base text-gray-300 font-sans p-4 md:p-8 min-h-screen relative">
-    
+
     <!-- Banner de errores de fetch -->
     <div id="error-message" class="hidden bg-neg/20 text-neg border border-neg p-4 mb-6 font-mono text-sm rounded-sm"></div>
 
     <!-- Banner de corrida degradada (falló una porción grande del universo -- RS Score no confiable) -->
     <div id="degraded-banner" class="hidden bg-neg/20 text-neg border border-neg p-4 mb-6 font-mono text-sm rounded-sm"></div>
 
-    <!-- 1. Encabezado -->
-    <header class="mb-8 border-b border-surface pb-4 flex flex-col xl:flex-row justify-between xl:items-end gap-6">
+    <!-- Encabezado persistente: título, T-0, badges -- visible en todas las solapas -->
+    <header class="mb-6 border-b border-surface pb-4">
         <div>
             <h1 class="text-3xl font-bold text-white tracking-tight uppercase">Radar de Mercado</h1>
             <div id="last-update" class="font-mono text-sm text-gray-500 mt-1 leading-relaxed">Sincronizando datos...</div>
             <!-- Badges de estado -->
             <div id="badges" class="flex flex-wrap gap-2 font-mono text-xs uppercase mt-3"></div>
         </div>
+    </header>
 
+    <!-- ===== SOLAPA: INICIO ===== -->
+    <div id="tab-inicio" class="tab-content space-y-6">
         <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-            <!-- 2. Buscador de Ticker -->
-            <div class="flex items-center bg-surface border border-surface focus-within:border-accent transition-colors rounded-sm overflow-hidden p-1 shadow-inner">
-                <input type="text" id="ticker-search" class="bg-transparent text-white w-24 sm:w-32 px-3 py-1.5 focus:outline-none uppercase font-mono text-sm placeholder-gray-600" placeholder="TICKER">
-                <button id="ticker-search-btn" class="bg-base hover:bg-accent hover:text-base text-gray-400 px-3 py-1.5 transition-colors font-mono text-xs font-bold rounded-sm border border-gray-800">BUSCAR</button>
-            </div>
-
             <!-- Botón de escaneo manual -->
             <a href="https://github.com/victoriagramigna/radar-mercado/actions/workflows/radar.yml"
                target="_blank" rel="noopener"
                class="flex items-center gap-2 bg-accent text-base hover:bg-white transition-colors px-4 py-2 rounded-sm font-mono text-xs font-bold uppercase whitespace-nowrap">
                 🔄 Correr escaneo ahora
             </a>
-
             <!-- 6. Calculadora CCL Manual -->
             <div class="bg-surface border border-surface p-3 rounded-sm flex flex-col sm:flex-row items-start sm:items-center gap-4 font-mono text-xs">
                 <div class="flex items-center gap-2">
@@ -103,12 +106,17 @@
                 </div>
             </div>
         </div>
-    </header>
 
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
-        <div class="lg:col-span-2 space-y-6">
-            
-            <!-- 3. Sección Alertas (Con Scroll y Contador) -->
+        <!-- Movimientos del día -->
+        <section>
+            <h2 class="text-accent uppercase text-sm font-bold tracking-widest mb-4 border-b border-surface pb-1">Movimientos del día</h2>
+            <div id="movimientos-dia" class="bg-surface p-4 space-y-2 rounded-sm border border-surface"></div>
+        </section>
+    </div>
+
+    <!-- ===== SOLAPA: ALERTAS ===== -->
+    <div id="tab-alertas" class="tab-content hidden-tab">
+        <!-- 3. Sección Alertas (Con Scroll y Contador) -->
             <section>
                 <div class="flex justify-between items-end border-b border-surface pb-1 mb-4">
                     <h2 id="alert-title" class="text-accent uppercase text-sm font-bold tracking-widest">Alertas Activas (0)</h2>
@@ -116,34 +124,117 @@
                 <!-- 4. Contenedor de Alertas -->
                 <div id="alerts-container" class="grid grid-cols-1 gap-4 max-h-[360px] overflow-y-auto pr-2 custom-scrollbar"></div>
             </section>
+    </div>
 
-            <!-- 5. Detalle por Sector (Ranking) -->
-            <section>
-                <h2 class="text-accent uppercase text-sm font-bold tracking-widest mb-4 border-b border-surface pb-1">Universo Técnico</h2>
-                <div id="sectors-detail" class="space-y-6"></div>
-            </section>
-        </div>
-
-        <div class="space-y-6">
+    <!-- ===== SOLAPA: UNIVERSO ===== -->
+    <div id="tab-universo" class="tab-content hidden-tab space-y-6">
+        <!-- 2. Buscador de Ticker -->
+            <div class="flex items-center bg-surface border border-surface focus-within:border-accent transition-colors rounded-sm overflow-hidden p-1 shadow-inner">
+                <input type="text" id="ticker-search" class="bg-transparent text-white w-24 sm:w-32 px-3 py-1.5 focus:outline-none uppercase font-mono text-sm placeholder-gray-600" placeholder="TICKER">
+                <button id="ticker-search-btn" class="bg-base hover:bg-accent hover:text-base text-gray-400 px-3 py-1.5 transition-colors font-mono text-xs font-bold rounded-sm border border-gray-800">BUSCAR</button>
+            </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <!-- Sección Nueva: Top 10 -->
             <section>
                 <h2 class="text-accent uppercase text-sm font-bold tracking-widest mb-4 border-b border-surface pb-1">Top 10 Fuerza Relativa</h2>
                 <div id="top10-container" class="bg-surface p-4 space-y-3 rounded-sm border border-surface"></div>
             </section>
-
             <!-- 4. Rotación Sectorial -->
             <section>
                 <h2 class="text-accent uppercase text-sm font-bold tracking-widest mb-4 border-b border-surface pb-1">Rotación Sectorial (RS)</h2>
                 <div id="sector-rotation" class="bg-surface p-5 space-y-5 rounded-sm border border-surface"></div>
             </section>
+        </div>
+        <!-- 5. Detalle por Sector (Ranking) -->
+            <section>
+                <h2 class="text-accent uppercase text-sm font-bold tracking-widest mb-4 border-b border-surface pb-1">Universo Técnico</h2>
+                <div id="sectors-detail" class="space-y-6"></div>
+            </section>
+    </div>
 
-            <!-- Panel CEDEAR caro/barato -->
+    <!-- ===== SOLAPA: CEDEARS ===== -->
+    <div id="tab-cedears" class="tab-content hidden-tab">
+        <!-- Panel CEDEAR caro/barato -->
             <section>
                 <h2 class="text-accent uppercase text-sm font-bold tracking-widest mb-4 border-b border-surface pb-1">CEDEAR caro/barato</h2>
                 <div id="cedears-panel" class="bg-surface p-4 space-y-1 rounded-sm border border-surface max-h-[400px] overflow-y-auto custom-scrollbar"></div>
             </section>
-        </div>
     </div>
+
+    <!-- ===== SOLAPA: HISTORIAL ===== -->
+    <div id="tab-historial" class="tab-content hidden-tab space-y-4">
+        <div class="flex items-center gap-2">
+            <input type="text" id="historial-filtro" class="bg-surface border border-surface focus-within:border-accent text-white px-3 py-2 rounded-sm font-mono text-sm uppercase placeholder-gray-600 flex-1" placeholder="Filtrar por ticker (opcional)">
+        </div>
+        <div id="historial-container" class="space-y-2"></div>
+    </div>
+
+    <!-- ===== SOLAPA: MI CARTERA ===== -->
+    <div id="tab-cartera" class="tab-content hidden-tab space-y-6">
+        <section>
+            <h2 class="text-accent uppercase text-sm font-bold tracking-widest mb-4 border-b border-surface pb-1">Anotar una compra</h2>
+            <form id="cartera-form" class="bg-surface p-4 rounded-sm border border-surface grid grid-cols-2 gap-3 font-mono text-sm">
+                <div class="col-span-1">
+                    <label class="text-gray-500 text-[10px] uppercase block mb-1">Ticker</label>
+                    <input type="text" id="cartera-ticker" required class="w-full bg-base border border-gray-700 focus:border-accent rounded-sm px-2 py-1.5 text-white uppercase" placeholder="NVDA">
+                </div>
+                <div class="col-span-1">
+                    <label class="text-gray-500 text-[10px] uppercase block mb-1">Precio de compra (USD)</label>
+                    <input type="number" step="0.01" id="cartera-precio" required class="w-full bg-base border border-gray-700 focus:border-accent rounded-sm px-2 py-1.5 text-white" placeholder="230.36">
+                </div>
+                <div class="col-span-1">
+                    <label class="text-gray-500 text-[10px] uppercase block mb-1">Cantidad (opcional)</label>
+                    <input type="number" step="any" id="cartera-cantidad" class="w-full bg-base border border-gray-700 focus:border-accent rounded-sm px-2 py-1.5 text-white" placeholder="10">
+                </div>
+                <div class="col-span-1">
+                    <label class="text-gray-500 text-[10px] uppercase block mb-1">Fecha de compra</label>
+                    <input type="date" id="cartera-fecha" required class="w-full bg-base border border-gray-700 focus:border-accent rounded-sm px-2 py-1.5 text-white">
+                </div>
+                <button type="submit" class="col-span-2 bg-accent text-base font-bold uppercase text-xs py-2 rounded-sm hover:bg-white transition-colors mt-2">Agregar</button>
+            </form>
+            <div class="font-mono text-[10px] text-gray-600 mt-2">Se guarda solo en este navegador (no se sube al repo). Informativo -- no es una orden real.</div>
+        </section>
+
+        <section>
+            <h2 class="text-accent uppercase text-sm font-bold tracking-widest mb-4 border-b border-surface pb-1">Posiciones</h2>
+            <div id="cartera-container" class="space-y-3"></div>
+        </section>
+    </div>
+
+    <!-- Barra de navegación inferior fija -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-surface border-t border-gray-800 grid grid-cols-6 z-40 text-gray-500">
+        
+        <button class="tab-btn active flex flex-col items-center gap-1 py-2" data-tab="inicio" onclick="switchTab('inicio')">
+            <span class="tab-dot w-1 h-1 rounded-full bg-accent absolute -mt-3"></span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+            <span class="text-[9px] font-mono uppercase">Inicio</span>
+        </button>
+        <button class="tab-btn  flex flex-col items-center gap-1 py-2" data-tab="alertas" onclick="switchTab('alertas')">
+            <span class="tab-dot w-1 h-1 rounded-full bg-accent absolute -mt-3"></span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path></svg>
+            <span class="text-[9px] font-mono uppercase">Alertas</span>
+        </button>
+        <button class="tab-btn  flex flex-col items-center gap-1 py-2" data-tab="universo" onclick="switchTab('universo')">
+            <span class="tab-dot w-1 h-1 rounded-full bg-accent absolute -mt-3"></span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"></path></svg>
+            <span class="text-[9px] font-mono uppercase">Universo</span>
+        </button>
+        <button class="tab-btn  flex flex-col items-center gap-1 py-2" data-tab="cedears" onclick="switchTab('cedears')">
+            <span class="tab-dot w-1 h-1 rounded-full bg-accent absolute -mt-3"></span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            <span class="text-[9px] font-mono uppercase">CEDEARs</span>
+        </button>
+        <button class="tab-btn  flex flex-col items-center gap-1 py-2" data-tab="historial" onclick="switchTab('historial')">
+            <span class="tab-dot w-1 h-1 rounded-full bg-accent absolute -mt-3"></span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20zM12 6v6l4 2"></path></svg>
+            <span class="text-[9px] font-mono uppercase">Historial</span>
+        </button>
+        <button class="tab-btn  flex flex-col items-center gap-1 py-2" data-tab="cartera" onclick="switchTab('cartera')">
+            <span class="tab-dot w-1 h-1 rounded-full bg-accent absolute -mt-3"></span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7h20v14H2zM16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            <span class="text-[9px] font-mono uppercase">Cartera</span>
+        </button>
+    </nav>
 
     <!-- Modal de Detalle de Ticker Flotante -->
     <div id="ticker-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-base/90 p-4 backdrop-blur-sm transition-opacity">
@@ -391,6 +482,8 @@
             document.getElementById('ccl-auto').textContent = currentAutoCcl ? `$${currentAutoCcl.toFixed(2)}` : '—';
             document.getElementById('ccl-manual').dispatchEvent(new Event('input'));
             renderCedearPanel(data);
+            renderMovimientosDia(data);
+            renderCartera();
 
             // Banner de corrida degradada (mucho de la fuente de datos falló)
             const degradedEl = document.getElementById('degraded-banner');
@@ -675,8 +768,189 @@
             }
         }
 
+        // ============ SOLAPAS ============
+        function switchTab(name) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden-tab'));
+            document.getElementById(`tab-${name}`).classList.remove('hidden-tab');
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.tab === name);
+            });
+            if (name === 'historial' && historialData === null) fetchHistorialData();
+            window.scrollTo({ top: 0, behavior: 'instant' });
+        }
+
+        // ============ MOVIMIENTOS DEL DÍA (Inicio) ============
+        function renderMovimientosDia(data) {
+            const container = document.getElementById('movimientos-dia');
+            const movs = data?.movimientos_dia ?? [];
+            if (movs.length === 0) {
+                container.innerHTML = '<div class="text-gray-500 font-mono text-xs p-2">Sin movimientos fuertes hoy.</div>';
+                return;
+            }
+            container.innerHTML = movs.map(m => {
+                const varPct = m?.['Variacion_dia_%'] ?? 0;
+                const esPos = varPct >= 0;
+                const color = esPos ? 'text-pos' : 'text-neg';
+                return `
+                    <div class="flex justify-between items-center py-2 border-b border-gray-800 last:border-0 font-mono text-sm">
+                        <div>
+                            <span class="font-bold text-white">${m?.Ticker ?? '—'}</span>
+                            <span class="text-[10px] text-gray-500 uppercase ml-2">${m?.Sector ?? ''}</span>
+                        </div>
+                        <span class="font-bold ${color}">${esPos ? '+' : ''}${varPct}%</span>
+                    </div>`;
+            }).join('');
+        }
+
+        // ============ HISTORIAL (bitácora de eventos) ============
+        const LOG_URL = 'https://raw.githubusercontent.com/victoriagramigna/radar-mercado/main/data/log_alertas.jsonl';
+        let historialData = null; // null = todavía no se pidió; [] = se pidió y vino vacío/404
+
+        async function fetchHistorialData() {
+            const container = document.getElementById('historial-container');
+            container.innerHTML = '<div class="text-gray-500 font-mono text-xs p-2">Cargando bitácora...</div>';
+            try {
+                const resp = await fetch(`${LOG_URL}?t=${Date.now()}`, { cache: 'no-store' });
+                if (!resp.ok) {
+                    // 404 es esperable si la bitácora recién arrancó y todavía no tiene ni un evento
+                    historialData = [];
+                    renderHistorial();
+                    return;
+                }
+                const texto = await resp.text();
+                historialData = texto.split('\n').filter(l => l.trim()).map(l => {
+                    try { return JSON.parse(l); } catch (e) { return null; }
+                }).filter(e => e !== null);
+                renderHistorial();
+            } catch (error) {
+                historialData = [];
+                container.innerHTML = '<div class="text-gray-500 font-mono text-xs p-2">No se pudo cargar la bitácora todavía.</div>';
+            }
+        }
+
+        function renderHistorial() {
+            const container = document.getElementById('historial-container');
+            const filtro = document.getElementById('historial-filtro').value.trim().toUpperCase();
+            let eventos = [...(historialData ?? [])];
+            if (filtro) eventos = eventos.filter(e => e?.ticker?.toUpperCase().includes(filtro));
+            eventos.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+
+            if (eventos.length === 0) {
+                container.innerHTML = `<div class="text-gray-500 font-mono text-xs p-4 border border-dashed border-surface rounded-sm">
+                    ${filtro ? 'Sin eventos para ese ticker.' : 'Todavía no hay eventos guardados -- la bitácora graba cada alerta NUEVA a partir de ahora, así que se va a ir llenando con el tiempo.'}
+                </div>`;
+                return;
+            }
+
+            container.innerHTML = eventos.map(e => {
+                const fecha = e.timestamp ? new Date(e.timestamp) : null;
+                const fechaStr = fecha ? `${fecha.toLocaleDateString('es-AR', {day:'2-digit',month:'2-digit',year:'numeric'})} · ${fecha.toLocaleTimeString('es-AR', {hour12:false,hour:'2-digit',minute:'2-digit'})}` : '—';
+                const rec = e.recomendacion ?? '—';
+                let recColor = 'text-accent border-accent';
+                if (rec === 'COMPRA') recColor = 'text-pos border-pos';
+                if (rec === 'VENTA') recColor = 'text-neg border-neg';
+                return `
+                    <div class="bg-surface p-3 rounded-sm border border-surface flex justify-between items-center font-mono text-sm">
+                        <div>
+                            <div><span class="font-bold text-white">${e.ticker ?? '—'}</span> <span class="text-[10px] text-gray-500 uppercase ml-1">${e.sector ?? ''}</span></div>
+                            <div class="text-xs text-gray-400 mt-1">${e.estado ?? '—'}</div>
+                            <div class="text-[10px] text-gray-600 mt-1">${fechaStr}</div>
+                        </div>
+                        <div class="text-right">
+                            <span class="border ${recColor} px-2 py-1 rounded-sm text-xs font-bold">${rec}</span>
+                            ${e.radar_score != null ? `<div class="text-[10px] text-gray-500 mt-1">Radar Score ${e.radar_score}</div>` : ''}
+                        </div>
+                    </div>`;
+            }).join('');
+        }
+
+        document.getElementById('historial-filtro').addEventListener('input', () => {
+            if (historialData !== null) renderHistorial();
+        });
+
+        // ============ MI CARTERA ============
+        function cargarCartera() {
+            try {
+                return JSON.parse(localStorage.getItem('mi_cartera') || '[]');
+            } catch (e) {
+                return [];
+            }
+        }
+
+        function guardarCartera(posiciones) {
+            localStorage.setItem('mi_cartera', JSON.stringify(posiciones));
+        }
+
+        function renderCartera() {
+            const container = document.getElementById('cartera-container');
+            const posiciones = cargarCartera();
+
+            if (posiciones.length === 0) {
+                container.innerHTML = '<div class="text-gray-500 font-mono text-xs p-4 border border-dashed border-surface rounded-sm">Todavía no anotaste ninguna compra.</div>';
+                return;
+            }
+
+            const ranking = currentRadarData?.ranking ?? [];
+            const alertas = currentRadarData?.alertas ?? [];
+
+            container.innerHTML = posiciones.map((p, idx) => {
+                const tickerData = ranking.find(t => t?.Ticker?.toUpperCase() === p.ticker.toUpperCase());
+                const precioActual = tickerData?.Precio;
+                let variacionHtml = '<span class="text-gray-500">sin precio actual disponible</span>';
+                if (precioActual != null && p.precio > 0) {
+                    const varPct = ((precioActual / p.precio - 1) * 100).toFixed(1);
+                    const color = varPct >= 0 ? 'text-pos' : 'text-neg';
+                    variacionHtml = `<span class="${color} font-bold">${varPct >= 0 ? '+' : ''}${varPct}%</span> (actual: $${precioActual.toFixed(2)})`;
+                }
+
+                const alertaActiva = alertas.find(a => a?.Ticker?.toUpperCase() === p.ticker.toUpperCase());
+                const stopHtml = alertaActiva?.Stop_sugerido != null
+                    ? `<div class="text-accent text-xs mt-1">STOP SUGERIDO (aprox.): $${alertaActiva.Stop_sugerido}</div>`
+                    : `<div class="text-gray-600 text-[10px] mt-1">Sin alerta activa hoy -- sin stop calculado.</div>`;
+
+                return `
+                    <div class="bg-surface p-4 rounded-sm border border-surface font-mono text-sm">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <span class="font-bold text-white text-lg">${p.ticker}</span>
+                                <div class="text-xs text-gray-500 mt-1">Compra: $${p.precio} ${p.cantidad ? `× ${p.cantidad}` : ''} el ${p.fecha}</div>
+                            </div>
+                            <button onclick="eliminarPosicion(${idx})" class="text-gray-600 hover:text-neg text-xs">✕ quitar</button>
+                        </div>
+                        <div class="mt-2">${variacionHtml}</div>
+                        ${stopHtml}
+                    </div>`;
+            }).join('');
+        }
+
+        function eliminarPosicion(idx) {
+            const posiciones = cargarCartera();
+            posiciones.splice(idx, 1);
+            guardarCartera(posiciones);
+            renderCartera();
+        }
+
+        document.getElementById('cartera-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const ticker = document.getElementById('cartera-ticker').value.trim().toUpperCase();
+            const precio = parseFloat(document.getElementById('cartera-precio').value);
+            const cantidad = document.getElementById('cartera-cantidad').value || null;
+            const fecha = document.getElementById('cartera-fecha').value;
+            if (!ticker || !precio || !fecha) return;
+
+            const posiciones = cargarCartera();
+            posiciones.push({ ticker, precio, cantidad, fecha });
+            guardarCartera(posiciones);
+            renderCartera();
+            e.target.reset();
+        });
+
+        // Fecha de hoy por defecto en el form de Mi Cartera
+        document.getElementById('cartera-fecha').valueAsDate = new Date();
+
         // Refresco automático
         fetchRadarData();
+        renderCartera();
         setInterval(fetchRadarData, 5 * 60 * 1000); // 300.000 milisegundos
     </script>
 </body>
