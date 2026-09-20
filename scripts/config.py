@@ -100,6 +100,22 @@ TICKERS = {
     "PLD": "Real Estate",      # Prologis -- REIT de depósitos y logística
     "LIN": "Materiales",       # Linde -- gases industriales
     "SHW": "Materiales",       # Sherwin-Williams -- pinturas
+    # --- Tanda 1 del listado completo de CEDEARs de tu bróker (sept. 2026) ---
+    # Sin ratio todavía (las capturas no lo mostraban) -- entran al universo
+    # técnico (RS Score, alertas) pero no al panel de CEDEAR caro/barato.
+    "BP": "Energía", "CAT": "Materiales", "CL": "Consumo", "COST": "Consumo",
+    "CRM": "Tecnología", "CRWD": "Tecnología", "DE": "Materiales", "DHR": "Materiales",
+    "DISN": "Tecnología", "EBAY": "Consumo", "ETSY": "Consumo", "GS": "Bancos",
+    "IBM": "Tecnología", "INTC": "Tecnología", "ISRG": "Salud", "MA": "Fintech",
+    "MCD": "Consumo", "MDLZ": "Consumo", "META": "Tecnología", "MMM": "Materiales",
+    "MRNA": "Salud", "MRVL": "Tecnología", "MU": "Tecnología", "NKE": "Consumo",
+    "NOW": "Tecnología", "ORCL": "Tecnología", "OXY": "Energía", "PANW": "Tecnología",
+    "PATH": "Tecnología", "PG": "Consumo", "PINS": "Tecnología", "PSX": "Energía",
+    "RBLX": "Tecnología", "ROKU": "Tecnología", "ROST": "Consumo", "SBUX": "Consumo",
+    "SHEL": "Energía", "SLB": "Energía", "SNAP": "Tecnología", "SNOW": "Tecnología",
+    "TEAM": "Tecnología", "TJX": "Consumo", "TTE": "Energía", "UAL": "Transporte",
+    "UNP": "Transporte", "UPST": "Fintech", "USB": "Bancos", "VRTX": "Salud",
+    "CVS": "Salud",  # CVS Health Corp -- confirmado por Victoria
 }
 
 BENCHMARK = "SPY"
@@ -183,6 +199,15 @@ RATIOS_CEDEAR = {
     "ARM": 27, "AVGO": 39, "IREN": 12, "TXN": 5, "AMAT": 5, "SNDK": 170,
     "KLAC": 34, "SKHY": 25, "DELL": 74, "WDC": 92, "GEV": 180, "TLN": 63,
     "MS": 41, "IBKR": 17, "SPCX": 50, "WELL": 48, "PLD": 29, "LIN": 102, "SHW": 69,
+    # --- Tanda 1 del listado completo (ratios oficiales BYMA, PDF actualizado 3/2/2026,
+    # salvo CRWD que se sumó a BYMA después de esa fecha -- ratio de fuentes cruzadas) ---
+    "BP": 5, "CAT": 20, "CL": 3, "COST": 48, "CRM": 18, "CRWD": 79, "DE": 40,
+    "DHR": 54, "DISN": 12, "EBAY": 2, "ETSY": 16, "GS": 13, "IBM": 15, "INTC": 5,
+    "ISRG": 90, "MA": 33, "MCD": 24, "MDLZ": 15, "META": 24, "MMM": 10, "MRNA": 19,
+    "MRVL": 14, "MU": 5, "NKE": 12, "NOW": 172, "ORCL": 3, "OXY": 5, "PANW": 50,
+    "PATH": 2, "PG": 15, "PINS": 7, "PSX": 6, "RBLX": 2, "ROKU": 13, "ROST": 4,
+    "SBUX": 12, "SHEL": 2, "SLB": 3, "SNAP": 1, "SNOW": 30, "TEAM": 47, "TJX": 22,
+    "TTE": 3, "UAL": 5, "UNP": 20, "UPST": 5, "USB": 5, "VRTX": 101, "CVS": 15,
 }
 
 # --- Umbral para marcar un CEDEAR como "caro" o "barato" respecto a su valor teórico ---
