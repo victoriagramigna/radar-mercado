@@ -98,6 +98,14 @@ PALABRAS_CLAVE_SECTOR = {
 # --- Parámetros del Score de Confirmación (ajustables tras el backtest con datos reales) ---
 SCORE_MINIMO_ALERTA = 3       # score a partir del cual se considera señal relevante
 VOLUMEN_RELATIVO_MINIMO = 1.5 # volumen de hoy vs promedio 20d, para confirmar
+
+# --- Umbral de "corrida degradada": si falla más de este % del universo,
+# el RS Score de los que sí llegaron se calcula sobre un percentil chico y
+# no representativo -- se sigue guardando el resultado (los datos que sí
+# vinieron son reales), pero se marca la corrida y se salta el envío de
+# Telegram esa vez puntual, para no mandar una alerta de compra basada en
+# un ranking inflado por matemática de percentil rota, no por el mercado.
+UMBRAL_CORRIDA_DEGRADADA_PCT = 25
 RSI_ZONA_SANA = (40, 65)      # rango de RSI que suma punto al score
 VENTANA_BASE_DIAS = 30        # días recientes para medir si hubo consolidación previa
 

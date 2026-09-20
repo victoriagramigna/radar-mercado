@@ -60,6 +60,9 @@
     <!-- Banner de errores de fetch -->
     <div id="error-message" class="hidden bg-neg/20 text-neg border border-neg p-4 mb-6 font-mono text-sm rounded-sm"></div>
 
+    <!-- Banner de corrida degradada (falló una porción grande del universo -- RS Score no confiable) -->
+    <div id="degraded-banner" class="hidden bg-neg/20 text-neg border border-neg p-4 mb-6 font-mono text-sm rounded-sm"></div>
+
     <!-- 1. Encabezado -->
     <header class="mb-8 border-b border-surface pb-4 flex flex-col xl:flex-row justify-between xl:items-end gap-6">
         <div>
@@ -385,10 +388,27 @@
             document.getElementById('ccl-manual').dispatchEvent(new Event('input'));
             renderCedearPanel(data);
 
+            // Banner de corrida degradada (mucho de la fuente de datos falló)
+            const degradedEl = document.getElementById('degraded-banner');
+            if (data?.corrida_degradada) {
+                const nFallidos = (data?.tickers_fallidos ?? []).length;
+                degradedEl.innerHTML = `⚠️ CORRIDA CON DATOS PARCIALES — falló el ${data.pct_fallidos}% del universo (${nFallidos} ticker(s)). El RS Score de esta corrida no es confiable (percentil sobre una muestra chica). No se enviaron notificaciones de Telegram esta corrida.`;
+                degradedEl.classList.remove('hidden');
+            } else {
+                degradedEl.classList.add('hidden');
+            }
+
             // Renderizado de Badges (Sumando la Brecha Cambiaria)
             const badgesHtml = [];
             if (data?.frescura_dato?.sospechoso) {
                 badgesHtml.push(`<span class="bg-accent text-base px-2 py-1 font-bold rounded-sm animate-pulse">⚠️ DATO VIEJO / SOSPECHOSO</span>`);
+            }
+
+            // Badge chico de fuentes con problemas (solo si NO es una corrida degradada -- ese caso ya tiene el banner grande arriba)
+            const nFallidos = (data?.tickers_fallidos ?? []).length;
+            if (nFallidos > 0 && !data?.corrida_degradada) {
+                const listaTickers = data.tickers_fallidos.map(f => f.ticker).join(', ');
+                badgesHtml.push(`<span class="border border-accent text-accent px-2 py-1 rounded-sm bg-surface cursor-help" title="Falló: ${listaTickers}">⚠️ ${nFallidos} FUENTE(S) CON PROBLEMAS</span>`);
             }
             
             const vixSano = data?.regimen_mercado?.sano ?? true;

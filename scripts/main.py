@@ -14,7 +14,7 @@ import numpy as np
 from datetime import datetime, timezone, timedelta
 
 from config import (TICKERS, BENCHMARK, SCORE_MINIMO_ALERTA, MODO, VIX_TICKER,
-                     UMBRAL_MOVIMIENTO_DIARIO_PCT)
+                     UMBRAL_MOVIMIENTO_DIARIO_PCT, UMBRAL_CORRIDA_DEGRADADA_PCT)
 from datos import traer_datos
 from rs_score import calcular_rs_score
 from alertas import detectar_alertas
@@ -99,6 +99,17 @@ def main():
         log.error("El benchmark no se pudo traer -- abortando la corrida")
         return
 
+    # 1b. Estado de fuentes -- ¿falló poco (normal) o falló tanto que el RS
+    # Score de esta corrida ya no es confiable (percentil sobre un universo
+    # chico y no representativo)?
+    fallidos_universo = [f for f in fallidos if f["ticker"] in TICKERS]
+    pct_fallidos = round(len(fallidos_universo) / len(TICKERS) * 100, 1) if TICKERS else 0
+    corrida_degradada = pct_fallidos >= UMBRAL_CORRIDA_DEGRADADA_PCT
+    if corrida_degradada:
+        log.warning(f"CORRIDA DEGRADADA: falló el {pct_fallidos}% del universo "
+                    f"({len(fallidos_universo)}/{len(TICKERS)}) -- se guarda igual, "
+                    f"pero se saltea el envío de Telegram esta corrida")
+
     # 2. Régimen de mercado (VIX)
     vix_actual = traer_vix(precios)
     regimen = evaluar_regimen_mercado(vix_actual)
@@ -157,6 +168,8 @@ def main():
         "proxima_corrida_estimada_utc": estimar_proxima_corrida(ahora),
         "tickers_ok": len(precios) - 2,  # -1 benchmark, -1 VIX
         "tickers_fallidos": fallidos,
+        "pct_fallidos": pct_fallidos,
+        "corrida_degradada": corrida_degradada,
         "frescura_dato": frescura,
         "ranking": df_rs.to_dict(orient="records") if not df_rs.empty else [],
         "rs_por_sector": rs_por_sector,
@@ -185,12 +198,25 @@ def main():
         ya_notificado = historial["_notificaciones"].get(ticker) == clave_estado
         if not ya_notificado:
             alertas_nuevas.append(a)
-            historial["_notificaciones"][ticker] = clave_estado
+            # OJO: el marcado de "ya notificado" se hace más abajo, recién
+            # cuando efectivamente se envía (o se loguea en modo test) --
+            # no acá, para que una alerta salteada por corrida degradada
+            # pueda mandarse igual en una corrida sana posterior el mismo día.
 
     if alertas_relevantes:
         log.info(f"{len(alertas_relevantes)} alerta(s) relevante(s), {len(alertas_nuevas)} nueva(s) (no notificadas aún hoy)")
 
-    if alertas_nuevas:
+    if alertas_nuevas and corrida_degradada:
+        log.warning(f"Se salteó el envío de {len(alertas_nuevas)} alerta(s) a Telegram "
+                    f"-- corrida degradada ({pct_fallidos}% del universo falló), "
+                    f"el ranking de esta corrida no es confiable. NO se marcan como "
+                    f"notificadas, para poder reintentar en una corrida sana.")
+    elif alertas_nuevas:
+        for a in alertas_nuevas:
+            ticker = a["Ticker"]
+            clave_estado = f"{fecha_hoy}|{a['Tipo']}|{a['Estado']}"
+            historial["_notificaciones"][ticker] = clave_estado
+
         if MODO == "produccion":
             token = os.environ.get("TELEGRAM_BOT_TOKEN")
             chat_id = os.environ.get("TELEGRAM_CHAT_ID")
