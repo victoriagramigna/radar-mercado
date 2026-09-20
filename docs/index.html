@@ -163,6 +163,10 @@
 
         async function fetchRadarData() {
             try {
+                // ?t=... rompe el caché de 5 minutos de raw.githubusercontent.com (max-age=300),
+                // que ignora "cache: no-store" porque ese header solo controla el caché del
+                // navegador, no el del servidor -- sin esto, el dashboard puede mostrar datos
+                // de hasta 5 minutos atrás justo después de una corrida nueva.
                 const response = await fetch(`${DATA_URL}?t=${Date.now()}`, { cache: 'no-store' });
                 if (!response.ok) throw new Error(`HTTP ${response.status}`);
                 
@@ -455,6 +459,15 @@
                     const ajustado = alerta?.['Ajustado por'] ?? '—';
                     const tipo = alerta?.Tipo ?? 'tecnico';
 
+                    const fechaEvento = alerta?.fecha_evento;
+                    let fechaEventoStr = '';
+                    if (fechaEvento) {
+                        const fe = new Date(fechaEvento);
+                        const diaMes = fe.toLocaleDateString('es-AR', {day: '2-digit', month: '2-digit', year: 'numeric'});
+                        const hora = fe.toLocaleTimeString('es-AR', {hour12: false, hour: '2-digit', minute: '2-digit'});
+                        fechaEventoStr = `${diaMes} · ${hora}`;
+                    }
+
                     let recColor = 'text-accent border-accent'; 
                     let containerBorder = 'border-l-2 border-surface hover:border-l-accent';
                     let bgCustom = 'bg-surface';
@@ -485,6 +498,7 @@
                                 <span>SCORE: <span class="text-white">${score}</span></span>
                                 <span>ADJ: ${ajustado}</span>
                             </div>
+                            ${fechaEventoStr ? `<div class="font-mono text-[10px] text-gray-600 mt-2">${fechaEventoStr}</div>` : ''}
                         </div>
                     `;
                 }).join('');
