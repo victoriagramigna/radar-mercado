@@ -79,6 +79,27 @@ TICKERS = {
     "SUPV": "Bancos",         # Grupo Supervielle
     "BBAR": "Bancos",         # Banco BBVA Argentina -- asumí que no era el BBVA español, confirmame
     "BBVA": "Bancos",         # Banco Bilbao Vizcaya Argentaria (España) -- la matriz, distinta de BBAR
+    # --- 19 tickers nuevos sumados en sept. 2026 (7 confirmados + 12 de la tanda BYMA/Comafi) ---
+    "ARM": "Tecnología",       # ARM Holdings, diseño de chips
+    "AVGO": "Tecnología",      # Broadcom
+    "IREN": "Tecnología",      # IREN Ltd -- data centers Bitcoin/IA
+    "TXN": "Tecnología",       # Texas Instruments
+    "AMAT": "Tecnología",      # Applied Materials
+    "SNDK": "Tecnología",      # SanDisk, spin-off de Western Digital
+    "EDN": "Energía",          # Edenor -- distribución eléctrica AMBA (ADR, sin CEDEAR propio)
+    "KLAC": "Tecnología",      # KLA Corp -- equipos de inspección de semiconductores
+    "SKHY": "Tecnología",      # SK Hynix -- memorias DRAM/NAND para IA
+    "DELL": "Tecnología",      # Dell -- servidores y storage corporativo
+    "WDC": "Tecnología",       # Western Digital -- discos rígidos
+    "GEV": "Energía",          # GE Vernova -- equipos de generación eléctrica
+    "TLN": "Energía",          # Talen Energy -- generadora con exposición a data centers
+    "MS": "Bancos",            # Morgan Stanley
+    "IBKR": "Fintech",         # Interactive Brokers
+    "SPCX": "Aeroespacial",    # SpaceX
+    "WELL": "Real Estate",     # Welltower -- REIT de infraestructura de salud
+    "PLD": "Real Estate",      # Prologis -- REIT de depósitos y logística
+    "LIN": "Materiales",       # Linde -- gases industriales
+    "SHW": "Materiales",       # Sherwin-Williams -- pinturas
 }
 
 BENCHMARK = "SPY"
@@ -158,6 +179,10 @@ ARCHIVO_HISTORIAL = "data/historial_alertas.json"
 RATIOS_CEDEAR = {
     "SPY": 20, "TSLA": 15, "QQQ": 20, "NVDA": 24, "BABA": 9, "OKLO": 28,
     "AAPL": 20, "JMIA": 1, "SATL": 1, "CRWV": 27, "TEM": 12, "LAC": 1,
+    # --- 19 tickers nuevos sumados en sept. 2026 (EDN queda afuera: es ADR sin CEDEAR propio) ---
+    "ARM": 27, "AVGO": 39, "IREN": 12, "TXN": 5, "AMAT": 5, "SNDK": 170,
+    "KLAC": 34, "SKHY": 25, "DELL": 74, "WDC": 92, "GEV": 180, "TLN": 63,
+    "MS": 41, "IBKR": 17, "SPCX": 50, "WELL": 48, "PLD": 29, "LIN": 102, "SHW": 69,
 }
 
 # --- Umbral para marcar un CEDEAR como "caro" o "barato" respecto a su valor teórico ---
