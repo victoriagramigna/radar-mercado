@@ -2950,5 +2950,16 @@
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
+  },
+  "AGRO": {
+    "ultima_fecha": "2026-09-20",
+    "estado": null,
+    "fecha_evento": "2026-09-20T18:13:14.535411+00:00",
+    "dias_verdes_consecutivos": 0,
+    "precio": 11.46,
+    "lider_soporte_activo": false,
+    "fecha_evento_lider": "2026-09-20T18:13:14.535411+00:00",
+    "gap_alcista_activo": false,
+    "fecha_evento_gap": "2026-09-20T18:13:14.535411+00:00"
   }
 }
