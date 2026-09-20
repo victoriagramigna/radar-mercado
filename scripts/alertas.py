@@ -232,13 +232,20 @@ def detectar_alertas(precios: dict, volumenes: dict, tickers_sector: dict, bench
 
         if lider_soporte_activo and _horas_desde(fecha_evento_lider, ahora) <= VENTANA_ALERTA_HORAS:
             dist_sma50_pct = round((precio_hoy / sma50_hoy - 1) * 100, 2)
+            # Stop-loss sugerido: el soporte que está testeando es justamente
+            # la SMA50 -- si la pierde, la tesis de "líder apoyándose en
+            # soporte" se invalida. Mismo colchón del 1% que usa "Gap
+            # alcista", para mantener un único criterio en toda la app.
+            stop_sugerido_aprox = round(sma50_hoy * 0.99, 2)
             alertas.append({
                 "Ticker": ticker, "Sector": sector,
                 "Tipo": "lider_soporte",
                 "Estado": ESTADOS.get("lider_soporte", "📈 Líder apoyando en soporte"),
                 "Score": f"RS {rs_ticker:.0f}",
                 "Score_num": None,
-                "Señales": [f"RS {rs_ticker:.0f}", f"a {dist_sma50_pct}% de su SMA50"],
+                "Señales": [f"RS {rs_ticker:.0f}", f"a {dist_sma50_pct}% de su SMA50",
+                            f"stop sugerido (aprox.): ${stop_sugerido_aprox}"],
+                "Stop_sugerido": stop_sugerido_aprox,
                 "RSI": round(rsi_hoy, 1) if pd.notna(rsi_hoy) else None,
                 "Vol_rel": round(vol_rel_hoy, 2),
                 "fecha_evento": fecha_evento_lider,
@@ -254,6 +261,7 @@ def detectar_alertas(precios: dict, volumenes: dict, tickers_sector: dict, bench
                 "Score_num": None,
                 "Señales": [f"variación del día: +{round(variacion_dia_pct, 1)}%",
                             f"stop sugerido (aprox.): ${stop_sugerido_aprox}"],
+                "Stop_sugerido": stop_sugerido_aprox,
                 "RSI": round(rsi_hoy, 1) if pd.notna(rsi_hoy) else None,
                 "Vol_rel": round(vol_rel_hoy, 2),
                 "fecha_evento": fecha_evento_gap,
