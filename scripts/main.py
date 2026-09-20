@@ -163,6 +163,16 @@ def main():
 
     # 7. Recomendación final
     radar_score_por_ticker = dict(zip(df_rs["Ticker"], df_rs["Radar_Score"])) if not df_rs.empty else {}
+    dist_52w_por_ticker = dict(zip(df_rs["Ticker"], df_rs["Dist_Max52w_%"])) if not df_rs.empty else {}
+
+    # Variación de SPY HOY (cierre de hoy vs. cierre de ayer) -- para poder
+    # comparar el movimiento de cada alerta contra el del mercado en general
+    # ese mismo día, no solo contra su propio historial.
+    bench_close_serie = precios[BENCHMARK].dropna()
+    var_spy_dia_pct = None
+    if len(bench_close_serie) >= 2:
+        var_spy_dia_pct = round((bench_close_serie.iloc[-1] / bench_close_serie.iloc[-2] - 1) * 100, 2)
+
     recomendaciones = []
     for _, fila in df_alertas.iterrows():
         rec = recomendacion_final(fila["Sector"], fila["Score_num"], fila["Estado"],
@@ -171,6 +181,9 @@ def main():
             rec["Recomendación final"] = "MANTENER"
             rec["Ajustado por"] += f"; régimen de mercado volátil ({regimen['motivo']})"
         rec["Radar_Score"] = radar_score_por_ticker.get(fila["Ticker"])
+        rec["Dist_Max52w_%"] = dist_52w_por_ticker.get(fila["Ticker"])
+        rec["RS_sector"] = round(rs_por_sector[fila["Sector"]], 1) if fila["Sector"] in rs_por_sector else None
+        rec["Var_SPY_dia_%"] = var_spy_dia_pct
         recomendaciones.append({**fila.to_dict(), **rec})
 
     # 8. Guardar resultado para el dashboard

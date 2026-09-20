@@ -460,6 +460,25 @@
                     const tipo = alerta?.Tipo ?? 'tecnico';
                     const stopSugerido = alerta?.Stop_sugerido;
                     const radarScore = alerta?.Radar_Score;
+                    const precioRef = alerta?.Precio;
+                    const rsi = alerta?.RSI;
+                    const volRel = alerta?.Vol_rel;
+                    const dist52w = alerta?.['Dist_Max52w_%'];
+                    const rsSector = alerta?.RS_sector;
+                    const varDia = alerta?.['Var_dia_%'];
+                    const varSpyDia = alerta?.['Var_SPY_dia_%'];
+
+                    let stopPctStr = '';
+                    if (stopSugerido != null && precioRef != null && precioRef > 0) {
+                        const stopPct = ((stopSugerido / precioRef - 1) * 100).toFixed(1);
+                        stopPctStr = ` (${stopPct}%)`;
+                    }
+
+                    let vsSpyStr = '';
+                    if (varDia != null && varSpyDia != null) {
+                        const diff = (varDia - varSpyDia).toFixed(1);
+                        vsSpyStr = `${diff >= 0 ? '+' : ''}${diff}pp vs SPY`;
+                    }
 
                     const fechaEvento = alerta?.fecha_evento;
                     let fechaEventoStr = '';
@@ -503,7 +522,15 @@
                                 <span>SCORE: <span class="text-white">${score}</span></span>
                                 <span>ADJ: ${ajustado}</span>
                             </div>
-                            ${stopSugerido ? `<div class="font-mono text-xs text-accent mt-1">STOP SUGERIDO (aprox.): $${stopSugerido}</div>` : ''}
+                            <div class="grid grid-cols-4 gap-2 font-mono text-[9px] text-gray-500 mt-2">
+                                <div><div class="uppercase">RSI</div><div class="text-white text-[11px]">${rsi ?? '—'}</div></div>
+                                <div><div class="uppercase">VOL</div><div class="text-white text-[11px]">${volRel != null ? volRel + 'x' : '—'}</div></div>
+                                <div><div class="uppercase">52W</div><div class="text-white text-[11px]">${dist52w != null ? dist52w + '%' : '—'}</div></div>
+                                <div><div class="uppercase">RS SECTOR</div><div class="text-white text-[11px]">${rsSector ?? '—'}</div></div>
+                            </div>
+                            ${precioRef != null ? `<div class="font-mono text-[10px] text-gray-500 mt-2">PRECIO REF.: <span class="text-white">$${precioRef}</span></div>` : ''}
+                            ${stopSugerido ? `<div class="font-mono text-xs text-accent mt-1">STOP SUGERIDO (aprox.): $${stopSugerido}${stopPctStr}</div>` : ''}
+                            ${vsSpyStr ? `<div class="font-mono text-[10px] text-gray-500 mt-1">${vsSpyStr}</div>` : ''}
                             ${fechaEventoStr ? `<div class="font-mono text-[10px] text-gray-600 mt-2">${fechaEventoStr}</div>` : ''}
                         </div>
                     `;

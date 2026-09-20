@@ -227,6 +227,7 @@ def detectar_alertas(precios: dict, volumenes: dict, tickers_sector: dict, bench
                 "RSI": round(rsi_hoy, 1) if pd.notna(rsi_hoy) else None,
                 "Vol_rel": round(vol_rel_hoy, 2),
                 "SMA21": round(sma_cortas[21].iloc[-1], 2) if not pd.isna(sma_cortas[21].iloc[-1]) else None,
+                "Precio": round(float(precio_hoy), 2),
                 "fecha_evento": fecha_evento,
             })
 
@@ -248,6 +249,7 @@ def detectar_alertas(precios: dict, volumenes: dict, tickers_sector: dict, bench
                 "Stop_sugerido": stop_sugerido_aprox,
                 "RSI": round(rsi_hoy, 1) if pd.notna(rsi_hoy) else None,
                 "Vol_rel": round(vol_rel_hoy, 2),
+                "Precio": round(float(precio_hoy), 2),
                 "fecha_evento": fecha_evento_lider,
             })
 
@@ -262,8 +264,10 @@ def detectar_alertas(precios: dict, volumenes: dict, tickers_sector: dict, bench
                 "Señales": [f"variación del día: +{round(variacion_dia_pct, 1)}%",
                             f"stop sugerido (aprox.): ${stop_sugerido_aprox}"],
                 "Stop_sugerido": stop_sugerido_aprox,
+                "Var_dia_%": round(variacion_dia_pct, 1),
                 "RSI": round(rsi_hoy, 1) if pd.notna(rsi_hoy) else None,
                 "Vol_rel": round(vol_rel_hoy, 2),
+                "Precio": round(float(precio_hoy), 2),
                 "fecha_evento": fecha_evento_gap,
             })
 
