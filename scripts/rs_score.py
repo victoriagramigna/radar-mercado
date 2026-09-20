@@ -6,6 +6,7 @@ se calculaban puertas adentro para los tickers con alerta activa; ahora
 quedan disponibles para cualquier ticker, tenga o no un evento hoy.
 """
 import pandas as pd
+from vcp import detectar_vcp
 
 
 def _rsi(serie, periodo=14):
@@ -78,8 +79,16 @@ def calcular_rs_score(precios: dict, tickers_sector: dict, benchmark: str, volum
                 fila["Vol_rel"] = round(float(vol.iloc[-1] / vol_prom20.iloc[-1]), 2)
             else:
                 fila["Vol_rel"] = None
+
+            # VCP para TODO el universo (antes solo se calculaba puertas
+            # adentro del flujo de alertas, para tickers con alerta activa
+            # -- el Radar Score lo necesita para cualquier ticker, tenga o
+            # no una señal disparada hoy).
+            vcp_resultado = detectar_vcp(close, vol)
+            fila["VCP_valido"] = bool(vcp_resultado["valido"])
         else:
             fila["Vol_rel"] = None
+            fila["VCP_valido"] = False
 
         resultados.append(fila)
 

@@ -16,7 +16,8 @@ log = logging.getLogger("radar.bitacora")
 ARCHIVO_LOG = "data/log_alertas.jsonl"
 
 
-def registrar_eventos(alertas_nuevas: list, rs_por_ticker: dict, precios_usd: dict, timestamp: str):
+def registrar_eventos(alertas_nuevas: list, rs_por_ticker: dict, precios_usd: dict, timestamp: str,
+                       radar_score_por_ticker: dict = None):
     """
     Agrega una línea por cada alerta NUEVA de esta corrida a la bitácora.
 
@@ -28,11 +29,13 @@ def registrar_eventos(alertas_nuevas: list, rs_por_ticker: dict, precios_usd: di
     if not alertas_nuevas:
         return 0
 
+    radar_score_por_ticker = radar_score_por_ticker or {}
     lineas = []
     for a in alertas_nuevas:
         ticker = a["Ticker"]
         vcp_info = a.get("VCP") or {}
         rs_ticker = rs_por_ticker.get(ticker)
+        radar_score_ticker = radar_score_por_ticker.get(ticker)
         evento = {
             "timestamp": timestamp,
             "ticker": ticker,
@@ -41,6 +44,7 @@ def registrar_eventos(alertas_nuevas: list, rs_por_ticker: dict, precios_usd: di
             "estado": a.get("Estado"),
             "score_num": a.get("Score_num"),
             "rs_score": round(rs_ticker, 1) if rs_ticker is not None else None,
+            "radar_score": radar_score_ticker,
             "vol_rel": a.get("Vol_rel"),
             "rsi": a.get("RSI"),
             "vcp_valido": vcp_info.get("valido") if isinstance(vcp_info, dict) else None,

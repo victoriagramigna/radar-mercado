@@ -27,6 +27,7 @@ from frescura import evaluar_frescura
 from cedear_pricing import calcular_brechas_cedear
 from movimientos import detectar_movimientos_diarios
 from bitacora import registrar_eventos
+from radar_score import calcular_radar_score
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 log = logging.getLogger("radar.main")
@@ -126,6 +127,13 @@ def main():
     rs_por_sector = df_rs.groupby("Sector")["RS_Score"].mean().to_dict() if not df_rs.empty else {}
     rs_por_ticker = dict(zip(df_rs["Ticker"], df_rs["RS_Score"])) if not df_rs.empty else {}
 
+    # 3a-bis. Radar Score v1 (compuesto, pensado para timing de entrada --
+    # ver radar_score.py para la definición completa de cada componente)
+    bench_close = precios[BENCHMARK].dropna()
+    spy_sma50 = bench_close.rolling(50).mean().iloc[-1] if len(bench_close) >= 50 else None
+    spy_sobre_sma50 = bool(bench_close.iloc[-1] > spy_sma50) if spy_sma50 is not None and not math.isnan(spy_sma50) else True
+    df_rs = calcular_radar_score(df_rs, rs_por_sector, spy_sobre_sma50, regimen)
+
     # 3b. Señal de CEDEAR caro/barato
     precios_usd_actuales = dict(zip(df_rs["Ticker"], df_rs["Precio"])) if not df_rs.empty else {}
     cedears_pricing = calcular_brechas_cedear(precios_usd_actuales)
@@ -154,6 +162,7 @@ def main():
     log.info(f"Contexto macro-local: {contexto_macro}")
 
     # 7. Recomendación final
+    radar_score_por_ticker = dict(zip(df_rs["Ticker"], df_rs["Radar_Score"])) if not df_rs.empty else {}
     recomendaciones = []
     for _, fila in df_alertas.iterrows():
         rec = recomendacion_final(fila["Sector"], fila["Score_num"], fila["Estado"],
@@ -161,6 +170,7 @@ def main():
         if not regimen.get("sin_datos") and not regimen.get("sano") and rec["Recomendación final"] == "COMPRA":
             rec["Recomendación final"] = "MANTENER"
             rec["Ajustado por"] += f"; régimen de mercado volátil ({regimen['motivo']})"
+        rec["Radar_Score"] = radar_score_por_ticker.get(fila["Ticker"])
         recomendaciones.append({**fila.to_dict(), **rec})
 
     # 8. Guardar resultado para el dashboard
@@ -212,7 +222,8 @@ def main():
     # esta corrida no es confiable, así que no vale la pena dejarlo grabado
     # como si lo fuera.
     if alertas_nuevas and not corrida_degradada:
-        registrar_eventos(alertas_nuevas, rs_por_ticker, precios_usd_actuales, timestamp)
+        registrar_eventos(alertas_nuevas, rs_por_ticker, precios_usd_actuales, timestamp,
+                           radar_score_por_ticker)
     elif alertas_nuevas and corrida_degradada:
         log.info("Bitácora: se salteó el registro de esta corrida (degradada)")
 

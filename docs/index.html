@@ -458,6 +458,8 @@
                     const score = alerta?.Score ?? '—';
                     const ajustado = alerta?.['Ajustado por'] ?? '—';
                     const tipo = alerta?.Tipo ?? 'tecnico';
+                    const stopSugerido = alerta?.Stop_sugerido;
+                    const radarScore = alerta?.Radar_Score;
 
                     const fechaEvento = alerta?.fecha_evento;
                     let fechaEventoStr = '';
@@ -493,11 +495,15 @@
                                 </div>
                                 <span class="font-mono text-xs px-2 py-1 font-bold rounded-sm ${recColor}">${recomendacion}</span>
                             </div>
-                            <div class="font-mono text-sm text-gray-300 mb-3">${estado}</div>
+                            <div class="flex justify-between items-center mb-3">
+                                <div class="font-mono text-sm text-gray-300">${estado}</div>
+                                ${radarScore != null ? `<div class="font-mono text-xs text-gray-500 whitespace-nowrap ml-2">RADAR SCORE <span class="text-accent font-bold">${radarScore}</span></div>` : ''}
+                            </div>
                             <div class="flex justify-between font-mono text-xs text-gray-500 border-t border-base pt-2 mt-auto">
                                 <span>SCORE: <span class="text-white">${score}</span></span>
                                 <span>ADJ: ${ajustado}</span>
                             </div>
+                            ${stopSugerido ? `<div class="font-mono text-xs text-accent mt-1">STOP SUGERIDO (aprox.): $${stopSugerido}</div>` : ''}
                             ${fechaEventoStr ? `<div class="font-mono text-[10px] text-gray-600 mt-2">${fechaEventoStr}</div>` : ''}
                         </div>
                     `;
