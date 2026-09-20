@@ -26,6 +26,7 @@ from macro_local import traer_contexto_macro
 from frescura import evaluar_frescura
 from cedear_pricing import calcular_brechas_cedear
 from movimientos import detectar_movimientos_diarios
+from bitacora import registrar_eventos
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 log = logging.getLogger("radar.main")
@@ -205,6 +206,15 @@ def main():
 
     if alertas_relevantes:
         log.info(f"{len(alertas_relevantes)} alerta(s) relevante(s), {len(alertas_nuevas)} nueva(s) (no notificadas aún hoy)")
+
+    # 9b. Bitácora de eventos (para el backtest futuro) -- se saltea en
+    # corridas degradadas, por la misma razón que Telegram: el RS Score de
+    # esta corrida no es confiable, así que no vale la pena dejarlo grabado
+    # como si lo fuera.
+    if alertas_nuevas and not corrida_degradada:
+        registrar_eventos(alertas_nuevas, rs_por_ticker, precios_usd_actuales, timestamp)
+    elif alertas_nuevas and corrida_degradada:
+        log.info("Bitácora: se salteó el registro de esta corrida (degradada)")
 
     if alertas_nuevas and corrida_degradada:
         log.warning(f"Se salteó el envío de {len(alertas_nuevas)} alerta(s) a Telegram "
