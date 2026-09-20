@@ -117,6 +117,39 @@ TICKERS = {
     "TEAM": "Tecnología", "TJX": "Consumo", "TTE": "Energía", "UAL": "Transporte",
     "UNP": "Transporte", "UPST": "Fintech", "USB": "Bancos", "VRTX": "Salud",
     "CVS": "Salud",  # CVS Health Corp -- confirmado por Victoria
+    # --- Tanda 2 del listado completo (120 tickers). BAC, BK y NOK usan su
+    # ticker real de NYSE/NASDAQ -- BA.C, BNY y NOKA eran códigos internos
+    # de BYMA que yfinance no reconoce (mismo problema que tuvo Disney) ---
+    "AAP": "Automotriz", "ABBV": "Salud", "ABT": "Salud", "ACN": "Tecnología",
+    "ADGO": "Agro", "ADI": "Tecnología", "ADP": "Tecnología", "AEG": "Fintech",
+    "AEM": "Materiales", "AI": "Tecnología", "AIG": "Fintech", "ALAB": "Tecnología",
+    "ASR": "Transporte", "ASTS": "Tecnología", "AVY": "Materiales", "AXP": "Fintech",
+    "AZN": "Salud", "BA": "Aeroespacial", "BAC": "Bancos", "BAK": "Materiales",
+    "BB": "Tecnología", "BCS": "Bancos", "BHP": "Materiales", "BIDU": "Tecnología",
+    "BIIB": "Salud", "BK": "Bancos", "BKNG": "Consumo", "BKR": "Energía",
+    "BMNR": "Tecnología", "BMY": "Salud", "BX": "Fintech", "CAH": "Salud",
+    "CAR": "Consumo", "CCJ": "Energía", "CCL": "Consumo", "CDE": "Materiales",
+    "CEG": "Energía", "COIN": "Fintech", "COP": "Energía", "DECK": "Consumo",
+    "DEO": "Consumo", "DOCU": "Tecnología", "EA": "Tecnología", "ECL": "Materiales",
+    "EFX": "Fintech", "EQNR": "Energía", "ERIC": "Tecnología", "GLW": "Tecnología",
+    "GRMN": "Tecnología", "GSK": "Salud", "GT": "Automotriz", "HAL": "Energía",
+    "HD": "Consumo", "HDB": "Bancos", "HL": "Materiales", "HMC": "Automotriz",
+    "HMY": "Materiales", "HOG": "Automotriz", "HON": "Materiales", "HPQ": "Tecnología",
+    "HSBC": "Bancos", "HSY": "Consumo", "HUT": "Tecnología", "HWM": "Aeroespacial",
+    "IBN": "Bancos", "INFY": "Tecnología", "ING": "Bancos", "IP": "Materiales",
+    "JCI": "Materiales", "JD": "Consumo", "KB": "Bancos", "KMB": "Consumo",
+    "LMT": "Aeroespacial", "LRCX": "Tecnología", "LVS": "Consumo", "LYG": "Bancos",
+    "MDT": "Salud", "MO": "Consumo", "MOS": "Agro", "MP": "Materiales",
+    "MSI": "Tecnología", "MSTR": "Fintech", "MUX": "Materiales", "NEE": "Energía",
+    "NEM": "Materiales", "NGG": "Energía", "NMR": "Bancos", "NOK": "Tecnología",
+    "NUE": "Materiales", "NVO": "Salud", "NVS": "Salud", "NXE": "Energía",
+    "O": "Real Estate", "ORLY": "Automotriz", "PAAS": "Materiales", "PBR": "Energía",
+    "PCAR": "Automotriz", "PDD": "Consumo", "PM": "Consumo", "RACE": "Automotriz",
+    "RGTI": "Tecnología", "RIOT": "Tecnología", "RKLB": "Aeroespacial", "RTX": "Aeroespacial",
+    "SAP": "Tecnología", "SCCO": "Materiales", "SE": "Consumo", "SONY": "Tecnología",
+    "TM": "Automotriz", "TMO": "Salud", "TMUS": "Telecomunicaciones", "TRIP": "Consumo",
+    "TV": "Telecomunicaciones", "TWLO": "Tecnología", "UGP": "Energía", "UL": "Consumo",
+    "URBN": "Consumo", "VRSN": "Tecnología", "VST": "Energía", "VZ": "Telecomunicaciones",
 }
 
 BENCHMARK = "SPY"
@@ -209,6 +242,22 @@ RATIOS_CEDEAR = {
     "PATH": 2, "PG": 15, "PINS": 7, "PSX": 6, "RBLX": 2, "ROKU": 13, "ROST": 4,
     "SBUX": 12, "SHEL": 2, "SLB": 3, "SNAP": 1, "SNOW": 30, "TEAM": 47, "TJX": 22,
     "TTE": 3, "UAL": 5, "UNP": 20, "UPST": 5, "USB": 5, "VRTX": 101, "CVS": 15,
+    # --- Tanda 2 (MP, NVO y O quedan afuera: sin ratio confirmado todavía) ---
+    "AAP": 14, "ABBV": 10, "ABT": 4, "ACN": 75, "ADGO": 1, "ADI": 15, "ADP": 6, "AEG": 1,
+    "AEM": 6, "AI": 5, "AIG": 5, "ALAB": 44, "ASR": 20, "ASTS": 15, "AVY": 18, "AXP": 15,
+    "AZN": 4, "BA": 24, "BAC": 4, "BAK": 2, "BB": 3, "BCS": 1, "BHP": 2, "BIDU": 11,
+    "BIIB": 13, "BK": 2, "BKNG": 700, "BKR": 7, "BMNR": 8, "BMY": 3, "BX": 30, "CAH": 3,
+    "CAR": 26, "CCJ": 25, "CCL": 3, "CDE": 1, "CEG": 45, "COIN": 27, "COP": 25, "DECK": 25,
+    "DEO": 6, "DOCU": 22, "EA": 14, "ECL": 56, "EFX": 16, "EQNR": 6, "ERIC": 2, "GLW": 4,
+    "GRMN": 3, "GSK": 4, "GT": 2, "HAL": 2, "HD": 32, "HDB": 2, "HL": 1, "HMC": 1,
+    "HMY": 1, "HOG": 3, "HON": 8, "HPQ": 1, "HSBC": 2, "HSY": 21, "HUT": 1, "HWM": 1,
+    "IBN": 1, "INFY": 1, "ING": 3, "IP": 4, "JCI": 2, "JD": 4, "KB": 2, "KMB": 6,
+    "LMT": 20, "LRCX": 56, "LVS": 2, "LYG": 2, "MDT": 4, "MO": 4, "MOS": 5, "MSI": 20,
+    "MSTR": 20, "MUX": 2, "NEE": 19, "NEM": 3, "NGG": 2, "NMR": 1, "NOK": 1, "NUE": 16,
+    "NVS": 4, "NXE": 1, "ORLY": 222, "PAAS": 3, "PBR": 1, "PCAR": 3, "PDD": 25, "PM": 18,
+    "RACE": 83, "RGTI": 2, "RIOT": 3, "RKLB": 12, "RTX": 5, "SAP": 6, "SCCO": 2, "SE": 32,
+    "SONY": 8, "TM": 15, "TMO": 22, "TMUS": 33, "TRIP": 2, "TV": 3, "TWLO": 36, "UGP": 1,
+    "UL": 3, "URBN": 2, "VRSN": 6, "VST": 26, "VZ": 4,
 }
 
 # --- Casos donde el ticker real (yfinance/NYSE) difiere del código que usa
@@ -219,7 +268,10 @@ RATIOS_CEDEAR = {
 # código real fuera otro, esto simplemente sigue sin encontrar coincidencia,
 # no rompe nada.
 ALIAS_CEDEAR_DATA912 = {
-    "DIS": "DISN",  # Walt Disney
+    "DIS": "DISN",   # Walt Disney
+    "BAC": "BA.C",   # Bank of America
+    "BK": "BNY",     # Bank of New York Mellon
+    "NOK": "NOKA",   # Nokia
 }
 
 # --- Umbral para marcar un CEDEAR como "caro" o "barato" respecto a su valor teórico ---
