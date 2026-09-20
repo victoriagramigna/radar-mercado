@@ -1,5 +1,5 @@
 {
-  "generado_utc": "2026-09-20T17:51:21.741965+00:00",
+  "generado_utc": "2026-09-20T17:56:21.973594+00:00",
   "proxima_corrida_estimada_utc": "2026-09-21T14:00:00+00:00",
   "tickers_ok": 148,
   "tickers_fallidos": [
@@ -3663,8 +3663,12 @@
       },
       {
         "Ticker": "DIS",
-        "sin_datos": true,
-        "Precio_teorico_ARS": 13661.99
+        "sin_datos": false,
+        "Precio_real_ARS": 13620.0,
+        "Precio_teorico_ARS": 13661.99,
+        "Brecha_%": -0.31,
+        "Estado": "Barato respecto al teórico",
+        "Distorsion_relevante": false
       },
       {
         "Ticker": "EBAY",
