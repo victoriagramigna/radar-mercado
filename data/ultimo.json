@@ -1,5 +1,5 @@
 {
-  "generado_utc": "2026-09-20T12:59:37.371747+00:00",
+  "generado_utc": "2026-09-20T13:58:45.423615+00:00",
   "proxima_corrida_estimada_utc": "2026-09-21T14:00:00+00:00",
   "tickers_ok": 99,
   "tickers_fallidos": [
@@ -1729,105 +1729,6 @@
   },
   "alertas": [
     {
-      "Ticker": "GOOGL",
-      "Sector": "Tecnología",
-      "Tipo": "tecnico",
-      "Estado": "✅ Confirmado",
-      "Score": "4/7",
-      "Score_num": 4.0,
-      "Señales": [
-        "volumen fuerte",
-        "RSI diario sano",
-        "base ordenada",
-        "sector+mercado ok"
-      ],
-      "VCP": {
-        "valido": false,
-        "contracciones_detectadas": 1,
-        "olas": [
-          {
-            "ola": 1,
-            "rango_%": 18.11,
-            "vol_prom": 34049530.0
-          },
-          {
-            "ola": 2,
-            "rango_%": 4.95,
-            "vol_prom": 20446410.0
-          },
-          {
-            "ola": 3,
-            "rango_%": 3.89,
-            "vol_prom": 23714210.0
-          },
-          {
-            "ola": 4,
-            "rango_%": 5.71,
-            "vol_prom": 27105000.0
-          }
-        ],
-        "motivo": "solo 1 contracción(es), se necesitan 2"
-      },
-      "RSI": 52.5,
-      "Vol_rel": 1.87,
-      "SMA21": 341.62,
-      "fecha_evento": "2026-09-18T13:53:55.679119+00:00",
-      "Señal técnica": "COMPRA",
-      "Recomendación final": "COMPRA",
-      "Ajustado por": "sin ajustes",
-      "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión."
-    },
-    {
-      "Ticker": "QQQ",
-      "Sector": "ETF",
-      "Tipo": "tecnico",
-      "Estado": "✅ Confirmado",
-      "Score": "5/7",
-      "Score_num": 5.0,
-      "Señales": [
-        "volumen fuerte",
-        "RSI diario sano",
-        "base ordenada",
-        "sector+mercado ok",
-        "VCP válido (2 contracciones)"
-      ],
-      "VCP": {
-        "valido": true,
-        "contracciones_detectadas": 2,
-        "olas": [
-          {
-            "ola": 1,
-            "rango_%": 9.39,
-            "vol_prom": 48280420.0
-          },
-          {
-            "ola": 2,
-            "rango_%": 2.97,
-            "vol_prom": 31570390.0
-          },
-          {
-            "ola": 3,
-            "rango_%": 2.09,
-            "vol_prom": 29833270.0
-          },
-          {
-            "ola": 4,
-            "rango_%": 2.4,
-            "vol_prom": 32912550.0
-          }
-        ],
-        "motivo": null
-      },
-      "RSI": 53.9,
-      "Vol_rel": 1.54,
-      "SMA21": 713.13,
-      "fecha_evento": "2026-09-18T13:53:55.679119+00:00",
-      "Señal técnica": "COMPRA",
-      "Recomendación final": "COMPRA",
-      "Ajustado por": "sin ajustes",
-      "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión."
-    },
-    {
       "Ticker": "ZM",
       "Sector": "Tecnología",
       "Tipo": "tecnico",
@@ -1870,6 +1771,7 @@
       "Vol_rel": 1.63,
       "SMA21": 97.33,
       "fecha_evento": "2026-09-18T20:09:07.878154+00:00",
+      "Stop_sugerido": null,
       "Señal técnica": "VENTA",
       "Recomendación final": "VENTA",
       "Ajustado por": "sin ajustes",
@@ -1916,53 +1818,7 @@
       "Vol_rel": 2.09,
       "SMA21": 178.66,
       "fecha_evento": "2026-09-18T20:09:07.878154+00:00",
-      "Señal técnica": "MANTENER",
-      "Recomendación final": "MANTENER",
-      "Ajustado por": "sin ajustes",
-      "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión."
-    },
-    {
-      "Ticker": "GM",
-      "Sector": "Automotriz",
-      "Tipo": "tecnico",
-      "Estado": "⚠️ Sacudón, sin definición clara",
-      "Score": "2/7",
-      "Score_num": 2.0,
-      "Señales": [
-        "volumen fuerte",
-        "RSI diario sano"
-      ],
-      "VCP": {
-        "valido": false,
-        "contracciones_detectadas": 1,
-        "olas": [
-          {
-            "ola": 1,
-            "rango_%": 9.27,
-            "vol_prom": 7218110.0
-          },
-          {
-            "ola": 2,
-            "rango_%": 6.74,
-            "vol_prom": 4223920.0
-          },
-          {
-            "ola": 3,
-            "rango_%": 3.61,
-            "vol_prom": 5992750.0
-          },
-          {
-            "ola": 4,
-            "rango_%": 6.76,
-            "vol_prom": 8121690.0
-          }
-        ],
-        "motivo": "solo 1 contracción(es), se necesitan 2"
-      },
-      "RSI": 41.4,
-      "Vol_rel": 3.0,
-      "SMA21": 85.83,
-      "fecha_evento": "2026-09-18T13:53:55.679119+00:00",
+      "Stop_sugerido": null,
       "Señal técnica": "MANTENER",
       "Recomendación final": "MANTENER",
       "Ajustado por": "sin ajustes",
@@ -2010,6 +1866,7 @@
       "Vol_rel": 2.32,
       "SMA21": 13.89,
       "fecha_evento": "2026-09-18T16:15:39.975676+00:00",
+      "Stop_sugerido": null,
       "Señal técnica": "VENTA",
       "Recomendación final": "VENTA",
       "Ajustado por": "sin ajustes",
@@ -2054,6 +1911,7 @@
       "Vol_rel": 0.6,
       "SMA21": 14.98,
       "fecha_evento": "2026-09-18T16:15:39.975676+00:00",
+      "Stop_sugerido": null,
       "Señal técnica": "VENTA",
       "Recomendación final": "VENTA",
       "Ajustado por": "sin ajustes",
@@ -2101,6 +1959,7 @@
       "Vol_rel": 0.76,
       "SMA21": 3.37,
       "fecha_evento": "2026-09-18T20:09:07.878154+00:00",
+      "Stop_sugerido": null,
       "Señal técnica": "VENTA",
       "Recomendación final": "VENTA",
       "Ajustado por": "sin ajustes",
@@ -2149,101 +2008,7 @@
       "Vol_rel": 1.71,
       "SMA21": 9.14,
       "fecha_evento": "2026-09-18T20:09:07.878154+00:00",
-      "Señal técnica": "VENTA",
-      "Recomendación final": "VENTA",
-      "Ajustado por": "sin ajustes",
-      "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión."
-    },
-    {
-      "Ticker": "RIO",
-      "Sector": "Materiales",
-      "Tipo": "tecnico",
-      "Estado": "⚠️ Sacudón, sin definición clara",
-      "Score": "1/7",
-      "Score_num": 1.0,
-      "Señales": [
-        "VCP válido (2 contracciones)"
-      ],
-      "VCP": {
-        "valido": true,
-        "contracciones_detectadas": 2,
-        "olas": [
-          {
-            "ola": 1,
-            "rango_%": 11.28,
-            "vol_prom": 2658090.0
-          },
-          {
-            "ola": 2,
-            "rango_%": 6.78,
-            "vol_prom": 2369020.0
-          },
-          {
-            "ola": 3,
-            "rango_%": 4.86,
-            "vol_prom": 2093090.0
-          },
-          {
-            "ola": 4,
-            "rango_%": 8.39,
-            "vol_prom": 1645320.0
-          }
-        ],
-        "motivo": null
-      },
-      "RSI": 30.9,
-      "Vol_rel": 0.7,
-      "SMA21": 101.81,
-      "fecha_evento": "2026-09-18T13:53:55.679119+00:00",
-      "Señal técnica": "MANTENER",
-      "Recomendación final": "MANTENER",
-      "Ajustado por": "sin ajustes",
-      "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión."
-    },
-    {
-      "Ticker": "SPCE",
-      "Sector": "Aeroespacial",
-      "Tipo": "tecnico",
-      "Estado": "🔻 Rompió piso (SMA200)",
-      "Score": "4/7",
-      "Score_num": 4.0,
-      "Señales": [
-        "volumen fuerte",
-        "RSI diario sano",
-        "base ordenada",
-        "sector+mercado ok"
-      ],
-      "VCP": {
-        "valido": false,
-        "contracciones_detectadas": 1,
-        "olas": [
-          {
-            "ola": 1,
-            "rango_%": 20.41,
-            "vol_prom": 7812070.0
-          },
-          {
-            "ola": 2,
-            "rango_%": 7.79,
-            "vol_prom": 10301380.0
-          },
-          {
-            "ola": 3,
-            "rango_%": 6.57,
-            "vol_prom": 4976060.0
-          },
-          {
-            "ola": 4,
-            "rango_%": 7.56,
-            "vol_prom": 6579600.0
-          }
-        ],
-        "motivo": "solo 1 contracción(es), se necesitan 2"
-      },
-      "RSI": 57.0,
-      "Vol_rel": 2.87,
-      "SMA21": 2.99,
-      "fecha_evento": "2026-09-18T13:53:55.679119+00:00",
+      "Stop_sugerido": null,
       "Señal técnica": "VENTA",
       "Recomendación final": "VENTA",
       "Ajustado por": "sin ajustes",
@@ -2293,29 +2058,9 @@
       "Vol_rel": 0.93,
       "SMA21": 283.89,
       "fecha_evento": "2026-09-18T20:09:07.878154+00:00",
+      "Stop_sugerido": null,
       "Señal técnica": "MANTENER",
       "Recomendación final": "MANTENER",
-      "Ajustado por": "sin ajustes",
-      "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión."
-    },
-    {
-      "Ticker": "BBVA",
-      "Sector": "Bancos",
-      "Tipo": "lider_soporte",
-      "Estado": "📈 Líder apoyando en soporte",
-      "Score": "RS 86",
-      "Score_num": null,
-      "Señales": [
-        "RS 86",
-        "a 1.72% de su SMA50"
-      ],
-      "VCP": null,
-      "RSI": 44.2,
-      "Vol_rel": 2.03,
-      "SMA21": null,
-      "fecha_evento": "2026-09-18T13:53:55.679119+00:00",
-      "Señal técnica": "COMPRA",
-      "Recomendación final": "COMPRA",
       "Ajustado por": "sin ajustes",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión."
     },
@@ -2335,6 +2080,7 @@
       "Vol_rel": 1.7,
       "SMA21": null,
       "fecha_evento": "2026-09-20T12:52:00.393901+00:00",
+      "Stop_sugerido": 272.85,
       "Señal técnica": "COMPRA",
       "Recomendación final": "COMPRA",
       "Ajustado por": "sin ajustes",
@@ -2356,6 +2102,7 @@
       "Vol_rel": 1.65,
       "SMA21": null,
       "fecha_evento": "2026-09-20T12:52:00.393901+00:00",
+      "Stop_sugerido": 1773.9,
       "Señal técnica": "COMPRA",
       "Recomendación final": "COMPRA",
       "Ajustado por": "sin ajustes",
