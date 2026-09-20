@@ -14,7 +14,7 @@ de la corrida (mismo patrón que macro_local.py).
 import logging
 import requests
 
-from config import RATIOS_CEDEAR, BRECHA_CEDEAR_ALERTA_PCT
+from config import RATIOS_CEDEAR, BRECHA_CEDEAR_ALERTA_PCT, ALIAS_CEDEAR_DATA912
 
 log = logging.getLogger("radar.cedear_pricing")
 
@@ -101,16 +101,20 @@ def traer_precios_cedears(tickers: list):
 
     precios = {}
     tickers_set = set(tickers)
+    # data912 -> símbolo interno del radar, para los casos donde difieren (ver config.py)
+    alias_inversa = {v: k for k, v in ALIAS_CEDEAR_DATA912.items()}
+
     for item in data:
         symbol = _extraer_campo(item, CAMPOS_SYMBOL_CANDIDATOS)
         if symbol is None:
             continue
         symbol = str(symbol).upper().replace(".BA", "").strip()
-        if symbol not in tickers_set:
+        symbol_interno = alias_inversa.get(symbol, symbol)
+        if symbol_interno not in tickers_set:
             continue
         precio = _extraer_campo(item, CAMPOS_PRECIO_CANDIDATOS)
         if precio is not None:
-            precios[symbol] = float(precio)
+            precios[symbol_interno] = float(precio)
 
     faltantes = tickers_set - set(precios.keys())
     if faltantes:

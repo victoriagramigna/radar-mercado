@@ -211,6 +211,17 @@ RATIOS_CEDEAR = {
     "TTE": 3, "UAL": 5, "UNP": 20, "UPST": 5, "USB": 5, "VRTX": 101, "CVS": 15,
 }
 
+# --- Casos donde el ticker real (yfinance/NYSE) difiere del código que usa
+# data912.com para el panel de CEDEARs (que replica el código interno de
+# BYMA) -- sin esto, ese ticker puntual queda sin datos en el panel de
+# caro/barato aunque el resto de la app funcione bien. Sin confirmar en vivo
+# contra data912 (no accesible desde este entorno de desarrollo); si el
+# código real fuera otro, esto simplemente sigue sin encontrar coincidencia,
+# no rompe nada.
+ALIAS_CEDEAR_DATA912 = {
+    "DIS": "DISN",  # Walt Disney
+}
+
 # --- Umbral para marcar un CEDEAR como "caro" o "barato" respecto a su valor teórico ---
 BRECHA_CEDEAR_ALERTA_PCT = 3   # +/- 3% de diferencia se considera una distorsión a mirar
 
