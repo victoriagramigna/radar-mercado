@@ -1,7 +1,7 @@
 {
-  "generado_utc": "2026-09-20T18:08:05.982142+00:00",
+  "generado_utc": "2026-09-20T18:20:51.098741+00:00",
   "proxima_corrida_estimada_utc": "2026-09-21T14:00:00+00:00",
-  "tickers_ok": 265,
+  "tickers_ok": 266,
   "tickers_fallidos": [
     {
       "ticker": "SKHY",
@@ -12,10 +12,6 @@
       "motivo": "datos insuficientes (68 filas, se necesitan >=200)"
     },
     {
-      "ticker": "ADGO",
-      "motivo": "datos insuficientes (0 filas, se necesitan >=200)"
-    },
-    {
       "ticker": "BK",
       "motivo": "datos insuficientes (0 filas, se necesitan >=200)"
     },
@@ -24,7 +20,7 @@
       "motivo": "datos insuficientes (1 filas, se necesitan >=200)"
     }
   ],
-  "pct_fallidos": 1.9,
+  "pct_fallidos": 1.5,
   "corrida_degradada": false,
   "frescura_dato": {
     "fecha_ultimo_dato": "2026-09-18",
@@ -257,7 +253,7 @@
       "RSI": 67.9,
       "Vol_rel": 1.65,
       "VCP_valido": false,
-      "RS_Score": 95.8,
+      "RS_Score": 95.9,
       "Radar_Score": 61.0
     },
     {
@@ -333,8 +329,8 @@
       "RSI": 45.5,
       "Vol_rel": 1.43,
       "VCP_valido": false,
-      "RS_Score": 94.3,
-      "Radar_Score": 53.8
+      "RS_Score": 94.4,
+      "Radar_Score": 53.9
     },
     {
       "Ticker": "ALAB",
@@ -409,7 +405,7 @@
       "RSI": 62.5,
       "Vol_rel": 1.59,
       "VCP_valido": true,
-      "RS_Score": 92.8,
+      "RS_Score": 92.9,
       "Radar_Score": 90.7
     },
     {
@@ -485,7 +481,7 @@
       "RSI": 63.3,
       "Vol_rel": 1.96,
       "VCP_valido": false,
-      "RS_Score": 91.3,
+      "RS_Score": 91.4,
       "Radar_Score": 57.4
     },
     {
@@ -504,8 +500,8 @@
       "RSI": 37.3,
       "Vol_rel": 1.31,
       "VCP_valido": true,
-      "RS_Score": 90.9,
-      "Radar_Score": 92.0
+      "RS_Score": 91.0,
+      "Radar_Score": 92.1
     },
     {
       "Ticker": "ARM",
@@ -580,7 +576,7 @@
       "RSI": 67.9,
       "Vol_rel": 1.57,
       "VCP_valido": false,
-      "RS_Score": 89.4,
+      "RS_Score": 89.5,
       "Radar_Score": 61.1
     },
     {
@@ -656,7 +652,7 @@
       "RSI": 42.8,
       "Vol_rel": 1.36,
       "VCP_valido": true,
-      "RS_Score": 87.9,
+      "RS_Score": 88.0,
       "Radar_Score": 90.2
     },
     {
@@ -675,7 +671,7 @@
       "RSI": 38.9,
       "Vol_rel": 1.88,
       "VCP_valido": true,
-      "RS_Score": 87.5,
+      "RS_Score": 87.6,
       "Radar_Score": 93.5
     },
     {
@@ -732,8 +728,8 @@
       "RSI": 47.8,
       "Vol_rel": 2.3,
       "VCP_valido": false,
-      "RS_Score": 86.4,
-      "Radar_Score": 54.8
+      "RS_Score": 86.5,
+      "Radar_Score": 54.9
     },
     {
       "Ticker": "KB",
@@ -751,7 +747,7 @@
       "RSI": 54.4,
       "Vol_rel": 1.01,
       "VCP_valido": false,
-      "RS_Score": 86.0,
+      "RS_Score": 86.1,
       "Radar_Score": 59.4
     },
     {
@@ -808,8 +804,8 @@
       "RSI": 77.9,
       "Vol_rel": 1.48,
       "VCP_valido": false,
-      "RS_Score": 84.9,
-      "Radar_Score": 60.5
+      "RS_Score": 85.0,
+      "Radar_Score": 60.6
     },
     {
       "Ticker": "PBR",
@@ -827,7 +823,7 @@
       "RSI": 68.3,
       "Vol_rel": 0.65,
       "VCP_valido": false,
-      "RS_Score": 84.5,
+      "RS_Score": 84.6,
       "Radar_Score": 51.6
     },
     {
@@ -884,7 +880,7 @@
       "RSI": 43.4,
       "Vol_rel": 0.93,
       "VCP_valido": false,
-      "RS_Score": 83.4,
+      "RS_Score": 83.5,
       "Radar_Score": 57.1
     },
     {
@@ -903,7 +899,7 @@
       "RSI": 34.1,
       "Vol_rel": 2.95,
       "VCP_valido": true,
-      "RS_Score": 83.0,
+      "RS_Score": 83.1,
       "Radar_Score": 93.2
     },
     {
@@ -922,7 +918,7 @@
       "RSI": 52.9,
       "Vol_rel": 1.14,
       "VCP_valido": true,
-      "RS_Score": 82.6,
+      "RS_Score": 82.7,
       "Radar_Score": 85.8
     },
     {
@@ -960,8 +956,8 @@
       "RSI": 44.3,
       "Vol_rel": 0.76,
       "VCP_valido": false,
-      "RS_Score": 81.9,
-      "Radar_Score": 54.7
+      "RS_Score": 82.0,
+      "Radar_Score": 54.8
     },
     {
       "Ticker": "AEG",
@@ -979,7 +975,7 @@
       "RSI": 56.6,
       "Vol_rel": 0.59,
       "VCP_valido": false,
-      "RS_Score": 81.5,
+      "RS_Score": 81.6,
       "Radar_Score": 54.5
     },
     {
@@ -998,8 +994,8 @@
       "RSI": 65.8,
       "Vol_rel": 0.74,
       "VCP_valido": false,
-      "RS_Score": 81.1,
-      "Radar_Score": 51.4
+      "RS_Score": 81.2,
+      "Radar_Score": 51.5
     },
     {
       "Ticker": "SNAP",
@@ -1036,7 +1032,7 @@
       "RSI": 70.2,
       "Vol_rel": 1.64,
       "VCP_valido": false,
-      "RS_Score": 80.4,
+      "RS_Score": 80.5,
       "Radar_Score": 59.7
     },
     {
@@ -1055,7 +1051,7 @@
       "RSI": 36.4,
       "Vol_rel": 1.7,
       "VCP_valido": true,
-      "RS_Score": 80.0,
+      "RS_Score": 80.1,
       "Radar_Score": 83.8
     },
     {
@@ -1074,8 +1070,8 @@
       "RSI": 59.2,
       "Vol_rel": 0.96,
       "VCP_valido": true,
-      "RS_Score": 79.6,
-      "Radar_Score": 86.9
+      "RS_Score": 79.7,
+      "Radar_Score": 87.0
     },
     {
       "Ticker": "EQNR",
@@ -1093,7 +1089,7 @@
       "RSI": 61.3,
       "Vol_rel": 1.17,
       "VCP_valido": false,
-      "RS_Score": 79.2,
+      "RS_Score": 79.3,
       "Radar_Score": 55.5
     },
     {
@@ -1131,7 +1127,7 @@
       "RSI": 43.4,
       "Vol_rel": 2.55,
       "VCP_valido": false,
-      "RS_Score": 78.5,
+      "RS_Score": 78.6,
       "Radar_Score": 57.0
     },
     {
@@ -1150,8 +1146,8 @@
       "RSI": 58.5,
       "Vol_rel": 1.08,
       "VCP_valido": false,
-      "RS_Score": 78.1,
-      "Radar_Score": 57.8
+      "RS_Score": 78.2,
+      "Radar_Score": 57.9
     },
     {
       "Ticker": "EBAY",
@@ -1169,7 +1165,7 @@
       "RSI": 63.5,
       "Vol_rel": 4.03,
       "VCP_valido": false,
-      "RS_Score": 77.7,
+      "RS_Score": 77.8,
       "Radar_Score": 57.8
     },
     {
@@ -1207,7 +1203,7 @@
       "RSI": 40.2,
       "Vol_rel": 1.61,
       "VCP_valido": true,
-      "RS_Score": 77.0,
+      "RS_Score": 77.1,
       "Radar_Score": 83.2
     },
     {
@@ -1226,8 +1222,8 @@
       "RSI": 43.0,
       "Vol_rel": 2.38,
       "VCP_valido": true,
-      "RS_Score": 76.6,
-      "Radar_Score": 79.2
+      "RS_Score": 76.7,
+      "Radar_Score": 79.3
     },
     {
       "Ticker": "NVDA",
@@ -1245,8 +1241,8 @@
       "RSI": 55.0,
       "Vol_rel": 1.41,
       "VCP_valido": true,
-      "RS_Score": 76.2,
-      "Radar_Score": 90.1
+      "RS_Score": 76.3,
+      "Radar_Score": 90.2
     },
     {
       "Ticker": "HSBC",
@@ -1264,7 +1260,7 @@
       "RSI": 45.0,
       "Vol_rel": 1.37,
       "VCP_valido": false,
-      "RS_Score": 75.8,
+      "RS_Score": 75.9,
       "Radar_Score": 56.0
     },
     {
@@ -1283,7 +1279,7 @@
       "RSI": 34.3,
       "Vol_rel": 3.12,
       "VCP_valido": false,
-      "RS_Score": 75.5,
+      "RS_Score": 75.6,
       "Radar_Score": 61.3
     },
     {
@@ -1302,8 +1298,8 @@
       "RSI": 35.4,
       "Vol_rel": 0.85,
       "VCP_valido": false,
-      "RS_Score": 75.1,
-      "Radar_Score": 48.5
+      "RS_Score": 75.2,
+      "Radar_Score": 48.6
     },
     {
       "Ticker": "SCCO",
@@ -1321,8 +1317,8 @@
       "RSI": 37.4,
       "Vol_rel": 1.18,
       "VCP_valido": false,
-      "RS_Score": 74.7,
-      "Radar_Score": 51.8
+      "RS_Score": 74.8,
+      "Radar_Score": 51.9
     },
     {
       "Ticker": "ABNB",
@@ -1340,7 +1336,7 @@
       "RSI": 17.0,
       "Vol_rel": 2.09,
       "VCP_valido": false,
-      "RS_Score": 74.3,
+      "RS_Score": 74.4,
       "Radar_Score": 50.6
     },
     {
@@ -1359,7 +1355,7 @@
       "RSI": 53.0,
       "Vol_rel": 2.52,
       "VCP_valido": false,
-      "RS_Score": 74.0,
+      "RS_Score": 74.1,
       "Radar_Score": 61.2
     },
     {
@@ -1378,8 +1374,8 @@
       "RSI": 49.4,
       "Vol_rel": 1.72,
       "VCP_valido": true,
-      "RS_Score": 73.6,
-      "Radar_Score": 78.3
+      "RS_Score": 73.7,
+      "Radar_Score": 78.4
     },
     {
       "Ticker": "IBKR",
@@ -1397,7 +1393,7 @@
       "RSI": 40.8,
       "Vol_rel": 1.55,
       "VCP_valido": false,
-      "RS_Score": 73.2,
+      "RS_Score": 73.3,
       "Radar_Score": 55.7
     },
     {
@@ -1416,7 +1412,7 @@
       "RSI": 63.2,
       "Vol_rel": 3.88,
       "VCP_valido": false,
-      "RS_Score": 72.8,
+      "RS_Score": 72.9,
       "Radar_Score": 52.3
     },
     {
@@ -1435,7 +1431,7 @@
       "RSI": 55.7,
       "Vol_rel": 1.98,
       "VCP_valido": false,
-      "RS_Score": 72.5,
+      "RS_Score": 72.6,
       "Radar_Score": 51.8
     },
     {
@@ -1454,8 +1450,8 @@
       "RSI": 60.6,
       "Vol_rel": 1.31,
       "VCP_valido": true,
-      "RS_Score": 72.1,
-      "Radar_Score": 86.8
+      "RS_Score": 72.2,
+      "Radar_Score": 86.9
     },
     {
       "Ticker": "EWZ",
@@ -1473,8 +1469,8 @@
       "RSI": 65.6,
       "Vol_rel": 0.76,
       "VCP_valido": false,
-      "RS_Score": 71.7,
-      "Radar_Score": 51.0
+      "RS_Score": 71.8,
+      "Radar_Score": 51.1
     },
     {
       "Ticker": "XLE",
@@ -1492,7 +1488,7 @@
       "RSI": 58.3,
       "Vol_rel": 0.97,
       "VCP_valido": false,
-      "RS_Score": 71.3,
+      "RS_Score": 71.4,
       "Radar_Score": 55.3
     },
     {
@@ -1511,8 +1507,8 @@
       "RSI": 29.4,
       "Vol_rel": 0.84,
       "VCP_valido": false,
-      "RS_Score": 70.9,
-      "Radar_Score": 43.6
+      "RS_Score": 71.1,
+      "Radar_Score": 43.7
     },
     {
       "Ticker": "UNH",
@@ -1530,7 +1526,7 @@
       "RSI": 38.8,
       "Vol_rel": 1.74,
       "VCP_valido": false,
-      "RS_Score": 70.6,
+      "RS_Score": 70.7,
       "Radar_Score": 53.1
     },
     {
@@ -1549,7 +1545,7 @@
       "RSI": 60.7,
       "Vol_rel": 1.71,
       "VCP_valido": false,
-      "RS_Score": 70.2,
+      "RS_Score": 70.3,
       "Radar_Score": 51.1
     },
     {
@@ -1568,7 +1564,7 @@
       "RSI": 36.2,
       "Vol_rel": 1.59,
       "VCP_valido": true,
-      "RS_Score": 69.8,
+      "RS_Score": 69.9,
       "Radar_Score": 79.9
     },
     {
@@ -1587,8 +1583,8 @@
       "RSI": 25.9,
       "Vol_rel": 2.07,
       "VCP_valido": true,
-      "RS_Score": 69.4,
-      "Radar_Score": 85.1
+      "RS_Score": 69.5,
+      "Radar_Score": 85.2
     },
     {
       "Ticker": "DHR",
@@ -1606,7 +1602,7 @@
       "RSI": 44.6,
       "Vol_rel": 2.48,
       "VCP_valido": false,
-      "RS_Score": 69.1,
+      "RS_Score": 69.2,
       "Radar_Score": 53.0
     },
     {
@@ -1625,7 +1621,7 @@
       "RSI": 60.5,
       "Vol_rel": 4.83,
       "VCP_valido": false,
-      "RS_Score": 68.7,
+      "RS_Score": 68.8,
       "Radar_Score": 55.6
     },
     {
@@ -1644,7 +1640,7 @@
       "RSI": 44.1,
       "Vol_rel": 1.79,
       "VCP_valido": false,
-      "RS_Score": 68.3,
+      "RS_Score": 68.4,
       "Radar_Score": 55.6
     },
     {
@@ -1663,7 +1659,7 @@
       "RSI": 39.0,
       "Vol_rel": 2.64,
       "VCP_valido": false,
-      "RS_Score": 67.9,
+      "RS_Score": 68.0,
       "Radar_Score": 55.2
     },
     {
@@ -1682,8 +1678,8 @@
       "RSI": 53.9,
       "Vol_rel": 3.03,
       "VCP_valido": false,
-      "RS_Score": 67.5,
-      "Radar_Score": 50.2
+      "RS_Score": 67.7,
+      "Radar_Score": 50.3
     },
     {
       "Ticker": "BBD",
@@ -1701,7 +1697,7 @@
       "RSI": 62.0,
       "Vol_rel": 0.76,
       "VCP_valido": true,
-      "RS_Score": 67.2,
+      "RS_Score": 67.3,
       "Radar_Score": 73.5
     },
     {
@@ -1720,7 +1716,7 @@
       "RSI": 61.6,
       "Vol_rel": 0.71,
       "VCP_valido": false,
-      "RS_Score": 66.8,
+      "RS_Score": 66.9,
       "Radar_Score": 46.9
     },
     {
@@ -1739,7 +1735,7 @@
       "RSI": 46.2,
       "Vol_rel": 3.25,
       "VCP_valido": false,
-      "RS_Score": 66.4,
+      "RS_Score": 66.5,
       "Radar_Score": 58.6
     },
     {
@@ -1758,8 +1754,8 @@
       "RSI": 36.5,
       "Vol_rel": 2.71,
       "VCP_valido": true,
-      "RS_Score": 66.0,
-      "Radar_Score": 82.0
+      "RS_Score": 66.2,
+      "Radar_Score": 82.1
     },
     {
       "Ticker": "XYZ",
@@ -1777,7 +1773,7 @@
       "RSI": 30.9,
       "Vol_rel": 1.45,
       "VCP_valido": true,
-      "RS_Score": 65.7,
+      "RS_Score": 65.8,
       "Radar_Score": 82.1
     },
     {
@@ -1796,8 +1792,8 @@
       "RSI": 19.3,
       "Vol_rel": 1.19,
       "VCP_valido": false,
-      "RS_Score": 65.3,
-      "Radar_Score": 35.2
+      "RS_Score": 65.4,
+      "Radar_Score": 35.3
     },
     {
       "Ticker": "MDT",
@@ -1815,7 +1811,7 @@
       "RSI": 53.7,
       "Vol_rel": 1.74,
       "VCP_valido": false,
-      "RS_Score": 64.9,
+      "RS_Score": 65.0,
       "Radar_Score": 56.0
     },
     {
@@ -1834,8 +1830,8 @@
       "RSI": 33.8,
       "Vol_rel": 1.61,
       "VCP_valido": false,
-      "RS_Score": 64.5,
-      "Radar_Score": 48.6
+      "RS_Score": 64.7,
+      "Radar_Score": 48.7
     },
     {
       "Ticker": "MOS",
@@ -1853,7 +1849,7 @@
       "RSI": 57.4,
       "Vol_rel": 1.42,
       "VCP_valido": false,
-      "RS_Score": 64.2,
+      "RS_Score": 64.3,
       "Radar_Score": 44.9
     },
     {
@@ -1872,7 +1868,7 @@
       "RSI": 57.7,
       "Vol_rel": 3.22,
       "VCP_valido": false,
-      "RS_Score": 63.8,
+      "RS_Score": 63.9,
       "Radar_Score": 49.0
     },
     {
@@ -1891,7 +1887,7 @@
       "RSI": 44.5,
       "Vol_rel": 1.94,
       "VCP_valido": false,
-      "RS_Score": 63.4,
+      "RS_Score": 63.5,
       "Radar_Score": 49.6
     },
     {
@@ -1910,8 +1906,8 @@
       "RSI": 44.1,
       "Vol_rel": 0.77,
       "VCP_valido": true,
-      "RS_Score": 63.0,
-      "Radar_Score": 75.7
+      "RS_Score": 63.2,
+      "Radar_Score": 75.8
     },
     {
       "Ticker": "AEM",
@@ -1929,8 +1925,8 @@
       "RSI": 44.2,
       "Vol_rel": 0.7,
       "VCP_valido": true,
-      "RS_Score": 62.6,
-      "Radar_Score": 70.2
+      "RS_Score": 62.8,
+      "Radar_Score": 70.3
     },
     {
       "Ticker": "QQQ",
@@ -1948,8 +1944,8 @@
       "RSI": 53.9,
       "Vol_rel": 1.54,
       "VCP_valido": true,
-      "RS_Score": 62.3,
-      "Radar_Score": 87.6
+      "RS_Score": 62.4,
+      "Radar_Score": 87.7
     },
     {
       "Ticker": "BMY",
@@ -1967,7 +1963,7 @@
       "RSI": 27.7,
       "Vol_rel": 4.03,
       "VCP_valido": false,
-      "RS_Score": 61.9,
+      "RS_Score": 62.0,
       "Radar_Score": 52.4
     },
     {
@@ -1986,8 +1982,8 @@
       "RSI": 21.8,
       "Vol_rel": 2.07,
       "VCP_valido": false,
-      "RS_Score": 61.5,
-      "Radar_Score": 45.4
+      "RS_Score": 61.7,
+      "Radar_Score": 45.5
     },
     {
       "Ticker": "COP",
@@ -2005,7 +2001,7 @@
       "RSI": 52.6,
       "Vol_rel": 2.65,
       "VCP_valido": false,
-      "RS_Score": 61.1,
+      "RS_Score": 61.3,
       "Radar_Score": 52.4
     },
     {
@@ -2024,7 +2020,7 @@
       "RSI": 46.0,
       "Vol_rel": 2.2,
       "VCP_valido": true,
-      "RS_Score": 60.8,
+      "RS_Score": 60.9,
       "Radar_Score": 74.5
     },
     {
@@ -2043,8 +2039,8 @@
       "RSI": 39.9,
       "Vol_rel": 1.91,
       "VCP_valido": true,
-      "RS_Score": 60.4,
-      "Radar_Score": 81.0
+      "RS_Score": 60.5,
+      "Radar_Score": 81.1
     },
     {
       "Ticker": "SPCE",
@@ -2062,8 +2058,8 @@
       "RSI": 57.0,
       "Vol_rel": 2.87,
       "VCP_valido": false,
-      "RS_Score": 60.0,
-      "Radar_Score": 44.2
+      "RS_Score": 60.2,
+      "Radar_Score": 44.3
     },
     {
       "Ticker": "MO",
@@ -2081,8 +2077,8 @@
       "RSI": 64.4,
       "Vol_rel": 1.72,
       "VCP_valido": true,
-      "RS_Score": 59.6,
-      "Radar_Score": 82.2
+      "RS_Score": 59.8,
+      "Radar_Score": 82.3
     },
     {
       "Ticker": "PATH",
@@ -2100,8 +2096,8 @@
       "RSI": 23.4,
       "Vol_rel": 0.63,
       "VCP_valido": false,
-      "RS_Score": 59.2,
-      "Radar_Score": 35.3
+      "RS_Score": 59.4,
+      "Radar_Score": 35.4
     },
     {
       "Ticker": "WELL",
@@ -2119,7 +2115,7 @@
       "RSI": 33.7,
       "Vol_rel": 3.06,
       "VCP_valido": true,
-      "RS_Score": 58.9,
+      "RS_Score": 59.0,
       "Radar_Score": 77.2
     },
     {
@@ -2138,7 +2134,7 @@
       "RSI": 61.0,
       "Vol_rel": 2.54,
       "VCP_valido": false,
-      "RS_Score": 58.5,
+      "RS_Score": 58.6,
       "Radar_Score": 52.7
     },
     {
@@ -2157,7 +2153,7 @@
       "RSI": 52.5,
       "Vol_rel": 1.87,
       "VCP_valido": false,
-      "RS_Score": 58.1,
+      "RS_Score": 58.3,
       "Radar_Score": 53.1
     },
     {
@@ -2176,8 +2172,8 @@
       "RSI": 48.1,
       "Vol_rel": 1.81,
       "VCP_valido": false,
-      "RS_Score": 57.7,
-      "Radar_Score": 50.5
+      "RS_Score": 57.9,
+      "Radar_Score": 50.6
     },
     {
       "Ticker": "USB",
@@ -2195,8 +2191,8 @@
       "RSI": 37.4,
       "Vol_rel": 1.99,
       "VCP_valido": false,
-      "RS_Score": 57.4,
-      "Radar_Score": 50.7
+      "RS_Score": 57.5,
+      "Radar_Score": 50.8
     },
     {
       "Ticker": "B",
@@ -2214,8 +2210,8 @@
       "RSI": 40.8,
       "Vol_rel": 1.17,
       "VCP_valido": true,
-      "RS_Score": 57.0,
-      "Radar_Score": 74.4
+      "RS_Score": 57.1,
+      "Radar_Score": 74.5
     },
     {
       "Ticker": "UNP",
@@ -2233,7 +2229,7 @@
       "RSI": 11.0,
       "Vol_rel": 2.11,
       "VCP_valido": true,
-      "RS_Score": 56.6,
+      "RS_Score": 56.8,
       "Radar_Score": 76.3
     },
     {
@@ -2252,7 +2248,7 @@
       "RSI": 44.9,
       "Vol_rel": 2.22,
       "VCP_valido": true,
-      "RS_Score": 56.2,
+      "RS_Score": 56.4,
       "Radar_Score": 85.3
     },
     {
@@ -2271,7 +2267,7 @@
       "RSI": 74.6,
       "Vol_rel": 1.3,
       "VCP_valido": false,
-      "RS_Score": 55.8,
+      "RS_Score": 56.0,
       "Radar_Score": 41.0
     },
     {
@@ -2290,7 +2286,7 @@
       "RSI": 27.6,
       "Vol_rel": 1.86,
       "VCP_valido": true,
-      "RS_Score": 55.5,
+      "RS_Score": 55.6,
       "Radar_Score": 69.2
     },
     {
@@ -2309,7 +2305,7 @@
       "RSI": 23.1,
       "Vol_rel": 1.45,
       "VCP_valido": false,
-      "RS_Score": 55.1,
+      "RS_Score": 55.3,
       "Radar_Score": 48.8
     },
     {
@@ -2328,8 +2324,8 @@
       "RSI": 40.9,
       "Vol_rel": 1.64,
       "VCP_valido": false,
-      "RS_Score": 54.7,
-      "Radar_Score": 43.6
+      "RS_Score": 54.9,
+      "Radar_Score": 43.7
     },
     {
       "Ticker": "HL",
@@ -2347,8 +2343,8 @@
       "RSI": 41.3,
       "Vol_rel": 1.64,
       "VCP_valido": false,
-      "RS_Score": 54.3,
-      "Radar_Score": 38.8
+      "RS_Score": 54.5,
+      "Radar_Score": 38.9
     },
     {
       "Ticker": "TTE",
@@ -2366,7 +2362,7 @@
       "RSI": 63.6,
       "Vol_rel": 0.64,
       "VCP_valido": false,
-      "RS_Score": 54.0,
+      "RS_Score": 54.1,
       "Radar_Score": 42.9
     },
     {
@@ -2385,7 +2381,7 @@
       "RSI": 30.3,
       "Vol_rel": 1.8,
       "VCP_valido": true,
-      "RS_Score": 53.6,
+      "RS_Score": 53.8,
       "Radar_Score": 84.0
     },
     {
@@ -2404,7 +2400,7 @@
       "RSI": 55.1,
       "Vol_rel": 2.03,
       "VCP_valido": false,
-      "RS_Score": 53.2,
+      "RS_Score": 53.4,
       "Radar_Score": 46.0
     },
     {
@@ -2423,7 +2419,7 @@
       "RSI": 46.9,
       "Vol_rel": 2.12,
       "VCP_valido": false,
-      "RS_Score": 52.8,
+      "RS_Score": 53.0,
       "Radar_Score": 49.1
     },
     {
@@ -2442,7 +2438,7 @@
       "RSI": 56.6,
       "Vol_rel": 2.71,
       "VCP_valido": false,
-      "RS_Score": 52.5,
+      "RS_Score": 52.6,
       "Radar_Score": 54.5
     },
     {
@@ -2461,7 +2457,7 @@
       "RSI": 62.9,
       "Vol_rel": 1.16,
       "VCP_valido": false,
-      "RS_Score": 52.1,
+      "RS_Score": 52.3,
       "Radar_Score": 46.8
     },
     {
@@ -2480,8 +2476,27 @@
       "RSI": 30.9,
       "Vol_rel": 0.7,
       "VCP_valido": true,
-      "RS_Score": 51.7,
-      "Radar_Score": 70.0
+      "RS_Score": 51.9,
+      "Radar_Score": 70.1
+    },
+    {
+      "Ticker": "AGRO",
+      "Sector": "Agro",
+      "Precio": 11.46,
+      "Ret_1m_%": 4.8,
+      "Ret_3m_%": 25.2,
+      "Ret_6m_%": -18.1,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": -24.5,
+      "SMA50": 10.61,
+      "Dist_SMA50_%": 7.98,
+      "SMA200": 10.64,
+      "Dist_SMA200_%": 7.7,
+      "RSI": 58.8,
+      "Vol_rel": 0.95,
+      "VCP_valido": true,
+      "RS_Score": 51.5,
+      "Radar_Score": 68.0
     },
     {
       "Ticker": "MS",
@@ -2499,7 +2514,7 @@
       "RSI": 30.5,
       "Vol_rel": 1.62,
       "VCP_valido": true,
-      "RS_Score": 51.3,
+      "RS_Score": 51.1,
       "Radar_Score": 78.0
     },
     {
@@ -2518,8 +2533,8 @@
       "RSI": 50.3,
       "Vol_rel": 0.75,
       "VCP_valido": true,
-      "RS_Score": 50.9,
-      "Radar_Score": 60.3
+      "RS_Score": 50.8,
+      "Radar_Score": 60.2
     },
     {
       "Ticker": "VRTX",
@@ -2537,8 +2552,8 @@
       "RSI": 29.7,
       "Vol_rel": 2.45,
       "VCP_valido": false,
-      "RS_Score": 50.6,
-      "Radar_Score": 48.5
+      "RS_Score": 50.4,
+      "Radar_Score": 48.4
     },
     {
       "Ticker": "DEO",
@@ -2556,7 +2571,7 @@
       "RSI": 24.3,
       "Vol_rel": 0.99,
       "VCP_valido": true,
-      "RS_Score": 50.2,
+      "RS_Score": 50.0,
       "Radar_Score": 67.3
     },
     {
@@ -2575,8 +2590,8 @@
       "RSI": 31.6,
       "Vol_rel": 1.71,
       "VCP_valido": true,
-      "RS_Score": 49.8,
-      "Radar_Score": 72.6
+      "RS_Score": 49.6,
+      "Radar_Score": 72.5
     },
     {
       "Ticker": "MELI",
@@ -2594,8 +2609,8 @@
       "RSI": 28.0,
       "Vol_rel": 2.35,
       "VCP_valido": false,
-      "RS_Score": 49.4,
-      "Radar_Score": 34.0
+      "RS_Score": 49.2,
+      "Radar_Score": 33.9
     },
     {
       "Ticker": "SPOT",
@@ -2613,8 +2628,8 @@
       "RSI": 36.8,
       "Vol_rel": 1.21,
       "VCP_valido": true,
-      "RS_Score": 49.1,
-      "Radar_Score": 68.1
+      "RS_Score": 48.9,
+      "Radar_Score": 68.0
     },
     {
       "Ticker": "SHOP",
@@ -2632,8 +2647,8 @@
       "RSI": 26.2,
       "Vol_rel": 1.4,
       "VCP_valido": false,
-      "RS_Score": 48.7,
-      "Radar_Score": 36.7
+      "RS_Score": 48.5,
+      "Radar_Score": 36.6
     },
     {
       "Ticker": "MMM",
@@ -2651,8 +2666,8 @@
       "RSI": 33.1,
       "Vol_rel": 1.62,
       "VCP_valido": false,
-      "RS_Score": 48.3,
-      "Radar_Score": 43.9
+      "RS_Score": 48.1,
+      "Radar_Score": 43.8
     },
     {
       "Ticker": "NVO",
@@ -2670,8 +2685,8 @@
       "RSI": 39.2,
       "Vol_rel": 1.04,
       "VCP_valido": false,
-      "RS_Score": 47.9,
-      "Radar_Score": 32.6
+      "RS_Score": 47.7,
+      "Radar_Score": 32.5
     },
     {
       "Ticker": "GM",
@@ -2689,7 +2704,7 @@
       "RSI": 41.4,
       "Vol_rel": 3.0,
       "VCP_valido": false,
-      "RS_Score": 47.5,
+      "RS_Score": 47.4,
       "Radar_Score": 43.8
     },
     {
@@ -2708,8 +2723,8 @@
       "RSI": 43.2,
       "Vol_rel": 2.32,
       "VCP_valido": true,
-      "RS_Score": 47.2,
-      "Radar_Score": 76.9
+      "RS_Score": 47.0,
+      "Radar_Score": 76.8
     },
     {
       "Ticker": "VIST",
@@ -2727,8 +2742,8 @@
       "RSI": 53.7,
       "Vol_rel": 0.95,
       "VCP_valido": false,
-      "RS_Score": 46.8,
-      "Radar_Score": 41.9
+      "RS_Score": 46.6,
+      "Radar_Score": 41.8
     },
     {
       "Ticker": "BCS",
@@ -2746,8 +2761,8 @@
       "RSI": 31.1,
       "Vol_rel": 2.02,
       "VCP_valido": false,
-      "RS_Score": 46.4,
-      "Radar_Score": 46.2
+      "RS_Score": 46.2,
+      "Radar_Score": 46.1
     },
     {
       "Ticker": "ADI",
@@ -2765,8 +2780,8 @@
       "RSI": 60.6,
       "Vol_rel": 2.13,
       "VCP_valido": true,
-      "RS_Score": 46.0,
-      "Radar_Score": 78.7
+      "RS_Score": 45.9,
+      "Radar_Score": 78.6
     },
     {
       "Ticker": "UAL",
@@ -2784,8 +2799,8 @@
       "RSI": 46.5,
       "Vol_rel": 1.31,
       "VCP_valido": false,
-      "RS_Score": 45.7,
-      "Radar_Score": 33.9
+      "RS_Score": 45.5,
+      "Radar_Score": 33.8
     },
     {
       "Ticker": "CAH",
@@ -2803,7 +2818,7 @@
       "RSI": 37.9,
       "Vol_rel": 2.57,
       "VCP_valido": false,
-      "RS_Score": 45.3,
+      "RS_Score": 45.1,
       "Radar_Score": 46.7
     },
     {
@@ -2822,8 +2837,8 @@
       "RSI": 74.5,
       "Vol_rel": 1.1,
       "VCP_valido": true,
-      "RS_Score": 44.9,
-      "Radar_Score": 69.5
+      "RS_Score": 44.7,
+      "Radar_Score": 69.4
     },
     {
       "Ticker": "JCI",
@@ -2841,8 +2856,8 @@
       "RSI": 56.1,
       "Vol_rel": 1.68,
       "VCP_valido": true,
-      "RS_Score": 44.5,
-      "Radar_Score": 73.4
+      "RS_Score": 44.4,
+      "Radar_Score": 73.3
     },
     {
       "Ticker": "CVS",
@@ -2860,7 +2875,7 @@
       "RSI": 36.0,
       "Vol_rel": 3.32,
       "VCP_valido": false,
-      "RS_Score": 44.2,
+      "RS_Score": 44.0,
       "Radar_Score": 43.1
     },
     {
@@ -2879,8 +2894,8 @@
       "RSI": 28.4,
       "Vol_rel": 0.77,
       "VCP_valido": false,
-      "RS_Score": 43.8,
-      "Radar_Score": 29.6
+      "RS_Score": 43.6,
+      "Radar_Score": 29.5
     },
     {
       "Ticker": "MDLZ",
@@ -2898,8 +2913,8 @@
       "RSI": 37.6,
       "Vol_rel": 2.27,
       "VCP_valido": false,
-      "RS_Score": 43.4,
-      "Radar_Score": 43.4
+      "RS_Score": 43.2,
+      "Radar_Score": 43.3
     },
     {
       "Ticker": "OXY",
@@ -2917,8 +2932,8 @@
       "RSI": 50.0,
       "Vol_rel": 1.8,
       "VCP_valido": false,
-      "RS_Score": 43.0,
-      "Radar_Score": 45.7
+      "RS_Score": 42.9,
+      "Radar_Score": 45.6
     },
     {
       "Ticker": "PG",
@@ -2936,7 +2951,7 @@
       "RSI": 58.7,
       "Vol_rel": 1.5,
       "VCP_valido": false,
-      "RS_Score": 42.6,
+      "RS_Score": 42.5,
       "Radar_Score": 45.3
     },
     {
@@ -2955,8 +2970,8 @@
       "RSI": 41.4,
       "Vol_rel": 0.92,
       "VCP_valido": false,
-      "RS_Score": 42.3,
-      "Radar_Score": 30.6
+      "RS_Score": 42.1,
+      "Radar_Score": 30.5
     },
     {
       "Ticker": "TM",
@@ -2974,7 +2989,7 @@
       "RSI": 45.3,
       "Vol_rel": 0.89,
       "VCP_valido": true,
-      "RS_Score": 41.9,
+      "RS_Score": 41.7,
       "Radar_Score": 61.3
     },
     {
@@ -2993,7 +3008,7 @@
       "RSI": 41.4,
       "Vol_rel": 2.32,
       "VCP_valido": false,
-      "RS_Score": 41.5,
+      "RS_Score": 41.4,
       "Radar_Score": 33.4
     },
     {
@@ -3012,7 +3027,7 @@
       "RSI": 42.7,
       "Vol_rel": 1.64,
       "VCP_valido": false,
-      "RS_Score": 41.1,
+      "RS_Score": 41.0,
       "Radar_Score": 36.3
     },
     {
@@ -3031,7 +3046,7 @@
       "RSI": 36.2,
       "Vol_rel": 2.22,
       "VCP_valido": false,
-      "RS_Score": 40.8,
+      "RS_Score": 40.6,
       "Radar_Score": 46.3
     },
     {
@@ -3050,8 +3065,8 @@
       "RSI": 44.3,
       "Vol_rel": 2.18,
       "VCP_valido": false,
-      "RS_Score": 40.4,
-      "Radar_Score": 38.4
+      "RS_Score": 40.2,
+      "Radar_Score": 38.3
     },
     {
       "Ticker": "ABT",
@@ -3069,8 +3084,8 @@
       "RSI": 20.4,
       "Vol_rel": 3.09,
       "VCP_valido": false,
-      "RS_Score": 40.0,
-      "Radar_Score": 36.8
+      "RS_Score": 39.8,
+      "Radar_Score": 36.7
     },
     {
       "Ticker": "ROST",
@@ -3088,7 +3103,7 @@
       "RSI": 47.3,
       "Vol_rel": 1.65,
       "VCP_valido": true,
-      "RS_Score": 39.6,
+      "RS_Score": 39.5,
       "Radar_Score": 70.7
     },
     {
@@ -3107,8 +3122,8 @@
       "RSI": 22.1,
       "Vol_rel": 1.78,
       "VCP_valido": false,
-      "RS_Score": 39.2,
-      "Radar_Score": 34.3
+      "RS_Score": 39.1,
+      "Radar_Score": 34.2
     },
     {
       "Ticker": "AVY",
@@ -3126,8 +3141,8 @@
       "RSI": 31.8,
       "Vol_rel": 2.25,
       "VCP_valido": true,
-      "RS_Score": 38.9,
-      "Radar_Score": 65.9
+      "RS_Score": 38.7,
+      "Radar_Score": 65.8
     },
     {
       "Ticker": "AIG",
@@ -3145,8 +3160,8 @@
       "RSI": 42.6,
       "Vol_rel": 1.84,
       "VCP_valido": false,
-      "RS_Score": 38.5,
-      "Radar_Score": 40.3
+      "RS_Score": 38.3,
+      "Radar_Score": 40.2
     },
     {
       "Ticker": "IBN",
@@ -3164,7 +3179,7 @@
       "RSI": 31.2,
       "Vol_rel": 0.83,
       "VCP_valido": false,
-      "RS_Score": 38.1,
+      "RS_Score": 38.0,
       "Radar_Score": 32.6
     },
     {
@@ -3183,7 +3198,7 @@
       "RSI": 18.6,
       "Vol_rel": 1.87,
       "VCP_valido": true,
-      "RS_Score": 37.7,
+      "RS_Score": 37.6,
       "Radar_Score": 66.1
     },
     {
@@ -3202,7 +3217,7 @@
       "RSI": 29.1,
       "Vol_rel": 2.26,
       "VCP_valido": false,
-      "RS_Score": 37.4,
+      "RS_Score": 37.2,
       "Radar_Score": 40.1
     },
     {
@@ -3221,7 +3236,7 @@
       "RSI": 41.2,
       "Vol_rel": 1.02,
       "VCP_valido": false,
-      "RS_Score": 37.0,
+      "RS_Score": 36.8,
       "Radar_Score": 29.7
     },
     {
@@ -3240,7 +3255,7 @@
       "RSI": 35.8,
       "Vol_rel": 0.74,
       "VCP_valido": false,
-      "RS_Score": 36.6,
+      "RS_Score": 36.5,
       "Radar_Score": 22.6
     },
     {
@@ -3259,7 +3274,7 @@
       "RSI": 35.6,
       "Vol_rel": 2.29,
       "VCP_valido": false,
-      "RS_Score": 36.2,
+      "RS_Score": 36.1,
       "Radar_Score": 39.8
     },
     {
@@ -3278,7 +3293,7 @@
       "RSI": 29.2,
       "Vol_rel": 1.63,
       "VCP_valido": true,
-      "RS_Score": 35.8,
+      "RS_Score": 35.7,
       "Radar_Score": 66.3
     },
     {
@@ -3297,7 +3312,7 @@
       "RSI": 31.7,
       "Vol_rel": 1.31,
       "VCP_valido": false,
-      "RS_Score": 35.5,
+      "RS_Score": 35.3,
       "Radar_Score": 34.2
     },
     {
@@ -3316,8 +3331,8 @@
       "RSI": 23.6,
       "Vol_rel": 1.77,
       "VCP_valido": false,
-      "RS_Score": 35.1,
-      "Radar_Score": 34.9
+      "RS_Score": 35.0,
+      "Radar_Score": 34.8
     },
     {
       "Ticker": "CAT",
@@ -3335,7 +3350,7 @@
       "RSI": 52.8,
       "Vol_rel": 2.01,
       "VCP_valido": true,
-      "RS_Score": 34.7,
+      "RS_Score": 34.6,
       "Radar_Score": 64.9
     },
     {
@@ -3354,8 +3369,8 @@
       "RSI": 52.8,
       "Vol_rel": 0.99,
       "VCP_valido": false,
-      "RS_Score": 34.3,
-      "Radar_Score": 30.1
+      "RS_Score": 34.2,
+      "Radar_Score": 30.0
     },
     {
       "Ticker": "PLD",
@@ -3373,7 +3388,7 @@
       "RSI": 36.3,
       "Vol_rel": 2.29,
       "VCP_valido": false,
-      "RS_Score": 34.0,
+      "RS_Score": 33.8,
       "Radar_Score": 35.8
     },
     {
@@ -3392,7 +3407,7 @@
       "RSI": 38.2,
       "Vol_rel": 0.6,
       "VCP_valido": false,
-      "RS_Score": 33.6,
+      "RS_Score": 33.5,
       "Radar_Score": 23.8
     },
     {
@@ -3411,7 +3426,7 @@
       "RSI": 56.8,
       "Vol_rel": 1.28,
       "VCP_valido": true,
-      "RS_Score": 33.2,
+      "RS_Score": 33.1,
       "Radar_Score": 61.7
     },
     {
@@ -3430,7 +3445,7 @@
       "RSI": 45.5,
       "Vol_rel": 0.66,
       "VCP_valido": true,
-      "RS_Score": 32.8,
+      "RS_Score": 32.7,
       "Radar_Score": 55.3
     },
     {
@@ -3449,7 +3464,7 @@
       "RSI": 28.8,
       "Vol_rel": 1.93,
       "VCP_valido": false,
-      "RS_Score": 32.5,
+      "RS_Score": 32.3,
       "Radar_Score": 36.3
     },
     {
@@ -3468,8 +3483,8 @@
       "RSI": 15.2,
       "Vol_rel": 2.45,
       "VCP_valido": false,
-      "RS_Score": 32.1,
-      "Radar_Score": 37.5
+      "RS_Score": 32.0,
+      "Radar_Score": 37.4
     },
     {
       "Ticker": "GSK",
@@ -3487,7 +3502,7 @@
       "RSI": 46.4,
       "Vol_rel": 1.71,
       "VCP_valido": false,
-      "RS_Score": 31.7,
+      "RS_Score": 31.6,
       "Radar_Score": 36.8
     },
     {
@@ -3506,7 +3521,7 @@
       "RSI": 38.6,
       "Vol_rel": 2.89,
       "VCP_valido": false,
-      "RS_Score": 31.3,
+      "RS_Score": 31.2,
       "Radar_Score": 31.9
     },
     {
@@ -3525,7 +3540,7 @@
       "RSI": 51.1,
       "Vol_rel": 1.61,
       "VCP_valido": true,
-      "RS_Score": 30.9,
+      "RS_Score": 30.8,
       "Radar_Score": 65.5
     },
     {
@@ -3544,7 +3559,7 @@
       "RSI": 27.5,
       "Vol_rel": 2.15,
       "VCP_valido": false,
-      "RS_Score": 30.6,
+      "RS_Score": 30.5,
       "Radar_Score": 35.5
     },
     {
@@ -3563,7 +3578,7 @@
       "RSI": 26.9,
       "Vol_rel": 1.1,
       "VCP_valido": false,
-      "RS_Score": 30.2,
+      "RS_Score": 30.1,
       "Radar_Score": 26.2
     },
     {
@@ -3582,7 +3597,7 @@
       "RSI": 10.8,
       "Vol_rel": 2.05,
       "VCP_valido": false,
-      "RS_Score": 29.8,
+      "RS_Score": 29.7,
       "Radar_Score": 33.8
     },
     {
@@ -3601,7 +3616,7 @@
       "RSI": 54.5,
       "Vol_rel": 1.83,
       "VCP_valido": false,
-      "RS_Score": 29.4,
+      "RS_Score": 29.3,
       "Radar_Score": 34.6
     },
     {
@@ -3620,8 +3635,8 @@
       "RSI": 34.8,
       "Vol_rel": 2.95,
       "VCP_valido": false,
-      "RS_Score": 29.1,
-      "Radar_Score": 30.4
+      "RS_Score": 28.9,
+      "Radar_Score": 30.3
     },
     {
       "Ticker": "ORCL",
@@ -3639,8 +3654,8 @@
       "RSI": 47.5,
       "Vol_rel": 1.29,
       "VCP_valido": true,
-      "RS_Score": 28.7,
-      "Radar_Score": 62.8
+      "RS_Score": 28.6,
+      "Radar_Score": 62.7
     },
     {
       "Ticker": "KMB",
@@ -3658,7 +3673,7 @@
       "RSI": 19.1,
       "Vol_rel": 1.45,
       "VCP_valido": false,
-      "RS_Score": 28.3,
+      "RS_Score": 28.2,
       "Radar_Score": 30.9
     },
     {
@@ -3677,7 +3692,7 @@
       "RSI": 21.7,
       "Vol_rel": 3.89,
       "VCP_valido": false,
-      "RS_Score": 27.9,
+      "RS_Score": 27.8,
       "Radar_Score": 31.8
     },
     {
@@ -3696,7 +3711,7 @@
       "RSI": 44.1,
       "Vol_rel": 2.31,
       "VCP_valido": true,
-      "RS_Score": 27.5,
+      "RS_Score": 27.4,
       "Radar_Score": 64.5
     },
     {
@@ -3715,7 +3730,7 @@
       "RSI": 35.1,
       "Vol_rel": 2.48,
       "VCP_valido": false,
-      "RS_Score": 27.2,
+      "RS_Score": 27.1,
       "Radar_Score": 30.2
     },
     {
@@ -3734,7 +3749,7 @@
       "RSI": 62.8,
       "Vol_rel": 2.12,
       "VCP_valido": true,
-      "RS_Score": 26.8,
+      "RS_Score": 26.7,
       "Radar_Score": 64.3
     },
     {
@@ -3753,8 +3768,8 @@
       "RSI": 56.5,
       "Vol_rel": 0.97,
       "VCP_valido": true,
-      "RS_Score": 26.4,
-      "Radar_Score": 62.1
+      "RS_Score": 26.3,
+      "Radar_Score": 62.0
     },
     {
       "Ticker": "IBM",
@@ -3772,8 +3787,8 @@
       "RSI": 44.9,
       "Vol_rel": 2.53,
       "VCP_valido": true,
-      "RS_Score": 26.0,
-      "Radar_Score": 60.4
+      "RS_Score": 25.9,
+      "Radar_Score": 60.3
     },
     {
       "Ticker": "WMT",
@@ -3791,7 +3806,7 @@
       "RSI": 63.3,
       "Vol_rel": 1.78,
       "VCP_valido": false,
-      "RS_Score": 25.7,
+      "RS_Score": 25.6,
       "Radar_Score": 29.7
     },
     {
@@ -3810,7 +3825,7 @@
       "RSI": 35.5,
       "Vol_rel": 2.05,
       "VCP_valido": false,
-      "RS_Score": 25.3,
+      "RS_Score": 25.2,
       "Radar_Score": 30.1
     },
     {
@@ -3829,7 +3844,7 @@
       "RSI": 36.0,
       "Vol_rel": 1.01,
       "VCP_valido": false,
-      "RS_Score": 24.9,
+      "RS_Score": 24.8,
       "Radar_Score": 25.9
     },
     {
@@ -3848,8 +3863,8 @@
       "RSI": 41.6,
       "Vol_rel": 0.66,
       "VCP_valido": true,
-      "RS_Score": 24.5,
-      "Radar_Score": 51.5
+      "RS_Score": 24.4,
+      "Radar_Score": 51.4
     },
     {
       "Ticker": "BABA",
@@ -3867,7 +3882,7 @@
       "RSI": 37.2,
       "Vol_rel": 1.18,
       "VCP_valido": false,
-      "RS_Score": 24.2,
+      "RS_Score": 24.1,
       "Radar_Score": 22.8
     },
     {
@@ -3886,7 +3901,7 @@
       "RSI": 50.7,
       "Vol_rel": 0.82,
       "VCP_valido": false,
-      "RS_Score": 23.8,
+      "RS_Score": 23.7,
       "Radar_Score": 22.8
     },
     {
@@ -3905,8 +3920,8 @@
       "RSI": 54.9,
       "Vol_rel": 1.19,
       "VCP_valido": false,
-      "RS_Score": 23.4,
-      "Radar_Score": 22.7
+      "RS_Score": 23.3,
+      "Radar_Score": 22.6
     },
     {
       "Ticker": "HAL",
@@ -3924,7 +3939,7 @@
       "RSI": 34.6,
       "Vol_rel": 1.6,
       "VCP_valido": false,
-      "RS_Score": 23.0,
+      "RS_Score": 22.9,
       "Radar_Score": 28.6
     },
     {
@@ -3962,7 +3977,7 @@
       "RSI": 29.0,
       "Vol_rel": 2.62,
       "VCP_valido": true,
-      "RS_Score": 22.3,
+      "RS_Score": 22.2,
       "Radar_Score": 59.7
     },
     {
@@ -3981,7 +3996,7 @@
       "RSI": 34.9,
       "Vol_rel": 1.66,
       "VCP_valido": false,
-      "RS_Score": 21.9,
+      "RS_Score": 21.8,
       "Radar_Score": 28.2
     },
     {
@@ -4000,7 +4015,7 @@
       "RSI": 47.1,
       "Vol_rel": 0.67,
       "VCP_valido": false,
-      "RS_Score": 21.5,
+      "RS_Score": 21.4,
       "Radar_Score": 21.0
     },
     {
@@ -4038,7 +4053,7 @@
       "RSI": 44.5,
       "Vol_rel": 2.2,
       "VCP_valido": false,
-      "RS_Score": 20.8,
+      "RS_Score": 20.7,
       "Radar_Score": 32.5
     },
     {
@@ -4057,7 +4072,7 @@
       "RSI": 25.9,
       "Vol_rel": 1.73,
       "VCP_valido": false,
-      "RS_Score": 20.4,
+      "RS_Score": 20.3,
       "Radar_Score": 25.8
     },
     {
@@ -4076,8 +4091,8 @@
       "RSI": 50.3,
       "Vol_rel": 0.5,
       "VCP_valido": false,
-      "RS_Score": 20.0,
-      "Radar_Score": 14.8
+      "RS_Score": 19.9,
+      "Radar_Score": 14.7
     },
     {
       "Ticker": "ERIC",
@@ -4095,8 +4110,8 @@
       "RSI": 58.1,
       "Vol_rel": 1.18,
       "VCP_valido": true,
-      "RS_Score": 19.6,
-      "Radar_Score": 60.3
+      "RS_Score": 19.5,
+      "Radar_Score": 60.2
     },
     {
       "Ticker": "NEE",
@@ -4133,7 +4148,7 @@
       "RSI": 17.3,
       "Vol_rel": 2.26,
       "VCP_valido": true,
-      "RS_Score": 18.9,
+      "RS_Score": 18.8,
       "Radar_Score": 59.2
     },
     {
@@ -4152,7 +4167,7 @@
       "RSI": 51.2,
       "Vol_rel": 0.91,
       "VCP_valido": false,
-      "RS_Score": 18.5,
+      "RS_Score": 18.4,
       "Radar_Score": 21.8
     },
     {
@@ -4171,8 +4186,8 @@
       "RSI": 51.2,
       "Vol_rel": 2.11,
       "VCP_valido": true,
-      "RS_Score": 18.1,
-      "Radar_Score": 61.7
+      "RS_Score": 18.0,
+      "Radar_Score": 61.6
     },
     {
       "Ticker": "BBAR",
@@ -4209,7 +4224,7 @@
       "RSI": 51.9,
       "Vol_rel": 1.16,
       "VCP_valido": false,
-      "RS_Score": 17.4,
+      "RS_Score": 17.3,
       "Radar_Score": 24.3
     },
     {
@@ -4228,7 +4243,7 @@
       "RSI": 10.0,
       "Vol_rel": 2.37,
       "VCP_valido": false,
-      "RS_Score": 17.0,
+      "RS_Score": 16.9,
       "Radar_Score": 29.2
     },
     {
@@ -4247,7 +4262,7 @@
       "RSI": 34.6,
       "Vol_rel": 0.91,
       "VCP_valido": false,
-      "RS_Score": 16.6,
+      "RS_Score": 16.5,
       "Radar_Score": 26.8
     },
     {
@@ -4304,7 +4319,7 @@
       "RSI": 28.6,
       "Vol_rel": 1.15,
       "VCP_valido": true,
-      "RS_Score": 15.5,
+      "RS_Score": 15.4,
       "Radar_Score": 53.6
     },
     {
@@ -4323,8 +4338,8 @@
       "RSI": 35.7,
       "Vol_rel": 1.19,
       "VCP_valido": false,
-      "RS_Score": 15.1,
-      "Radar_Score": 20.2
+      "RS_Score": 15.0,
+      "Radar_Score": 20.1
     },
     {
       "Ticker": "BKNG",
@@ -4380,7 +4395,7 @@
       "RSI": 15.5,
       "Vol_rel": 2.65,
       "VCP_valido": false,
-      "RS_Score": 14.0,
+      "RS_Score": 13.9,
       "Radar_Score": 26.7
     },
     {
@@ -4399,7 +4414,7 @@
       "RSI": 32.2,
       "Vol_rel": 2.85,
       "VCP_valido": false,
-      "RS_Score": 13.6,
+      "RS_Score": 13.5,
       "Radar_Score": 22.8
     },
     {
@@ -4456,7 +4471,7 @@
       "RSI": 48.4,
       "Vol_rel": 1.23,
       "VCP_valido": false,
-      "RS_Score": 12.5,
+      "RS_Score": 12.4,
       "Radar_Score": 19.8
     },
     {
@@ -4475,7 +4490,7 @@
       "RSI": 21.3,
       "Vol_rel": 2.34,
       "VCP_valido": false,
-      "RS_Score": 12.1,
+      "RS_Score": 12.0,
       "Radar_Score": 26.1
     },
     {
@@ -4551,7 +4566,7 @@
       "RSI": 44.2,
       "Vol_rel": 1.36,
       "VCP_valido": true,
-      "RS_Score": 10.6,
+      "RS_Score": 10.5,
       "Radar_Score": 50.5
     },
     {
@@ -4627,7 +4642,7 @@
       "RSI": 47.1,
       "Vol_rel": 2.56,
       "VCP_valido": false,
-      "RS_Score": 9.1,
+      "RS_Score": 9.0,
       "Radar_Score": 25.2
     },
     {
@@ -4646,7 +4661,7 @@
       "RSI": 30.4,
       "Vol_rel": 1.18,
       "VCP_valido": false,
-      "RS_Score": 8.7,
+      "RS_Score": 8.6,
       "Radar_Score": 21.0
     },
     {
@@ -4722,7 +4737,7 @@
       "RSI": 27.8,
       "Vol_rel": 3.22,
       "VCP_valido": false,
-      "RS_Score": 7.2,
+      "RS_Score": 7.1,
       "Radar_Score": 20.9
     },
     {
@@ -4798,8 +4813,8 @@
       "RSI": 24.1,
       "Vol_rel": 3.69,
       "VCP_valido": false,
-      "RS_Score": 5.7,
-      "Radar_Score": 20.5
+      "RS_Score": 5.6,
+      "Radar_Score": 20.4
     },
     {
       "Ticker": "ASR",
@@ -4874,7 +4889,7 @@
       "RSI": 29.3,
       "Vol_rel": 1.96,
       "VCP_valido": false,
-      "RS_Score": 4.2,
+      "RS_Score": 4.1,
       "Radar_Score": 21.9
     },
     {
@@ -5069,21 +5084,21 @@
     }
   ],
   "rs_por_sector": {
-    "Aeroespacial": 25.55,
-    "Agro": 37.550000000000004,
-    "Automotriz": 39.875,
-    "Bancos": 53.523809523809526,
-    "Consumo": 34.56923076923077,
-    "Diversificado": 52.5,
-    "ETF": 74.39999999999999,
-    "Energía": 43.496875,
-    "Fintech": 56.188235294117646,
-    "Materiales": 44.71333333333334,
-    "Real Estate": 36.63333333333333,
-    "Salud": 58.75238095238095,
-    "Tecnología": 64.78507462686568,
-    "Telecomunicaciones": 26.25,
-    "Transporte": 36.050000000000004
+    "Aeroespacial": 25.516666666666666,
+    "Agro": 42.233333333333334,
+    "Automotriz": 39.824999999999996,
+    "Bancos": 53.53809523809524,
+    "Consumo": 34.54871794871795,
+    "Diversificado": 52.6,
+    "ETF": 74.5,
+    "Energía": 43.48125,
+    "Fintech": 56.19411764705882,
+    "Materiales": 44.72,
+    "Real Estate": 36.56666666666666,
+    "Salud": 58.72380952380953,
+    "Tecnología": 64.79402985074627,
+    "Telecomunicaciones": 26.125,
+    "Transporte": 36.025
   },
   "regimen_mercado": {
     "sano": true,
@@ -5197,7 +5212,7 @@
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 50.6,
       "Dist_Max52w_%": -12.7,
-      "RS_sector": 34.6,
+      "RS_sector": 34.5,
       "Var_SPY_dia_%": 0.13
     },
     {
@@ -5363,7 +5378,7 @@
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 57.1,
       "Dist_Max52w_%": -6.6,
-      "RS_sector": 74.4,
+      "RS_sector": 74.5,
       "Var_SPY_dia_%": 0.13
     },
     {
@@ -5557,7 +5572,7 @@
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 43.1,
       "Dist_Max52w_%": -19.2,
-      "RS_sector": 58.8,
+      "RS_sector": 58.7,
       "Var_SPY_dia_%": 0.13
     },
     {
@@ -5611,7 +5626,7 @@
       "Recomendación final": "VENTA",
       "Ajustado por": "sin ajustes",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 79.2,
+      "Radar_Score": 79.3,
       "Dist_Max52w_%": -35.9,
       "RS_sector": 64.8,
       "Var_SPY_dia_%": 0.13
@@ -5669,7 +5684,7 @@
       "Recomendación final": "MANTENER",
       "Ajustado por": "sin ajustes",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 78.7,
+      "Radar_Score": 78.6,
       "Dist_Max52w_%": -15.4,
       "RS_sector": 64.8,
       "Var_SPY_dia_%": 0.13
@@ -5782,7 +5797,7 @@
       "Recomendación final": "VENTA",
       "Ajustado por": "sin ajustes",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 65.9,
+      "Radar_Score": 65.8,
       "Dist_Max52w_%": -13.6,
       "RS_sector": 44.7,
       "Var_SPY_dia_%": 0.13
@@ -5866,7 +5881,7 @@
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 67.3,
       "Dist_Max52w_%": -15.4,
-      "RS_sector": 34.6,
+      "RS_sector": 34.5,
       "Var_SPY_dia_%": 0.13
     },
     {
@@ -6083,7 +6098,7 @@
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 44.9,
       "Dist_Max52w_%": -29.4,
-      "RS_sector": 37.6,
+      "RS_sector": 42.2,
       "Var_SPY_dia_%": 0.13
     },
     {
@@ -6165,7 +6180,7 @@
       "Recomendación final": "COMPRA",
       "Ajustado por": "sin ajustes",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 54.7,
+      "Radar_Score": 54.8,
       "Dist_Max52w_%": -7.3,
       "RS_sector": 53.5,
       "Var_SPY_dia_%": 0.13
@@ -6246,9 +6261,9 @@
       "Recomendación final": "VENTA",
       "Ajustado por": "sin ajustes",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 29.6,
+      "Radar_Score": 29.5,
       "Dist_Max52w_%": -15.0,
-      "RS_sector": 34.6,
+      "RS_sector": 34.5,
       "Var_SPY_dia_%": 0.13
     }
   ],
@@ -6991,6 +7006,15 @@
         "Precio_teorico_ARS": 3859.8,
         "Brecha_%": -0.51,
         "Estado": "Barato respecto al teórico",
+        "Distorsion_relevante": false
+      },
+      {
+        "Ticker": "AGRO",
+        "sin_datos": false,
+        "Precio_real_ARS": 18430.0,
+        "Precio_teorico_ARS": 18299.38,
+        "Brecha_%": 0.71,
+        "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false
       },
       {
