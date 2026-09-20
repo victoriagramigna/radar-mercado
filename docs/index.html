@@ -180,17 +180,46 @@
                     <input type="text" id="cartera-ticker" required class="w-full bg-base border border-gray-700 focus:border-accent rounded-sm px-2 py-1.5 text-white uppercase" placeholder="NVDA">
                 </div>
                 <div class="col-span-1">
-                    <label class="text-gray-500 text-[10px] uppercase block mb-1">Precio de compra (USD)</label>
-                    <input type="number" step="0.01" id="cartera-precio" required class="w-full bg-base border border-gray-700 focus:border-accent rounded-sm px-2 py-1.5 text-white" placeholder="230.36">
+                    <label class="text-gray-500 text-[10px] uppercase block mb-1">¿Cómo compraste?</label>
+                    <select id="cartera-moneda" class="w-full bg-base border border-gray-700 focus:border-accent rounded-sm px-2 py-1.5 text-white">
+                        <option value="USD">En dólares (precio de la acción)</option>
+                        <option value="ARS">CEDEAR en pesos</option>
+                    </select>
                 </div>
+
+                <div id="cartera-campos-usd" class="col-span-2 grid grid-cols-2 gap-3">
+                    <div class="col-span-1">
+                        <label class="text-gray-500 text-[10px] uppercase block mb-1">Precio de compra (USD, por acción)</label>
+                        <input type="number" step="0.01" id="cartera-precio-usd" class="w-full bg-base border border-gray-700 focus:border-accent rounded-sm px-2 py-1.5 text-white" placeholder="230.36">
+                    </div>
+                </div>
+
+                <div id="cartera-campos-ars" class="col-span-2 grid grid-cols-2 gap-3 hidden">
+                    <div class="col-span-1">
+                        <label class="text-gray-500 text-[10px] uppercase block mb-1">Precio del CEDEAR (ARS)</label>
+                        <input type="number" step="0.01" id="cartera-precio-ars" class="w-full bg-base border border-gray-700 focus:border-accent rounded-sm px-2 py-1.5 text-white" placeholder="77150">
+                    </div>
+                    <div class="col-span-1">
+                        <label class="text-gray-500 text-[10px] uppercase block mb-1">CCL de ese día</label>
+                        <input type="number" step="0.01" id="cartera-ccl-compra" class="w-full bg-base border border-gray-700 focus:border-accent rounded-sm px-2 py-1.5 text-white" placeholder="1596.80">
+                    </div>
+                    <div class="col-span-2 text-[10px] text-gray-500">
+                        El ratio de conversión del ticker lo toma solo del panel de CEDEARs.
+                        El stop-loss y todo el análisis técnico están en dólares, así que
+                        convertimos tu precio en pesos a su equivalente en dólares por
+                        acción -- es contra ese número que se compara todo.
+                    </div>
+                </div>
+
                 <div class="col-span-1">
-                    <label class="text-gray-500 text-[10px] uppercase block mb-1">Cantidad (opcional)</label>
+                    <label class="text-gray-500 text-[10px] uppercase block mb-1">Cantidad de CEDEARs/acciones (opcional)</label>
                     <input type="number" step="any" id="cartera-cantidad" class="w-full bg-base border border-gray-700 focus:border-accent rounded-sm px-2 py-1.5 text-white" placeholder="10">
                 </div>
                 <div class="col-span-1">
                     <label class="text-gray-500 text-[10px] uppercase block mb-1">Fecha de compra</label>
                     <input type="date" id="cartera-fecha" required class="w-full bg-base border border-gray-700 focus:border-accent rounded-sm px-2 py-1.5 text-white">
                 </div>
+                <div id="cartera-error" class="col-span-2 text-neg text-xs hidden"></div>
                 <button type="submit" class="col-span-2 bg-accent text-base font-bold uppercase text-xs py-2 rounded-sm hover:bg-white transition-colors mt-2">Agregar</button>
             </form>
             <div class="font-mono text-[10px] text-gray-600 mt-2">Se guarda solo en este navegador (no se sube al repo). Informativo -- no es una orden real.</div>
@@ -948,7 +977,8 @@
                         <div class="flex justify-between items-start">
                             <div>
                                 <span class="font-bold text-white text-lg">${p.ticker}</span>
-                                <div class="text-xs text-gray-500 mt-1">Compra: $${p.precio} ${p.cantidad ? `× ${p.cantidad}` : ''} el ${p.fecha}</div>
+                                <div class="text-xs text-gray-500 mt-1">Compra: $${p.precio} (USD/acción) ${p.cantidad ? `× ${p.cantidad}` : ''} el ${p.fecha}</div>
+                                ${p.origenArs ? `<div class="text-[10px] text-gray-600 mt-0.5">CEDEAR: ARS $${p.origenArs.precioArs} · CCL ${p.origenArs.cclCompra} · ratio ${p.origenArs.ratio}:1</div>` : ''}
                             </div>
                             <button onclick="eliminarPosicion(${idx})" class="text-gray-600 hover:text-neg text-xs">✕ quitar</button>
                         </div>
@@ -966,19 +996,53 @@
             renderCartera();
         }
 
+        // Muestra los campos de USD o de ARS+CCL según lo que elija Victoria
+        document.getElementById('cartera-moneda').addEventListener('change', (e) => {
+            const esArs = e.target.value === 'ARS';
+            document.getElementById('cartera-campos-usd').classList.toggle('hidden', esArs);
+            document.getElementById('cartera-campos-ars').classList.toggle('hidden', !esArs);
+        });
+
         document.getElementById('cartera-form').addEventListener('submit', (e) => {
             e.preventDefault();
+            const errorDiv = document.getElementById('cartera-error');
+            errorDiv.classList.add('hidden');
+
             const ticker = document.getElementById('cartera-ticker').value.trim().toUpperCase();
-            const precio = parseFloat(document.getElementById('cartera-precio').value);
+            const moneda = document.getElementById('cartera-moneda').value;
             const cantidad = document.getElementById('cartera-cantidad').value || null;
             const fecha = document.getElementById('cartera-fecha').value;
-            if (!ticker || !precio || !fecha) return;
+            if (!ticker || !fecha) return;
+
+            let precioUsd, origenArs = null;
+
+            if (moneda === 'USD') {
+                precioUsd = parseFloat(document.getElementById('cartera-precio-usd').value);
+                if (!precioUsd) return;
+            } else {
+                const precioArs = parseFloat(document.getElementById('cartera-precio-ars').value);
+                const cclCompra = parseFloat(document.getElementById('cartera-ccl-compra').value);
+                if (!precioArs || !cclCompra) return;
+
+                const cedears = currentRadarData?.cedears_pricing?.cedears ?? [];
+                const infoCedear = cedears.find(c => c?.Ticker?.toUpperCase() === ticker);
+                if (!infoCedear || !infoCedear.Ratio) {
+                    errorDiv.textContent = `No tengo el ratio de conversión de ${ticker} todavía -- no puedo calcular el equivalente en dólares. Avisale a Claude para que lo sume al panel de CEDEARs.`;
+                    errorDiv.classList.remove('hidden');
+                    return;
+                }
+                const ratio = infoCedear.Ratio;
+                precioUsd = Math.round((precioArs * ratio / cclCompra) * 100) / 100;
+                origenArs = { precioArs, cclCompra, ratio };
+            }
 
             const posiciones = cargarCartera();
-            posiciones.push({ ticker, precio, cantidad, fecha });
+            posiciones.push({ ticker, precio: precioUsd, cantidad, fecha, origenArs });
             guardarCartera(posiciones);
             renderCartera();
             e.target.reset();
+            document.getElementById('cartera-campos-ars').classList.add('hidden');
+            document.getElementById('cartera-campos-usd').classList.remove('hidden');
         });
 
         // Fecha de hoy por defecto en el form de Mi Cartera

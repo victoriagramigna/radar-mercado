@@ -148,6 +148,7 @@ def calcular_brechas_cedear(precios_usd: dict):
             resultados.append({
                 "Ticker": ticker, "sin_datos": True,
                 "Precio_teorico_ARS": teorico,
+                "Ratio": ratio,
             })
             continue
 
@@ -162,6 +163,9 @@ def calcular_brechas_cedear(precios_usd: dict):
             "Brecha_%": brecha_pct,
             "Estado": ("Caro respecto al teórico" if brecha_pct > 0 else "Barato respecto al teórico"),
             "Distorsion_relevante": distorsion,
+            "Ratio": ratio,  # cuántos CEDEARs equivalen a 1 acción subyacente -- lo usa
+            # "Mi Cartera" para convertir un precio de compra en pesos a su
+            # equivalente en dólares (que es contra lo que se compara el stop-loss)
         })
 
     return {"ccl": ccl, "sin_datos": False, "cedears": resultados}

@@ -243,6 +243,7 @@ ARCHIVO_HISTORIAL = "data/historial_alertas.json"
 RATIOS_CEDEAR = {
     "SPY": 20, "TSLA": 15, "QQQ": 20, "NVDA": 24, "BABA": 9, "OKLO": 28,
     "AAPL": 20, "JMIA": 1, "SATL": 1, "CRWV": 27, "TEM": 12, "LAC": 1,
+    "TSM": 9,  # Taiwan Semiconductor -- faltaba, lo pidió Victoria para Mi Cartera
     # --- 19 tickers nuevos sumados en sept. 2026 (EDN queda afuera: es ADR sin CEDEAR propio) ---
     "ARM": 27, "AVGO": 39, "IREN": 12, "TXN": 5, "AMAT": 5, "SNDK": 170,
     "KLAC": 34, "SKHY": 25, "DELL": 74, "WDC": 92, "GEV": 180, "TLN": 63,
