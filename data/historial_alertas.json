@@ -1640,5 +1640,16 @@
     "fecha_evento_lider": "2026-09-20T17:43:08.881162+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T17:43:08.881162+00:00"
+  },
+  "DIS": {
+    "ultima_fecha": "2026-09-20",
+    "estado": "deterioro",
+    "fecha_evento": "2026-09-20T17:51:21.741965+00:00",
+    "dias_verdes_consecutivos": 0,
+    "precio": 102.67,
+    "lider_soporte_activo": false,
+    "fecha_evento_lider": "2026-09-20T17:51:21.741965+00:00",
+    "gap_alcista_activo": false,
+    "fecha_evento_gap": "2026-09-20T17:51:21.741965+00:00"
   }
 }
