@@ -1,5 +1,5 @@
 {
-  "generado_utc": "2026-09-20T14:33:02.800372+00:00",
+  "generado_utc": "2026-09-20T14:51:03.391686+00:00",
   "proxima_corrida_estimada_utc": "2026-09-21T14:00:00+00:00",
   "tickers_ok": 99,
   "tickers_fallidos": [
@@ -1968,13 +1968,18 @@
       "RSI": 29.2,
       "Vol_rel": 1.63,
       "SMA21": 97.33,
+      "Precio": 88.77,
       "fecha_evento": "2026-09-18T20:09:07.878154+00:00",
       "Stop_sugerido": null,
+      "Var_dia_%": null,
       "Señal técnica": "VENTA",
       "Recomendación final": "VENTA",
       "Ajustado por": "sin ajustes",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 65.6
+      "Radar_Score": 65.6,
+      "Dist_Max52w_%": -20.7,
+      "RS_sector": 59.4,
+      "Var_SPY_dia_%": 0.13
     },
     {
       "Ticker": "ABNB",
@@ -2016,13 +2021,18 @@
       "RSI": 17.0,
       "Vol_rel": 2.09,
       "SMA21": 178.66,
+      "Precio": 166.22,
       "fecha_evento": "2026-09-18T20:09:07.878154+00:00",
       "Stop_sugerido": null,
+      "Var_dia_%": null,
       "Señal técnica": "MANTENER",
       "Recomendación final": "MANTENER",
       "Ajustado por": "sin ajustes",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 51.9
+      "Radar_Score": 51.9,
+      "Dist_Max52w_%": -12.7,
+      "RS_sector": 43.8,
+      "Var_SPY_dia_%": 0.13
     },
     {
       "Ticker": "F",
@@ -2065,13 +2075,18 @@
       "RSI": 41.4,
       "Vol_rel": 2.32,
       "SMA21": 13.89,
+      "Precio": 13.21,
       "fecha_evento": "2026-09-18T16:15:39.975676+00:00",
       "Stop_sugerido": null,
+      "Var_dia_%": null,
       "Señal técnica": "VENTA",
       "Recomendación final": "VENTA",
       "Ajustado por": "sin ajustes",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 32.5
+      "Radar_Score": 32.5,
+      "Dist_Max52w_%": -23.4,
+      "RS_sector": 27.3,
+      "Var_SPY_dia_%": 0.13
     },
     {
       "Ticker": "VALE",
@@ -2111,13 +2126,18 @@
       "RSI": 38.2,
       "Vol_rel": 0.6,
       "SMA21": 14.98,
+      "Precio": 14.21,
       "fecha_evento": "2026-09-18T16:15:39.975676+00:00",
       "Stop_sugerido": null,
+      "Var_dia_%": null,
       "Señal técnica": "VENTA",
       "Recomendación final": "VENTA",
       "Ajustado por": "sin ajustes",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 22.2
+      "Radar_Score": 22.2,
+      "Dist_Max52w_%": -18.0,
+      "RS_sector": 31.7,
+      "Var_SPY_dia_%": 0.13
     },
     {
       "Ticker": "BBD",
@@ -2160,13 +2180,18 @@
       "RSI": 62.0,
       "Vol_rel": 0.76,
       "SMA21": 3.37,
+      "Precio": 3.43,
       "fecha_evento": "2026-09-18T20:09:07.878154+00:00",
       "Stop_sugerido": null,
+      "Var_dia_%": null,
       "Señal técnica": "VENTA",
       "Recomendación final": "VENTA",
       "Ajustado por": "sin ajustes",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 69.0
+      "Radar_Score": 69.0,
+      "Dist_Max52w_%": -16.5,
+      "RS_sector": 45.1,
+      "Var_SPY_dia_%": 0.13
     },
     {
       "Ticker": "PAGS",
@@ -2210,13 +2235,18 @@
       "RSI": 60.7,
       "Vol_rel": 1.71,
       "SMA21": 9.14,
+      "Precio": 9.26,
       "fecha_evento": "2026-09-18T20:09:07.878154+00:00",
       "Stop_sugerido": null,
+      "Var_dia_%": null,
       "Señal técnica": "VENTA",
       "Recomendación final": "VENTA",
       "Ajustado por": "sin ajustes",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 51.3
+      "Radar_Score": 51.3,
+      "Dist_Max52w_%": -18.6,
+      "RS_sector": 64.4,
+      "Var_SPY_dia_%": 0.13
     },
     {
       "Ticker": "SPXL",
@@ -2261,13 +2291,18 @@
       "RSI": 43.4,
       "Vol_rel": 0.93,
       "SMA21": 283.89,
+      "Precio": 281.32,
       "fecha_evento": "2026-09-18T20:09:07.878154+00:00",
       "Stop_sugerido": null,
+      "Var_dia_%": null,
       "Señal técnica": "MANTENER",
       "Recomendación final": "MANTENER",
       "Ajustado por": "sin ajustes",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 58.2
+      "Radar_Score": 58.2,
+      "Dist_Max52w_%": -6.6,
+      "RS_sector": 76.9,
+      "Var_SPY_dia_%": 0.13
     },
     {
       "Ticker": "ARM",
@@ -2284,13 +2319,18 @@
       "RSI": 64.9,
       "Vol_rel": 1.7,
       "SMA21": null,
+      "Precio": 275.61,
       "fecha_evento": "2026-09-20T12:52:00.393901+00:00",
       "Stop_sugerido": 272.85,
+      "Var_dia_%": 4.0,
       "Señal técnica": "COMPRA",
       "Recomendación final": "COMPRA",
       "Ajustado por": "sin ajustes",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 88.2
+      "Radar_Score": 88.2,
+      "Dist_Max52w_%": -37.3,
+      "RS_sector": 59.4,
+      "Var_SPY_dia_%": 0.13
     },
     {
       "Ticker": "SNDK",
@@ -2307,13 +2347,18 @@
       "RSI": 67.9,
       "Vol_rel": 1.65,
       "SMA21": null,
+      "Precio": 1791.82,
       "fecha_evento": "2026-09-20T12:52:00.393901+00:00",
       "Stop_sugerido": 1773.9,
+      "Var_dia_%": 11.0,
       "Señal técnica": "COMPRA",
       "Recomendación final": "COMPRA",
       "Ajustado por": "sin ajustes",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 61.3
+      "Radar_Score": 61.3,
+      "Dist_Max52w_%": -23.3,
+      "RS_sector": 59.4,
+      "Var_SPY_dia_%": 0.13
     }
   ],
   "contexto_macro": {
