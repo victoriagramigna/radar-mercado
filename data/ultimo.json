@@ -1,5 +1,5 @@
 {
-  "generado_utc": "2026-09-20T18:37:47.004458+00:00",
+  "generado_utc": "2026-09-20T18:45:30.445958+00:00",
   "proxima_corrida_estimada_utc": "2026-09-21T14:00:00+00:00",
   "tickers_ok": 266,
   "tickers_fallidos": [
@@ -10,13 +10,9 @@
     {
       "ticker": "SPCX",
       "motivo": "datos insuficientes (68 filas, se necesitan >=200)"
-    },
-    {
-      "ticker": "EA",
-      "motivo": "datos insuficientes (1 filas, se necesitan >=200)"
     }
   ],
-  "pct_fallidos": 1.1,
+  "pct_fallidos": 0.7,
   "corrida_degradada": false,
   "frescura_dato": {
     "fecha_ultimo_dato": "2026-09-18",
