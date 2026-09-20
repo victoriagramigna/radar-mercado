@@ -127,7 +127,14 @@ TICKERS = {
     "ASR": "Transporte", "ASTS": "Tecnología", "AVY": "Materiales", "AXP": "Fintech",
     "AZN": "Salud", "BA": "Aeroespacial", "BAC": "Bancos", "BAK": "Materiales",
     "BB": "Tecnología", "BCS": "Bancos", "BHP": "Materiales", "BIDU": "Tecnología",
-    "BIIB": "Salud", "BK": "Bancos", "BKNG": "Consumo", "BKR": "Energía",
+    "BIIB": "Salud",
+    # "BK": "Bancos",  # Bank of New York Mellon -- sacado del universo: falló
+    # 4 corridas seguidas en yfinance (mismo patrón que tuvo NTCO -- ticker
+    # real y activamente operado, problema específico y persistente de
+    # Yahoo con este símbolo puntual, no un error nuestro). Si en algún
+    # momento se quiere reintentar, sacarle el comentario a esta línea Y a
+    # las de RATIOS_CEDEAR / ALIAS_CEDEAR_DATA912 más abajo.
+    "BKNG": "Consumo", "BKR": "Energía",
     "BMNR": "Tecnología", "BMY": "Salud", "BX": "Fintech", "CAH": "Salud",
     "CAR": "Consumo", "CCJ": "Energía", "CCL": "Consumo", "CDE": "Materiales",
     "CEG": "Energía", "COIN": "Fintech", "COP": "Energía", "DECK": "Consumo",
@@ -247,7 +254,7 @@ RATIOS_CEDEAR = {
     "AAP": 14, "ABBV": 10, "ABT": 4, "ACN": 75, "AGRO": 1, "ADI": 15, "ADP": 6, "AEG": 1,
     "AEM": 6, "AI": 5, "AIG": 5, "ALAB": 44, "ASR": 20, "ASTS": 15, "AVY": 18, "AXP": 15,
     "AZN": 4, "BA": 24, "BAC": 4, "BAK": 2, "BB": 3, "BCS": 1, "BHP": 2, "BIDU": 11,
-    "BIIB": 13, "BK": 2, "BKNG": 700, "BKR": 7, "BMNR": 8, "BMY": 3, "BX": 30, "CAH": 3,
+    "BIIB": 13, "BKNG": 700, "BKR": 7, "BMNR": 8, "BMY": 3, "BX": 30, "CAH": 3,
     "CAR": 26, "CCJ": 25, "CCL": 3, "CDE": 1, "CEG": 45, "COIN": 27, "COP": 25, "DECK": 25,
     "DEO": 6, "DOCU": 22, "EA": 14, "ECL": 56, "EFX": 16, "EQNR": 6, "ERIC": 2, "GLW": 4,
     "GRMN": 3, "GSK": 4, "GT": 2, "HAL": 2, "HD": 32, "HDB": 2, "HL": 1, "HMC": 1,
@@ -271,7 +278,6 @@ RATIOS_CEDEAR = {
 ALIAS_CEDEAR_DATA912 = {
     "DIS": "DISN",   # Walt Disney
     "BAC": "BA.C",   # Bank of America
-    "BK": "BNY",     # Bank of New York Mellon
     "NOK": "NOKA",   # Nokia
     "AGRO": "ADGO",  # Adecoagro
 }
