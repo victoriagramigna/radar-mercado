@@ -1,5 +1,5 @@
 {
-  "generado_utc": "2026-09-21T11:45:36.264449+00:00",
+  "generado_utc": "2026-09-21T12:58:33.760888+00:00",
   "proxima_corrida_estimada_utc": "2026-09-21T14:00:00+00:00",
   "tickers_ok": 266,
   "tickers_fallidos": [
@@ -5095,7 +5095,7 @@
   "regimen_mercado": {
     "sano": true,
     "sin_datos": false,
-    "vix": 14.87,
+    "vix": 14.82,
     "motivo": null
   },
   "alertas": [
