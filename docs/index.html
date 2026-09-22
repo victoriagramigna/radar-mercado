@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radar de Mercado</title>
+    <title>HyperTrade</title>
     
     <!-- Carga de Tailwind CSS sin build step -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -62,6 +61,9 @@
         .tab-btn.active .tab-dot { display: inline-block; }
         body { padding-bottom: 120px; } /* deja lugar de sobra para la barra fija de abajo */
         .tab-content { padding-bottom: 24px; } /* margen extra al final de cada pestaña */
+
+        /* Badges chicos de señales nuevas (Radar Score v2) */
+        .signal-chip { font-size: 9px; padding: 2px 6px; border-radius: 2px; border: 1px solid; white-space: nowrap; }
     </style>
 </head>
 <body class="bg-base text-gray-300 font-sans p-4 md:p-8 min-h-screen relative">
@@ -75,7 +77,7 @@
     <!-- Encabezado persistente: título, T-0, badges -- visible en todas las solapas -->
     <header class="mb-6 border-b border-surface pb-4">
         <div>
-            <h1 class="text-3xl font-bold text-white tracking-tight uppercase">Radar de Mercado</h1>
+            <h1 class="text-3xl font-bold text-white tracking-tight uppercase">HyperTrade</h1>
             <div id="last-update" class="font-mono text-sm text-gray-500 mt-1 leading-relaxed">Sincronizando datos...</div>
             <!-- Badges de estado -->
             <div id="badges" class="flex flex-wrap gap-2 font-mono text-xs uppercase mt-3"></div>
@@ -86,7 +88,7 @@
     <div id="tab-inicio" class="tab-content space-y-6">
         <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
             <!-- Botón de escaneo manual -->
-            <a href="https://github.com/victoriagramigna/radar-mercado/actions/workflows/radar.yml"
+            <a href="https://github.com/victoriagramigna/hypertrade/actions/workflows/radar.yml"
                target="_blank" rel="noopener"
                class="flex items-center gap-2 bg-accent text-base hover:bg-white transition-colors px-4 py-2 rounded-sm font-mono text-xs font-bold uppercase whitespace-nowrap">
                 🔄 Correr escaneo ahora
@@ -120,6 +122,9 @@
     <div id="tab-alertas" class="tab-content hidden-tab">
         <!-- 3. Sección Alertas (Con Scroll y Contador) -->
             <section>
+                <div class="flex items-center bg-surface border border-surface focus-within:border-accent transition-colors rounded-sm overflow-hidden p-1 shadow-inner mb-4">
+                    <input type="text" id="alertas-search" class="bg-transparent text-white w-full px-3 py-1.5 focus:outline-none uppercase font-mono text-sm placeholder-gray-600" placeholder="Filtrar por ticker (opcional)">
+                </div>
                 <div class="flex justify-between items-end border-b border-surface pb-1 mb-4">
                     <h2 id="alert-title" class="text-accent uppercase text-sm font-bold tracking-widest">Alertas Activas (0)</h2>
                 </div>
@@ -227,6 +232,40 @@
         </section>
 
         <section>
+            <h2 class="text-accent uppercase text-sm font-bold tracking-widest mb-4 border-b border-surface pb-1">Avisos por mail</h2>
+            <div class="bg-surface p-4 rounded-sm border border-surface font-mono text-xs space-y-3">
+                <div class="text-gray-400">
+                    Para que el sistema te avise por mail (stop tocado, objetivo de ganancia, pérdida de fuerza técnica) incluso sin tener esta página abierta, conectá esta cartera con GitHub -- una sola vez. Después, cada compra o venta que anotes se sincroniza sola, sin que tengas que copiar ni pegar nada.
+                </div>
+
+                <div id="sync-configurado" class="hidden space-y-2">
+                    <div class="flex items-center gap-2 text-pos font-bold">✓ Sincronización automática activada</div>
+                    <div id="sync-status" class="text-gray-500 text-[10px]"></div>
+                    <button id="sync-desconectar-btn" class="text-gray-600 hover:text-neg text-[10px] underline">Desconectar</button>
+                </div>
+
+                <div id="sync-sin-configurar" class="space-y-2">
+                    <div class="text-gray-500 text-[10px] leading-relaxed">
+                        Para conectar, necesitás un token de GitHub con permiso solo sobre este repo:
+                        <br>1. Andá a <span class="text-accent">github.com/settings/personal-access-tokens/new</span>
+                        <br>2. "Repository access" → "Only select repositories" → elegí <span class="text-accent">hypertrade</span>
+                        <br>3. En "Permissions" → "Repository permissions" → "Contents" → cambiá a "Read and write"
+                        <br>4. "Generate token" y copiá el código (empieza con <span class="text-accent">github_pat_...</span>)
+                    </div>
+                    <input type="password" id="github-token-input" placeholder="Pegá el token acá" class="w-full bg-base border border-gray-700 focus:border-accent rounded-sm px-2 py-1.5 text-white text-[10px]">
+                    <button id="github-token-guardar-btn" class="bg-accent text-base font-bold uppercase text-xs py-2 px-4 rounded-sm hover:bg-white transition-colors">Conectar</button>
+                    <div class="text-gray-600 text-[10px]">El token queda guardado solo en este navegador, igual que tu cartera -- nunca se sube al repo.</div>
+                </div>
+
+                <div class="border-t border-base pt-3 mt-3">
+                    <button id="exportar-cartera-btn" class="text-gray-500 hover:text-white text-[10px] underline">O exportar manualmente (respaldo, sin necesidad de token)</button>
+                    <textarea id="exportar-cartera-output" readonly class="hidden w-full bg-base border border-gray-700 rounded-sm p-2 text-white text-[10px] h-40 mt-2" onclick="this.select()"></textarea>
+                    <div id="exportar-cartera-hint" class="hidden text-gray-500 text-[10px] mt-1">Tocá el texto de arriba para seleccionarlo todo, copialo, y pegalo reemplazando el contenido de <code class="text-accent">data/mi_cartera.json</code> en el repo.</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
             <h2 class="text-accent uppercase text-sm font-bold tracking-widest mb-4 border-b border-surface pb-1">Posiciones</h2>
             <div id="cartera-container" class="space-y-3"></div>
         </section>
@@ -278,7 +317,7 @@
     </div>
 
     <script>
-        const DATA_URL = 'https://raw.githubusercontent.com/victoriagramigna/radar-mercado/main/data/ultimo.json';
+        const DATA_URL = 'https://raw.githubusercontent.com/victoriagramigna/hypertrade/main/data/ultimo.json';
         
         let currentAutoCcl = null;
         let currentRadarData = null; // Guardamos el estado global para búsquedas
@@ -382,7 +421,12 @@
             const rsColor = rsScore > 80 ? 'bg-pos' : (rsScore > 40 ? 'bg-accent' : 'bg-neg');
             const distMax = tickerData?.['Dist_Max52w_%'];
             const distMaxColor = (distMax != null && distMax > -3) ? 'text-pos font-bold' : 'text-gray-400';
-            const distMaxText = distMax != null ? `${distMax > 0 ? '+' : ''}${distMax.toFixed(2)}% del máx 52w` : '—';
+            // Máximo de 52w en $, derivado de la distancia % y el precio actual
+            const max52wVal = (distMax != null && tickerData?.Precio != null)
+                ? tickerData.Precio / (1 + distMax / 100)
+                : null;
+            const max52wStr = max52wVal != null ? ` ($${max52wVal.toFixed(2)})` : '';
+            const distMaxText = distMax != null ? `${distMax > 0 ? '+' : ''}${distMax.toFixed(2)}% del máx 52w${max52wStr}` : '—';
             
             const s50Text = tickerData?.SMA50 != null ? `$${tickerData.SMA50.toFixed(2)}` : 'sin datos';
             const dist50 = tickerData?.['Dist_SMA50_%'];
@@ -490,6 +534,145 @@
             }).join('');
         }
 
+        // Guarda la última lista de alertas ya ordenada, para poder
+        // filtrarla por ticker (buscador de la pestaña Alertas) sin
+        // tener que volver a pedir el JSON cada vez que se escribe.
+        let currentAlertasCompletas = [];
+
+        function filtrarAlertas() {
+            const query = (document.getElementById('alertas-search')?.value ?? '').trim().toUpperCase();
+            const alertas = query
+                ? currentAlertasCompletas.filter(a => (a?.Ticker ?? '').toUpperCase().includes(query))
+                : currentAlertasCompletas;
+
+            const alertsContainer = document.getElementById('alerts-container');
+            const totalTexto = query ? `${alertas.length} de ${currentAlertasCompletas.length}` : `${alertas.length}`;
+            document.getElementById('alert-title').textContent = `Alertas Activas (${totalTexto})`;
+
+            if (alertas.length === 0) {
+                alertsContainer.innerHTML = query
+                    ? '<div class="text-gray-500 font-mono text-sm p-4 border border-dashed border-surface rounded-sm">Sin alertas para ese ticker.</div>'
+                    : '<div class="text-gray-500 font-mono text-sm p-4 border border-dashed border-surface rounded-sm">Sin señales técnicas en las últimas 48hs.</div>';
+                return;
+            }
+
+            alertsContainer.innerHTML = alertas.map(alerta => {
+                const recomendacion = alerta?.['Recomendación final'] ?? '—';
+                const ticker = alerta?.Ticker ?? '—';
+                const sector = alerta?.Sector ?? '—';
+                const estado = alerta?.Estado ?? '—';
+                const score = alerta?.Score ?? '—';
+                const ajustado = alerta?.['Ajustado por'] ?? '—';
+                const tipo = alerta?.Tipo ?? 'tecnico';
+                const stopSugerido = alerta?.Stop_sugerido;
+                const radarScore = alerta?.Radar_Score;
+                const precioRef = alerta?.Precio;
+                const rsi = alerta?.RSI;
+                const volRel = alerta?.Vol_rel;
+                const dist52w = alerta?.['Dist_Max52w_%'];
+                const rsSector = alerta?.RS_sector;
+                const varDia = alerta?.['Var_dia_%'];
+                const varSpyDia = alerta?.['Var_SPY_dia_%'];
+                const narrativa = alerta?.Narrativa;
+
+                let stopPctStr = '';
+                if (stopSugerido != null && precioRef != null && precioRef > 0) {
+                    const stopPct = ((stopSugerido / precioRef - 1) * 100).toFixed(1);
+                    stopPctStr = ` (${stopPct}%)`;
+                }
+
+                let vsSpyStr = '';
+                if (varDia != null && varSpyDia != null) {
+                    const diff = (varDia - varSpyDia).toFixed(1);
+                    vsSpyStr = `${diff >= 0 ? '+' : ''}${diff}pp vs SPY`;
+                }
+
+                const fechaEvento = alerta?.fecha_evento;
+                let fechaEventoStr = '';
+                if (fechaEvento) {
+                    const fe = new Date(fechaEvento);
+                    const diaMes = fe.toLocaleDateString('es-AR', {day: '2-digit', month: '2-digit', year: 'numeric'});
+                    const hora = fe.toLocaleTimeString('es-AR', {hour12: false, hour: '2-digit', minute: '2-digit'});
+                    fechaEventoStr = `${diaMes} · ${hora}`;
+                }
+
+                let recColor = 'text-accent border-accent';
+                let containerBorder = 'border-l-2 border-surface hover:border-l-accent';
+                let bgCustom = 'bg-surface';
+                let titleIcon = '';
+
+                if (tipo === 'lider_soporte') {
+                    recColor = 'bg-blueAlert/20 text-blueAlert border border-blueAlert';
+                    containerBorder = 'border-l-4 border-blueAlert shadow-[inset_0_0_20px_rgba(59,130,246,0.05)]';
+                    bgCustom = 'bg-[#151b2b]';
+                    titleIcon = '🎯 ';
+                } else {
+                    if (recomendacion === 'COMPRA') recColor = 'bg-pos text-base border-pos';
+                    if (recomendacion === 'VENTA') recColor = 'bg-neg text-base border-neg';
+                    if (recomendacion === 'MANTENER') recColor = 'bg-accent text-base border-accent';
+                }
+
+                // Radar Score: barra de color + número, en vez de solo texto
+                let radarScoreHtml = '';
+                if (radarScore != null) {
+                    const rColor = radarScore >= 70 ? 'bg-pos' : (radarScore >= 45 ? 'bg-accent' : 'bg-neg');
+                    radarScoreHtml = `
+                        <div class="mt-3">
+                            <div class="flex justify-between font-mono text-[10px] uppercase text-gray-500 mb-1">
+                                <span>Radar Score</span>
+                                <span class="text-white font-bold">${radarScore.toFixed(0)} / 100</span>
+                            </div>
+                            <div class="h-1.5 w-full bar-bg rounded-full overflow-hidden">
+                                <div class="h-full ${rColor}" style="width: ${Math.min(radarScore, 100)}%"></div>
+                            </div>
+                        </div>`;
+                }
+
+                // Chips de señales nuevas activas (AVWAP, tendencia, contracción)
+                const chips = [];
+                if (alerta?.Apoyo_AVWAP) chips.push('<span class="signal-chip text-blueAlert border-blueAlert">AVWAP SOPORTE</span>');
+                if (alerta?.Cruce_AVWAP_52w) chips.push('<span class="signal-chip text-pos border-pos">CRUCE 52W</span>');
+                if (alerta?.Pendiente_OK) chips.push('<span class="signal-chip text-accent border-accent">TENDENCIA+</span>');
+                if (alerta?.ATR_Contraction) chips.push('<span class="signal-chip text-gray-300 border-gray-600">ATR COMPRIMIDO</span>');
+                const chipsHtml = chips.length ? `<div class="flex flex-wrap gap-1 mt-2">${chips.join('')}</div>` : '';
+
+                // Narrativa al pie -- el texto de radar_score.py/narrativa.py
+                const narrativaHtml = narrativa
+                    ? `<div class="font-mono text-[11px] text-gray-400 mt-3 pt-3 border-t border-base leading-relaxed whitespace-pre-line">${narrativa}</div>`
+                    : '';
+
+                return `
+                    <div class="${bgCustom} p-4 ${containerBorder} transition-colors rounded-r-sm">
+                        <div class="flex justify-between items-start mb-3">
+                            <div>
+                                <span class="text-xl font-bold text-white">${titleIcon}${ticker}</span>
+                                <span class="text-xs font-mono text-gray-500 ml-2 uppercase">${sector}</span>
+                            </div>
+                            <span class="font-mono text-xs px-2 py-1 font-bold rounded-sm ${recColor}">${recomendacion}</span>
+                        </div>
+                        <div class="font-mono text-sm text-gray-300">${estado}</div>
+                        ${chipsHtml}
+                        ${radarScoreHtml}
+                        <div class="flex justify-between font-mono text-xs text-gray-500 border-t border-base pt-2 mt-3">
+                            <span>SCORE: <span class="text-white">${score}</span></span>
+                            <span>ADJ: ${ajustado}</span>
+                        </div>
+                        <div class="grid grid-cols-4 gap-2 font-mono text-[9px] text-gray-500 mt-2">
+                            <div><div class="uppercase">RSI</div><div class="text-white text-[11px]">${rsi ?? '—'}</div></div>
+                            <div><div class="uppercase">VOL</div><div class="text-white text-[11px]">${volRel != null ? volRel + 'x' : '—'}</div></div>
+                            <div><div class="uppercase">52W</div><div class="text-white text-[11px]">${dist52w != null ? dist52w + '%' : '—'}</div></div>
+                            <div><div class="uppercase">RS SECTOR</div><div class="text-white text-[11px]">${rsSector ?? '—'}</div></div>
+                        </div>
+                        ${precioRef != null ? `<div class="font-mono text-[10px] text-gray-500 mt-2">PRECIO REF.: <span class="text-white">$${precioRef}</span></div>` : ''}
+                        ${stopSugerido ? `<div class="font-mono text-xs text-accent mt-1">STOP SUGERIDO (aprox.): $${stopSugerido}${stopPctStr}</div>` : ''}
+                        ${vsSpyStr ? `<div class="font-mono text-[10px] text-gray-500 mt-1">${vsSpyStr}</div>` : ''}
+                        ${fechaEventoStr ? `<div class="font-mono text-[10px] text-gray-600 mt-2">${fechaEventoStr}</div>` : ''}
+                        ${narrativaHtml}
+                    </div>
+                `;
+            }).join('');
+        }
+
         function renderDashboard(data) {
             // Timestamp y 24hs format
             const fechaGenerado = data?.generado_utc;
@@ -553,113 +736,31 @@
             const brecha = data?.contexto_macro?.['brecha_cambiaria_%'] ?? '—';
             badgesHtml.push(`<span class="border ${macroColor} px-2 py-1 rounded-sm bg-surface">BRECHA: ${brecha}%</span>`);
 
+            // Badge de Distribution Days (Radar Score v2) -- contexto de venta institucional
+            const distDays = data?.distribution_days;
+            if (distDays != null) {
+                const multDist = data?.multiplicador_distribution ?? 1;
+                const distColor = multDist < 1 ? 'border-neg text-neg' : 'border-pos text-pos';
+                badgesHtml.push(`<span class="border ${distColor} px-2 py-1 rounded-sm bg-surface cursor-help" title="Días con cierre a la baja y volumen mayor al día anterior, últimas 5 semanas. Penaliza el Radar Score cuando son muchos.">DIST. DAYS: ${distDays}</span>`);
+            }
+
             document.getElementById('badges').innerHTML = badgesHtml.join('');
 
-            // Renderizado de Alertas
-            const alertsContainer = document.getElementById('alerts-container');
-            const alertas = data?.alertas ?? [];
-            
-            document.getElementById('alert-title').textContent = `Alertas Activas (${alertas.length})`;
-            
-            if (alertas.length === 0) {
-                alertsContainer.innerHTML = '<div class="text-gray-500 font-mono text-sm p-4 border border-dashed border-surface rounded-sm">Sin señales técnicas en las últimas 48hs.</div>';
-            } else {
-                alertas.sort((a, b) => {
-                    const getRank = (alerta) => {
-                        const rec = alerta?.['Recomendación final'];
-                        if (rec === 'COMPRA' || alerta?.Tipo === 'lider_soporte') return 1;
-                        if (rec === 'VENTA') return 2;
-                        return 3;
-                    };
-                    return getRank(a) - getRank(b);
-                });
-
-                alertsContainer.innerHTML = alertas.map(alerta => {
-                    const recomendacion = alerta?.['Recomendación final'] ?? '—';
-                    const ticker = alerta?.Ticker ?? '—';
-                    const sector = alerta?.Sector ?? '—';
-                    const estado = alerta?.Estado ?? '—';
-                    const score = alerta?.Score ?? '—';
-                    const ajustado = alerta?.['Ajustado por'] ?? '—';
-                    const tipo = alerta?.Tipo ?? 'tecnico';
-                    const stopSugerido = alerta?.Stop_sugerido;
-                    const radarScore = alerta?.Radar_Score;
-                    const precioRef = alerta?.Precio;
-                    const rsi = alerta?.RSI;
-                    const volRel = alerta?.Vol_rel;
-                    const dist52w = alerta?.['Dist_Max52w_%'];
-                    const rsSector = alerta?.RS_sector;
-                    const varDia = alerta?.['Var_dia_%'];
-                    const varSpyDia = alerta?.['Var_SPY_dia_%'];
-
-                    let stopPctStr = '';
-                    if (stopSugerido != null && precioRef != null && precioRef > 0) {
-                        const stopPct = ((stopSugerido / precioRef - 1) * 100).toFixed(1);
-                        stopPctStr = ` (${stopPct}%)`;
-                    }
-
-                    let vsSpyStr = '';
-                    if (varDia != null && varSpyDia != null) {
-                        const diff = (varDia - varSpyDia).toFixed(1);
-                        vsSpyStr = `${diff >= 0 ? '+' : ''}${diff}pp vs SPY`;
-                    }
-
-                    const fechaEvento = alerta?.fecha_evento;
-                    let fechaEventoStr = '';
-                    if (fechaEvento) {
-                        const fe = new Date(fechaEvento);
-                        const diaMes = fe.toLocaleDateString('es-AR', {day: '2-digit', month: '2-digit', year: 'numeric'});
-                        const hora = fe.toLocaleTimeString('es-AR', {hour12: false, hour: '2-digit', minute: '2-digit'});
-                        fechaEventoStr = `${diaMes} · ${hora}`;
-                    }
-
-                    let recColor = 'text-accent border-accent'; 
-                    let containerBorder = 'border-l-2 border-surface hover:border-l-accent';
-                    let bgCustom = 'bg-surface';
-                    let titleIcon = '';
-
-                    if (tipo === 'lider_soporte') {
-                        recColor = 'bg-blueAlert/20 text-blueAlert border border-blueAlert';
-                        containerBorder = 'border-l-4 border-blueAlert shadow-[inset_0_0_20px_rgba(59,130,246,0.05)]';
-                        bgCustom = 'bg-[#151b2b]'; 
-                        titleIcon = '🎯 ';
-                    } else {
-                        if (recomendacion === 'COMPRA') recColor = 'bg-pos text-base border-pos';
-                        if (recomendacion === 'VENTA') recColor = 'bg-neg text-base border-neg';
-                        if (recomendacion === 'MANTENER') recColor = 'bg-accent text-base border-accent';
-                    }
-
-                    return `
-                        <div class="${bgCustom} p-4 ${containerBorder} transition-colors rounded-r-sm">
-                            <div class="flex justify-between items-start mb-3">
-                                <div>
-                                    <span class="text-xl font-bold text-white">${titleIcon}${ticker}</span>
-                                    <span class="text-xs font-mono text-gray-500 ml-2 uppercase">${sector}</span>
-                                </div>
-                                <span class="font-mono text-xs px-2 py-1 font-bold rounded-sm ${recColor}">${recomendacion}</span>
-                            </div>
-                            <div class="flex justify-between items-center mb-3">
-                                <div class="font-mono text-sm text-gray-300">${estado}</div>
-                                ${radarScore != null ? `<div class="font-mono text-xs text-gray-500 whitespace-nowrap ml-2">RADAR SCORE <span class="text-accent font-bold">${radarScore}</span></div>` : ''}
-                            </div>
-                            <div class="flex justify-between font-mono text-xs text-gray-500 border-t border-base pt-2 mt-auto">
-                                <span>SCORE: <span class="text-white">${score}</span></span>
-                                <span>ADJ: ${ajustado}</span>
-                            </div>
-                            <div class="grid grid-cols-4 gap-2 font-mono text-[9px] text-gray-500 mt-2">
-                                <div><div class="uppercase">RSI</div><div class="text-white text-[11px]">${rsi ?? '—'}</div></div>
-                                <div><div class="uppercase">VOL</div><div class="text-white text-[11px]">${volRel != null ? volRel + 'x' : '—'}</div></div>
-                                <div><div class="uppercase">52W</div><div class="text-white text-[11px]">${dist52w != null ? dist52w + '%' : '—'}</div></div>
-                                <div><div class="uppercase">RS SECTOR</div><div class="text-white text-[11px]">${rsSector ?? '—'}</div></div>
-                            </div>
-                            ${precioRef != null ? `<div class="font-mono text-[10px] text-gray-500 mt-2">PRECIO REF.: <span class="text-white">$${precioRef}</span></div>` : ''}
-                            ${stopSugerido ? `<div class="font-mono text-xs text-accent mt-1">STOP SUGERIDO (aprox.): $${stopSugerido}${stopPctStr}</div>` : ''}
-                            ${vsSpyStr ? `<div class="font-mono text-[10px] text-gray-500 mt-1">${vsSpyStr}</div>` : ''}
-                            ${fechaEventoStr ? `<div class="font-mono text-[10px] text-gray-600 mt-2">${fechaEventoStr}</div>` : ''}
-                        </div>
-                    `;
-                }).join('');
-            }
+            // Renderizado de Alertas -- se guarda la lista completa aparte
+            // para poder filtrarla por ticker sin volver a pedir el JSON
+            // (ver filtrarAlertas() definida fuera de esta función).
+            const alertasCompletas = data?.alertas ?? [];
+            alertasCompletas.sort((a, b) => {
+                const getRank = (alerta) => {
+                    const rec = alerta?.['Recomendación final'];
+                    if (rec === 'COMPRA' || alerta?.Tipo === 'lider_soporte') return 1;
+                    if (rec === 'VENTA') return 2;
+                    return 3;
+                };
+                return getRank(a) - getRank(b);
+            });
+            currentAlertasCompletas = alertasCompletas;
+            filtrarAlertas();
 
             const rankingArray = data?.ranking ?? [];
 
@@ -743,14 +844,25 @@
                             dot200Class = dist200 > 0 ? 'dot-pos' : 'dot-neg';
                         }
                         
-                        // Lógica Distancia Máximos 52w
+                        // Lógica Distancia Máximos 52w -- incluye el valor en $ del máximo
                         const distMax = ticker?.['Dist_Max52w_%'];
-                        const distMaxText = distMax != null ? `(${distMax > 0 ? '+' : ''}${distMax.toFixed(1)}% del máx.)` : '';
+                        const max52wVal = (distMax != null && typeof precio === 'number')
+                            ? precio / (1 + distMax / 100)
+                            : null;
+                        const distMaxText = distMax != null
+                            ? `(${distMax > 0 ? '+' : ''}${distMax.toFixed(1)}% del máx.${max52wVal != null ? ` $${max52wVal.toFixed(2)}` : ''})`
+                            : '';
                         const distMaxColor = (distMax != null && distMax > -3) ? 'text-pos font-bold' : 'text-gray-500';
 
                         const rsColor = rsScore > 80 ? 'bg-pos' : (rsScore > 40 ? 'bg-accent' : 'bg-neg');
                         const displayPrecio = typeof precio === 'number' ? precio.toFixed(2) : '—';
                         const displayRs = typeof rsScore === 'number' ? rsScore.toFixed(0) : '—';
+
+                        // Radar Score chico, al lado del RS (si está calculado)
+                        const radarScoreTicker = ticker?.Radar_Score;
+                        const radarChip = radarScoreTicker != null
+                            ? `<span class="text-[9px] text-gray-500 ml-2">RADAR <span class="text-accent font-bold">${radarScoreTicker.toFixed(0)}</span></span>`
+                            : '';
                         
                         // Lógica Tooltip Hover
                         const s50V = ticker?.SMA50 != null ? `$${ticker.SMA50.toFixed(2)} (${ticker['Dist_SMA50_%'] > 0 ? '+' : ''}${ticker['Dist_SMA50_%'].toFixed(1)}%)` : 'sin datos';
@@ -773,6 +885,7 @@
                                             <div class="h-full ${rsColor}" style="width: ${Math.min(rsScore, 100)}%"></div>
                                         </div>
                                         <div class="w-10 text-right text-xs text-gray-500">${displayRs}</div>
+                                        ${radarChip}
                                     </div>
 
                                     <div class="w-32 text-right flex justify-end items-center gap-2 text-[10px] text-gray-400 ml-auto tracking-widest">
@@ -845,7 +958,7 @@
         }
 
         // ============ HISTORIAL (bitácora de eventos) ============
-        const LOG_URL = 'https://raw.githubusercontent.com/victoriagramigna/radar-mercado/main/data/log_alertas.jsonl';
+        const LOG_URL = 'https://raw.githubusercontent.com/victoriagramigna/hypertrade/main/data/log_alertas.jsonl';
         let historialData = null; // null = todavía no se pidió; [] = se pidió y vino vacío/404
 
         async function fetchHistorialData() {
@@ -921,6 +1034,142 @@
 
         function guardarCartera(posiciones) {
             localStorage.setItem('mi_cartera', JSON.stringify(posiciones));
+            sincronizarConGithub(posiciones); // fire-and-forget, no bloquea la UI
+        }
+
+        // ============ SINCRONIZACIÓN AUTOMÁTICA CON GITHUB ============
+        // El token queda SOLO en este navegador (localStorage), nunca se sube
+        // al repo. Con permiso "Contents: Read and write" sobre este único
+        // repo, alcanza para leer y escribir data/mi_cartera.json vía la API
+        // de contenidos de GitHub -- no hace falta copiar/pegar nada más.
+        const GITHUB_OWNER = 'victoriagramigna';
+        const GITHUB_REPO = 'hypertrade';
+        const GITHUB_PATH_CARTERA = 'data/mi_cartera.json';
+
+        function cargarTokenGithub() {
+            return localStorage.getItem('gh_token_hypertrade');
+        }
+
+        function guardarTokenGithub(token) {
+            localStorage.setItem('gh_token_hypertrade', token);
+        }
+
+        function borrarTokenGithub() {
+            localStorage.removeItem('gh_token_hypertrade');
+        }
+
+        function _posicionesParaExportar(posiciones) {
+            return posiciones.map(p => ({
+                ticker: p.ticker,
+                precio: p.precio,
+                cantidad: p.cantidad ?? null,
+                fecha: p.fecha,
+                stopInicial: p.stopInicial ?? null,
+                stopActual: p.stopActual ?? null,
+                radarScoreCompra: p.radarScoreCompra ?? null,
+            }));
+        }
+
+        async function sincronizarConGithub(posiciones) {
+            const token = cargarTokenGithub();
+            const statusEl = document.getElementById('sync-status');
+            if (!token) return; // sin token conectado -- usar el botón de exportar manual
+
+            try {
+                const apiUrl = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${GITHUB_PATH_CARTERA}`;
+
+                // 1. Traer el sha actual del archivo (si existe) -- la API de
+                // GitHub lo exige para poder actualizar un archivo existente
+                let sha = null;
+                const getResp = await fetch(apiUrl, {
+                    headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json' },
+                });
+                if (getResp.ok) {
+                    const info = await getResp.json();
+                    sha = info.sha;
+                } else if (getResp.status !== 404) {
+                    throw new Error(`No se pudo leer el archivo actual (HTTP ${getResp.status})`);
+                }
+
+                // 2. Armar el contenido nuevo, codificado en base64 (lo que pide la API)
+                const contenido = JSON.stringify(_posicionesParaExportar(posiciones), null, 2);
+                const contenidoB64 = btoa(unescape(encodeURIComponent(contenido)));
+
+                const putBody = {
+                    message: `Sync cartera desde dashboard (${new Date().toISOString()})`,
+                    content: contenidoB64,
+                };
+                if (sha) putBody.sha = sha;
+
+                const putResp = await fetch(apiUrl, {
+                    method: 'PUT',
+                    headers: {
+                        Authorization: `Bearer ${token}`,
+                        Accept: 'application/vnd.github+json',
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(putBody),
+                });
+
+                if (statusEl) {
+                    if (putResp.ok) {
+                        const ahora = new Date().toLocaleTimeString('es-AR', { hour: '2-digit', minute: '2-digit' });
+                        statusEl.textContent = `Última sincronización: ${ahora}`;
+                        statusEl.classList.remove('text-neg');
+                    } else {
+                        statusEl.textContent = `⚠ Error al sincronizar (HTTP ${putResp.status}) -- revisá el token`;
+                        statusEl.classList.add('text-neg');
+                    }
+                }
+            } catch (e) {
+                if (statusEl) {
+                    statusEl.textContent = '⚠ Error al sincronizar (sin conexión o token inválido)';
+                    statusEl.classList.add('text-neg');
+                }
+            }
+        }
+
+        document.getElementById('alertas-search').addEventListener('input', filtrarAlertas);
+
+        function actualizarUIsincronizacion() {
+            const token = cargarTokenGithub();
+            document.getElementById('sync-configurado').classList.toggle('hidden', !token);
+            document.getElementById('sync-sin-configurar').classList.toggle('hidden', !!token);
+        }
+
+        document.getElementById('github-token-guardar-btn').addEventListener('click', () => {
+            const input = document.getElementById('github-token-input');
+            const token = input.value.trim();
+            if (!token) return;
+            guardarTokenGithub(token);
+            input.value = '';
+            actualizarUIsincronizacion();
+            sincronizarConGithub(cargarCartera()); // sincroniza de una lo que ya tenía cargado
+        });
+
+        document.getElementById('sync-desconectar-btn').addEventListener('click', () => {
+            borrarTokenGithub();
+            actualizarUIsincronizacion();
+        });
+
+        actualizarUIsincronizacion();
+
+        // Umbrales del seguimiento activo de posiciones -- reglas clásicas
+        // de swing trading (O'Neil/Minervini), ajustables acá si hace falta
+        const CARTERA_STOP_PCT_INICIAL = 0.08;       // -8% del precio de entrada, si no hay SMA50 más cercana
+        const CARTERA_GANANCIA_PARCIAL_PCT = 20;     // primer punto clásico para vender una porción
+        const CARTERA_GANANCIA_TRAILING_PCT = 35;    // a partir de acá, trailing más agresivo (bajo SMA50)
+        const CARTERA_CAIDA_RADAR_SCORE = 15;        // puntos de caída en el Radar Score vs. la compra = alerta
+        const CARTERA_AVISO_PREVIO_STOP_PCT = 1;     // avisa cuando falta esta distancia (%) para tocar el stop
+
+        function calcularStopInicial(precioCompra, tickerData) {
+            const stopPorcentual = precioCompra * (1 - CARTERA_STOP_PCT_INICIAL);
+            const sma50 = tickerData?.SMA50;
+            if (sma50 != null && sma50 < precioCompra) {
+                // Toma el más ajustado (más alto) de los dos, sin superar el precio de compra
+                return Math.max(stopPorcentual, sma50 * 0.98);
+            }
+            return stopPorcentual;
         }
 
         function renderCartera() {
@@ -933,45 +1182,89 @@
             }
 
             const ranking = currentRadarData?.ranking ?? [];
-            const alertas = currentRadarData?.alertas ?? [];
+            let huboCambios = false; // si el trailing stop de alguna posición subió, hay que re-guardar
 
             container.innerHTML = posiciones.map((p, idx) => {
                 const tickerData = ranking.find(t => t?.Ticker?.toUpperCase() === p.ticker.toUpperCase());
                 const precioActual = tickerData?.Precio;
+
                 let variacionHtml = '<span class="text-gray-500">sin precio actual disponible</span>';
+                let gananciaPct = null;
                 if (precioActual != null && p.precio > 0) {
-                    const varPct = ((precioActual / p.precio - 1) * 100).toFixed(1);
-                    const color = varPct >= 0 ? 'text-pos' : 'text-neg';
-                    variacionHtml = `<span class="${color} font-bold">${varPct >= 0 ? '+' : ''}${varPct}%</span> (actual: $${precioActual.toFixed(2)})`;
+                    gananciaPct = (precioActual / p.precio - 1) * 100;
+                    const color = gananciaPct >= 0 ? 'text-pos' : 'text-neg';
+                    variacionHtml = `<span class="${color} font-bold">${gananciaPct >= 0 ? '+' : ''}${gananciaPct.toFixed(1)}%</span> (actual: $${precioActual.toFixed(2)})`;
                 }
 
-                const alertaActiva = alertas.find(a => a?.Ticker?.toUpperCase() === p.ticker.toUpperCase());
-                const stop = alertaActiva?.Stop_sugerido;
+                // Stop inicial: se calcula UNA sola vez, al cargar la compra
+                // (queda grabado en la posición). Si por algún motivo una
+                // posición vieja no lo tiene, se calcula ahora como respaldo.
+                if (p.stopInicial == null) {
+                    p.stopInicial = calcularStopInicial(p.precio, tickerData);
+                    p.stopActual = p.stopInicial;
+                    huboCambios = true;
+                }
+                if (p.stopActual == null) p.stopActual = p.stopInicial;
 
-                let stopHtml = `<div class="text-gray-600 text-[10px] mt-1">Sin alerta activa hoy -- sin stop calculado.</div>`;
-                let cardBorder = 'border-surface';
-                let cardBg = 'bg-surface';
-                let legendHtml = '';
-
-                if (stop != null) {
-                    stopHtml = `<div class="text-accent text-xs mt-1">STOP SUGERIDO (aprox.): $${stop}</div>`;
-
-                    if (precioActual != null) {
-                        // Distancia del precio actual al stop, en % -- positivo = todavía arriba del stop
-                        const distStopPct = ((precioActual - stop) / stop) * 100;
-                        const UMBRAL_CERCA_STOP_PCT = 2; // a esta distancia o menos, se considera "atento"
-
-                        if (distStopPct <= 0) {
-                            cardBorder = 'border-neg';
-                            cardBg = 'bg-neg/10';
-                            legendHtml = `<div class="mt-2 bg-neg/20 border border-neg text-neg font-bold text-xs px-2 py-1.5 rounded-sm">🛑 YA TOCÓ EL STOP SUGERIDO</div>`;
-                        } else if (distStopPct <= UMBRAL_CERCA_STOP_PCT) {
-                            cardBorder = 'border-accent';
-                            cardBg = 'bg-accent/10';
-                            legendHtml = `<div class="mt-2 bg-accent/20 border border-accent text-accent font-bold text-xs px-2 py-1.5 rounded-sm">⚠️ ATENTO AL STOP LOSS (a ${distStopPct.toFixed(1)}%)</div>`;
-                        }
+                // Trailing: el stop SOLO puede subir, nunca bajar -- asegura
+                // ganancias progresivamente, nunca afloja el piso ya ganado.
+                let stopSugerido = p.stopActual;
+                if (gananciaPct != null) {
+                    if (gananciaPct >= CARTERA_GANANCIA_TRAILING_PCT && tickerData?.SMA50 != null) {
+                        stopSugerido = Math.max(stopSugerido, tickerData.SMA50 * 0.98);
+                    } else if (gananciaPct >= CARTERA_GANANCIA_PARCIAL_PCT) {
+                        stopSugerido = Math.max(stopSugerido, p.precio); // mueve a punto de equilibrio
                     }
                 }
+                if (stopSugerido !== p.stopActual) {
+                    p.stopActual = stopSugerido;
+                    huboCambios = true;
+                }
+
+                // Señales de gestión activa -- pueden acumularse varias a la vez
+                const señales = [];
+                if (precioActual != null && p.stopActual != null) {
+                    const distStopPct = ((precioActual - p.stopActual) / p.stopActual) * 100;
+                    if (distStopPct <= 0) {
+                        señales.push({ color: 'neg', texto: '🛑 Tocó el stop sugerido -- considerar vender' });
+                    } else if (distStopPct <= CARTERA_AVISO_PREVIO_STOP_PCT) {
+                        señales.push({ color: 'accent', texto: `⚠️ A ${distStopPct.toFixed(1)}% del stop -- atenta, puede tocarlo pronto` });
+                    }
+                }
+                if (gananciaPct != null && gananciaPct >= CARTERA_GANANCIA_TRAILING_PCT) {
+                    señales.push({ color: 'pos', texto: `💰 +${CARTERA_GANANCIA_TRAILING_PCT}% de ganancia -- evaluar tomar ganancia parcial adicional, stop ajustado bajo la SMA50` });
+                } else if (gananciaPct != null && gananciaPct >= CARTERA_GANANCIA_PARCIAL_PCT) {
+                    señales.push({ color: 'accent', texto: `💰 +${CARTERA_GANANCIA_PARCIAL_PCT}% de ganancia -- punto clásico para vender una porción y asegurar punto de equilibrio` });
+                }
+                if (tickerData?.Radar_Score != null && p.radarScoreCompra != null) {
+                    const caida = p.radarScoreCompra - tickerData.Radar_Score;
+                    if (caida >= CARTERA_CAIDA_RADAR_SCORE) {
+                        señales.push({ color: 'accent', texto: `⚠️ Perdiendo fuerza técnica -- Radar Score bajó de ${p.radarScoreCompra.toFixed(0)} a ${tickerData.Radar_Score.toFixed(0)} desde la compra` });
+                    }
+                }
+                if (tickerData?.Sobre_SMA50 === false) {
+                    señales.push({ color: 'accent', texto: '⚠️ Perdió el soporte de su SMA50' });
+                }
+                if (señales.length === 0 && precioActual != null) {
+                    señales.push({ color: 'gray-500', texto: '✅ Sin señales de alerta -- tendencia técnica intacta' });
+                }
+
+                const coloresBorde = { neg: 'border-neg', accent: 'border-accent', pos: 'border-pos', 'gray-500': 'border-surface' };
+                const cardBorder = señales.some(s => s.color === 'neg') ? coloresBorde.neg
+                    : señales.some(s => s.color === 'accent') ? coloresBorde.accent
+                    : señales.some(s => s.color === 'pos') ? coloresBorde.pos
+                    : 'border-surface';
+                const cardBg = cardBorder === coloresBorde.neg ? 'bg-neg/10' : cardBorder === coloresBorde.accent ? 'bg-accent/10' : 'bg-surface';
+
+                const señalesHtml = señales.map(s =>
+                    `<div class="mt-1.5 bg-${s.color}/20 border border-${s.color} text-${s.color} font-bold text-xs px-2 py-1.5 rounded-sm">${s.texto}</div>`
+                ).join('');
+
+                const stopHtml = p.stopActual != null
+                    ? `<div class="text-accent text-xs mt-2">STOP ACTUAL (trailing): $${p.stopActual.toFixed(2)} ${p.stopActual > p.stopInicial ? '<span class="text-gray-500">(subido desde el inicial $' + p.stopInicial.toFixed(2) + ')</span>' : ''}</div>`
+                    : '';
+
+                const objetivoHtml = `<div class="text-gray-500 text-[10px] mt-1">Objetivo parcial (+${CARTERA_GANANCIA_PARCIAL_PCT}%): $${(p.precio * (1 + CARTERA_GANANCIA_PARCIAL_PCT / 100)).toFixed(2)} · Objetivo trailing (+${CARTERA_GANANCIA_TRAILING_PCT}%): $${(p.precio * (1 + CARTERA_GANANCIA_TRAILING_PCT / 100)).toFixed(2)}</div>`;
 
                 return `
                     <div class="${cardBg} p-4 rounded-sm border ${cardBorder} font-mono text-sm">
@@ -985,9 +1278,12 @@
                         </div>
                         <div class="mt-2">${variacionHtml}</div>
                         ${stopHtml}
-                        ${legendHtml}
+                        ${objetivoHtml}
+                        ${señalesHtml}
                     </div>`;
             }).join('');
+
+            if (huboCambios) guardarCartera(posiciones);
         }
 
         function eliminarPosicion(idx) {
@@ -1037,13 +1333,47 @@
                 origenArs = { precioArs, cclCompra, ratio };
             }
 
+            // Captura el estado técnico del ticker AL MOMENTO DE LA COMPRA
+            // (stop inicial + Radar Score de referencia), para poder hacer
+            // seguimiento activo después -- ver renderCartera().
+            const tickerDataCompra = (currentRadarData?.ranking ?? []).find(t => t?.Ticker?.toUpperCase() === ticker);
+            const stopInicial = calcularStopInicial(precioUsd, tickerDataCompra);
+            const radarScoreCompra = tickerDataCompra?.Radar_Score ?? null;
+
             const posiciones = cargarCartera();
-            posiciones.push({ ticker, precio: precioUsd, cantidad, fecha, origenArs });
+            posiciones.push({
+                ticker, precio: precioUsd, cantidad, fecha, origenArs,
+                stopInicial, stopActual: stopInicial, radarScoreCompra,
+            });
             guardarCartera(posiciones);
             renderCartera();
             e.target.reset();
             document.getElementById('cartera-campos-ars').classList.add('hidden');
             document.getElementById('cartera-campos-usd').classList.remove('hidden');
+        });
+
+        // Exportar cartera -- arma el JSON que el backend espera en
+        // data/mi_cartera.json (mismos campos que ya guarda cada
+        // posición: ticker, precio, cantidad, fecha, stopInicial,
+        // stopActual, radarScoreCompra). No incluye origenArs ni
+        // campos internos del dashboard que el backend no necesita.
+        document.getElementById('exportar-cartera-btn').addEventListener('click', () => {
+            const posiciones = cargarCartera();
+            const paraExportar = posiciones.map(p => ({
+                ticker: p.ticker,
+                precio: p.precio,
+                cantidad: p.cantidad ?? null,
+                fecha: p.fecha,
+                stopInicial: p.stopInicial ?? null,
+                stopActual: p.stopActual ?? null,
+                radarScoreCompra: p.radarScoreCompra ?? null,
+            }));
+            const output = document.getElementById('exportar-cartera-output');
+            output.value = JSON.stringify(paraExportar, null, 2);
+            output.classList.remove('hidden');
+            document.getElementById('exportar-cartera-hint').classList.remove('hidden');
+            output.focus();
+            output.select();
         });
 
         // Fecha de hoy por defecto en el form de Mi Cartera
