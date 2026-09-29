@@ -1,5 +1,5 @@
 {
-  "generado_utc": "2026-09-29T21:16:04.653107+00:00",
+  "generado_utc": "2026-09-29T22:28:13.204776+00:00",
   "proxima_corrida_estimada_utc": "2026-09-30T14:00:00+00:00",
   "tickers_ok": 266,
   "tickers_fallidos": [
@@ -3863,19 +3863,19 @@
       "Sector": "Automotriz",
       "Precio": 111.8,
       "Ret_1m_%": -9.9,
-      "Ret_3m_%": -7.8,
-      "Ret_6m_%": -3.2,
+      "Ret_3m_%": -7.5,
+      "Ret_6m_%": -2.6,
       "Sobre_SMA50": false,
-      "Dist_Max52w_%": -19.1,
-      "SMA50": 125.85,
-      "Dist_SMA50_%": -11.16,
-      "SMA200": 120.79,
-      "Dist_SMA200_%": -7.44,
+      "Dist_Max52w_%": -18.9,
+      "SMA50": 125.74,
+      "Dist_SMA50_%": -11.08,
+      "SMA200": 120.23,
+      "Dist_SMA200_%": -7.01,
       "RSI": 14.8,
       "Vol_rel": 0.8,
       "VCP_valido": false,
       "RS_Score": 24.1,
-      "Radar_Score": 22.6
+      "Radar_Score": 22.7
     },
     {
       "Ticker": "PAAS",
