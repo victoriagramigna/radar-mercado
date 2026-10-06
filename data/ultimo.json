@@ -1,5 +1,5 @@
 {
-  "generado_utc": "2026-10-06T21:16:04.721576+00:00",
+  "generado_utc": "2026-10-06T22:51:10.085391+00:00",
   "proxima_corrida_estimada_utc": "2026-10-07T14:00:00+00:00",
   "tickers_ok": 266,
   "tickers_fallidos": [
@@ -186,10 +186,10 @@
       "SMA200": 6.43,
       "Dist_SMA200_%": 49.06,
       "RSI": 73.9,
-      "Vol_rel": 1.14,
+      "Vol_rel": 1.15,
       "VCP_valido": false,
       "RS_Score": 97.0,
-      "Radar_Score": 57.1
+      "Radar_Score": 57.2
     },
     {
       "Ticker": "TWLO",
@@ -490,7 +490,7 @@
       "SMA200": 17.46,
       "Dist_SMA200_%": 36.32,
       "RSI": 75.2,
-      "Vol_rel": 1.62,
+      "Vol_rel": 1.63,
       "VCP_valido": false,
       "RS_Score": 91.0,
       "Radar_Score": 63.1
@@ -566,10 +566,10 @@
       "SMA200": 115.57,
       "Dist_SMA200_%": 19.38,
       "RSI": 47.5,
-      "Vol_rel": 0.83,
+      "Vol_rel": 0.84,
       "VCP_valido": true,
       "RS_Score": 89.5,
-      "Radar_Score": 81.1
+      "Radar_Score": 81.2
     },
     {
       "Ticker": "TX",
@@ -604,10 +604,10 @@
       "SMA200": 542.76,
       "Dist_SMA200_%": 20.97,
       "RSI": 53.3,
-      "Vol_rel": 1.15,
+      "Vol_rel": 1.16,
       "VCP_valido": true,
       "RS_Score": 88.7,
-      "Radar_Score": 92.0
+      "Radar_Score": 92.1
     },
     {
       "Ticker": "META",
@@ -699,10 +699,10 @@
       "SMA200": 249.14,
       "Dist_SMA200_%": 20.09,
       "RSI": 72.2,
-      "Vol_rel": 0.73,
+      "Vol_rel": 0.74,
       "VCP_valido": false,
       "RS_Score": 86.8,
-      "Radar_Score": 58.1
+      "Radar_Score": 58.2
     },
     {
       "Ticker": "SAP",
@@ -756,10 +756,10 @@
       "SMA200": 387.46,
       "Dist_SMA200_%": 24.48,
       "RSI": 88.0,
-      "Vol_rel": 0.84,
+      "Vol_rel": 0.85,
       "VCP_valido": false,
       "RS_Score": 85.7,
-      "Radar_Score": 58.9
+      "Radar_Score": 59.0
     },
     {
       "Ticker": "ROKU",
@@ -813,10 +813,10 @@
       "SMA200": 5.61,
       "Dist_SMA200_%": 2.99,
       "RSI": 51.6,
-      "Vol_rel": 0.98,
+      "Vol_rel": 1.11,
       "VCP_valido": false,
       "RS_Score": 84.6,
-      "Radar_Score": 50.2
+      "Radar_Score": 51.5
     },
     {
       "Ticker": "ACN",
@@ -832,10 +832,10 @@
       "SMA200": 192.73,
       "Dist_SMA200_%": 0.35,
       "RSI": 52.3,
-      "Vol_rel": 0.66,
+      "Vol_rel": 0.88,
       "VCP_valido": false,
       "RS_Score": 84.2,
-      "Radar_Score": 46.9
+      "Radar_Score": 49.1
     },
     {
       "Ticker": "ADI",
@@ -908,7 +908,7 @@
       "SMA200": 36.28,
       "Dist_SMA200_%": 18.53,
       "RSI": 76.8,
-      "Vol_rel": 1.65,
+      "Vol_rel": 1.7,
       "VCP_valido": false,
       "RS_Score": 82.7,
       "Radar_Score": 64.8
@@ -984,7 +984,7 @@
       "SMA200": 9.4,
       "Dist_SMA200_%": 14.04,
       "RSI": 66.6,
-      "Vol_rel": 1.57,
+      "Vol_rel": 1.73,
       "VCP_valido": false,
       "RS_Score": 81.2,
       "Radar_Score": 62.4
@@ -1003,10 +1003,10 @@
       "SMA200": 229.96,
       "Dist_SMA200_%": 15.97,
       "RSI": 61.1,
-      "Vol_rel": 1.01,
+      "Vol_rel": 1.03,
       "VCP_valido": false,
       "RS_Score": 80.8,
-      "Radar_Score": 59.3
+      "Radar_Score": 59.5
     },
     {
       "Ticker": "AMAT",
@@ -1212,10 +1212,10 @@
       "SMA200": 23.05,
       "Dist_SMA200_%": 16.87,
       "RSI": 50.8,
-      "Vol_rel": 1.14,
+      "Vol_rel": 1.15,
       "VCP_valido": false,
       "RS_Score": 76.7,
-      "Radar_Score": 54.1
+      "Radar_Score": 54.2
     },
     {
       "Ticker": "LRCX",
@@ -1345,10 +1345,10 @@
       "SMA200": 30.22,
       "Dist_SMA200_%": 15.48,
       "RSI": 38.2,
-      "Vol_rel": 1.0,
+      "Vol_rel": 1.04,
       "VCP_valido": false,
       "RS_Score": 74.1,
-      "Radar_Score": 47.6
+      "Radar_Score": 48.0
     },
     {
       "Ticker": "SCCO",
@@ -1383,10 +1383,10 @@
       "SMA200": 586.94,
       "Dist_SMA200_%": 16.33,
       "RSI": 56.9,
-      "Vol_rel": 0.6,
+      "Vol_rel": 0.61,
       "VCP_valido": false,
       "RS_Score": 73.3,
-      "Radar_Score": 48.1
+      "Radar_Score": 48.2
     },
     {
       "Ticker": "CVX",
@@ -1402,7 +1402,7 @@
       "SMA200": 184.76,
       "Dist_SMA200_%": 12.35,
       "RSI": 41.1,
-      "Vol_rel": 0.55,
+      "Vol_rel": 0.56,
       "VCP_valido": false,
       "RS_Score": 72.9,
       "Radar_Score": 47.1
@@ -1554,10 +1554,10 @@
       "SMA200": 56.08,
       "Dist_SMA200_%": 13.67,
       "RSI": 50.7,
-      "Vol_rel": 0.75,
+      "Vol_rel": 0.8,
       "VCP_valido": false,
       "RS_Score": 69.9,
-      "Radar_Score": 52.6
+      "Radar_Score": 53.1
     },
     {
       "Ticker": "CEG",
@@ -1687,10 +1687,10 @@
       "SMA200": 1072.41,
       "Dist_SMA200_%": 7.93,
       "RSI": 56.9,
-      "Vol_rel": 0.95,
+      "Vol_rel": 0.96,
       "VCP_valido": true,
       "RS_Score": 67.3,
-      "Radar_Score": 77.7
+      "Radar_Score": 77.8
     },
     {
       "Ticker": "ABNB",
@@ -1763,10 +1763,10 @@
       "SMA200": 115.72,
       "Dist_SMA200_%": 11.77,
       "RSI": 42.6,
-      "Vol_rel": 0.82,
+      "Vol_rel": 0.84,
       "VCP_valido": true,
       "RS_Score": 65.8,
-      "Radar_Score": 76.4
+      "Radar_Score": 76.6
     },
     {
       "Ticker": "BHP",
@@ -1877,10 +1877,10 @@
       "SMA200": 2.98,
       "Dist_SMA200_%": 3.02,
       "RSI": 56.7,
-      "Vol_rel": 0.85,
+      "Vol_rel": 0.86,
       "VCP_valido": true,
       "RS_Score": 63.5,
-      "Radar_Score": 68.8
+      "Radar_Score": 68.9
     },
     {
       "Ticker": "PFE",
@@ -1896,10 +1896,10 @@
       "SMA200": 25.84,
       "Dist_SMA200_%": 6.43,
       "RSI": 50.8,
-      "Vol_rel": 0.73,
+      "Vol_rel": 0.74,
       "VCP_valido": false,
       "RS_Score": 63.2,
-      "Radar_Score": 49.5
+      "Radar_Score": 49.6
     },
     {
       "Ticker": "BBVA",
@@ -2010,10 +2010,10 @@
       "SMA200": 920.67,
       "Dist_SMA200_%": 11.79,
       "RSI": 86.1,
-      "Vol_rel": 1.14,
+      "Vol_rel": 1.15,
       "VCP_valido": false,
       "RS_Score": 60.9,
-      "Radar_Score": 46.8
+      "Radar_Score": 46.9
     },
     {
       "Ticker": "MMM",
@@ -2048,7 +2048,7 @@
       "SMA200": 154.32,
       "Dist_SMA200_%": 4.0,
       "RSI": 77.0,
-      "Vol_rel": 2.97,
+      "Vol_rel": 2.98,
       "VCP_valido": false,
       "RS_Score": 60.2,
       "Radar_Score": 46.5
@@ -2086,10 +2086,10 @@
       "SMA200": 103.26,
       "Dist_SMA200_%": 0.75,
       "RSI": 41.2,
-      "Vol_rel": 0.7,
+      "Vol_rel": 0.71,
       "VCP_valido": true,
       "RS_Score": 59.4,
-      "Radar_Score": 72.9
+      "Radar_Score": 73.0
     },
     {
       "Ticker": "CAT",
@@ -2238,10 +2238,10 @@
       "SMA200": 146.25,
       "Dist_SMA200_%": 1.48,
       "RSI": 53.6,
-      "Vol_rel": 1.38,
+      "Vol_rel": 1.6,
       "VCP_valido": false,
       "RS_Score": 56.4,
-      "Radar_Score": 48.7
+      "Radar_Score": 49.9
     },
     {
       "Ticker": "RACE",
@@ -2257,10 +2257,10 @@
       "SMA200": 365.64,
       "Dist_SMA200_%": 5.71,
       "RSI": 29.9,
-      "Vol_rel": 0.76,
+      "Vol_rel": 0.77,
       "VCP_valido": false,
       "RS_Score": 56.0,
-      "Radar_Score": 35.1
+      "Radar_Score": 35.2
     },
     {
       "Ticker": "ECL",
@@ -2276,10 +2276,10 @@
       "SMA200": 272.68,
       "Dist_SMA200_%": 2.99,
       "RSI": 59.2,
-      "Vol_rel": 0.96,
+      "Vol_rel": 0.99,
       "VCP_valido": false,
       "RS_Score": 55.6,
-      "Radar_Score": 44.8
+      "Radar_Score": 45.1
     },
     {
       "Ticker": "VRTX",
@@ -2409,10 +2409,10 @@
       "SMA200": 65.55,
       "Dist_SMA200_%": 4.58,
       "RSI": 37.5,
-      "Vol_rel": 0.82,
+      "Vol_rel": 0.88,
       "VCP_valido": true,
       "RS_Score": 53.0,
-      "Radar_Score": 73.0
+      "Radar_Score": 73.6
     },
     {
       "Ticker": "EBAY",
@@ -2466,10 +2466,10 @@
       "SMA200": 10.06,
       "Dist_SMA200_%": 9.06,
       "RSI": 61.2,
-      "Vol_rel": 1.02,
+      "Vol_rel": 1.04,
       "VCP_valido": true,
       "RS_Score": 51.9,
-      "Radar_Score": 70.8
+      "Radar_Score": 71.0
     },
     {
       "Ticker": "AEG",
@@ -2504,10 +2504,10 @@
       "SMA200": 353.07,
       "Dist_SMA200_%": 6.59,
       "RSI": 51.2,
-      "Vol_rel": 0.96,
+      "Vol_rel": 1.01,
       "VCP_valido": false,
       "RS_Score": 51.1,
-      "Radar_Score": 41.8
+      "Radar_Score": 42.3
     },
     {
       "Ticker": "AVGO",
@@ -2694,10 +2694,10 @@
       "SMA200": 188.53,
       "Dist_SMA200_%": -1.33,
       "RSI": 40.4,
-      "Vol_rel": 0.87,
+      "Vol_rel": 0.89,
       "VCP_valido": true,
       "RS_Score": 47.4,
-      "Radar_Score": 58.0
+      "Radar_Score": 58.2
     },
     {
       "Ticker": "UL",
@@ -2770,10 +2770,10 @@
       "SMA200": 93.51,
       "Dist_SMA200_%": 2.54,
       "RSI": 50.4,
-      "Vol_rel": 1.05,
+      "Vol_rel": 1.07,
       "VCP_valido": false,
       "RS_Score": 45.9,
-      "Radar_Score": 37.6
+      "Radar_Score": 37.8
     },
     {
       "Ticker": "JNJ",
@@ -2789,10 +2789,10 @@
       "SMA200": 240.2,
       "Dist_SMA200_%": 6.07,
       "RSI": 27.4,
-      "Vol_rel": 0.81,
+      "Vol_rel": 0.84,
       "VCP_valido": false,
       "RS_Score": 45.5,
-      "Radar_Score": 40.2
+      "Radar_Score": 40.5
     },
     {
       "Ticker": "JPM",
@@ -2808,10 +2808,10 @@
       "SMA200": 320.37,
       "Dist_SMA200_%": 3.41,
       "RSI": 27.7,
-      "Vol_rel": 0.69,
+      "Vol_rel": 0.74,
       "VCP_valido": true,
       "RS_Score": 45.1,
-      "Radar_Score": 64.8
+      "Radar_Score": 65.3
     },
     {
       "Ticker": "HSBC",
@@ -2827,10 +2827,10 @@
       "SMA200": 91.12,
       "Dist_SMA200_%": 7.09,
       "RSI": 39.5,
-      "Vol_rel": 0.83,
+      "Vol_rel": 0.84,
       "VCP_valido": false,
       "RS_Score": 44.7,
-      "Radar_Score": 36.2
+      "Radar_Score": 36.3
     },
     {
       "Ticker": "LIN",
@@ -2960,10 +2960,10 @@
       "SMA200": 42.39,
       "Dist_SMA200_%": -3.94,
       "RSI": 40.5,
-      "Vol_rel": 0.9,
+      "Vol_rel": 0.94,
       "VCP_valido": true,
       "RS_Score": 42.1,
-      "Radar_Score": 58.1
+      "Radar_Score": 58.5
     },
     {
       "Ticker": "ADBE",
@@ -3093,10 +3093,10 @@
       "SMA200": 28.45,
       "Dist_SMA200_%": -1.52,
       "RSI": 47.3,
-      "Vol_rel": 0.7,
+      "Vol_rel": 0.77,
       "VCP_valido": false,
       "RS_Score": 39.5,
-      "Radar_Score": 27.9
+      "Radar_Score": 28.6
     },
     {
       "Ticker": "ABT",
@@ -3112,10 +3112,10 @@
       "SMA200": 102.89,
       "Dist_SMA200_%": -4.6,
       "RSI": 35.4,
-      "Vol_rel": 1.01,
+      "Vol_rel": 1.17,
       "VCP_valido": false,
       "RS_Score": 39.1,
-      "Radar_Score": 30.9
+      "Radar_Score": 32.5
     },
     {
       "Ticker": "SPOT",
@@ -3321,10 +3321,10 @@
       "SMA200": 161.83,
       "Dist_SMA200_%": -10.54,
       "RSI": 51.9,
-      "Vol_rel": 0.55,
+      "Vol_rel": 0.57,
       "VCP_valido": false,
       "RS_Score": 35.0,
-      "Radar_Score": 27.2
+      "Radar_Score": 27.4
     },
     {
       "Ticker": "SLB",
@@ -3340,10 +3340,10 @@
       "SMA200": 50.19,
       "Dist_SMA200_%": -0.38,
       "RSI": 35.2,
-      "Vol_rel": 0.79,
+      "Vol_rel": 0.8,
       "VCP_valido": true,
       "RS_Score": 34.6,
-      "Radar_Score": 56.6
+      "Radar_Score": 56.7
     },
     {
       "Ticker": "VIST",
@@ -3549,10 +3549,10 @@
       "SMA200": 87.03,
       "Dist_SMA200_%": -0.69,
       "RSI": 34.5,
-      "Vol_rel": 1.23,
+      "Vol_rel": 1.27,
       "VCP_valido": false,
       "RS_Score": 30.5,
-      "Radar_Score": 31.8
+      "Radar_Score": 32.2
     },
     {
       "Ticker": "BABA",
@@ -3568,10 +3568,10 @@
       "SMA200": 129.78,
       "Dist_SMA200_%": -15.81,
       "RSI": 53.8,
-      "Vol_rel": 0.88,
+      "Vol_rel": 0.89,
       "VCP_valido": true,
       "RS_Score": 30.1,
-      "Radar_Score": 51.6
+      "Radar_Score": 51.7
     },
     {
       "Ticker": "WFC",
@@ -3663,10 +3663,10 @@
       "SMA200": 192.67,
       "Dist_SMA200_%": -0.86,
       "RSI": 28.8,
-      "Vol_rel": 0.83,
+      "Vol_rel": 0.86,
       "VCP_valido": true,
       "RS_Score": 28.2,
-      "Radar_Score": 55.2
+      "Radar_Score": 55.5
     },
     {
       "Ticker": "BAC",
@@ -3682,10 +3682,10 @@
       "SMA200": 54.82,
       "Dist_SMA200_%": -1.32,
       "RSI": 22.6,
-      "Vol_rel": 0.64,
+      "Vol_rel": 0.65,
       "VCP_valido": false,
       "RS_Score": 27.8,
-      "Radar_Score": 23.1
+      "Radar_Score": 23.2
     },
     {
       "Ticker": "NGG",
@@ -3758,10 +3758,10 @@
       "SMA200": 421.66,
       "Dist_SMA200_%": -6.06,
       "RSI": 38.2,
-      "Vol_rel": 0.73,
+      "Vol_rel": 0.74,
       "VCP_valido": false,
       "RS_Score": 26.3,
-      "Radar_Score": 25.1
+      "Radar_Score": 25.2
     },
     {
       "Ticker": "HWM",
@@ -3834,10 +3834,10 @@
       "SMA200": 330.48,
       "Dist_SMA200_%": -7.85,
       "RSI": 37.5,
-      "Vol_rel": 0.67,
+      "Vol_rel": 0.69,
       "VCP_valido": true,
       "RS_Score": 24.8,
-      "Radar_Score": 54.9
+      "Radar_Score": 55.1
     },
     {
       "Ticker": "LMT",
@@ -3872,10 +3872,10 @@
       "SMA200": 193.89,
       "Dist_SMA200_%": -5.47,
       "RSI": 14.6,
-      "Vol_rel": 1.04,
+      "Vol_rel": 1.06,
       "VCP_valido": false,
       "RS_Score": 24.1,
-      "Radar_Score": 25.2
+      "Radar_Score": 25.3
     },
     {
       "Ticker": "BCS",
@@ -3967,10 +3967,10 @@
       "SMA200": 52.46,
       "Dist_SMA200_%": -12.46,
       "RSI": 44.4,
-      "Vol_rel": 0.7,
+      "Vol_rel": 0.72,
       "VCP_valido": true,
       "RS_Score": 22.2,
-      "Radar_Score": 47.4
+      "Radar_Score": 47.6
     },
     {
       "Ticker": "BX",
@@ -4081,7 +4081,7 @@
       "SMA200": 51.68,
       "Dist_SMA200_%": -9.83,
       "RSI": 26.9,
-      "Vol_rel": 1.62,
+      "Vol_rel": 1.8,
       "VCP_valido": false,
       "RS_Score": 19.9,
       "Radar_Score": 31.2
@@ -4157,7 +4157,7 @@
       "SMA200": 105.7,
       "Dist_SMA200_%": -12.0,
       "RSI": 54.5,
-      "Vol_rel": 1.89,
+      "Vol_rel": 1.92,
       "VCP_valido": false,
       "RS_Score": 18.4,
       "Radar_Score": 24.3
@@ -4176,7 +4176,7 @@
       "SMA200": 10.9,
       "Dist_SMA200_%": -13.49,
       "RSI": 50.9,
-      "Vol_rel": 1.57,
+      "Vol_rel": 1.59,
       "VCP_valido": false,
       "RS_Score": 18.0,
       "Radar_Score": 24.1
@@ -4195,10 +4195,10 @@
       "SMA200": 181.48,
       "Dist_SMA200_%": -12.6,
       "RSI": 41.8,
-      "Vol_rel": 0.69,
+      "Vol_rel": 0.72,
       "VCP_valido": true,
       "RS_Score": 17.7,
-      "Radar_Score": 51.7
+      "Radar_Score": 52.0
     },
     {
       "Ticker": "TMUS",
@@ -4347,10 +4347,10 @@
       "SMA200": 188.41,
       "Dist_SMA200_%": -14.65,
       "RSI": 26.0,
-      "Vol_rel": 0.86,
+      "Vol_rel": 0.9,
       "VCP_valido": false,
       "RS_Score": 14.7,
-      "Radar_Score": 16.8
+      "Radar_Score": 17.2
     },
     {
       "Ticker": "PEP",
@@ -4537,10 +4537,10 @@
       "SMA200": 44.49,
       "Dist_SMA200_%": -15.65,
       "RSI": 26.6,
-      "Vol_rel": 0.9,
+      "Vol_rel": 0.92,
       "VCP_valido": false,
       "RS_Score": 10.9,
-      "Radar_Score": 19.8
+      "Radar_Score": 20.0
     },
     {
       "Ticker": "MOS",
@@ -5187,13 +5187,13 @@
           {
             "ola": 4,
             "rango_%": 3.66,
-            "vol_prom": 32947060.0
+            "vol_prom": 33143200.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
       },
       "RSI": 50.7,
-      "Vol_rel": 0.75,
+      "Vol_rel": 0.8,
       "SMA21": 63.29,
       "Precio": 63.75,
       "fecha_evento": "2026-10-05T13:01:44.434820+00:00",
@@ -5203,7 +5203,7 @@
       "Recomendación final": "MANTENER",
       "Ajustado por": "contexto macro inestable: riesgo país bajó 8.5% hoy",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 52.6,
+      "Radar_Score": 53.1,
       "Dist_Max52w_%": -2.7,
       "RS_sector": 81.1,
       "Var_SPY_dia_%": 0.55
@@ -5243,7 +5243,7 @@
           {
             "ola": 4,
             "rango_%": 3.15,
-            "vol_prom": 5071936.0
+            "vol_prom": 5072150.0
           }
         ],
         "motivo": null
@@ -5297,7 +5297,7 @@
           {
             "ola": 4,
             "rango_%": 6.39,
-            "vol_prom": 40031436.0
+            "vol_prom": 40031548.0
           }
         ],
         "motivo": "solo 0 contracción(es), se necesitan 2"
@@ -5351,7 +5351,7 @@
           {
             "ola": 4,
             "rango_%": 1.85,
-            "vol_prom": 4084058.0
+            "vol_prom": 4084745.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
@@ -5433,7 +5433,7 @@
           {
             "ola": 4,
             "rango_%": 28.05,
-            "vol_prom": 98328145.0
+            "vol_prom": 98331763.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
@@ -5487,13 +5487,13 @@
           {
             "ola": 4,
             "rango_%": 24.43,
-            "vol_prom": 5059246.0
+            "vol_prom": 5133473.0
           }
         ],
         "motivo": "solo 0 contracción(es), se necesitan 2"
       },
       "RSI": 66.6,
-      "Vol_rel": 1.57,
+      "Vol_rel": 1.73,
       "SMA21": 9.42,
       "Precio": 10.72,
       "fecha_evento": "2026-10-06T13:31:36.824111+00:00",
@@ -5541,13 +5541,13 @@
           {
             "ola": 4,
             "rango_%": 6.44,
-            "vol_prom": 1634454.0
+            "vol_prom": 1635310.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
       },
       "RSI": 72.2,
-      "Vol_rel": 0.73,
+      "Vol_rel": 0.74,
       "SMA21": 284.75,
       "Precio": 299.21,
       "fecha_evento": "2026-10-05T13:32:40.044371+00:00",
@@ -5557,7 +5557,7 @@
       "Recomendación final": "MANTENER",
       "Ajustado por": "contexto macro inestable: riesgo país bajó 8.5% hoy",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 58.1,
+      "Radar_Score": 58.2,
       "Dist_Max52w_%": -0.6,
       "RS_sector": 81.1,
       "Var_SPY_dia_%": 0.55
@@ -5788,13 +5788,13 @@
           {
             "ola": 4,
             "rango_%": 8.36,
-            "vol_prom": 1893212.0
+            "vol_prom": 1894352.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
       },
       "RSI": 86.1,
-      "Vol_rel": 1.14,
+      "Vol_rel": 1.15,
       "SMA21": 950.98,
       "Precio": 1029.21,
       "fecha_evento": "2026-10-05T13:01:44.434820+00:00",
@@ -5804,7 +5804,7 @@
       "Recomendación final": "MANTENER",
       "Ajustado por": "contexto macro inestable: riesgo país bajó 8.5% hoy",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 46.8,
+      "Radar_Score": 46.9,
       "Dist_Max52w_%": -12.4,
       "RS_sector": 49.4,
       "Var_SPY_dia_%": 0.55
@@ -6003,7 +6003,7 @@
           {
             "ola": 4,
             "rango_%": 7.23,
-            "vol_prom": 2221347.0
+            "vol_prom": 2222334.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
@@ -6225,13 +6225,13 @@
           {
             "ola": 4,
             "rango_%": 9.18,
-            "vol_prom": 30519481.0
+            "vol_prom": 30601550.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
       },
       "RSI": 51.9,
-      "Vol_rel": 0.55,
+      "Vol_rel": 0.57,
       "SMA21": 145.15,
       "Precio": 144.77,
       "fecha_evento": "2026-10-06T15:01:46.938345+00:00",
@@ -6241,7 +6241,7 @@
       "Recomendación final": "MANTENER",
       "Ajustado por": "contexto macro inestable: riesgo país bajó 8.5% hoy",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 27.2,
+      "Radar_Score": 27.4,
       "Dist_Max52w_%": -53.3,
       "RS_sector": 69.0,
       "Var_SPY_dia_%": 0.55
@@ -6279,7 +6279,7 @@
           {
             "ola": 4,
             "rango_%": 6.17,
-            "vol_prom": 9267377.0
+            "vol_prom": 9269314.0
           }
         ],
         "motivo": null
@@ -6333,9 +6333,10 @@
       "Sector": "Consumo",
       "Tipo": "tecnico",
       "Estado": "✅ Confirmado",
-      "Score": "2/7",
-      "Score_num": 2.0,
+      "Score": "3/7",
+      "Score_num": 3.0,
       "Señales": [
+        "volumen fuerte",
         "RSI diario sano",
         "base ordenada"
       ],
@@ -6361,13 +6362,13 @@
           {
             "ola": 4,
             "rango_%": 3.53,
-            "vol_prom": 7681514.0
+            "vol_prom": 7883995.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
       },
       "RSI": 53.6,
-      "Vol_rel": 1.38,
+      "Vol_rel": 1.6,
       "SMA21": 146.17,
       "Precio": 148.41,
       "fecha_evento": "2026-10-06T13:31:36.824111+00:00",
@@ -6377,7 +6378,7 @@
       "Recomendación final": "MANTENER",
       "Ajustado por": "contexto macro inestable: riesgo país bajó 8.5% hoy",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 48.7,
+      "Radar_Score": 49.9,
       "Dist_Max52w_%": -9.9,
       "RS_sector": 37.0,
       "Var_SPY_dia_%": 0.55
@@ -6415,7 +6416,7 @@
           {
             "ola": 4,
             "rango_%": 18.97,
-            "vol_prom": 14333465.0
+            "vol_prom": 14333902.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
@@ -6522,7 +6523,7 @@
           {
             "ola": 4,
             "rango_%": 9.26,
-            "vol_prom": 575624.0
+            "vol_prom": 575783.0
           }
         ],
         "motivo": null
@@ -6635,7 +6636,7 @@
           {
             "ola": 4,
             "rango_%": 6.25,
-            "vol_prom": 1874475.0
+            "vol_prom": 1874482.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
@@ -6688,7 +6689,7 @@
           {
             "ola": 4,
             "rango_%": 21.98,
-            "vol_prom": 32222439.0
+            "vol_prom": 32224881.0
           }
         ],
         "motivo": "solo 0 contracción(es), se necesitan 2"
@@ -6796,13 +6797,13 @@
           {
             "ola": 4,
             "rango_%": 3.36,
-            "vol_prom": 5842066.0
+            "vol_prom": 5856057.0
           }
         ],
         "motivo": null
       },
       "RSI": 42.6,
-      "Vol_rel": 0.82,
+      "Vol_rel": 0.84,
       "SMA21": 130.82,
       "Precio": 129.35,
       "fecha_evento": "2026-10-06T13:31:36.824111+00:00",
@@ -6812,7 +6813,7 @@
       "Recomendación final": "MANTENER",
       "Ajustado por": "contexto macro inestable: riesgo país bajó 8.5% hoy",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 76.4,
+      "Radar_Score": 76.6,
       "Dist_Max52w_%": -8.4,
       "RS_sector": 49.4,
       "Var_SPY_dia_%": 0.55
@@ -6851,13 +6852,13 @@
           {
             "ola": 4,
             "rango_%": 3.52,
-            "vol_prom": 1161170.0
+            "vol_prom": 1164265.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
       },
       "RSI": 59.2,
-      "Vol_rel": 0.96,
+      "Vol_rel": 0.99,
       "SMA21": 274.91,
       "Precio": 280.82,
       "fecha_evento": "2026-10-06T14:01:45.622992+00:00",
@@ -6867,7 +6868,7 @@
       "Recomendación final": "MANTENER",
       "Ajustado por": "contexto macro inestable: riesgo país bajó 8.5% hoy",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 44.8,
+      "Radar_Score": 45.1,
       "Dist_Max52w_%": -8.2,
       "RS_sector": 42.9,
       "Var_SPY_dia_%": 0.55
@@ -6959,7 +6960,7 @@
           {
             "ola": 4,
             "rango_%": 5.04,
-            "vol_prom": 1104984.0
+            "vol_prom": 1104988.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
@@ -7013,13 +7014,13 @@
           {
             "ola": 4,
             "rango_%": 10.27,
-            "vol_prom": 2187700.0
+            "vol_prom": 2191449.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
       },
       "RSI": 50.8,
-      "Vol_rel": 1.14,
+      "Vol_rel": 1.15,
       "SMA21": 26.09,
       "Precio": 26.94,
       "fecha_evento": "2026-10-06T13:31:36.824111+00:00",
@@ -7029,7 +7030,7 @@
       "Recomendación final": "MANTENER",
       "Ajustado por": "contexto macro inestable: riesgo país bajó 8.5% hoy",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 54.1,
+      "Radar_Score": 54.2,
       "Dist_Max52w_%": -4.7,
       "RS_sector": 38.1,
       "Var_SPY_dia_%": 0.55
@@ -7177,7 +7178,7 @@
           {
             "ola": 4,
             "rango_%": 3.72,
-            "vol_prom": 26362580.0
+            "vol_prom": 26362699.0
           }
         ],
         "motivo": "solo 0 contracción(es), se necesitan 2"
@@ -7231,13 +7232,13 @@
           {
             "ola": 4,
             "rango_%": 3.26,
-            "vol_prom": 7067999.0
+            "vol_prom": 7115947.0
           }
         ],
         "motivo": null
       },
       "RSI": 37.5,
-      "Vol_rel": 0.82,
+      "Vol_rel": 0.88,
       "SMA21": 68.47,
       "Precio": 68.55,
       "fecha_evento": "2026-10-06T13:31:36.824111+00:00",
@@ -7247,7 +7248,7 @@
       "Recomendación final": "MANTENER",
       "Ajustado por": "contexto macro inestable: riesgo país bajó 8.5% hoy",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 73.0,
+      "Radar_Score": 73.6,
       "Dist_Max52w_%": -7.0,
       "RS_sector": 37.0,
       "Var_SPY_dia_%": 0.55
@@ -7318,7 +7319,7 @@
       ],
       "VCP": null,
       "RSI": 61.2,
-      "Vol_rel": 1.02,
+      "Vol_rel": 1.04,
       "SMA21": null,
       "Precio": 10.97,
       "fecha_evento": "2026-10-06T15:01:46.938345+00:00",
@@ -7328,7 +7329,7 @@
       "Recomendación final": "MANTENER",
       "Ajustado por": "contexto macro inestable: riesgo país bajó 8.5% hoy",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 70.8,
+      "Radar_Score": 71.0,
       "Dist_Max52w_%": -34.9,
       "RS_sector": 69.0,
       "Var_SPY_dia_%": 0.55
@@ -7366,7 +7367,7 @@
           {
             "ola": 4,
             "rango_%": 3.04,
-            "vol_prom": 4262422.0
+            "vol_prom": 4262601.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
@@ -7451,7 +7452,7 @@
           {
             "ola": 4,
             "rango_%": 3.74,
-            "vol_prom": 3568029.0
+            "vol_prom": 3568068.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
@@ -7614,13 +7615,13 @@
           {
             "ola": 4,
             "rango_%": 16.35,
-            "vol_prom": 7665498.0
+            "vol_prom": 7672209.0
           }
         ],
         "motivo": "solo 0 contracción(es), se necesitan 2"
       },
       "RSI": 77.0,
-      "Vol_rel": 2.97,
+      "Vol_rel": 2.98,
       "SMA21": 142.9,
       "Precio": 160.5,
       "fecha_evento": "2026-10-06T13:31:36.824111+00:00",
