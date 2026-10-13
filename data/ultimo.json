@@ -1,5 +1,5 @@
 {
-  "generado_utc": "2026-10-13T02:33:42.001176+00:00",
+  "generado_utc": "2026-10-13T13:01:34.625393+00:00",
   "proxima_corrida_estimada_utc": "2026-10-13T14:00:00+00:00",
   "tickers_ok": 266,
   "tickers_fallidos": [
@@ -1028,6 +1028,25 @@
       "Radar_Score": 85.9
     },
     {
+      "Ticker": "SHEL",
+      "Sector": "Energía",
+      "Precio": 101.59,
+      "Ret_1m_%": 5.3,
+      "Ret_3m_%": 21.1,
+      "Ret_6m_%": 13.2,
+      "Sobre_SMA50": true,
+      "Dist_Max52w_%": 0.0,
+      "SMA50": 93.71,
+      "Dist_SMA50_%": 8.41,
+      "SMA200": 84.95,
+      "Dist_SMA200_%": 19.59,
+      "RSI": 81.7,
+      "Vol_rel": 0.91,
+      "VCP_valido": false,
+      "RS_Score": 80.1,
+      "Radar_Score": 58.1
+    },
+    {
       "Ticker": "XLE",
       "Sector": "ETF",
       "Precio": 66.01,
@@ -1043,8 +1062,8 @@
       "RSI": 77.6,
       "Vol_rel": 0.58,
       "VCP_valido": false,
-      "RS_Score": 80.1,
-      "Radar_Score": 54.8
+      "RS_Score": 79.7,
+      "Radar_Score": 54.7
     },
     {
       "Ticker": "V",
@@ -1062,8 +1081,8 @@
       "RSI": 79.4,
       "Vol_rel": 0.8,
       "VCP_valido": false,
-      "RS_Score": 79.7,
-      "Radar_Score": 56.9
+      "RS_Score": 79.3,
+      "Radar_Score": 56.8
     },
     {
       "Ticker": "EQNR",
@@ -1081,8 +1100,8 @@
       "RSI": 61.6,
       "Vol_rel": 0.82,
       "VCP_valido": false,
-      "RS_Score": 79.3,
-      "Radar_Score": 55.7
+      "RS_Score": 78.9,
+      "Radar_Score": 55.5
     },
     {
       "Ticker": "AAPL",
@@ -1100,8 +1119,8 @@
       "RSI": 51.3,
       "Vol_rel": 0.7,
       "VCP_valido": false,
-      "RS_Score": 78.9,
-      "Radar_Score": 55.7
+      "RS_Score": 78.6,
+      "Radar_Score": 55.6
     },
     {
       "Ticker": "NUE",
@@ -1119,8 +1138,8 @@
       "RSI": 57.6,
       "Vol_rel": 0.62,
       "VCP_valido": true,
-      "RS_Score": 78.6,
-      "Radar_Score": 74.6
+      "RS_Score": 78.2,
+      "Radar_Score": 74.5
     },
     {
       "Ticker": "TGT",
@@ -1138,8 +1157,8 @@
       "RSI": 37.1,
       "Vol_rel": 0.93,
       "VCP_valido": false,
-      "RS_Score": 78.2,
-      "Radar_Score": 47.1
+      "RS_Score": 77.8,
+      "Radar_Score": 46.9
     },
     {
       "Ticker": "CVX",
@@ -1157,8 +1176,8 @@
       "RSI": 74.8,
       "Vol_rel": 0.88,
       "VCP_valido": false,
-      "RS_Score": 77.8,
-      "Radar_Score": 56.7
+      "RS_Score": 77.4,
+      "Radar_Score": 56.6
     },
     {
       "Ticker": "ADI",
@@ -1176,8 +1195,8 @@
       "RSI": 62.5,
       "Vol_rel": 0.87,
       "VCP_valido": true,
-      "RS_Score": 77.4,
-      "Radar_Score": 84.1
+      "RS_Score": 77.1,
+      "Radar_Score": 84.0
     },
     {
       "Ticker": "META",
@@ -1195,8 +1214,8 @@
       "RSI": 51.6,
       "Vol_rel": 1.13,
       "VCP_valido": false,
-      "RS_Score": 77.1,
-      "Radar_Score": 57.9
+      "RS_Score": 76.7,
+      "Radar_Score": 57.8
     },
     {
       "Ticker": "JCI",
@@ -1214,8 +1233,8 @@
       "RSI": 65.5,
       "Vol_rel": 0.97,
       "VCP_valido": false,
-      "RS_Score": 76.7,
-      "Radar_Score": 53.3
+      "RS_Score": 76.3,
+      "Radar_Score": 53.1
     },
     {
       "Ticker": "LLY",
@@ -1233,8 +1252,8 @@
       "RSI": 53.6,
       "Vol_rel": 0.56,
       "VCP_valido": true,
-      "RS_Score": 76.3,
-      "Radar_Score": 81.0
+      "RS_Score": 75.9,
+      "Radar_Score": 80.8
     },
     {
       "Ticker": "AMAT",
@@ -1252,27 +1271,8 @@
       "RSI": 60.8,
       "Vol_rel": 0.69,
       "VCP_valido": true,
-      "RS_Score": 75.9,
-      "Radar_Score": 74.7
-    },
-    {
-      "Ticker": "SHEL",
-      "Sector": "Energía",
-      "Precio": 100.18,
-      "Ret_1m_%": 3.5,
-      "Ret_3m_%": 19.7,
-      "Ret_6m_%": 10.1,
-      "Sobre_SMA50": true,
-      "Dist_Max52w_%": -0.0,
-      "SMA50": 93.5,
-      "Dist_SMA50_%": 7.14,
-      "SMA200": 84.79,
-      "Dist_SMA200_%": 18.14,
-      "RSI": 80.5,
-      "Vol_rel": 0.91,
-      "VCP_valido": false,
       "RS_Score": 75.6,
-      "Radar_Score": 56.8
+      "Radar_Score": 74.6
     },
     {
       "Ticker": "NU",
@@ -5080,22 +5080,22 @@
     "Agro": 8.133333333333333,
     "Automotriz": 36.475,
     "Bancos": 32.92857142857143,
-    "Consumo": 42.24871794871795,
+    "Consumo": 42.238461538461536,
     "Diversificado": 60.5,
-    "ETF": 79.71666666666665,
-    "Energía": 52.7375,
-    "Fintech": 52.699999999999996,
-    "Materiales": 42.156666666666666,
+    "ETF": 79.64999999999999,
+    "Energía": 52.853125,
+    "Fintech": 52.6764705882353,
+    "Materiales": 42.13,
     "Real Estate": 37.46666666666666,
-    "Salud": 61.26190476190476,
-    "Tecnología": 65.655223880597,
+    "Salud": 61.24285714285714,
+    "Tecnología": 65.6358208955224,
     "Telecomunicaciones": 19.075,
     "Transporte": 33.675
   },
   "regimen_mercado": {
     "sano": true,
     "sin_datos": false,
-    "vix": 15.21,
+    "vix": 15.34,
     "motivo": null
   },
   "alertas": [
@@ -5124,7 +5124,7 @@
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 41.9,
       "Dist_Max52w_%": -12.4,
-      "RS_sector": 52.7,
+      "RS_sector": 52.9,
       "Var_SPY_dia_%": -0.06
     },
     {
@@ -5180,7 +5180,7 @@
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 46.5,
       "Dist_Max52w_%": -9.8,
-      "RS_sector": 52.7,
+      "RS_sector": 52.9,
       "Var_SPY_dia_%": -0.06
     },
     {
@@ -5288,7 +5288,7 @@
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 55.2,
       "Dist_Max52w_%": -6.5,
-      "RS_sector": 61.3,
+      "RS_sector": 61.2,
       "Var_SPY_dia_%": -0.06
     },
     {
@@ -5504,7 +5504,7 @@
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 53.1,
       "Dist_Max52w_%": -56.1,
-      "RS_sector": 65.7,
+      "RS_sector": 65.6,
       "Var_SPY_dia_%": -0.06
     },
     {
@@ -5558,7 +5558,7 @@
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 53.2,
       "Dist_Max52w_%": -12.5,
-      "RS_sector": 65.7,
+      "RS_sector": 65.6,
       "Var_SPY_dia_%": -0.06
     },
     {
@@ -5640,7 +5640,7 @@
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 68.1,
       "Dist_Max52w_%": 0.0,
-      "RS_sector": 52.7,
+      "RS_sector": 52.9,
       "Var_SPY_dia_%": -0.06
     },
     {
@@ -5749,9 +5749,9 @@
       "Recomendación final": "COMPRA",
       "Ajustado por": "sin ajustes",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 81.0,
+      "Radar_Score": 80.8,
       "Dist_Max52w_%": -7.6,
-      "RS_sector": 61.3,
+      "RS_sector": 61.2,
       "Var_SPY_dia_%": -0.06
     },
     {
@@ -5806,7 +5806,7 @@
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 69.9,
       "Dist_Max52w_%": -23.6,
-      "RS_sector": 65.7,
+      "RS_sector": 65.6,
       "Var_SPY_dia_%": -0.06
     },
     {
@@ -5861,7 +5861,7 @@
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 31.1,
       "Dist_Max52w_%": -11.6,
-      "RS_sector": 52.7,
+      "RS_sector": 52.9,
       "Var_SPY_dia_%": -0.06
     },
     {
@@ -6106,9 +6106,9 @@
       "Recomendación final": "COMPRA",
       "Ajustado por": "sin ajustes",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 57.9,
+      "Radar_Score": 57.8,
       "Dist_Max52w_%": -4.5,
-      "RS_sector": 65.7,
+      "RS_sector": 65.6,
       "Var_SPY_dia_%": -0.06
     },
     {
@@ -6137,7 +6137,7 @@
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 56.8,
       "Dist_Max52w_%": -18.5,
-      "RS_sector": 65.7,
+      "RS_sector": 65.6,
       "Var_SPY_dia_%": -0.06
     },
     {
@@ -6190,7 +6190,7 @@
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 49.8,
       "Dist_Max52w_%": -6.9,
-      "RS_sector": 52.7,
+      "RS_sector": 52.9,
       "Var_SPY_dia_%": -0.06
     },
     {
@@ -6245,7 +6245,7 @@
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 68.9,
       "Dist_Max52w_%": -30.9,
-      "RS_sector": 65.7,
+      "RS_sector": 65.6,
       "Var_SPY_dia_%": -0.06
     },
     {
@@ -6298,7 +6298,7 @@
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 40.8,
       "Dist_Max52w_%": -39.2,
-      "RS_sector": 65.7,
+      "RS_sector": 65.6,
       "Var_SPY_dia_%": -0.06
     },
     {
@@ -6352,7 +6352,7 @@
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 58.6,
       "Dist_Max52w_%": -18.4,
-      "RS_sector": 52.7,
+      "RS_sector": 52.9,
       "Var_SPY_dia_%": -0.06
     },
     {
@@ -6380,7 +6380,7 @@
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 56.1,
       "Dist_Max52w_%": -28.2,
-      "RS_sector": 65.7,
+      "RS_sector": 65.6,
       "Var_SPY_dia_%": -0.06
     },
     {
@@ -6489,7 +6489,7 @@
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 48.4,
       "Dist_Max52w_%": -4.5,
-      "RS_sector": 52.7,
+      "RS_sector": 52.9,
       "Var_SPY_dia_%": -0.06
     },
     {
@@ -6544,7 +6544,7 @@
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 54.9,
       "Dist_Max52w_%": -4.1,
-      "RS_sector": 65.7,
+      "RS_sector": 65.6,
       "Var_SPY_dia_%": -0.06
     },
     {
@@ -6654,7 +6654,7 @@
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 23.4,
       "Dist_Max52w_%": -61.3,
-      "RS_sector": 65.7,
+      "RS_sector": 65.6,
       "Var_SPY_dia_%": -0.06
     },
     {
@@ -6683,7 +6683,7 @@
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 76.3,
       "Dist_Max52w_%": -58.1,
-      "RS_sector": 65.7,
+      "RS_sector": 65.6,
       "Var_SPY_dia_%": -0.06
     },
     {
@@ -6738,7 +6738,7 @@
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 38.9,
       "Dist_Max52w_%": -14.6,
-      "RS_sector": 61.3,
+      "RS_sector": 61.2,
       "Var_SPY_dia_%": -0.06
     },
     {
@@ -6792,7 +6792,7 @@
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 49.8,
       "Dist_Max52w_%": -4.0,
-      "RS_sector": 61.3,
+      "RS_sector": 61.2,
       "Var_SPY_dia_%": -0.06
     },
     {
@@ -6901,7 +6901,7 @@
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 74.4,
       "Dist_Max52w_%": -7.1,
-      "RS_sector": 42.2,
+      "RS_sector": 42.1,
       "Var_SPY_dia_%": -0.06
     },
     {
@@ -6953,9 +6953,9 @@
       "Recomendación final": "MANTENER",
       "Ajustado por": "sin ajustes",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 55.7,
+      "Radar_Score": 55.5,
       "Dist_Max52w_%": -4.0,
-      "RS_sector": 52.7,
+      "RS_sector": 52.9,
       "Var_SPY_dia_%": -0.06
     },
     {
@@ -7009,7 +7009,7 @@
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 25.5,
       "Dist_Max52w_%": -42.3,
-      "RS_sector": 65.7,
+      "RS_sector": 65.6,
       "Var_SPY_dia_%": -0.06
     },
     {
@@ -7117,7 +7117,7 @@
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 54.1,
       "Dist_Max52w_%": -9.8,
-      "RS_sector": 61.3,
+      "RS_sector": 61.2,
       "Var_SPY_dia_%": -0.06
     },
     {
@@ -7170,7 +7170,7 @@
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 26.9,
       "Dist_Max52w_%": -41.2,
-      "RS_sector": 65.7,
+      "RS_sector": 65.6,
       "Var_SPY_dia_%": -0.06
     },
     {
@@ -7225,7 +7225,7 @@
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 80.7,
       "Dist_Max52w_%": -5.0,
-      "RS_sector": 42.2,
+      "RS_sector": 42.1,
       "Var_SPY_dia_%": -0.06
     },
     {
@@ -7280,7 +7280,7 @@
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 48.5,
       "Dist_Max52w_%": -19.8,
-      "RS_sector": 65.7,
+      "RS_sector": 65.6,
       "Var_SPY_dia_%": -0.06
     },
     {
@@ -7344,7 +7344,7 @@
     "estable": true,
     "sin_datos": false,
     "riesgo_pais": 589.0,
-    "variacion_riesgo_%": 0.2,
+    "variacion_riesgo_%": 0.0,
     "brecha_cambiaria_%": 0.0,
     "motivos": []
   },
