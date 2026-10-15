@@ -341,7 +341,7 @@
     "XLE": "2026-09-30|tecnico|🔨 Recién cruzó, sin confirmar",
     "HMC": "2026-10-08|tecnico|🔨 Recién cruzó, sin confirmar",
     "AI": "2026-10-15|gap_alcista|🚀 Gap alcista con macrotendencia",
-    "EBAY": "2026-10-15|tecnico|💣 Ruptura de máximo con volumen",
+    "EBAY": "2026-10-15|gap_alcista|🚀 Gap alcista con macrotendencia",
     "RBLX": "2026-10-03|tecnico|🔨 Recién cruzó, sin confirmar",
     "PBR": "2026-10-09|gap_alcista|🚀 Gap alcista con macrotendencia",
     "GLOB": "2026-10-15|tecnico|🔨 Recién cruzó, sin confirmar",
@@ -1361,14 +1361,14 @@
   },
   "EBAY": {
     "ultima_fecha": "2026-10-15",
-    "estado": "ruptura_vol",
-    "fecha_evento": "2026-10-15T20:31:13.786207+00:00",
+    "estado": null,
+    "fecha_evento": "2026-10-15T20:47:58.649033+00:00",
     "dias_verdes_consecutivos": 2,
     "precio": 122.91,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T17:43:08.881162+00:00",
-    "gap_alcista_activo": false,
-    "fecha_evento_gap": "2026-09-20T17:43:08.881162+00:00"
+    "gap_alcista_activo": true,
+    "fecha_evento_gap": "2026-10-15T20:47:58.649033+00:00"
   },
   "ETSY": {
     "ultima_fecha": "2026-10-15",
