@@ -1,6 +1,6 @@
 {
-  "generado_utc": "2026-10-19T20:31:16.727337+00:00",
-  "proxima_corrida_estimada_utc": "2026-10-19T21:00:00+00:00",
+  "generado_utc": "2026-10-19T21:15:55.642892+00:00",
+  "proxima_corrida_estimada_utc": "2026-10-20T14:00:00+00:00",
   "tickers_ok": 266,
   "tickers_fallidos": [
     {
@@ -53,10 +53,10 @@
       "SMA200": 114.7,
       "Dist_SMA200_%": 87.22,
       "RSI": 76.4,
-      "Vol_rel": 0.72,
+      "Vol_rel": 0.73,
       "VCP_valido": false,
       "RS_Score": 99.6,
-      "Radar_Score": 58.0
+      "Radar_Score": 58.1
     },
     {
       "Ticker": "PSX",
@@ -72,10 +72,10 @@
       "SMA200": 191.03,
       "Dist_SMA200_%": 52.1,
       "RSI": 78.8,
-      "Vol_rel": 0.68,
+      "Vol_rel": 0.72,
       "VCP_valido": false,
       "RS_Score": 99.2,
-      "Radar_Score": 57.0
+      "Radar_Score": 57.4
     },
     {
       "Ticker": "DOCU",
@@ -91,10 +91,10 @@
       "SMA200": 53.84,
       "Dist_SMA200_%": 42.39,
       "RSI": 72.6,
-      "Vol_rel": 0.7,
+      "Vol_rel": 0.73,
       "VCP_valido": true,
       "RS_Score": 98.9,
-      "Radar_Score": 87.5
+      "Radar_Score": 87.8
     },
     {
       "Ticker": "ACN",
@@ -148,10 +148,10 @@
       "SMA200": 183.52,
       "Dist_SMA200_%": 40.2,
       "RSI": 37.2,
-      "Vol_rel": 0.65,
+      "Vol_rel": 0.66,
       "VCP_valido": false,
       "RS_Score": 97.7,
-      "Radar_Score": 52.2
+      "Radar_Score": 52.3
     },
     {
       "Ticker": "CRWD",
@@ -167,10 +167,10 @@
       "SMA200": 161.11,
       "Dist_SMA200_%": 41.58,
       "RSI": 31.2,
-      "Vol_rel": 0.97,
+      "Vol_rel": 0.98,
       "VCP_valido": true,
       "RS_Score": 97.4,
-      "Radar_Score": 80.4
+      "Radar_Score": 80.5
     },
     {
       "Ticker": "SHOP",
@@ -205,10 +205,10 @@
       "SMA200": 115.0,
       "Dist_SMA200_%": 26.4,
       "RSI": 69.2,
-      "Vol_rel": 0.88,
+      "Vol_rel": 0.89,
       "VCP_valido": true,
       "RS_Score": 96.6,
-      "Radar_Score": 81.3
+      "Radar_Score": 81.4
     },
     {
       "Ticker": "PBR",
@@ -300,10 +300,10 @@
       "SMA200": 315.19,
       "Dist_SMA200_%": 44.5,
       "RSI": 30.6,
-      "Vol_rel": 0.91,
+      "Vol_rel": 0.93,
       "VCP_valido": true,
       "RS_Score": 94.7,
-      "Radar_Score": 77.5
+      "Radar_Score": 77.7
     },
     {
       "Ticker": "CRM",
@@ -319,10 +319,10 @@
       "SMA200": 198.19,
       "Dist_SMA200_%": 22.33,
       "RSI": 64.9,
-      "Vol_rel": 0.78,
+      "Vol_rel": 0.8,
       "VCP_valido": true,
       "RS_Score": 94.4,
-      "Radar_Score": 84.6
+      "Radar_Score": 84.8
     },
     {
       "Ticker": "MU",
@@ -433,10 +433,10 @@
       "SMA200": 10.12,
       "Dist_SMA200_%": 11.5,
       "RSI": 63.1,
-      "Vol_rel": 0.7,
+      "Vol_rel": 0.71,
       "VCP_valido": true,
       "RS_Score": 92.1,
-      "Radar_Score": 75.9
+      "Radar_Score": 76.0
     },
     {
       "Ticker": "SNAP",
@@ -699,10 +699,10 @@
       "SMA200": 145.2,
       "Dist_SMA200_%": 20.84,
       "RSI": 78.8,
-      "Vol_rel": 0.58,
+      "Vol_rel": 0.63,
       "VCP_valido": false,
       "RS_Score": 86.8,
-      "Radar_Score": 50.5
+      "Radar_Score": 51.0
     },
     {
       "Ticker": "CAH",
@@ -718,7 +718,7 @@
       "SMA200": 219.19,
       "Dist_SMA200_%": 15.26,
       "RSI": 83.4,
-      "Vol_rel": 1.68,
+      "Vol_rel": 1.69,
       "VCP_valido": false,
       "RS_Score": 86.5,
       "Radar_Score": 62.0
@@ -870,10 +870,10 @@
       "SMA200": 57.11,
       "Dist_SMA200_%": 18.72,
       "RSI": 79.9,
-      "Vol_rel": 0.87,
+      "Vol_rel": 0.9,
       "VCP_valido": false,
       "RS_Score": 83.5,
-      "Radar_Score": 54.8
+      "Radar_Score": 55.1
     },
     {
       "Ticker": "PM",
@@ -889,7 +889,7 @@
       "SMA200": 177.37,
       "Dist_SMA200_%": 13.35,
       "RSI": 59.7,
-      "Vol_rel": 1.0,
+      "Vol_rel": 1.01,
       "VCP_valido": false,
       "RS_Score": 83.1,
       "Radar_Score": 55.5
@@ -965,10 +965,10 @@
       "SMA200": 200.59,
       "Dist_SMA200_%": 11.88,
       "RSI": 48.8,
-      "Vol_rel": 0.92,
+      "Vol_rel": 0.95,
       "VCP_valido": false,
       "RS_Score": 81.6,
-      "Radar_Score": 49.0
+      "Radar_Score": 49.2
     },
     {
       "Ticker": "ROKU",
@@ -984,10 +984,10 @@
       "SMA200": 125.63,
       "Dist_SMA200_%": 23.81,
       "RSI": 65.6,
-      "Vol_rel": 0.89,
+      "Vol_rel": 0.92,
       "VCP_valido": false,
       "RS_Score": 81.2,
-      "Radar_Score": 53.6
+      "Radar_Score": 53.9
     },
     {
       "Ticker": "BP",
@@ -1041,10 +1041,10 @@
       "SMA200": 84.16,
       "Dist_SMA200_%": 11.08,
       "RSI": 77.3,
-      "Vol_rel": 1.3,
+      "Vol_rel": 1.32,
       "VCP_valido": false,
       "RS_Score": 80.1,
-      "Radar_Score": 56.2
+      "Radar_Score": 56.4
     },
     {
       "Ticker": "PFE",
@@ -1098,10 +1098,10 @@
       "SMA200": 102.22,
       "Dist_SMA200_%": 17.85,
       "RSI": 86.3,
-      "Vol_rel": 0.97,
+      "Vol_rel": 1.01,
       "VCP_valido": false,
       "RS_Score": 78.9,
-      "Radar_Score": 54.0
+      "Radar_Score": 54.4
     },
     {
       "Ticker": "MRK",
@@ -1212,10 +1212,10 @@
       "SMA200": 86.94,
       "Dist_SMA200_%": 6.71,
       "RSI": 66.1,
-      "Vol_rel": 0.47,
+      "Vol_rel": 0.66,
       "VCP_valido": false,
       "RS_Score": 76.7,
-      "Radar_Score": 46.0
+      "Radar_Score": 47.9
     },
     {
       "Ticker": "EWZ",
@@ -1345,10 +1345,10 @@
       "SMA200": 56.81,
       "Dist_SMA200_%": 13.25,
       "RSI": 28.2,
-      "Vol_rel": 0.58,
+      "Vol_rel": 0.6,
       "VCP_valido": false,
       "RS_Score": 74.1,
-      "Radar_Score": 35.5
+      "Radar_Score": 35.7
     },
     {
       "Ticker": "PG",
@@ -1497,10 +1497,10 @@
       "SMA200": 43.18,
       "Dist_SMA200_%": -7.03,
       "RSI": 74.7,
-      "Vol_rel": 1.06,
+      "Vol_rel": 1.08,
       "VCP_valido": false,
       "RS_Score": 71.1,
-      "Radar_Score": 39.4
+      "Radar_Score": 39.6
     },
     {
       "Ticker": "NEM",
@@ -1516,10 +1516,10 @@
       "SMA200": 111.91,
       "Dist_SMA200_%": 5.45,
       "RSI": 51.8,
-      "Vol_rel": 0.96,
+      "Vol_rel": 0.97,
       "VCP_valido": false,
       "RS_Score": 70.7,
-      "Radar_Score": 40.4
+      "Radar_Score": 40.5
     },
     {
       "Ticker": "TGT",
@@ -1573,10 +1573,10 @@
       "SMA200": 356.04,
       "Dist_SMA200_%": 14.28,
       "RSI": 69.9,
-      "Vol_rel": 0.83,
+      "Vol_rel": 0.85,
       "VCP_valido": false,
       "RS_Score": 69.5,
-      "Radar_Score": 48.3
+      "Radar_Score": 48.5
     },
     {
       "Ticker": "PYPL",
@@ -1611,10 +1611,10 @@
       "SMA200": 252.23,
       "Dist_SMA200_%": 12.44,
       "RSI": 50.4,
-      "Vol_rel": 0.83,
+      "Vol_rel": 0.84,
       "VCP_valido": false,
       "RS_Score": 68.8,
-      "Radar_Score": 44.5
+      "Radar_Score": 44.6
     },
     {
       "Ticker": "UNP",
@@ -1649,10 +1649,10 @@
       "SMA200": 351.19,
       "Dist_SMA200_%": 0.01,
       "RSI": 62.3,
-      "Vol_rel": 0.86,
+      "Vol_rel": 0.87,
       "VCP_valido": false,
       "RS_Score": 68.0,
-      "Radar_Score": 43.6
+      "Radar_Score": 43.7
     },
     {
       "Ticker": "AVY",
@@ -1763,10 +1763,10 @@
       "SMA200": 101.34,
       "Dist_SMA200_%": 2.68,
       "RSI": 60.2,
-      "Vol_rel": 0.86,
+      "Vol_rel": 0.87,
       "VCP_valido": false,
       "RS_Score": 65.8,
-      "Radar_Score": 39.7
+      "Radar_Score": 39.8
     },
     {
       "Ticker": "AIG",
@@ -2238,10 +2238,10 @@
       "SMA200": 418.17,
       "Dist_SMA200_%": 2.31,
       "RSI": 77.4,
-      "Vol_rel": 0.69,
+      "Vol_rel": 0.7,
       "VCP_valido": false,
       "RS_Score": 56.4,
-      "Radar_Score": 35.8
+      "Radar_Score": 35.9
     },
     {
       "Ticker": "QQQ",
@@ -2257,10 +2257,10 @@
       "SMA200": 674.19,
       "Dist_SMA200_%": 6.55,
       "RSI": 38.8,
-      "Vol_rel": 1.03,
+      "Vol_rel": 1.04,
       "VCP_valido": false,
       "RS_Score": 56.0,
-      "Radar_Score": 42.8
+      "Radar_Score": 42.9
     },
     {
       "Ticker": "SPOT",
@@ -2390,10 +2390,10 @@
       "SMA200": 1216.38,
       "Dist_SMA200_%": 12.72,
       "RSI": 23.7,
-      "Vol_rel": 1.02,
+      "Vol_rel": 1.03,
       "VCP_valido": false,
       "RS_Score": 53.4,
-      "Radar_Score": 33.7
+      "Radar_Score": 33.8
     },
     {
       "Ticker": "LMT",
@@ -2428,10 +2428,10 @@
       "SMA200": 70.78,
       "Dist_SMA200_%": 9.49,
       "RSI": 61.8,
-      "Vol_rel": 0.74,
+      "Vol_rel": 0.79,
       "VCP_valido": false,
       "RS_Score": 52.6,
-      "Radar_Score": 34.0
+      "Radar_Score": 34.5
     },
     {
       "Ticker": "TSM",
@@ -2447,10 +2447,10 @@
       "SMA200": 394.0,
       "Dist_SMA200_%": 6.65,
       "RSI": 33.7,
-      "Vol_rel": 1.13,
+      "Vol_rel": 1.14,
       "VCP_valido": false,
       "RS_Score": 52.3,
-      "Radar_Score": 40.0
+      "Radar_Score": 40.1
     },
     {
       "Ticker": "BHP",
@@ -2504,10 +2504,10 @@
       "SMA200": 202.81,
       "Dist_SMA200_%": 7.04,
       "RSI": 38.6,
-      "Vol_rel": 0.93,
+      "Vol_rel": 0.94,
       "VCP_valido": true,
       "RS_Score": 51.1,
-      "Radar_Score": 69.0
+      "Radar_Score": 69.1
     },
     {
       "Ticker": "ERIC",
@@ -2713,7 +2713,7 @@
       "SMA200": 194.1,
       "Dist_SMA200_%": -1.02,
       "RSI": 58.8,
-      "Vol_rel": 1.58,
+      "Vol_rel": 1.59,
       "VCP_valido": false,
       "RS_Score": 47.0,
       "Radar_Score": 34.2
@@ -2751,10 +2751,10 @@
       "SMA200": 340.72,
       "Dist_SMA200_%": 1.02,
       "RSI": 53.3,
-      "Vol_rel": 0.76,
+      "Vol_rel": 0.77,
       "VCP_valido": true,
       "RS_Score": 46.2,
-      "Radar_Score": 64.2
+      "Radar_Score": 64.3
     },
     {
       "Ticker": "SBUX",
@@ -2808,10 +2808,10 @@
       "SMA200": 319.55,
       "Dist_SMA200_%": 4.37,
       "RSI": 50.3,
-      "Vol_rel": 0.83,
+      "Vol_rel": 0.84,
       "VCP_valido": false,
       "RS_Score": 45.1,
-      "Radar_Score": 32.8
+      "Radar_Score": 33.0
     },
     {
       "Ticker": "HMY",
@@ -2903,10 +2903,10 @@
       "SMA200": 82.07,
       "Dist_SMA200_%": -3.68,
       "RSI": 66.6,
-      "Vol_rel": 1.09,
+      "Vol_rel": 1.33,
       "VCP_valido": false,
       "RS_Score": 43.2,
-      "Radar_Score": 36.8
+      "Radar_Score": 39.2
     },
     {
       "Ticker": "MSTR",
@@ -2941,10 +2941,10 @@
       "SMA200": 58.51,
       "Dist_SMA200_%": 0.54,
       "RSI": 37.6,
-      "Vol_rel": 0.82,
+      "Vol_rel": 0.83,
       "VCP_valido": false,
       "RS_Score": 42.5,
-      "Radar_Score": 34.2
+      "Radar_Score": 34.3
     },
     {
       "Ticker": "VZ",
@@ -2960,10 +2960,10 @@
       "SMA200": 45.21,
       "Dist_SMA200_%": -2.35,
       "RSI": 43.8,
-      "Vol_rel": 0.62,
+      "Vol_rel": 0.63,
       "VCP_valido": false,
       "RS_Score": 42.1,
-      "Radar_Score": 24.5
+      "Radar_Score": 24.6
     },
     {
       "Ticker": "PEP",
@@ -3036,10 +3036,10 @@
       "SMA200": 387.58,
       "Dist_SMA200_%": -5.04,
       "RSI": 59.1,
-      "Vol_rel": 1.11,
+      "Vol_rel": 1.12,
       "VCP_valido": false,
       "RS_Score": 40.6,
-      "Radar_Score": 28.7
+      "Radar_Score": 28.8
     },
     {
       "Ticker": "SLB",
@@ -3074,10 +3074,10 @@
       "SMA200": 56.88,
       "Dist_SMA200_%": 1.71,
       "RSI": 51.6,
-      "Vol_rel": 0.88,
+      "Vol_rel": 0.9,
       "VCP_valido": false,
       "RS_Score": 39.8,
-      "Radar_Score": 30.9
+      "Radar_Score": 31.1
     },
     {
       "Ticker": "BMNR",
@@ -3093,10 +3093,10 @@
       "SMA200": 21.37,
       "Dist_SMA200_%": 0.95,
       "RSI": 21.4,
-      "Vol_rel": 0.68,
+      "Vol_rel": 0.69,
       "VCP_valido": false,
       "RS_Score": 39.5,
-      "Radar_Score": 26.1
+      "Radar_Score": 26.2
     },
     {
       "Ticker": "WFC",
@@ -3112,10 +3112,10 @@
       "SMA200": 83.49,
       "Dist_SMA200_%": -2.02,
       "RSI": 54.6,
-      "Vol_rel": 0.98,
+      "Vol_rel": 0.99,
       "VCP_valido": false,
       "RS_Score": 39.1,
-      "Radar_Score": 27.0
+      "Radar_Score": 27.1
     },
     {
       "Ticker": "NMR",
@@ -3359,10 +3359,10 @@
       "SMA200": 24.51,
       "Dist_SMA200_%": -5.36,
       "RSI": 39.7,
-      "Vol_rel": 0.67,
+      "Vol_rel": 0.68,
       "VCP_valido": false,
       "RS_Score": 34.2,
-      "Radar_Score": 21.2
+      "Radar_Score": 21.3
     },
     {
       "Ticker": "PDD",
@@ -3378,10 +3378,10 @@
       "SMA200": 92.81,
       "Dist_SMA200_%": -12.3,
       "RSI": 63.6,
-      "Vol_rel": 0.69,
+      "Vol_rel": 0.7,
       "VCP_valido": false,
       "RS_Score": 33.8,
-      "Radar_Score": 20.8
+      "Radar_Score": 20.9
     },
     {
       "Ticker": "PAM",
@@ -3435,10 +3435,10 @@
       "SMA200": 36.97,
       "Dist_SMA200_%": -8.71,
       "RSI": 54.1,
-      "Vol_rel": 1.05,
+      "Vol_rel": 1.06,
       "VCP_valido": false,
       "RS_Score": 32.7,
-      "Radar_Score": 20.7
+      "Radar_Score": 20.8
     },
     {
       "Ticker": "HSBC",
@@ -3682,10 +3682,10 @@
       "SMA200": 86.28,
       "Dist_SMA200_%": -9.4,
       "RSI": 62.4,
-      "Vol_rel": 0.84,
+      "Vol_rel": 0.85,
       "VCP_valido": false,
       "RS_Score": 27.8,
-      "Radar_Score": 24.2
+      "Radar_Score": 24.3
     },
     {
       "Ticker": "F",
@@ -3701,10 +3701,10 @@
       "SMA200": 13.23,
       "Dist_SMA200_%": -7.93,
       "RSI": 47.2,
-      "Vol_rel": 0.76,
+      "Vol_rel": 0.78,
       "VCP_valido": false,
       "RS_Score": 27.4,
-      "Radar_Score": 16.0
+      "Radar_Score": 16.2
     },
     {
       "Ticker": "BA",
@@ -3796,10 +3796,10 @@
       "SMA200": 282.5,
       "Dist_SMA200_%": -14.1,
       "RSI": 68.9,
-      "Vol_rel": 0.81,
+      "Vol_rel": 0.82,
       "VCP_valido": false,
       "RS_Score": 25.6,
-      "Radar_Score": 20.4
+      "Radar_Score": 20.5
     },
     {
       "Ticker": "ARM",
@@ -3815,10 +3815,10 @@
       "SMA200": 224.04,
       "Dist_SMA200_%": 1.79,
       "RSI": 21.6,
-      "Vol_rel": 0.69,
+      "Vol_rel": 0.73,
       "VCP_valido": false,
       "RS_Score": 25.2,
-      "Radar_Score": 22.0
+      "Radar_Score": 22.4
     },
     {
       "Ticker": "NFLX",
@@ -3853,7 +3853,7 @@
       "SMA200": 101.22,
       "Dist_SMA200_%": -12.59,
       "RSI": 28.8,
-      "Vol_rel": 1.66,
+      "Vol_rel": 1.68,
       "VCP_valido": false,
       "RS_Score": 24.4,
       "Radar_Score": 26.1
@@ -3891,10 +3891,10 @@
       "SMA200": 128.05,
       "Dist_SMA200_%": -15.21,
       "RSI": 52.0,
-      "Vol_rel": 0.54,
+      "Vol_rel": 0.57,
       "VCP_valido": false,
       "RS_Score": 23.7,
-      "Radar_Score": 16.3
+      "Radar_Score": 16.6
     },
     {
       "Ticker": "COIN",
@@ -3910,10 +3910,10 @@
       "SMA200": 182.03,
       "Dist_SMA200_%": -7.46,
       "RSI": 36.4,
-      "Vol_rel": 0.92,
+      "Vol_rel": 0.94,
       "VCP_valido": false,
       "RS_Score": 23.3,
-      "Radar_Score": 16.2
+      "Radar_Score": 16.4
     },
     {
       "Ticker": "AMAT",
@@ -4043,10 +4043,10 @@
       "SMA200": 54.73,
       "Dist_SMA200_%": -7.93,
       "RSI": 21.5,
-      "Vol_rel": 0.98,
+      "Vol_rel": 0.99,
       "VCP_valido": false,
       "RS_Score": 20.7,
-      "Radar_Score": 18.7
+      "Radar_Score": 18.8
     },
     {
       "Ticker": "ASR",
@@ -4214,10 +4214,10 @@
       "SMA200": 804.94,
       "Dist_SMA200_%": -9.83,
       "RSI": 26.5,
-      "Vol_rel": 0.95,
+      "Vol_rel": 0.97,
       "VCP_valido": false,
       "RS_Score": 17.3,
-      "Radar_Score": 14.7
+      "Radar_Score": 14.9
     },
     {
       "Ticker": "AVGO",
@@ -4290,10 +4290,10 @@
       "SMA200": 219.38,
       "Dist_SMA200_%": -21.69,
       "RSI": 43.4,
-      "Vol_rel": 0.82,
+      "Vol_rel": 0.83,
       "VCP_valido": false,
       "RS_Score": 15.8,
-      "Radar_Score": 16.7
+      "Radar_Score": 16.8
     },
     {
       "Ticker": "TMUS",
@@ -4347,10 +4347,10 @@
       "SMA200": 18.99,
       "Dist_SMA200_%": -20.74,
       "RSI": 30.4,
-      "Vol_rel": 0.73,
+      "Vol_rel": 0.74,
       "VCP_valido": false,
       "RS_Score": 14.7,
-      "Radar_Score": 11.7
+      "Radar_Score": 11.8
     },
     {
       "Ticker": "NOK",
@@ -4442,10 +4442,10 @@
       "SMA200": 153.48,
       "Dist_SMA200_%": -13.51,
       "RSI": 33.3,
-      "Vol_rel": 0.93,
+      "Vol_rel": 0.94,
       "VCP_valido": false,
       "RS_Score": 12.8,
-      "Radar_Score": 16.9
+      "Radar_Score": 17.0
     },
     {
       "Ticker": "LVS",
@@ -4499,10 +4499,10 @@
       "SMA200": 105.4,
       "Dist_SMA200_%": -23.43,
       "RSI": 38.7,
-      "Vol_rel": 0.57,
+      "Vol_rel": 0.58,
       "VCP_valido": false,
       "RS_Score": 11.7,
-      "Radar_Score": 13.0
+      "Radar_Score": 13.1
     },
     {
       "Ticker": "AGRO",
@@ -4518,10 +4518,10 @@
       "SMA200": 10.91,
       "Dist_SMA200_%": -11.65,
       "RSI": 43.7,
-      "Vol_rel": 1.18,
+      "Vol_rel": 1.19,
       "VCP_valido": false,
       "RS_Score": 11.3,
-      "Radar_Score": 15.2
+      "Radar_Score": 15.3
     },
     {
       "Ticker": "UPST",
@@ -4556,10 +4556,10 @@
       "SMA200": 21.06,
       "Dist_SMA200_%": -23.78,
       "RSI": 33.0,
-      "Vol_rel": 0.62,
+      "Vol_rel": 0.63,
       "VCP_valido": false,
       "RS_Score": 10.5,
-      "Radar_Score": 9.3
+      "Radar_Score": 9.4
     },
     {
       "Ticker": "SPCE",
@@ -4575,10 +4575,10 @@
       "SMA200": 2.95,
       "Dist_SMA200_%": -20.66,
       "RSI": 12.0,
-      "Vol_rel": 1.15,
+      "Vol_rel": 1.18,
       "VCP_valido": false,
       "RS_Score": 10.2,
-      "Radar_Score": 14.6
+      "Radar_Score": 14.9
     },
     {
       "Ticker": "URA",
@@ -4784,10 +4784,10 @@
       "SMA200": 4.97,
       "Dist_SMA200_%": -31.73,
       "RSI": 49.5,
-      "Vol_rel": 0.71,
+      "Vol_rel": 0.72,
       "VCP_valido": false,
       "RS_Score": 6.0,
-      "Radar_Score": 8.9
+      "Radar_Score": 9.0
     },
     {
       "Ticker": "MP",
@@ -4803,10 +4803,10 @@
       "SMA200": 56.22,
       "Dist_SMA200_%": -30.71,
       "RSI": 32.6,
-      "Vol_rel": 0.72,
+      "Vol_rel": 0.73,
       "VCP_valido": false,
       "RS_Score": 5.6,
-      "Radar_Score": 8.9
+      "Radar_Score": 9.0
     },
     {
       "Ticker": "BAK",
@@ -4841,10 +4841,10 @@
       "SMA200": 82.17,
       "Dist_SMA200_%": -17.04,
       "RSI": 26.4,
-      "Vol_rel": 0.84,
+      "Vol_rel": 0.86,
       "VCP_valido": false,
       "RS_Score": 4.9,
-      "Radar_Score": 13.6
+      "Radar_Score": 13.8
     },
     {
       "Ticker": "RGTI",
@@ -4879,10 +4879,10 @@
       "SMA200": 81.17,
       "Dist_SMA200_%": -36.72,
       "RSI": 21.3,
-      "Vol_rel": 0.72,
+      "Vol_rel": 0.77,
       "VCP_valido": false,
       "RS_Score": 4.1,
-      "Radar_Score": 8.4
+      "Radar_Score": 8.9
     },
     {
       "Ticker": "LAR",
@@ -4898,10 +4898,10 @@
       "SMA200": 7.46,
       "Dist_SMA200_%": -38.85,
       "RSI": 18.4,
-      "Vol_rel": 0.63,
+      "Vol_rel": 0.64,
       "VCP_valido": false,
       "RS_Score": 3.8,
-      "Radar_Score": 7.4
+      "Radar_Score": 7.5
     },
     {
       "Ticker": "GT",
@@ -4936,7 +4936,7 @@
       "SMA200": 92.39,
       "Dist_SMA200_%": -33.84,
       "RSI": 25.0,
-      "Vol_rel": 2.34,
+      "Vol_rel": 2.36,
       "VCP_valido": false,
       "RS_Score": 3.0,
       "Radar_Score": 19.6
@@ -5031,10 +5031,10 @@
       "SMA200": 45.32,
       "Dist_SMA200_%": -38.81,
       "RSI": 14.0,
-      "Vol_rel": 1.08,
+      "Vol_rel": 1.1,
       "VCP_valido": false,
       "RS_Score": 1.1,
-      "Radar_Score": 14.9
+      "Radar_Score": 15.1
     },
     {
       "Ticker": "OKLO",
@@ -5132,7 +5132,7 @@
           {
             "ola": 4,
             "rango_%": 9.96,
-            "vol_prom": 881002.0
+            "vol_prom": 881004.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
@@ -5184,7 +5184,7 @@
           {
             "ola": 4,
             "rango_%": 5.6,
-            "vol_prom": 1012829.0
+            "vol_prom": 1012832.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
@@ -5238,13 +5238,13 @@
           {
             "ola": 4,
             "rango_%": 3.87,
-            "vol_prom": 21909550.0
+            "vol_prom": 21957929.0
           }
         ],
         "motivo": null
       },
       "RSI": 53.3,
-      "Vol_rel": 0.76,
+      "Vol_rel": 0.77,
       "SMA21": 346.31,
       "Precio": 344.18,
       "fecha_evento": "2026-10-19T20:01:29.464123+00:00",
@@ -5252,7 +5252,7 @@
       "Recomendación final": "COMPRA",
       "Ajustado por": "sin ajustes",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 64.2,
+      "Radar_Score": 64.3,
       "Dist_Max52w_%": -14.4,
       "RS_sector": 59.9,
       "Var_SPY_dia_%": 0.42
@@ -5292,13 +5292,13 @@
           {
             "ola": 4,
             "rango_%": 7.89,
-            "vol_prom": 31736768.0
+            "vol_prom": 31755047.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
       },
       "RSI": 59.1,
-      "Vol_rel": 1.11,
+      "Vol_rel": 1.12,
       "SMA21": 370.23,
       "Precio": 368.06,
       "fecha_evento": "2026-10-19T14:01:30.591657+00:00",
@@ -5306,7 +5306,7 @@
       "Recomendación final": "MANTENER",
       "Ajustado por": "sin ajustes",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 28.7,
+      "Radar_Score": 28.8,
       "Dist_Max52w_%": -24.9,
       "RS_sector": 40.0,
       "Var_SPY_dia_%": 0.42
@@ -5343,7 +5343,7 @@
           {
             "ola": 4,
             "rango_%": 22.82,
-            "vol_prom": 20701776.0
+            "vol_prom": 20709789.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
@@ -5392,7 +5392,7 @@
           {
             "ola": 4,
             "rango_%": 5.18,
-            "vol_prom": 9846851.0
+            "vol_prom": 9855528.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
@@ -5445,7 +5445,7 @@
           {
             "ola": 4,
             "rango_%": 4.59,
-            "vol_prom": 2741518.0
+            "vol_prom": 2741623.0
           }
         ],
         "motivo": null
@@ -5473,6 +5473,7 @@
       "Score_num": 3,
       "Señales": [
         "cruce SMA50",
+        "volumen fuerte",
         "RSI diario sano",
         "base ordenada"
       ],
@@ -5498,7 +5499,7 @@
           {
             "ola": 4,
             "rango_%": 4.98,
-            "vol_prom": 35986966.0
+            "vol_prom": 36007930.0
           }
         ],
         "motivo": "solo 0 contracción(es), se necesitan 2"
@@ -5551,7 +5552,7 @@
           {
             "ola": 4,
             "rango_%": 5.58,
-            "vol_prom": 6478195.0
+            "vol_prom": 6478350.0
           }
         ],
         "motivo": null
@@ -5600,7 +5601,7 @@
           {
             "ola": 4,
             "rango_%": 11.1,
-            "vol_prom": 70721108.0
+            "vol_prom": 70734847.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
@@ -5652,7 +5653,7 @@
           {
             "ola": 4,
             "rango_%": 9.27,
-            "vol_prom": 1482961.0
+            "vol_prom": 1483008.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
@@ -5756,7 +5757,7 @@
           {
             "ola": 4,
             "rango_%": 13.29,
-            "vol_prom": 2336468.0
+            "vol_prom": 2336620.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
@@ -5807,13 +5808,13 @@
           {
             "ola": 4,
             "rango_%": 8.8,
-            "vol_prom": 1370768.0
+            "vol_prom": 1372461.0
           }
         ],
         "motivo": "solo 0 contracción(es), se necesitan 2"
       },
       "RSI": 62.3,
-      "Vol_rel": 0.86,
+      "Vol_rel": 0.87,
       "SMA21": 336.92,
       "Precio": 351.22,
       "fecha_evento": "2026-10-19T16:01:28.556021+00:00",
@@ -5821,7 +5822,7 @@
       "Recomendación final": "VENTA",
       "Ajustado por": "sin ajustes",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 43.6,
+      "Radar_Score": 43.7,
       "Dist_Max52w_%": -19.8,
       "RS_sector": 53.1,
       "Var_SPY_dia_%": 0.42
@@ -5860,7 +5861,7 @@
           {
             "ola": 4,
             "rango_%": 25.95,
-            "vol_prom": 24616490.0
+            "vol_prom": 24618927.0
           }
         ],
         "motivo": null
@@ -5912,13 +5913,13 @@
           {
             "ola": 4,
             "rango_%": 2.29,
-            "vol_prom": 1261931.0
+            "vol_prom": 1266837.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
       },
       "RSI": 65.6,
-      "Vol_rel": 0.89,
+      "Vol_rel": 0.92,
       "SMA21": 153.16,
       "Precio": 155.54,
       "fecha_evento": "2026-10-19T18:01:34.678013+00:00",
@@ -5926,7 +5927,7 @@
       "Recomendación final": "MANTENER",
       "Ajustado por": "sin ajustes",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 53.6,
+      "Radar_Score": 53.9,
       "Dist_Max52w_%": -2.6,
       "RS_sector": 59.9,
       "Var_SPY_dia_%": 0.42
@@ -5964,7 +5965,7 @@
           {
             "ola": 4,
             "rango_%": 8.53,
-            "vol_prom": 1414664.0
+            "vol_prom": 1414689.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
@@ -6015,7 +6016,7 @@
           {
             "ola": 4,
             "rango_%": 12.65,
-            "vol_prom": 2536320.0
+            "vol_prom": 2536321.0
           }
         ],
         "motivo": null
@@ -6066,7 +6067,7 @@
           {
             "ola": 4,
             "rango_%": 18.86,
-            "vol_prom": 13028042.0
+            "vol_prom": 13028234.0
           }
         ],
         "motivo": "solo 0 contracción(es), se necesitan 2"
@@ -6117,7 +6118,7 @@
           {
             "ola": 4,
             "rango_%": 14.14,
-            "vol_prom": 5201368.0
+            "vol_prom": 5202032.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
@@ -6166,13 +6167,13 @@
           {
             "ola": 4,
             "rango_%": 10.26,
-            "vol_prom": 8230326.0
+            "vol_prom": 8250312.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
       },
       "RSI": 36.4,
-      "Vol_rel": 0.92,
+      "Vol_rel": 0.94,
       "SMA21": 185.68,
       "Precio": 168.45,
       "fecha_evento": "2026-10-19T14:01:30.591657+00:00",
@@ -6180,7 +6181,7 @@
       "Recomendación final": "MANTENER",
       "Ajustado por": "sin ajustes",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 16.2,
+      "Radar_Score": 16.4,
       "Dist_Max52w_%": -53.4,
       "RS_sector": 46.8,
       "Var_SPY_dia_%": 0.42
@@ -6219,7 +6220,7 @@
           {
             "ola": 4,
             "rango_%": 7.27,
-            "vol_prom": 843196.0
+            "vol_prom": 843200.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
@@ -6323,7 +6324,7 @@
           {
             "ola": 4,
             "rango_%": 9.14,
-            "vol_prom": 3740601.0
+            "vol_prom": 3740796.0
           }
         ],
         "motivo": "solo 0 contracción(es), se necesitan 2"
@@ -6374,7 +6375,7 @@
           {
             "ola": 4,
             "rango_%": 10.59,
-            "vol_prom": 1139374.0
+            "vol_prom": 1139544.0
           }
         ],
         "motivo": "solo 0 contracción(es), se necesitan 2"
@@ -6423,13 +6424,13 @@
           {
             "ola": 4,
             "rango_%": 6.71,
-            "vol_prom": 917118.0
+            "vol_prom": 942118.0
           }
         ],
         "motivo": "solo 0 contracción(es), se necesitan 2"
       },
       "RSI": 66.6,
-      "Vol_rel": 1.09,
+      "Vol_rel": 1.33,
       "SMA21": 76.8,
       "Precio": 79.05,
       "fecha_evento": "2026-10-19T14:01:30.591657+00:00",
@@ -6437,7 +6438,7 @@
       "Recomendación final": "VENTA",
       "Ajustado por": "sin ajustes",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 36.8,
+      "Radar_Score": 39.2,
       "Dist_Max52w_%": -13.6,
       "RS_sector": 53.1,
       "Var_SPY_dia_%": 0.42
@@ -6528,7 +6529,7 @@
           {
             "ola": 4,
             "rango_%": 6.4,
-            "vol_prom": 339467.0
+            "vol_prom": 339470.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
@@ -6579,7 +6580,7 @@
           {
             "ola": 4,
             "rango_%": 10.21,
-            "vol_prom": 2904186.0
+            "vol_prom": 2904215.0
           }
         ],
         "motivo": "solo 0 contracción(es), se necesitan 2"
@@ -6630,13 +6631,13 @@
           {
             "ola": 4,
             "rango_%": 18.46,
-            "vol_prom": 2755862.0
+            "vol_prom": 2757365.0
           }
         ],
         "motivo": "solo 0 contracción(es), se necesitan 2"
       },
       "RSI": 37.2,
-      "Vol_rel": 0.65,
+      "Vol_rel": 0.66,
       "SMA21": 281.56,
       "Precio": 257.29,
       "fecha_evento": "2026-10-19T14:31:18.545458+00:00",
@@ -6644,7 +6645,7 @@
       "Recomendación final": "MANTENER",
       "Ajustado por": "sin ajustes",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 52.2,
+      "Radar_Score": 52.3,
       "Dist_Max52w_%": -14.6,
       "RS_sector": 59.9,
       "Var_SPY_dia_%": 0.42
@@ -6681,13 +6682,13 @@
           {
             "ola": 4,
             "rango_%": 9.58,
-            "vol_prom": 30507587.0
+            "vol_prom": 30524807.0
           }
         ],
         "motivo": "solo 1 contracción(es), se necesitan 2"
       },
       "RSI": 43.8,
-      "Vol_rel": 0.62,
+      "Vol_rel": 0.63,
       "SMA21": 45.01,
       "Precio": 44.15,
       "fecha_evento": "2026-10-19T13:31:24.360946+00:00",
@@ -6695,7 +6696,7 @@
       "Recomendación final": "VENTA",
       "Ajustado por": "sin ajustes",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
-      "Radar_Score": 24.5,
+      "Radar_Score": 24.6,
       "Dist_Max52w_%": -12.9,
       "RS_sector": 27.0,
       "Var_SPY_dia_%": 0.42
@@ -6710,15 +6711,15 @@
     "motivos": []
   },
   "cedears_pricing": {
-    "ccl": 1623.6686,
+    "ccl": 1623.4869,
     "sin_datos": false,
     "cedears": [
       {
         "Ticker": "TSLA",
         "sin_datos": false,
         "Precio_real_ARS": 39800.0,
-        "Precio_teorico_ARS": 39840.5,
-        "Brecha_%": -0.1,
+        "Precio_teorico_ARS": 39836.04,
+        "Brecha_%": -0.09,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 15
@@ -6727,8 +6728,8 @@
         "Ticker": "QQQ",
         "sin_datos": false,
         "Precio_real_ARS": 58475.0,
-        "Precio_teorico_ARS": 58318.93,
-        "Brecha_%": 0.27,
+        "Precio_teorico_ARS": 58312.4,
+        "Brecha_%": 0.28,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 20
@@ -6737,8 +6738,8 @@
         "Ticker": "NVDA",
         "sin_datos": false,
         "Precio_real_ARS": 14720.0,
-        "Precio_teorico_ARS": 14686.76,
-        "Brecha_%": 0.23,
+        "Precio_teorico_ARS": 14685.12,
+        "Brecha_%": 0.24,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 24
@@ -6747,8 +6748,8 @@
         "Ticker": "BABA",
         "sin_datos": false,
         "Precio_real_ARS": 19540.0,
-        "Precio_teorico_ARS": 19586.86,
-        "Brecha_%": -0.24,
+        "Precio_teorico_ARS": 19584.66,
+        "Brecha_%": -0.23,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 9
@@ -6757,8 +6758,8 @@
         "Ticker": "OKLO",
         "sin_datos": false,
         "Precio_real_ARS": 1580.0,
-        "Precio_teorico_ARS": 1579.6,
-        "Brecha_%": 0.03,
+        "Precio_teorico_ARS": 1579.42,
+        "Brecha_%": 0.04,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 28
@@ -6767,8 +6768,8 @@
         "Ticker": "AAPL",
         "sin_datos": false,
         "Precio_real_ARS": 27780.0,
-        "Precio_teorico_ARS": 27841.05,
-        "Brecha_%": -0.22,
+        "Precio_teorico_ARS": 27837.93,
+        "Brecha_%": -0.21,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 20
@@ -6777,8 +6778,8 @@
         "Ticker": "JMIA",
         "sin_datos": false,
         "Precio_real_ARS": 9400.0,
-        "Precio_teorico_ARS": 9352.33,
-        "Brecha_%": 0.51,
+        "Precio_teorico_ARS": 9351.28,
+        "Brecha_%": 0.52,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 1
@@ -6787,8 +6788,8 @@
         "Ticker": "SATL",
         "sin_datos": false,
         "Precio_real_ARS": 6360.0,
-        "Precio_teorico_ARS": 6332.31,
-        "Brecha_%": 0.44,
+        "Precio_teorico_ARS": 6331.6,
+        "Brecha_%": 0.45,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 1
@@ -6797,8 +6798,8 @@
         "Ticker": "CRWV",
         "sin_datos": false,
         "Precio_real_ARS": 3717.5,
-        "Precio_teorico_ARS": 3675.5,
-        "Brecha_%": 1.14,
+        "Precio_teorico_ARS": 3675.09,
+        "Brecha_%": 1.15,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 27
@@ -6807,8 +6808,8 @@
         "Ticker": "TEM",
         "sin_datos": false,
         "Precio_real_ARS": 8750.0,
-        "Precio_teorico_ARS": 8705.57,
-        "Brecha_%": 0.51,
+        "Precio_teorico_ARS": 8704.6,
+        "Brecha_%": 0.52,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 12
@@ -6817,8 +6818,8 @@
         "Ticker": "LAC",
         "sin_datos": false,
         "Precio_real_ARS": 3507.5,
-        "Precio_teorico_ARS": 3474.65,
-        "Brecha_%": 0.95,
+        "Precio_teorico_ARS": 3474.26,
+        "Brecha_%": 0.96,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 1
@@ -6827,8 +6828,8 @@
         "Ticker": "TSM",
         "sin_datos": false,
         "Precio_real_ARS": 76100.0,
-        "Precio_teorico_ARS": 75810.89,
-        "Brecha_%": 0.38,
+        "Precio_teorico_ARS": 75802.41,
+        "Brecha_%": 0.39,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 9
@@ -6837,8 +6838,8 @@
         "Ticker": "ARM",
         "sin_datos": false,
         "Precio_real_ARS": 13830.0,
-        "Precio_teorico_ARS": 13713.99,
-        "Brecha_%": 0.85,
+        "Precio_teorico_ARS": 13712.45,
+        "Brecha_%": 0.86,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 27
@@ -6847,8 +6848,8 @@
         "Ticker": "AVGO",
         "sin_datos": false,
         "Precio_real_ARS": 13980.0,
-        "Precio_teorico_ARS": 13929.83,
-        "Brecha_%": 0.36,
+        "Precio_teorico_ARS": 13928.27,
+        "Brecha_%": 0.37,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 39
@@ -6857,8 +6858,8 @@
         "Ticker": "IREN",
         "sin_datos": false,
         "Precio_real_ARS": 3760.0,
-        "Precio_teorico_ARS": 3752.03,
-        "Brecha_%": 0.21,
+        "Precio_teorico_ARS": 3751.61,
+        "Brecha_%": 0.22,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 12
@@ -6867,8 +6868,8 @@
         "Ticker": "TXN",
         "sin_datos": false,
         "Precio_real_ARS": 89875.0,
-        "Precio_teorico_ARS": 89675.22,
-        "Brecha_%": 0.22,
+        "Precio_teorico_ARS": 89665.18,
+        "Brecha_%": 0.23,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 5
@@ -6877,8 +6878,8 @@
         "Ticker": "AMAT",
         "sin_datos": false,
         "Precio_real_ARS": 134475.0,
-        "Precio_teorico_ARS": 134150.75,
-        "Brecha_%": 0.24,
+        "Precio_teorico_ARS": 134135.73,
+        "Brecha_%": 0.25,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 5
@@ -6887,8 +6888,8 @@
         "Ticker": "SNDK",
         "sin_datos": false,
         "Precio_real_ARS": 13170.0,
-        "Precio_teorico_ARS": 13095.56,
-        "Brecha_%": 0.57,
+        "Precio_teorico_ARS": 13094.09,
+        "Brecha_%": 0.58,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 170
@@ -6897,8 +6898,8 @@
         "Ticker": "KLAC",
         "sin_datos": false,
         "Precio_real_ARS": 7975.0,
-        "Precio_teorico_ARS": 7946.43,
-        "Brecha_%": 0.36,
+        "Precio_teorico_ARS": 7945.54,
+        "Brecha_%": 0.37,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 34
@@ -6907,8 +6908,8 @@
         "Ticker": "DELL",
         "sin_datos": false,
         "Precio_real_ARS": 9970.0,
-        "Precio_teorico_ARS": 9993.02,
-        "Brecha_%": -0.23,
+        "Precio_teorico_ARS": 9991.9,
+        "Brecha_%": -0.22,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 74
@@ -6917,8 +6918,8 @@
         "Ticker": "WDC",
         "sin_datos": false,
         "Precio_real_ARS": 6225.0,
-        "Precio_teorico_ARS": 6216.0,
-        "Brecha_%": 0.14,
+        "Precio_teorico_ARS": 6215.31,
+        "Brecha_%": 0.16,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 92
@@ -6927,8 +6928,8 @@
         "Ticker": "GEV",
         "sin_datos": false,
         "Precio_real_ARS": 8170.0,
-        "Precio_teorico_ARS": 8194.48,
-        "Brecha_%": -0.3,
+        "Precio_teorico_ARS": 8193.56,
+        "Brecha_%": -0.29,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 180
@@ -6937,8 +6938,8 @@
         "Ticker": "TLN",
         "sin_datos": false,
         "Precio_real_ARS": 9075.0,
-        "Precio_teorico_ARS": 9051.82,
-        "Brecha_%": 0.26,
+        "Precio_teorico_ARS": 9050.81,
+        "Brecha_%": 0.27,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 63
@@ -6947,8 +6948,8 @@
         "Ticker": "MS",
         "sin_datos": false,
         "Precio_real_ARS": 7080.0,
-        "Precio_teorico_ARS": 7067.71,
-        "Brecha_%": 0.17,
+        "Precio_teorico_ARS": 7066.92,
+        "Brecha_%": 0.19,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 41
@@ -6957,8 +6958,8 @@
         "Ticker": "IBKR",
         "sin_datos": false,
         "Precio_real_ARS": 7790.0,
-        "Precio_teorico_ARS": 7769.73,
-        "Brecha_%": 0.26,
+        "Precio_teorico_ARS": 7768.86,
+        "Brecha_%": 0.27,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 17
@@ -6967,8 +6968,8 @@
         "Ticker": "WELL",
         "sin_datos": false,
         "Precio_real_ARS": 7890.0,
-        "Precio_teorico_ARS": 7898.81,
-        "Brecha_%": -0.11,
+        "Precio_teorico_ARS": 7897.93,
+        "Brecha_%": -0.1,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 48
@@ -6977,8 +6978,8 @@
         "Ticker": "PLD",
         "sin_datos": false,
         "Precio_real_ARS": 6965.0,
-        "Precio_teorico_ARS": 6947.62,
-        "Brecha_%": 0.25,
+        "Precio_teorico_ARS": 6946.84,
+        "Brecha_%": 0.26,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 29
@@ -6987,8 +6988,8 @@
         "Ticker": "LIN",
         "sin_datos": false,
         "Precio_real_ARS": 8000.0,
-        "Precio_teorico_ARS": 8013.92,
-        "Brecha_%": -0.17,
+        "Precio_teorico_ARS": 8013.02,
+        "Brecha_%": -0.16,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 102
@@ -6997,8 +6998,8 @@
         "Ticker": "SHW",
         "sin_datos": false,
         "Precio_real_ARS": 7790.0,
-        "Precio_teorico_ARS": 7803.26,
-        "Brecha_%": -0.17,
+        "Precio_teorico_ARS": 7802.38,
+        "Brecha_%": -0.16,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 69
@@ -7007,8 +7008,8 @@
         "Ticker": "BP",
         "sin_datos": false,
         "Precio_real_ARS": 16010.0,
-        "Precio_teorico_ARS": 16054.84,
-        "Brecha_%": -0.28,
+        "Precio_teorico_ARS": 16053.04,
+        "Brecha_%": -0.27,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 5
@@ -7017,8 +7018,8 @@
         "Ticker": "CAT",
         "sin_datos": false,
         "Precio_real_ARS": 58900.0,
-        "Precio_teorico_ARS": 58922.12,
-        "Brecha_%": -0.04,
+        "Precio_teorico_ARS": 58915.53,
+        "Brecha_%": -0.03,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 20
@@ -7027,8 +7028,8 @@
         "Ticker": "CL",
         "sin_datos": false,
         "Precio_real_ARS": 50525.0,
-        "Precio_teorico_ARS": 50544.8,
-        "Brecha_%": -0.04,
+        "Precio_teorico_ARS": 50539.15,
+        "Brecha_%": -0.03,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 3
@@ -7037,8 +7038,8 @@
         "Ticker": "COST",
         "sin_datos": false,
         "Precio_real_ARS": 33640.0,
-        "Precio_teorico_ARS": 33675.23,
-        "Brecha_%": -0.1,
+        "Precio_teorico_ARS": 33671.46,
+        "Brecha_%": -0.09,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 48
@@ -7047,8 +7048,8 @@
         "Ticker": "CRM",
         "sin_datos": false,
         "Precio_real_ARS": 21860.0,
-        "Precio_teorico_ARS": 21869.91,
-        "Brecha_%": -0.05,
+        "Precio_teorico_ARS": 21867.47,
+        "Brecha_%": -0.03,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 18
@@ -7057,8 +7058,8 @@
         "Ticker": "CRWD",
         "sin_datos": false,
         "Precio_real_ARS": 4707.5,
-        "Precio_teorico_ARS": 4688.09,
-        "Brecha_%": 0.41,
+        "Precio_teorico_ARS": 4687.56,
+        "Brecha_%": 0.43,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 79
@@ -7067,8 +7068,8 @@
         "Ticker": "DE",
         "sin_datos": false,
         "Precio_real_ARS": 25520.0,
-        "Precio_teorico_ARS": 25451.01,
-        "Brecha_%": 0.27,
+        "Precio_teorico_ARS": 25448.16,
+        "Brecha_%": 0.28,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 40
@@ -7077,8 +7078,8 @@
         "Ticker": "DHR",
         "sin_datos": false,
         "Precio_real_ARS": 6710.0,
-        "Precio_teorico_ARS": 6748.15,
-        "Brecha_%": -0.57,
+        "Precio_teorico_ARS": 6747.39,
+        "Brecha_%": -0.55,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 54
@@ -7087,8 +7088,8 @@
         "Ticker": "DIS",
         "sin_datos": false,
         "Precio_real_ARS": 14810.0,
-        "Precio_teorico_ARS": 14828.15,
-        "Brecha_%": -0.12,
+        "Precio_teorico_ARS": 14826.49,
+        "Brecha_%": -0.11,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 12
@@ -7097,8 +7098,8 @@
         "Ticker": "EBAY",
         "sin_datos": false,
         "Precio_real_ARS": 97675.0,
-        "Precio_teorico_ARS": 97801.68,
-        "Brecha_%": -0.13,
+        "Precio_teorico_ARS": 97790.73,
+        "Brecha_%": -0.12,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 2
@@ -7107,8 +7108,8 @@
         "Ticker": "ETSY",
         "sin_datos": false,
         "Precio_real_ARS": 8605.0,
-        "Precio_teorico_ARS": 8652.12,
-        "Brecha_%": -0.54,
+        "Precio_teorico_ARS": 8651.16,
+        "Brecha_%": -0.53,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 16
@@ -7117,8 +7118,8 @@
         "Ticker": "GS",
         "sin_datos": false,
         "Precio_real_ARS": 109400.0,
-        "Precio_teorico_ARS": 109382.81,
-        "Brecha_%": 0.02,
+        "Precio_teorico_ARS": 109370.57,
+        "Brecha_%": 0.03,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 13
@@ -7127,8 +7128,8 @@
         "Ticker": "IBM",
         "sin_datos": false,
         "Precio_real_ARS": 25640.0,
-        "Precio_teorico_ARS": 25587.93,
-        "Brecha_%": 0.2,
+        "Precio_teorico_ARS": 25585.07,
+        "Brecha_%": 0.21,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 15
@@ -7137,8 +7138,8 @@
         "Ticker": "INTC",
         "sin_datos": false,
         "Precio_real_ARS": 29980.0,
-        "Precio_teorico_ARS": 29885.24,
-        "Brecha_%": 0.32,
+        "Precio_teorico_ARS": 29881.9,
+        "Brecha_%": 0.33,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 5
@@ -7147,8 +7148,8 @@
         "Ticker": "ISRG",
         "sin_datos": false,
         "Precio_real_ARS": 7560.0,
-        "Precio_teorico_ARS": 7814.9,
-        "Brecha_%": -3.26,
+        "Precio_teorico_ARS": 7814.02,
+        "Brecha_%": -3.25,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": true,
         "Ratio": 90
@@ -7157,8 +7158,8 @@
         "Ticker": "MA",
         "sin_datos": false,
         "Precio_real_ARS": 30320.0,
-        "Precio_teorico_ARS": 30328.16,
-        "Brecha_%": -0.03,
+        "Precio_teorico_ARS": 30324.77,
+        "Brecha_%": -0.02,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 33
@@ -7167,8 +7168,8 @@
         "Ticker": "MCD",
         "sin_datos": false,
         "Precio_real_ARS": 16440.0,
-        "Precio_teorico_ARS": 16417.32,
-        "Brecha_%": 0.14,
+        "Precio_teorico_ARS": 16415.48,
+        "Brecha_%": 0.15,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 24
@@ -7177,8 +7178,8 @@
         "Ticker": "MDLZ",
         "sin_datos": false,
         "Precio_real_ARS": 6840.0,
-        "Precio_teorico_ARS": 6856.21,
-        "Brecha_%": -0.24,
+        "Precio_teorico_ARS": 6855.44,
+        "Brecha_%": -0.23,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 15
@@ -7187,8 +7188,8 @@
         "Ticker": "META",
         "sin_datos": false,
         "Precio_real_ARS": 47720.0,
-        "Precio_teorico_ARS": 47725.03,
-        "Brecha_%": -0.01,
+        "Precio_teorico_ARS": 47719.69,
+        "Brecha_%": 0.0,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 24
@@ -7197,8 +7198,8 @@
         "Ticker": "MMM",
         "sin_datos": false,
         "Precio_real_ARS": 26380.0,
-        "Precio_teorico_ARS": 26305.05,
-        "Brecha_%": 0.28,
+        "Precio_teorico_ARS": 26302.11,
+        "Brecha_%": 0.3,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 10
@@ -7207,8 +7208,8 @@
         "Ticker": "MRNA",
         "sin_datos": false,
         "Precio_real_ARS": 19340.0,
-        "Precio_teorico_ARS": 19389.17,
-        "Brecha_%": -0.25,
+        "Precio_teorico_ARS": 19387.0,
+        "Brecha_%": -0.24,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 19
@@ -7217,8 +7218,8 @@
         "Ticker": "MRVL",
         "sin_datos": false,
         "Precio_real_ARS": 27680.0,
-        "Precio_teorico_ARS": 27496.83,
-        "Brecha_%": 0.67,
+        "Precio_teorico_ARS": 27493.75,
+        "Brecha_%": 0.68,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 14
@@ -7227,8 +7228,8 @@
         "Ticker": "MU",
         "sin_datos": false,
         "Precio_real_ARS": 294925.0,
-        "Precio_teorico_ARS": 293851.54,
-        "Brecha_%": 0.37,
+        "Precio_teorico_ARS": 293818.66,
+        "Brecha_%": 0.38,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 5
@@ -7237,8 +7238,8 @@
         "Ticker": "NKE",
         "sin_datos": false,
         "Precio_real_ARS": 5020.0,
-        "Precio_teorico_ARS": 5034.73,
-        "Brecha_%": -0.29,
+        "Precio_teorico_ARS": 5034.16,
+        "Brecha_%": -0.28,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 12
@@ -7247,8 +7248,8 @@
         "Ticker": "NOW",
         "sin_datos": false,
         "Precio_real_ARS": 1368.0,
-        "Precio_teorico_ARS": 1372.19,
-        "Brecha_%": -0.31,
+        "Precio_teorico_ARS": 1372.04,
+        "Brecha_%": -0.29,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 172
@@ -7257,8 +7258,8 @@
         "Ticker": "ORCL",
         "sin_datos": false,
         "Precio_real_ARS": 70225.0,
-        "Precio_teorico_ARS": 70137.07,
-        "Brecha_%": 0.13,
+        "Precio_teorico_ARS": 70129.22,
+        "Brecha_%": 0.14,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 3
@@ -7267,8 +7268,8 @@
         "Ticker": "OXY",
         "sin_datos": false,
         "Precio_real_ARS": 20390.0,
-        "Precio_teorico_ARS": 20367.3,
-        "Brecha_%": 0.11,
+        "Precio_teorico_ARS": 20365.02,
+        "Brecha_%": 0.12,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 5
@@ -7277,8 +7278,8 @@
         "Ticker": "PANW",
         "sin_datos": false,
         "Precio_real_ARS": 11240.0,
-        "Precio_teorico_ARS": 11266.64,
-        "Brecha_%": -0.24,
+        "Precio_teorico_ARS": 11265.38,
+        "Brecha_%": -0.23,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 50
@@ -7287,8 +7288,8 @@
         "Ticker": "PATH",
         "sin_datos": false,
         "Precio_real_ARS": 10620.0,
-        "Precio_teorico_ARS": 10651.27,
-        "Brecha_%": -0.29,
+        "Precio_teorico_ARS": 10650.07,
+        "Brecha_%": -0.28,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 2
@@ -7297,8 +7298,8 @@
         "Ticker": "PG",
         "sin_datos": false,
         "Precio_real_ARS": 17040.0,
-        "Precio_teorico_ARS": 17069.09,
-        "Brecha_%": -0.17,
+        "Precio_teorico_ARS": 17067.18,
+        "Brecha_%": -0.16,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 15
@@ -7307,8 +7308,8 @@
         "Ticker": "PINS",
         "sin_datos": false,
         "Precio_real_ARS": 5500.0,
-        "Precio_teorico_ARS": 5181.82,
-        "Brecha_%": 6.14,
+        "Precio_teorico_ARS": 5181.24,
+        "Brecha_%": 6.15,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": true,
         "Ratio": 7
@@ -7317,8 +7318,8 @@
         "Ticker": "PSX",
         "sin_datos": false,
         "Precio_real_ARS": 78825.0,
-        "Precio_teorico_ARS": 78626.15,
-        "Brecha_%": 0.25,
+        "Precio_teorico_ARS": 78617.35,
+        "Brecha_%": 0.26,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 6
@@ -7327,8 +7328,8 @@
         "Ticker": "RBLX",
         "sin_datos": false,
         "Precio_real_ARS": 41160.0,
-        "Precio_teorico_ARS": 41200.59,
-        "Brecha_%": -0.1,
+        "Precio_teorico_ARS": 41195.98,
+        "Brecha_%": -0.09,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 2
@@ -7337,8 +7338,8 @@
         "Ticker": "ROKU",
         "sin_datos": false,
         "Precio_real_ARS": 19390.0,
-        "Precio_teorico_ARS": 19426.57,
-        "Brecha_%": -0.19,
+        "Precio_teorico_ARS": 19424.4,
+        "Brecha_%": -0.18,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 13
@@ -7347,8 +7348,8 @@
         "Ticker": "ROST",
         "sin_datos": false,
         "Precio_real_ARS": 97300.0,
-        "Precio_teorico_ARS": 96876.19,
-        "Brecha_%": 0.44,
+        "Precio_teorico_ARS": 96865.35,
+        "Brecha_%": 0.45,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 4
@@ -7357,8 +7358,8 @@
         "Ticker": "SBUX",
         "sin_datos": false,
         "Precio_real_ARS": 13240.0,
-        "Precio_teorico_ARS": 13242.37,
-        "Brecha_%": -0.02,
+        "Precio_teorico_ARS": 13240.89,
+        "Brecha_%": -0.01,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 12
@@ -7367,9 +7368,9 @@
         "Ticker": "SHEL",
         "sin_datos": false,
         "Precio_real_ARS": 85100.0,
-        "Precio_teorico_ARS": 85096.47,
-        "Brecha_%": 0.0,
-        "Estado": "Barato respecto al teórico",
+        "Precio_teorico_ARS": 85086.95,
+        "Brecha_%": 0.02,
+        "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 2
       },
@@ -7377,8 +7378,8 @@
         "Ticker": "SLB",
         "sin_datos": false,
         "Precio_real_ARS": 26560.0,
-        "Precio_teorico_ARS": 26568.63,
-        "Brecha_%": -0.03,
+        "Precio_teorico_ARS": 26565.66,
+        "Brecha_%": -0.02,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 3
@@ -7387,8 +7388,8 @@
         "Ticker": "SNAP",
         "sin_datos": false,
         "Precio_real_ARS": 10170.0,
-        "Precio_teorico_ARS": 10180.4,
-        "Brecha_%": -0.1,
+        "Precio_teorico_ARS": 10179.26,
+        "Brecha_%": -0.09,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 1
@@ -7397,8 +7398,8 @@
         "Ticker": "SNOW",
         "sin_datos": false,
         "Precio_real_ARS": 17070.0,
-        "Precio_teorico_ARS": 17067.46,
-        "Brecha_%": 0.01,
+        "Precio_teorico_ARS": 17065.55,
+        "Brecha_%": 0.03,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 30
@@ -7407,8 +7408,8 @@
         "Ticker": "TEAM",
         "sin_datos": false,
         "Precio_real_ARS": 7395.0,
-        "Precio_teorico_ARS": 7418.78,
-        "Brecha_%": -0.32,
+        "Precio_teorico_ARS": 7417.95,
+        "Brecha_%": -0.31,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 47
@@ -7417,8 +7418,8 @@
         "Ticker": "TJX",
         "sin_datos": false,
         "Precio_real_ARS": 10700.0,
-        "Precio_teorico_ARS": 10875.63,
-        "Brecha_%": -1.61,
+        "Precio_teorico_ARS": 10874.41,
+        "Brecha_%": -1.6,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 22
@@ -7427,8 +7428,8 @@
         "Ticker": "TTE",
         "sin_datos": false,
         "Precio_real_ARS": 48720.0,
-        "Precio_teorico_ARS": 48683.0,
-        "Brecha_%": 0.08,
+        "Precio_teorico_ARS": 48677.55,
+        "Brecha_%": 0.09,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 3
@@ -7437,8 +7438,8 @@
         "Ticker": "UAL",
         "sin_datos": false,
         "Precio_real_ARS": 31100.0,
-        "Precio_teorico_ARS": 31044.54,
-        "Brecha_%": 0.18,
+        "Precio_teorico_ARS": 31041.07,
+        "Brecha_%": 0.19,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 5
@@ -7447,8 +7448,8 @@
         "Ticker": "UNP",
         "sin_datos": false,
         "Precio_real_ARS": 23380.0,
-        "Precio_teorico_ARS": 23300.46,
-        "Brecha_%": 0.34,
+        "Precio_teorico_ARS": 23297.85,
+        "Brecha_%": 0.35,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 20
@@ -7457,8 +7458,8 @@
         "Ticker": "UPST",
         "sin_datos": false,
         "Precio_real_ARS": 7565.0,
-        "Precio_teorico_ARS": 7550.06,
-        "Brecha_%": 0.2,
+        "Precio_teorico_ARS": 7549.21,
+        "Brecha_%": 0.21,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 5
@@ -7467,8 +7468,8 @@
         "Ticker": "USB",
         "sin_datos": false,
         "Precio_real_ARS": 18810.0,
-        "Precio_teorico_ARS": 18785.85,
-        "Brecha_%": 0.13,
+        "Precio_teorico_ARS": 18783.74,
+        "Brecha_%": 0.14,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 5
@@ -7477,8 +7478,8 @@
         "Ticker": "VRTX",
         "sin_datos": false,
         "Precio_real_ARS": 8035.0,
-        "Precio_teorico_ARS": 8069.31,
-        "Brecha_%": -0.43,
+        "Precio_teorico_ARS": 8068.41,
+        "Brecha_%": -0.41,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 101
@@ -7487,8 +7488,8 @@
         "Ticker": "CVS",
         "sin_datos": false,
         "Precio_real_ARS": 10030.0,
-        "Precio_teorico_ARS": 10032.11,
-        "Brecha_%": -0.02,
+        "Precio_teorico_ARS": 10030.98,
+        "Brecha_%": -0.01,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 15
@@ -7497,8 +7498,8 @@
         "Ticker": "AAP",
         "sin_datos": false,
         "Precio_real_ARS": 5035.0,
-        "Precio_teorico_ARS": 5068.17,
-        "Brecha_%": -0.65,
+        "Precio_teorico_ARS": 5067.6,
+        "Brecha_%": -0.64,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 14
@@ -7507,8 +7508,8 @@
         "Ticker": "ABBV",
         "sin_datos": false,
         "Precio_real_ARS": 45980.0,
-        "Precio_teorico_ARS": 45897.86,
-        "Brecha_%": 0.18,
+        "Precio_teorico_ARS": 45892.73,
+        "Brecha_%": 0.19,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 10
@@ -7517,8 +7518,8 @@
         "Ticker": "ABT",
         "sin_datos": false,
         "Precio_real_ARS": 42160.0,
-        "Precio_teorico_ARS": 42239.74,
-        "Brecha_%": -0.19,
+        "Precio_teorico_ARS": 42235.01,
+        "Brecha_%": -0.18,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 4
@@ -7527,8 +7528,8 @@
         "Ticker": "ACN",
         "sin_datos": false,
         "Precio_real_ARS": 5095.0,
-        "Precio_teorico_ARS": 5129.28,
-        "Brecha_%": -0.67,
+        "Precio_teorico_ARS": 5128.7,
+        "Brecha_%": -0.66,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 75
@@ -7537,8 +7538,8 @@
         "Ticker": "AGRO",
         "sin_datos": false,
         "Precio_real_ARS": 15700.0,
-        "Precio_teorico_ARS": 15652.17,
-        "Brecha_%": 0.31,
+        "Precio_teorico_ARS": 15650.41,
+        "Brecha_%": 0.32,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 1
@@ -7547,8 +7548,8 @@
         "Ticker": "ADI",
         "sin_datos": false,
         "Precio_real_ARS": 42920.0,
-        "Precio_teorico_ARS": 42686.25,
-        "Brecha_%": 0.55,
+        "Precio_teorico_ARS": 42681.47,
+        "Brecha_%": 0.56,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 15
@@ -7557,8 +7558,8 @@
         "Ticker": "ADP",
         "sin_datos": false,
         "Precio_real_ARS": 77575.0,
-        "Precio_teorico_ARS": 77673.6,
-        "Brecha_%": -0.13,
+        "Precio_teorico_ARS": 77664.91,
+        "Brecha_%": -0.12,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 6
@@ -7567,8 +7568,8 @@
         "Ticker": "AEG",
         "sin_datos": false,
         "Precio_real_ARS": 13330.0,
-        "Precio_teorico_ARS": 13314.08,
-        "Brecha_%": 0.12,
+        "Precio_teorico_ARS": 13312.59,
+        "Brecha_%": 0.13,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 1
@@ -7577,8 +7578,8 @@
         "Ticker": "AEM",
         "sin_datos": false,
         "Precio_real_ARS": 50900.0,
-        "Precio_teorico_ARS": 50769.41,
-        "Brecha_%": 0.26,
+        "Precio_teorico_ARS": 50763.73,
+        "Brecha_%": 0.27,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 6
@@ -7587,8 +7588,8 @@
         "Ticker": "AI",
         "sin_datos": false,
         "Precio_real_ARS": 3650.0,
-        "Precio_teorico_ARS": 3663.0,
-        "Brecha_%": -0.35,
+        "Precio_teorico_ARS": 3662.59,
+        "Brecha_%": -0.34,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 5
@@ -7597,8 +7598,8 @@
         "Ticker": "AIG",
         "sin_datos": false,
         "Precio_real_ARS": 26220.0,
-        "Precio_teorico_ARS": 26193.02,
-        "Brecha_%": 0.1,
+        "Precio_teorico_ARS": 26190.09,
+        "Brecha_%": 0.11,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 5
@@ -7607,8 +7608,8 @@
         "Ticker": "ALAB",
         "sin_datos": false,
         "Precio_real_ARS": 10620.0,
-        "Precio_teorico_ARS": 10575.25,
-        "Brecha_%": 0.42,
+        "Precio_teorico_ARS": 10574.07,
+        "Brecha_%": 0.43,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 44
@@ -7617,8 +7618,8 @@
         "Ticker": "ASR",
         "sin_datos": false,
         "Precio_real_ARS": 19520.0,
-        "Precio_teorico_ARS": 19445.87,
-        "Brecha_%": 0.38,
+        "Precio_teorico_ARS": 19443.69,
+        "Brecha_%": 0.39,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 20
@@ -7627,8 +7628,8 @@
         "Ticker": "ASTS",
         "sin_datos": false,
         "Precio_real_ARS": 4537.5,
-        "Precio_teorico_ARS": 4532.2,
-        "Brecha_%": 0.12,
+        "Precio_teorico_ARS": 4531.69,
+        "Brecha_%": 0.13,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 15
@@ -7637,8 +7638,8 @@
         "Ticker": "AVY",
         "sin_datos": false,
         "Precio_real_ARS": 15820.0,
-        "Precio_teorico_ARS": 15836.18,
-        "Brecha_%": -0.1,
+        "Precio_teorico_ARS": 15834.41,
+        "Brecha_%": -0.09,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 18
@@ -7647,8 +7648,8 @@
         "Ticker": "AXP",
         "sin_datos": false,
         "Precio_real_ARS": 34280.0,
-        "Precio_teorico_ARS": 34249.67,
-        "Brecha_%": 0.09,
+        "Precio_teorico_ARS": 34245.83,
+        "Brecha_%": 0.1,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 15
@@ -7657,8 +7658,8 @@
         "Ticker": "AZN",
         "sin_datos": false,
         "Precio_real_ARS": 66525.0,
-        "Precio_teorico_ARS": 66550.12,
-        "Brecha_%": -0.04,
+        "Precio_teorico_ARS": 66542.67,
+        "Brecha_%": -0.03,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 4
@@ -7667,8 +7668,8 @@
         "Ticker": "BA",
         "sin_datos": false,
         "Precio_real_ARS": 13010.0,
-        "Precio_teorico_ARS": 12950.11,
-        "Brecha_%": 0.46,
+        "Precio_teorico_ARS": 12948.66,
+        "Brecha_%": 0.47,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 24
@@ -7677,7 +7678,7 @@
         "Ticker": "BAC",
         "sin_datos": false,
         "Precio_real_ARS": 7.81,
-        "Precio_teorico_ARS": 20454.17,
+        "Precio_teorico_ARS": 20451.88,
         "Brecha_%": -99.96,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": true,
@@ -7687,8 +7688,8 @@
         "Ticker": "BAK",
         "sin_datos": false,
         "Precio_real_ARS": 1361.0,
-        "Precio_teorico_ARS": 1380.12,
-        "Brecha_%": -1.39,
+        "Precio_teorico_ARS": 1379.96,
+        "Brecha_%": -1.37,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 2
@@ -7697,8 +7698,8 @@
         "Ticker": "BB",
         "sin_datos": false,
         "Precio_real_ARS": 4387.5,
-        "Precio_teorico_ARS": 4416.38,
-        "Brecha_%": -0.65,
+        "Precio_teorico_ARS": 4415.88,
+        "Brecha_%": -0.64,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 3
@@ -7707,8 +7708,8 @@
         "Ticker": "BCS",
         "sin_datos": false,
         "Precio_real_ARS": 35960.0,
-        "Precio_teorico_ARS": 35996.73,
-        "Brecha_%": -0.1,
+        "Precio_teorico_ARS": 35992.7,
+        "Brecha_%": -0.09,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 1
@@ -7717,8 +7718,8 @@
         "Ticker": "BHP",
         "sin_datos": false,
         "Precio_real_ARS": 67475.0,
-        "Precio_teorico_ARS": 67560.85,
-        "Brecha_%": -0.13,
+        "Precio_teorico_ARS": 67553.29,
+        "Brecha_%": -0.12,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 2
@@ -7727,8 +7728,8 @@
         "Ticker": "BIDU",
         "sin_datos": false,
         "Precio_real_ARS": 11770.0,
-        "Precio_teorico_ARS": 11776.03,
-        "Brecha_%": -0.05,
+        "Precio_teorico_ARS": 11774.71,
+        "Brecha_%": -0.04,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 11
@@ -7737,8 +7738,8 @@
         "Ticker": "BIIB",
         "sin_datos": false,
         "Precio_real_ARS": 29120.0,
-        "Precio_teorico_ARS": 29161.09,
-        "Brecha_%": -0.14,
+        "Precio_teorico_ARS": 29157.82,
+        "Brecha_%": -0.13,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 13
@@ -7747,8 +7748,8 @@
         "Ticker": "BKNG",
         "sin_datos": false,
         "Precio_real_ARS": 385.25,
-        "Precio_teorico_ARS": 377.16,
-        "Brecha_%": 2.14,
+        "Precio_teorico_ARS": 377.11,
+        "Brecha_%": 2.16,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 700
@@ -7757,8 +7758,8 @@
         "Ticker": "BKR",
         "sin_datos": false,
         "Precio_real_ARS": 12770.0,
-        "Precio_teorico_ARS": 12945.28,
-        "Brecha_%": -1.35,
+        "Precio_teorico_ARS": 12943.83,
+        "Brecha_%": -1.34,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 7
@@ -7767,8 +7768,8 @@
         "Ticker": "BMNR",
         "sin_datos": false,
         "Precio_real_ARS": 4380.0,
-        "Precio_teorico_ARS": 4377.82,
-        "Brecha_%": 0.05,
+        "Precio_teorico_ARS": 4377.33,
+        "Brecha_%": 0.06,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 8
@@ -7777,8 +7778,8 @@
         "Ticker": "BMY",
         "sin_datos": false,
         "Precio_real_ARS": 31760.0,
-        "Precio_teorico_ARS": 31840.14,
-        "Brecha_%": -0.25,
+        "Precio_teorico_ARS": 31836.58,
+        "Brecha_%": -0.24,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 3
@@ -7787,8 +7788,8 @@
         "Ticker": "BX",
         "sin_datos": false,
         "Precio_real_ARS": 5805.0,
-        "Precio_teorico_ARS": 5795.96,
-        "Brecha_%": 0.16,
+        "Precio_teorico_ARS": 5795.31,
+        "Brecha_%": 0.17,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 30
@@ -7797,8 +7798,8 @@
         "Ticker": "CAH",
         "sin_datos": false,
         "Precio_real_ARS": 136900.0,
-        "Precio_teorico_ARS": 136739.96,
-        "Brecha_%": 0.12,
+        "Precio_teorico_ARS": 136724.66,
+        "Brecha_%": 0.13,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 3
@@ -7807,8 +7808,8 @@
         "Ticker": "CAR",
         "sin_datos": false,
         "Precio_real_ARS": 6370.0,
-        "Precio_teorico_ARS": 6393.51,
-        "Brecha_%": -0.37,
+        "Precio_teorico_ARS": 6392.79,
+        "Brecha_%": -0.36,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 26
@@ -7817,8 +7818,8 @@
         "Ticker": "CCJ",
         "sin_datos": false,
         "Precio_real_ARS": 5695.0,
-        "Precio_teorico_ARS": 5241.2,
-        "Brecha_%": 8.66,
+        "Precio_teorico_ARS": 5240.62,
+        "Brecha_%": 8.67,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": true,
         "Ratio": 25
@@ -7827,8 +7828,8 @@
         "Ticker": "CCL",
         "sin_datos": false,
         "Precio_real_ARS": 14330.0,
-        "Precio_teorico_ARS": 14315.34,
-        "Brecha_%": 0.1,
+        "Precio_teorico_ARS": 14313.74,
+        "Brecha_%": 0.11,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 3
@@ -7837,8 +7838,8 @@
         "Ticker": "CDE",
         "sin_datos": false,
         "Precio_real_ARS": 25060.0,
-        "Precio_teorico_ARS": 24890.84,
-        "Brecha_%": 0.68,
+        "Precio_teorico_ARS": 24888.05,
+        "Brecha_%": 0.69,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 1
@@ -7847,8 +7848,8 @@
         "Ticker": "CEG",
         "sin_datos": false,
         "Precio_real_ARS": 9490.0,
-        "Precio_teorico_ARS": 9496.3,
-        "Brecha_%": -0.07,
+        "Precio_teorico_ARS": 9495.23,
+        "Brecha_%": -0.06,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 45
@@ -7857,8 +7858,8 @@
         "Ticker": "COIN",
         "sin_datos": false,
         "Precio_real_ARS": 10120.0,
-        "Precio_teorico_ARS": 10129.89,
-        "Brecha_%": -0.1,
+        "Precio_teorico_ARS": 10128.75,
+        "Brecha_%": -0.09,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 27
@@ -7867,8 +7868,8 @@
         "Ticker": "COP",
         "sin_datos": false,
         "Precio_real_ARS": 9455.0,
-        "Precio_teorico_ARS": 9432.87,
-        "Brecha_%": 0.23,
+        "Precio_teorico_ARS": 9431.81,
+        "Brecha_%": 0.25,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 25
@@ -7877,8 +7878,8 @@
         "Ticker": "DECK",
         "sin_datos": false,
         "Precio_real_ARS": 5640.0,
-        "Precio_teorico_ARS": 5665.95,
-        "Brecha_%": -0.46,
+        "Precio_teorico_ARS": 5665.32,
+        "Brecha_%": -0.45,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 25
@@ -7887,8 +7888,8 @@
         "Ticker": "DEO",
         "sin_datos": false,
         "Precio_real_ARS": 25260.0,
-        "Precio_teorico_ARS": 25299.46,
-        "Brecha_%": -0.16,
+        "Precio_teorico_ARS": 25296.63,
+        "Brecha_%": -0.14,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 6
@@ -7897,8 +7898,8 @@
         "Ticker": "DOCU",
         "sin_datos": false,
         "Precio_real_ARS": 5635.0,
-        "Precio_teorico_ARS": 5657.75,
-        "Brecha_%": -0.4,
+        "Precio_teorico_ARS": 5657.11,
+        "Brecha_%": -0.39,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 22
@@ -7907,8 +7908,8 @@
         "Ticker": "ECL",
         "sin_datos": false,
         "Precio_real_ARS": 8255.0,
-        "Precio_teorico_ARS": 8290.57,
-        "Brecha_%": -0.43,
+        "Precio_teorico_ARS": 8289.64,
+        "Brecha_%": -0.42,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 56
@@ -7917,8 +7918,8 @@
         "Ticker": "EFX",
         "sin_datos": false,
         "Precio_real_ARS": 16040.0,
-        "Precio_teorico_ARS": 16091.57,
-        "Brecha_%": -0.32,
+        "Precio_teorico_ARS": 16089.77,
+        "Brecha_%": -0.31,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 16
@@ -7927,8 +7928,8 @@
         "Ticker": "EQNR",
         "sin_datos": false,
         "Precio_real_ARS": 12680.0,
-        "Precio_teorico_ARS": 12488.72,
-        "Brecha_%": 1.53,
+        "Precio_teorico_ARS": 12487.32,
+        "Brecha_%": 1.54,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 6
@@ -7937,8 +7938,8 @@
         "Ticker": "ERIC",
         "sin_datos": false,
         "Precio_real_ARS": 8365.0,
-        "Precio_teorico_ARS": 8394.37,
-        "Brecha_%": -0.35,
+        "Precio_teorico_ARS": 8393.43,
+        "Brecha_%": -0.34,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 2
@@ -7947,8 +7948,8 @@
         "Ticker": "GLW",
         "sin_datos": false,
         "Precio_real_ARS": 53850.0,
-        "Precio_teorico_ARS": 53881.44,
-        "Brecha_%": -0.06,
+        "Precio_teorico_ARS": 53875.41,
+        "Brecha_%": -0.05,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 4
@@ -7957,8 +7958,8 @@
         "Ticker": "GRMN",
         "sin_datos": false,
         "Precio_real_ARS": 154675.0,
-        "Precio_teorico_ARS": 154876.34,
-        "Brecha_%": -0.13,
+        "Precio_teorico_ARS": 154859.0,
+        "Brecha_%": -0.12,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 3
@@ -7967,8 +7968,8 @@
         "Ticker": "GSK",
         "sin_datos": false,
         "Precio_real_ARS": 20040.0,
-        "Precio_teorico_ARS": 20076.66,
-        "Brecha_%": -0.18,
+        "Precio_teorico_ARS": 20074.42,
+        "Brecha_%": -0.17,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 4
@@ -7977,8 +7978,8 @@
         "Ticker": "GT",
         "sin_datos": false,
         "Precio_real_ARS": 3385.0,
-        "Precio_teorico_ARS": 3369.11,
-        "Brecha_%": 0.47,
+        "Precio_teorico_ARS": 3368.74,
+        "Brecha_%": 0.48,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 2
@@ -7987,8 +7988,8 @@
         "Ticker": "HAL",
         "sin_datos": false,
         "Precio_real_ARS": 26960.0,
-        "Precio_teorico_ARS": 26774.3,
-        "Brecha_%": 0.69,
+        "Precio_teorico_ARS": 26771.3,
+        "Brecha_%": 0.7,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 2
@@ -7997,8 +7998,8 @@
         "Ticker": "HD",
         "sin_datos": false,
         "Precio_real_ARS": 15770.0,
-        "Precio_teorico_ARS": 15723.2,
-        "Brecha_%": 0.3,
+        "Precio_teorico_ARS": 15721.44,
+        "Brecha_%": 0.31,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 32
@@ -8007,8 +8008,8 @@
         "Ticker": "HDB",
         "sin_datos": false,
         "Precio_real_ARS": 18700.0,
-        "Precio_teorico_ARS": 18737.14,
-        "Brecha_%": -0.2,
+        "Precio_teorico_ARS": 18735.04,
+        "Brecha_%": -0.19,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 2
@@ -8017,8 +8018,8 @@
         "Ticker": "HL",
         "sin_datos": false,
         "Precio_real_ARS": 24550.0,
-        "Precio_teorico_ARS": 24436.21,
-        "Brecha_%": 0.47,
+        "Precio_teorico_ARS": 24433.48,
+        "Brecha_%": 0.48,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 1
@@ -8027,8 +8028,8 @@
         "Ticker": "HMC",
         "sin_datos": false,
         "Precio_real_ARS": 55425.0,
-        "Precio_teorico_ARS": 55302.15,
-        "Brecha_%": 0.22,
+        "Precio_teorico_ARS": 55295.96,
+        "Brecha_%": 0.23,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 1
@@ -8037,8 +8038,8 @@
         "Ticker": "HMY",
         "sin_datos": false,
         "Precio_real_ARS": 27220.0,
-        "Precio_teorico_ARS": 27163.98,
-        "Brecha_%": 0.21,
+        "Precio_teorico_ARS": 27160.94,
+        "Brecha_%": 0.22,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 1
@@ -8047,8 +8048,8 @@
         "Ticker": "HOG",
         "sin_datos": false,
         "Precio_real_ARS": 14500.0,
-        "Precio_teorico_ARS": 14466.89,
-        "Brecha_%": 0.23,
+        "Precio_teorico_ARS": 14465.27,
+        "Brecha_%": 0.24,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 3
@@ -8057,8 +8058,8 @@
         "Ticker": "HON",
         "sin_datos": false,
         "Precio_real_ARS": 42820.0,
-        "Precio_teorico_ARS": 42617.24,
-        "Brecha_%": 0.48,
+        "Precio_teorico_ARS": 42612.47,
+        "Brecha_%": 0.49,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 8
@@ -8067,8 +8068,8 @@
         "Ticker": "HPQ",
         "sin_datos": false,
         "Precio_real_ARS": 49200.0,
-        "Precio_teorico_ARS": 49099.74,
-        "Brecha_%": 0.2,
+        "Precio_teorico_ARS": 49094.24,
+        "Brecha_%": 0.22,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 1
@@ -8077,8 +8078,8 @@
         "Ticker": "HSBC",
         "sin_datos": false,
         "Precio_real_ARS": 75450.0,
-        "Precio_teorico_ARS": 75468.12,
-        "Brecha_%": -0.02,
+        "Precio_teorico_ARS": 75459.67,
+        "Brecha_%": -0.01,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 2
@@ -8087,8 +8088,8 @@
         "Ticker": "HSY",
         "sin_datos": false,
         "Precio_real_ARS": 12950.0,
-        "Precio_teorico_ARS": 12912.03,
-        "Brecha_%": 0.29,
+        "Precio_teorico_ARS": 12910.59,
+        "Brecha_%": 0.31,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 21
@@ -8097,7 +8098,7 @@
         "Ticker": "HUT",
         "sin_datos": false,
         "Precio_real_ARS": 22210.0,
-        "Precio_teorico_ARS": 110685.49,
+        "Precio_teorico_ARS": 110673.1,
         "Brecha_%": -79.93,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": true,
@@ -8107,8 +8108,8 @@
         "Ticker": "HWM",
         "sin_datos": false,
         "Precio_real_ARS": 357800.0,
-        "Precio_teorico_ARS": 357255.8,
-        "Brecha_%": 0.15,
+        "Precio_teorico_ARS": 357215.82,
+        "Brecha_%": 0.16,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 1
@@ -8117,8 +8118,8 @@
         "Ticker": "IBN",
         "sin_datos": false,
         "Precio_real_ARS": 48120.0,
-        "Precio_teorico_ARS": 47865.75,
-        "Brecha_%": 0.53,
+        "Precio_teorico_ARS": 47860.39,
+        "Brecha_%": 0.54,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 1
@@ -8127,8 +8128,8 @@
         "Ticker": "INFY",
         "sin_datos": false,
         "Precio_real_ARS": 19830.0,
-        "Precio_teorico_ARS": 19808.76,
-        "Brecha_%": 0.11,
+        "Precio_teorico_ARS": 19806.54,
+        "Brecha_%": 0.12,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 1
@@ -8137,8 +8138,8 @@
         "Ticker": "ING",
         "sin_datos": false,
         "Precio_real_ARS": 17790.0,
-        "Precio_teorico_ARS": 17762.93,
-        "Brecha_%": 0.15,
+        "Precio_teorico_ARS": 17760.95,
+        "Brecha_%": 0.16,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 3
@@ -8147,9 +8148,9 @@
         "Ticker": "IP",
         "sin_datos": false,
         "Precio_real_ARS": 13700.0,
-        "Precio_teorico_ARS": 13699.7,
-        "Brecha_%": 0.0,
-        "Estado": "Barato respecto al teórico",
+        "Precio_teorico_ARS": 13698.17,
+        "Brecha_%": 0.01,
+        "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 4
       },
@@ -8157,8 +8158,8 @@
         "Ticker": "JCI",
         "sin_datos": false,
         "Precio_real_ARS": 120000.0,
-        "Precio_teorico_ARS": 120330.08,
-        "Brecha_%": -0.27,
+        "Precio_teorico_ARS": 120316.61,
+        "Brecha_%": -0.26,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 2
@@ -8167,8 +8168,8 @@
         "Ticker": "JD",
         "sin_datos": false,
         "Precio_real_ARS": 10840.0,
-        "Precio_teorico_ARS": 10870.46,
-        "Brecha_%": -0.28,
+        "Precio_teorico_ARS": 10869.24,
+        "Brecha_%": -0.27,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 4
@@ -8177,8 +8178,8 @@
         "Ticker": "KB",
         "sin_datos": false,
         "Precio_real_ARS": 96675.0,
-        "Precio_teorico_ARS": 96721.94,
-        "Brecha_%": -0.05,
+        "Precio_teorico_ARS": 96711.11,
+        "Brecha_%": -0.04,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 2
@@ -8187,8 +8188,8 @@
         "Ticker": "KMB",
         "sin_datos": false,
         "Precio_real_ARS": 28560.0,
-        "Precio_teorico_ARS": 28525.15,
-        "Brecha_%": 0.12,
+        "Precio_teorico_ARS": 28521.96,
+        "Brecha_%": 0.13,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 6
@@ -8197,8 +8198,8 @@
         "Ticker": "LMT",
         "sin_datos": false,
         "Precio_real_ARS": 44660.0,
-        "Precio_teorico_ARS": 44507.19,
-        "Brecha_%": 0.34,
+        "Precio_teorico_ARS": 44502.21,
+        "Brecha_%": 0.35,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 20
@@ -8207,8 +8208,8 @@
         "Ticker": "LRCX",
         "sin_datos": false,
         "Precio_real_ARS": 7930.0,
-        "Precio_teorico_ARS": 7892.19,
-        "Brecha_%": 0.48,
+        "Precio_teorico_ARS": 7891.31,
+        "Brecha_%": 0.49,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 56
@@ -8217,8 +8218,8 @@
         "Ticker": "LVS",
         "sin_datos": false,
         "Precio_real_ARS": 30780.0,
-        "Precio_teorico_ARS": 30857.82,
-        "Brecha_%": -0.25,
+        "Precio_teorico_ARS": 30854.37,
+        "Brecha_%": -0.24,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 2
@@ -8227,8 +8228,8 @@
         "Ticker": "LYG",
         "sin_datos": false,
         "Precio_real_ARS": 4365.0,
-        "Precio_teorico_ARS": 4392.02,
-        "Brecha_%": -0.62,
+        "Precio_teorico_ARS": 4391.53,
+        "Brecha_%": -0.6,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 2
@@ -8237,8 +8238,8 @@
         "Ticker": "MDT",
         "sin_datos": false,
         "Precio_real_ARS": 37680.0,
-        "Precio_teorico_ARS": 37656.93,
-        "Brecha_%": 0.06,
+        "Precio_teorico_ARS": 37652.72,
+        "Brecha_%": 0.07,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 4
@@ -8247,8 +8248,8 @@
         "Ticker": "MO",
         "sin_datos": false,
         "Precio_real_ARS": 30060.0,
-        "Precio_teorico_ARS": 30074.4,
-        "Brecha_%": -0.05,
+        "Precio_teorico_ARS": 30071.04,
+        "Brecha_%": -0.04,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 4
@@ -8257,8 +8258,8 @@
         "Ticker": "MOS",
         "sin_datos": false,
         "Precio_real_ARS": 5825.0,
-        "Precio_teorico_ARS": 5819.23,
-        "Brecha_%": 0.1,
+        "Precio_teorico_ARS": 5818.58,
+        "Brecha_%": 0.11,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 5
@@ -8267,8 +8268,8 @@
         "Ticker": "MSI",
         "sin_datos": false,
         "Precio_real_ARS": 37200.0,
-        "Precio_teorico_ARS": 37255.08,
-        "Brecha_%": -0.15,
+        "Precio_teorico_ARS": 37250.91,
+        "Brecha_%": -0.14,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 20
@@ -8277,8 +8278,8 @@
         "Ticker": "MSTR",
         "sin_datos": false,
         "Precio_real_ARS": 11070.0,
-        "Precio_teorico_ARS": 11042.57,
-        "Brecha_%": 0.25,
+        "Precio_teorico_ARS": 11041.33,
+        "Brecha_%": 0.26,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 20
@@ -8287,8 +8288,8 @@
         "Ticker": "MUX",
         "sin_datos": false,
         "Precio_real_ARS": 13100.0,
-        "Precio_teorico_ARS": 13029.94,
-        "Brecha_%": 0.54,
+        "Precio_teorico_ARS": 13028.48,
+        "Brecha_%": 0.55,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 2
@@ -8297,8 +8298,8 @@
         "Ticker": "NEE",
         "sin_datos": false,
         "Precio_real_ARS": 6655.0,
-        "Precio_teorico_ARS": 6680.11,
-        "Brecha_%": -0.38,
+        "Precio_teorico_ARS": 6679.37,
+        "Brecha_%": -0.36,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 19
@@ -8307,8 +8308,8 @@
         "Ticker": "NEM",
         "sin_datos": false,
         "Precio_real_ARS": 64000.0,
-        "Precio_teorico_ARS": 63869.71,
-        "Brecha_%": 0.2,
+        "Precio_teorico_ARS": 63862.56,
+        "Brecha_%": 0.22,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 3
@@ -8317,8 +8318,8 @@
         "Ticker": "NGG",
         "sin_datos": false,
         "Precio_real_ARS": 64150.0,
-        "Precio_teorico_ARS": 64175.5,
-        "Brecha_%": -0.04,
+        "Precio_teorico_ARS": 64168.32,
+        "Brecha_%": -0.03,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 2
@@ -8327,8 +8328,8 @@
         "Ticker": "NMR",
         "sin_datos": false,
         "Precio_real_ARS": 14790.0,
-        "Precio_teorico_ARS": 14807.86,
-        "Brecha_%": -0.12,
+        "Precio_teorico_ARS": 14806.2,
+        "Brecha_%": -0.11,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 1
@@ -8337,8 +8338,8 @@
         "Ticker": "NOK",
         "sin_datos": false,
         "Precio_real_ARS": 14820.0,
-        "Precio_teorico_ARS": 14742.91,
-        "Brecha_%": 0.52,
+        "Precio_teorico_ARS": 14741.26,
+        "Brecha_%": 0.53,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 1
@@ -8347,8 +8348,8 @@
         "Ticker": "NUE",
         "sin_datos": false,
         "Precio_real_ARS": 26520.0,
-        "Precio_teorico_ARS": 26458.69,
-        "Brecha_%": 0.23,
+        "Precio_teorico_ARS": 26455.73,
+        "Brecha_%": 0.24,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 16
@@ -8357,8 +8358,8 @@
         "Ticker": "NVS",
         "sin_datos": false,
         "Precio_real_ARS": 60875.0,
-        "Precio_teorico_ARS": 60968.76,
-        "Brecha_%": -0.15,
+        "Precio_teorico_ARS": 60961.93,
+        "Brecha_%": -0.14,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 4
@@ -8367,8 +8368,8 @@
         "Ticker": "NXE",
         "sin_datos": false,
         "Precio_real_ARS": 13700.0,
-        "Precio_teorico_ARS": 13801.18,
-        "Brecha_%": -0.73,
+        "Precio_teorico_ARS": 13799.64,
+        "Brecha_%": -0.72,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 1
@@ -8377,8 +8378,8 @@
         "Ticker": "ORLY",
         "sin_datos": false,
         "Precio_real_ARS": 616.5,
-        "Precio_teorico_ARS": 651.44,
-        "Brecha_%": -5.36,
+        "Precio_teorico_ARS": 651.37,
+        "Brecha_%": -5.35,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": true,
         "Ratio": 222
@@ -8387,8 +8388,8 @@
         "Ticker": "PAAS",
         "sin_datos": false,
         "Precio_real_ARS": 24140.0,
-        "Precio_teorico_ARS": 24046.53,
-        "Brecha_%": 0.39,
+        "Precio_teorico_ARS": 24043.84,
+        "Brecha_%": 0.4,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 3
@@ -8397,8 +8398,8 @@
         "Ticker": "PBR",
         "sin_datos": false,
         "Precio_real_ARS": 41480.0,
-        "Precio_teorico_ARS": 41500.97,
-        "Brecha_%": -0.05,
+        "Precio_teorico_ARS": 41496.33,
+        "Brecha_%": -0.04,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 1
@@ -8407,8 +8408,8 @@
         "Ticker": "PCAR",
         "sin_datos": false,
         "Precio_real_ARS": 58650.0,
-        "Precio_teorico_ARS": 58679.38,
-        "Brecha_%": -0.05,
+        "Precio_teorico_ARS": 58672.82,
+        "Brecha_%": -0.04,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 3
@@ -8417,8 +8418,8 @@
         "Ticker": "PDD",
         "sin_datos": false,
         "Precio_real_ARS": 5255.0,
-        "Precio_teorico_ARS": 5286.02,
-        "Brecha_%": -0.59,
+        "Precio_teorico_ARS": 5285.42,
+        "Brecha_%": -0.58,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 25
@@ -8427,8 +8428,8 @@
         "Ticker": "PM",
         "sin_datos": false,
         "Precio_real_ARS": 18140.0,
-        "Precio_teorico_ARS": 18135.48,
-        "Brecha_%": 0.02,
+        "Precio_teorico_ARS": 18133.45,
+        "Brecha_%": 0.04,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 18
@@ -8437,8 +8438,8 @@
         "Ticker": "RACE",
         "sin_datos": false,
         "Precio_real_ARS": 7705.0,
-        "Precio_teorico_ARS": 7712.43,
-        "Brecha_%": -0.1,
+        "Precio_teorico_ARS": 7711.56,
+        "Brecha_%": -0.09,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 83
@@ -8447,8 +8448,8 @@
         "Ticker": "RGTI",
         "sin_datos": false,
         "Precio_real_ARS": 9525.0,
-        "Precio_teorico_ARS": 9474.11,
-        "Brecha_%": 0.54,
+        "Precio_teorico_ARS": 9473.05,
+        "Brecha_%": 0.55,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 2
@@ -8457,8 +8458,8 @@
         "Ticker": "RIOT",
         "sin_datos": false,
         "Precio_real_ARS": 7600.0,
-        "Precio_teorico_ARS": 7560.88,
-        "Brecha_%": 0.52,
+        "Precio_teorico_ARS": 7560.04,
+        "Brecha_%": 0.53,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 3
@@ -8467,8 +8468,8 @@
         "Ticker": "RKLB",
         "sin_datos": false,
         "Precio_real_ARS": 6955.0,
-        "Precio_teorico_ARS": 6949.3,
-        "Brecha_%": 0.08,
+        "Precio_teorico_ARS": 6948.52,
+        "Brecha_%": 0.09,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 12
@@ -8477,8 +8478,8 @@
         "Ticker": "RTX",
         "sin_datos": false,
         "Precio_real_ARS": 62500.0,
-        "Precio_teorico_ARS": 62384.59,
-        "Brecha_%": 0.18,
+        "Precio_teorico_ARS": 62377.61,
+        "Brecha_%": 0.2,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 5
@@ -8487,8 +8488,8 @@
         "Ticker": "SAP",
         "sin_datos": false,
         "Precio_real_ARS": 61100.0,
-        "Precio_teorico_ARS": 61166.3,
-        "Brecha_%": -0.11,
+        "Precio_teorico_ARS": 61159.46,
+        "Brecha_%": -0.1,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 6
@@ -8497,8 +8498,8 @@
         "Ticker": "SCCO",
         "sin_datos": false,
         "Precio_real_ARS": 164250.0,
-        "Precio_teorico_ARS": 163811.93,
-        "Brecha_%": 0.27,
+        "Precio_teorico_ARS": 163793.59,
+        "Brecha_%": 0.28,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 2
@@ -8507,8 +8508,8 @@
         "Ticker": "SE",
         "sin_datos": false,
         "Precio_real_ARS": 4517.5,
-        "Precio_teorico_ARS": 4488.94,
-        "Brecha_%": 0.64,
+        "Precio_teorico_ARS": 4488.43,
+        "Brecha_%": 0.65,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 32
@@ -8517,8 +8518,8 @@
         "Ticker": "SONY",
         "sin_datos": false,
         "Precio_real_ARS": 5005.0,
-        "Precio_teorico_ARS": 5027.28,
-        "Brecha_%": -0.44,
+        "Precio_teorico_ARS": 5026.72,
+        "Brecha_%": -0.43,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 8
@@ -8527,8 +8528,8 @@
         "Ticker": "TM",
         "sin_datos": false,
         "Precio_real_ARS": 20970.0,
-        "Precio_teorico_ARS": 21005.94,
-        "Brecha_%": -0.17,
+        "Precio_teorico_ARS": 21003.59,
+        "Brecha_%": -0.16,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 15
@@ -8537,8 +8538,8 @@
         "Ticker": "TMO",
         "sin_datos": false,
         "Precio_real_ARS": 50050.0,
-        "Precio_teorico_ARS": 50140.36,
-        "Brecha_%": -0.18,
+        "Precio_teorico_ARS": 50134.75,
+        "Brecha_%": -0.17,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 22
@@ -8547,8 +8548,8 @@
         "Ticker": "TMUS",
         "sin_datos": false,
         "Precio_real_ARS": 7685.0,
-        "Precio_teorico_ARS": 7679.95,
-        "Brecha_%": 0.07,
+        "Precio_teorico_ARS": 7679.09,
+        "Brecha_%": 0.08,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 33
@@ -8557,8 +8558,8 @@
         "Ticker": "TRIP",
         "sin_datos": false,
         "Precio_real_ARS": 7505.0,
-        "Precio_teorico_ARS": 7525.7,
-        "Brecha_%": -0.28,
+        "Precio_teorico_ARS": 7524.86,
+        "Brecha_%": -0.26,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 2
@@ -8567,8 +8568,8 @@
         "Ticker": "TV",
         "sin_datos": false,
         "Precio_real_ARS": 1334.0,
-        "Precio_teorico_ARS": 1320.58,
-        "Brecha_%": 1.02,
+        "Precio_teorico_ARS": 1320.44,
+        "Brecha_%": 1.03,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 3
@@ -8577,8 +8578,8 @@
         "Ticker": "TWLO",
         "sin_datos": false,
         "Precio_real_ARS": 11660.0,
-        "Precio_teorico_ARS": 11604.27,
-        "Brecha_%": 0.48,
+        "Precio_teorico_ARS": 11602.97,
+        "Brecha_%": 0.49,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 36
@@ -8587,8 +8588,8 @@
         "Ticker": "UGP",
         "sin_datos": false,
         "Precio_real_ARS": 12570.0,
-        "Precio_teorico_ARS": 12615.91,
-        "Brecha_%": -0.36,
+        "Precio_teorico_ARS": 12614.49,
+        "Brecha_%": -0.35,
         "Estado": "Barato respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 1
@@ -8597,8 +8598,8 @@
         "Ticker": "UL",
         "sin_datos": false,
         "Precio_real_ARS": 35320.0,
-        "Precio_teorico_ARS": 35260.67,
-        "Brecha_%": 0.17,
+        "Precio_teorico_ARS": 35256.72,
+        "Brecha_%": 0.18,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 3
@@ -8607,8 +8608,8 @@
         "Ticker": "URBN",
         "sin_datos": false,
         "Precio_real_ARS": 70525.0,
-        "Precio_teorico_ARS": 70491.57,
-        "Brecha_%": 0.05,
+        "Precio_teorico_ARS": 70483.68,
+        "Brecha_%": 0.06,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 2
@@ -8617,8 +8618,8 @@
         "Ticker": "VRSN",
         "sin_datos": false,
         "Precio_real_ARS": 83100.0,
-        "Precio_teorico_ARS": 82936.99,
-        "Brecha_%": 0.2,
+        "Precio_teorico_ARS": 82927.71,
+        "Brecha_%": 0.21,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 6
@@ -8627,8 +8628,8 @@
         "Ticker": "VST",
         "sin_datos": false,
         "Precio_real_ARS": 9350.0,
-        "Precio_teorico_ARS": 9348.58,
-        "Brecha_%": 0.02,
+        "Precio_teorico_ARS": 9347.54,
+        "Brecha_%": 0.03,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 26
@@ -8637,8 +8638,8 @@
         "Ticker": "VZ",
         "sin_datos": false,
         "Precio_real_ARS": 17960.0,
-        "Precio_teorico_ARS": 17921.24,
-        "Brecha_%": 0.22,
+        "Precio_teorico_ARS": 17919.24,
+        "Brecha_%": 0.23,
         "Estado": "Caro respecto al teórico",
         "Distorsion_relevante": false,
         "Ratio": 4
