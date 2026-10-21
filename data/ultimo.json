@@ -1,5 +1,5 @@
 {
-  "generado_utc": "2026-10-21T21:05:02.171512+00:00",
+  "generado_utc": "2026-10-21T21:15:57.540714+00:00",
   "proxima_corrida_estimada_utc": "2026-10-22T14:00:00+00:00",
   "tickers_ok": 266,
   "tickers_fallidos": [
@@ -2420,7 +2420,7 @@
       "Precio": 156.14,
       "Ret_1m_%": 13.2,
       "Ret_3m_%": -4.3,
-      "Ret_6m_%": -0.2,
+      "Ret_6m_%": -0.1,
       "Sobre_SMA50": true,
       "Dist_Max52w_%": -22.0,
       "SMA50": 145.31,
