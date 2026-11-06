@@ -56,14 +56,14 @@
   },
   "MSFT": {
     "ultima_fecha": "2026-11-06",
-    "estado": "ruptura_vol",
-    "fecha_evento": "2026-11-06T01:01:51.374212+00:00",
+    "estado": null,
+    "fecha_evento": "2026-11-06T01:30:37.140725+00:00",
     "dias_verdes_consecutivos": 1,
     "precio": 555.8,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
-    "gap_alcista_activo": false,
-    "fecha_evento_gap": "2026-11-05T00:57:28.887959+00:00"
+    "gap_alcista_activo": true,
+    "fecha_evento_gap": "2026-11-06T01:30:37.140725+00:00"
   },
   "NVDA": {
     "ultima_fecha": "2026-11-06",
@@ -239,7 +239,7 @@
     "DOW": "2026-09-18|tecnico|🔨 Recién cruzó, sin confirmar",
     "TGS": "2026-09-16|🔻 Rompió piso (SMA200)",
     "ABNB": "2026-11-06|tecnico|🔨 Recién cruzó, sin confirmar",
-    "V": "2026-10-08|tecnico|✅ Confirmado",
+    "V": "2026-11-06|gap_alcista|🚀 Gap alcista con macrotendencia",
     "BBVA": "2026-10-01|lider_soporte|📈 Líder apoyando en soporte",
     "HOOD": "2026-10-10|lider_soporte|📈 Líder apoyando en soporte",
     "QQQ": "2026-10-30|tecnico|🔨 Recién cruzó, sin confirmar",
@@ -311,16 +311,16 @@
     "DHR": "2026-10-22|gap_alcista|🚀 Gap alcista con macrotendencia",
     "BIIB": "2026-10-22|gap_alcista|🚀 Gap alcista con macrotendencia",
     "DE": "2026-09-24|gap_alcista|🚀 Gap alcista con macrotendencia",
-    "BRK-B": "2026-10-14|tecnico|✅ Confirmado",
+    "BRK-B": "2026-11-06|gap_alcista|🚀 Gap alcista con macrotendencia",
     "PANW": "2026-10-29|tecnico|✅ Confirmado",
     "MMM": "2026-11-06|gap_alcista|🚀 Gap alcista con macrotendencia",
     "TXN": "2026-09-29|tecnico|🔨 Recién cruzó, sin confirmar",
-    "MDLZ": "2026-11-06|tecnico|💣 Ruptura de máximo con volumen",
+    "MDLZ": "2026-11-06|gap_alcista|🚀 Gap alcista con macrotendencia",
     "OXY": "2026-10-09|tecnico|🔨 Recién cruzó, sin confirmar",
     "AZN": "2026-10-16|tecnico|✅ Confirmado",
     "SNAP": "2026-10-22|gap_alcista|🚀 Gap alcista con macrotendencia",
     "SONY": "2026-10-14|tecnico|✅ Confirmado",
-    "MSFT": "2026-11-05|tecnico|🔨 Recién cruzó, sin confirmar",
+    "MSFT": "2026-11-06|gap_alcista|🚀 Gap alcista con macrotendencia",
     "PG": "2026-11-06|gap_alcista|🚀 Gap alcista con macrotendencia",
     "MSI": "2026-11-05|gap_alcista|🚀 Gap alcista con macrotendencia",
     "PYPL": "2026-10-31|tecnico|✅ Confirmado",
@@ -697,14 +697,14 @@
   },
   "V": {
     "ultima_fecha": "2026-11-06",
-    "estado": "ruptura_vol",
-    "fecha_evento": "2026-11-06T01:01:51.374212+00:00",
+    "estado": null,
+    "fecha_evento": "2026-11-06T01:30:37.140725+00:00",
     "dias_verdes_consecutivos": 2,
     "precio": 436.57,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-18T16:15:39.975676+00:00",
-    "gap_alcista_activo": false,
-    "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
+    "gap_alcista_activo": true,
+    "fecha_evento_gap": "2026-11-06T01:30:37.140725+00:00"
   },
   "XYZ": {
     "ultima_fecha": "2026-11-06",
@@ -840,14 +840,14 @@
   },
   "BRK-B": {
     "ultima_fecha": "2026-11-06",
-    "estado": "ruptura_vol",
-    "fecha_evento": "2026-11-06T01:01:51.374212+00:00",
+    "estado": null,
+    "fecha_evento": "2026-11-06T01:30:37.140725+00:00",
     "dias_verdes_consecutivos": 2,
     "precio": 579.09,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
-    "gap_alcista_activo": false,
-    "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
+    "gap_alcista_activo": true,
+    "fecha_evento_gap": "2026-11-06T01:30:37.140725+00:00"
   },
   "DOW": {
     "ultima_fecha": "2026-11-06",
@@ -1478,14 +1478,14 @@
   },
   "MDLZ": {
     "ultima_fecha": "2026-11-06",
-    "estado": "ruptura_vol",
-    "fecha_evento": "2026-11-06T01:01:51.374212+00:00",
+    "estado": null,
+    "fecha_evento": "2026-11-06T01:30:37.140725+00:00",
     "dias_verdes_consecutivos": 2,
     "precio": 67.38,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T17:43:08.881162+00:00",
-    "gap_alcista_activo": false,
-    "fecha_evento_gap": "2026-09-20T17:43:08.881162+00:00"
+    "gap_alcista_activo": true,
+    "fecha_evento_gap": "2026-11-06T01:30:37.140725+00:00"
   },
   "META": {
     "ultima_fecha": "2026-11-06",
@@ -1654,8 +1654,8 @@
   },
   "ROKU": {
     "ultima_fecha": "2026-11-06",
-    "estado": "ruptura_vol",
-    "fecha_evento": "2026-11-06T01:01:51.374212+00:00",
+    "estado": null,
+    "fecha_evento": "2026-11-06T01:30:37.140725+00:00",
     "dias_verdes_consecutivos": 2,
     "precio": 162.77,
     "lider_soporte_activo": false,
@@ -1665,9 +1665,9 @@
   },
   "ROST": {
     "ultima_fecha": "2026-11-06",
-    "estado": "recien_cruzo",
-    "fecha_evento": "2026-11-06T01:01:51.374212+00:00",
-    "dias_verdes_consecutivos": 1,
+    "estado": "confirmado",
+    "fecha_evento": "2026-11-06T01:30:37.140725+00:00",
+    "dias_verdes_consecutivos": 2,
     "precio": 245.74,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T17:43:08.881162+00:00",
@@ -1819,8 +1819,8 @@
   },
   "CVS": {
     "ultima_fecha": "2026-11-06",
-    "estado": "stop_loss",
-    "fecha_evento": "2026-11-06T01:01:51.374212+00:00",
+    "estado": "deterioro",
+    "fecha_evento": "2026-11-06T01:30:37.140725+00:00",
     "dias_verdes_consecutivos": 2,
     "precio": 79.96,
     "lider_soporte_activo": false,
@@ -2886,8 +2886,8 @@
   },
   "PM": {
     "ultima_fecha": "2026-11-06",
-    "estado": "ruptura_vol",
-    "fecha_evento": "2026-11-06T01:01:51.374212+00:00",
+    "estado": null,
+    "fecha_evento": "2026-11-06T01:30:37.140725+00:00",
     "dias_verdes_consecutivos": 2,
     "precio": 211.28,
     "lider_soporte_activo": false,
