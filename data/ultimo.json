@@ -1,5 +1,5 @@
 {
-  "generado_utc": "2026-11-06T23:53:23.762003+00:00",
+  "generado_utc": "2026-11-07T00:53:00.272288+00:00",
   "proxima_corrida_estimada_utc": "2026-11-09T14:00:00+00:00",
   "tickers_ok": 266,
   "tickers_fallidos": [
@@ -5156,7 +5156,7 @@
       "Ticker": "WFC",
       "Sector": "Bancos",
       "Tipo": "tecnico",
-      "Estado": "🛑 Perdió EMA200 tras rebote — stop sugerido",
+      "Estado": "🔻 Rompió piso (SMA200)",
       "Score": "1/7",
       "Score_num": 1.0,
       "Señales": [
@@ -5193,11 +5193,11 @@
       "Vol_rel": 0.73,
       "SMA21": 83.42,
       "Precio": 83.94,
-      "fecha_evento": "2026-11-06T23:53:23.762003+00:00",
+      "fecha_evento": "2026-11-07T00:53:00.272288+00:00",
       "Stop_sugerido": null,
       "Var_dia_%": null,
-      "Señal técnica": "MANTENER",
-      "Recomendación final": "MANTENER",
+      "Señal técnica": "VENTA",
+      "Recomendación final": "VENTA",
       "Ajustado por": "contexto macro inestable: riesgo país subió 8.6% hoy",
       "disclaimer": "Señal técnica basada en reglas propias, no es recomendación de inversión.",
       "Radar_Score": 25.2,
@@ -5475,7 +5475,7 @@
       "Ticker": "TGT",
       "Sector": "Consumo",
       "Tipo": "tecnico",
-      "Estado": "🔨 Recién cruzó, sin confirmar",
+      "Estado": "✅ Confirmado",
       "Score": "1/7",
       "Score_num": 1.0,
       "Señales": [
@@ -5512,7 +5512,7 @@
       "Vol_rel": 0.77,
       "SMA21": 154.28,
       "Precio": 158.41,
-      "fecha_evento": "2026-11-06T23:53:23.762003+00:00",
+      "fecha_evento": "2026-11-07T00:53:00.272288+00:00",
       "Stop_sugerido": null,
       "Var_dia_%": null,
       "Señal técnica": "MANTENER",
