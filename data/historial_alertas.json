@@ -1,17 +1,17 @@
 {
   "XOM": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-18T02:52:30.936972+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 160.55,
+    "precio": 160.58,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "CVX": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "sacudon",
     "fecha_evento": "2026-11-16T22:41:12.533960+00:00",
     "dias_verdes_consecutivos": 0,
@@ -22,29 +22,29 @@
     "fecha_evento_gap": "2026-10-10T00:46:59.829827+00:00"
   },
   "VIST": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-06T19:47:22.854515+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 51.89,
+    "precio": 51.93,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-10-12T14:31:24.041601+00:00"
   },
   "YPF": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-31T00:44:25.440018+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 35.08,
+    "precio": 35.1,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-10-12T14:31:24.041601+00:00"
   },
   "AAPL": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-06T19:47:22.854515+00:00",
     "dias_verdes_consecutivos": 1,
@@ -55,7 +55,7 @@
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "MSFT": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-06T01:30:37.140725+00:00",
     "dias_verdes_consecutivos": 1,
@@ -66,7 +66,7 @@
     "fecha_evento_gap": "2026-11-06T01:30:37.140725+00:00"
   },
   "NVDA": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-31T00:44:25.440018+00:00",
     "dias_verdes_consecutivos": 2,
@@ -77,7 +77,7 @@
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "GOOGL": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-22T13:31:20.141384+00:00",
     "dias_verdes_consecutivos": 0,
@@ -88,29 +88,29 @@
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "JPM": {
-    "ultima_fecha": "2026-11-18",
-    "estado": "stop_loss",
-    "fecha_evento": "2026-11-18T21:01:41.630531+00:00",
+    "ultima_fecha": "2026-11-19",
+    "estado": "deterioro",
+    "fecha_evento": "2026-11-19T02:31:01.719658+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 324.13,
+    "precio": 324.11,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "BMA": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 53.92,
+    "precio": 53.91,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "GGAL": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -121,7 +121,7 @@
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "WFC": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-18T21:01:41.630531+00:00",
     "dias_verdes_consecutivos": 2,
@@ -132,18 +132,18 @@
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "JNJ": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-28T18:35:45.065746+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 272.72,
+    "precio": 272.7,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "PFE": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -154,18 +154,18 @@
     "fecha_evento_gap": "2026-10-14T16:31:15.739553+00:00"
   },
   "MRK": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-10T03:31:16.916089+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 137.75,
+    "precio": 137.78,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "WMT": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-12T13:01:52.179586+00:00",
     "dias_verdes_consecutivos": 2,
@@ -176,18 +176,18 @@
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "KO": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-05T01:27:03.054405+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 98.04,
+    "precio": 98.09,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "MELI": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-22T13:31:20.141384+00:00",
     "dias_verdes_consecutivos": 2,
@@ -198,7 +198,7 @@
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "EWZ": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-28T18:35:45.065746+00:00",
     "dias_verdes_consecutivos": 2,
@@ -209,22 +209,22 @@
     "fecha_evento_gap": "2026-10-05T14:31:29.209201+00:00"
   },
   "XLE": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-14T01:25:43.950274+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 61.31,
+    "precio": 61.29,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "XLK": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-16T22:41:12.533960+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 163.79,
+    "precio": 163.81,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-10-14T18:31:16.608472+00:00",
     "gap_alcista_activo": false,
@@ -267,7 +267,7 @@
     "NMR": "2026-11-06|gap_alcista|🚀 Gap alcista con macrotendencia",
     "RIOT": "2026-10-01|lider_soporte|📈 Líder apoyando en soporte",
     "IBKR": "2026-10-16|tecnico|🔻 Rompió piso (SMA200)",
-    "DIS": "2026-11-18|gap_alcista|🚀 Gap alcista con macrotendencia",
+    "DIS": "2026-11-19|gap_alcista|🚀 Gap alcista con macrotendencia",
     "IBM": "2026-10-16|tecnico|🔨 Recién cruzó, sin confirmar",
     "INTC": "2026-10-12|lider_soporte|📈 Líder apoyando en soporte",
     "MA": "2026-10-12|tecnico|✅ Confirmado",
@@ -371,7 +371,7 @@
     "ARKK": "2026-10-15|tecnico|🔨 Recién cruzó, sin confirmar",
     "DELL": "2026-10-14|lider_soporte|📈 Líder apoyando en soporte",
     "UAL": "2026-11-05|tecnico|🔻 Rompió piso (SMA200)",
-    "AVGO": "2026-11-18|tecnico|🔨 Recién cruzó, sin confirmar",
+    "AVGO": "2026-11-19|tecnico|🔨 Recién cruzó, sin confirmar",
     "HPQ": "2026-10-21|tecnico|🔨 Recién cruzó, sin confirmar",
     "NOK": "2026-10-12|tecnico|🔨 Recién cruzó, sin confirmar",
     "CRM": "2026-10-30|lider_soporte|📈 Líder apoyando en soporte",
@@ -391,7 +391,7 @@
     "KO": "2026-11-05|tecnico|💣 Ruptura de máximo con volumen",
     "SCCO": "2026-10-22|tecnico|✅ Confirmado",
     "BAK": "2026-10-14|tecnico|🔨 Recién cruzó, sin confirmar",
-    "TJX": "2026-11-18|tecnico|🔨 Recién cruzó, sin confirmar",
+    "TJX": "2026-11-19|tecnico|🔨 Recién cruzó, sin confirmar",
     "NOW": "2026-10-16|gap_alcista|🚀 Gap alcista con macrotendencia",
     "TTE": "2026-10-15|tecnico|✅ Confirmado",
     "YPF": "2026-10-22|tecnico|✅ Confirmado",
@@ -430,7 +430,7 @@
     "CCL": "2026-11-06|gap_alcista|🚀 Gap alcista con macrotendencia",
     "AAL": "2026-11-04|tecnico|🔨 Recién cruzó, sin confirmar",
     "DECK": "2026-11-06|tecnico|✅ Confirmado",
-    "RACE": "2026-11-18|tecnico|🔨 Recién cruzó, sin confirmar",
+    "RACE": "2026-11-19|tecnico|🔨 Recién cruzó, sin confirmar",
     "JD": "2026-11-06|tecnico|✅ Confirmado",
     "FSLR": "2026-11-06|tecnico|🔨 Recién cruzó, sin confirmar",
     "COST": "2026-11-04|gap_alcista|🚀 Gap alcista con macrotendencia",
@@ -445,7 +445,7 @@
     "HMY": "2026-11-11|tecnico|🔨 Recién cruzó, sin confirmar"
   },
   "TSLA": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-17T21:27:47.000684+00:00",
     "dias_verdes_consecutivos": 2,
@@ -456,7 +456,7 @@
     "fecha_evento_gap": "2026-10-29T00:52:37.078035+00:00"
   },
   "QQQ": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-14T01:25:43.950274+00:00",
     "dias_verdes_consecutivos": 0,
@@ -467,18 +467,18 @@
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "BABA": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "sacudon",
     "fecha_evento": "2026-11-14T01:25:43.950274+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 84.35,
+    "precio": 84.37,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "OKLO": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -489,18 +489,18 @@
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "JMIA": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 2.75,
+    "precio": 2.74,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "SATL": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-14T13:01:39.765621+00:00",
     "dias_verdes_consecutivos": 0,
@@ -511,7 +511,7 @@
     "fecha_evento_gap": "2026-09-29T00:07:21.077711+00:00"
   },
   "CRWV": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-02T13:01:45.811089+00:00",
     "dias_verdes_consecutivos": 2,
@@ -522,7 +522,7 @@
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "TEM": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-09T22:49:00.392964+00:00",
     "dias_verdes_consecutivos": 2,
@@ -533,7 +533,7 @@
     "fecha_evento_gap": "2026-10-06T13:31:36.824111+00:00"
   },
   "LAC": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -544,10 +544,10 @@
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "AMD": {
-    "ultima_fecha": "2026-11-18",
-    "estado": "recien_cruzo",
-    "fecha_evento": "2026-11-18T21:01:41.630531+00:00",
-    "dias_verdes_consecutivos": 1,
+    "ultima_fecha": "2026-11-19",
+    "estado": "confirmado",
+    "fecha_evento": "2026-11-19T02:31:01.719658+00:00",
+    "dias_verdes_consecutivos": 2,
     "precio": 530.14,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-10-16T13:31:18.404981+00:00",
@@ -555,7 +555,7 @@
     "fecha_evento_gap": "2026-10-06T15:01:46.938345+00:00"
   },
   "TSM": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-17T21:27:47.000684+00:00",
     "dias_verdes_consecutivos": 0,
@@ -566,7 +566,7 @@
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "QCOM": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-14T01:25:43.950274+00:00",
     "dias_verdes_consecutivos": 2,
@@ -577,18 +577,18 @@
     "fecha_evento_gap": "2026-09-29T00:07:21.077711+00:00"
   },
   "GLOB": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-18T21:01:41.630531+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 42.63,
+    "precio": 42.65,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-11-06T01:01:51.374212+00:00"
   },
   "ADBE": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "sacudon",
     "fecha_evento": "2026-11-17T21:27:47.000684+00:00",
     "dias_verdes_consecutivos": 0,
@@ -599,9 +599,9 @@
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "SHOP": {
-    "ultima_fecha": "2026-11-18",
-    "estado": "stop_loss",
-    "fecha_evento": "2026-11-18T21:01:41.630531+00:00",
+    "ultima_fecha": "2026-11-19",
+    "estado": "deterioro",
+    "fecha_evento": "2026-11-19T02:31:01.719658+00:00",
     "dias_verdes_consecutivos": 2,
     "precio": 139.42,
     "lider_soporte_activo": false,
@@ -610,7 +610,7 @@
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "ZM": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-18T21:01:41.630531+00:00",
     "dias_verdes_consecutivos": 2,
@@ -621,7 +621,7 @@
     "fecha_evento_gap": "2026-10-09T19:31:14.143383+00:00"
   },
   "AMZN": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-06T19:47:22.854515+00:00",
     "dias_verdes_consecutivos": 2,
@@ -632,18 +632,18 @@
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "UBER": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-17T03:46:59.903081+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 68.77,
+    "precio": 68.76,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "NFLX": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -654,18 +654,18 @@
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "TGT": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-07T00:53:00.272288+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 165.96,
+    "precio": 165.93,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-10-02T20:01:41.795533+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "ABNB": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-06T23:53:23.762003+00:00",
     "dias_verdes_consecutivos": 2,
@@ -676,7 +676,7 @@
     "fecha_evento_gap": "2026-11-06T23:53:23.762003+00:00"
   },
   "HOOD": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-20T13:01:38.239263+00:00",
     "dias_verdes_consecutivos": 0,
@@ -687,7 +687,7 @@
     "fecha_evento_gap": "2026-09-21T13:33:45.902232+00:00"
   },
   "PYPL": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-29T18:45:05.542424+00:00",
     "dias_verdes_consecutivos": 2,
@@ -698,18 +698,18 @@
     "fecha_evento_gap": "2026-09-29T00:07:21.077711+00:00"
   },
   "V": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-06T01:30:37.140725+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 415.1,
+    "precio": 415.22,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-18T16:15:39.975676+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-11-06T01:30:37.140725+00:00"
   },
   "XYZ": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-06T19:47:22.854515+00:00",
     "dias_verdes_consecutivos": 1,
@@ -720,29 +720,29 @@
     "fecha_evento_gap": "2026-11-11T01:13:20.194504+00:00"
   },
   "SPGI": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-16T13:31:18.404981+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 446.16,
+    "precio": 446.38,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "C": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-06T01:01:51.374212+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 117.29,
+    "precio": 117.34,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "GM": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-02T22:02:24.020832+00:00",
     "dias_verdes_consecutivos": 2,
@@ -753,29 +753,29 @@
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "F": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-22T17:28:08.654332+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 11.27,
+    "precio": 11.28,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "VALE": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-05T14:01:47.132433+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 10.05,
+    "precio": 10.04,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "B": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-12T20:35:06.097101+00:00",
     "dias_verdes_consecutivos": 0,
@@ -786,29 +786,29 @@
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "TEN": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 44.04,
+    "precio": 44.07,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-11-05T01:27:03.054405+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-10-13T20:01:28.391130+00:00"
   },
   "T": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-12T13:31:12.468165+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 21.94,
+    "precio": 21.95,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "AAL": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "recien_cruzo",
     "fecha_evento": "2026-11-18T21:01:41.630531+00:00",
     "dias_verdes_consecutivos": 1,
@@ -819,7 +819,7 @@
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "BIOX": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-09-25T20:31:24.119036+00:00",
     "dias_verdes_consecutivos": 2,
@@ -830,29 +830,29 @@
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "ARKK": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-31T00:44:25.440018+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 71.04,
+    "precio": 71.06,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-10-07T00:39:40.594006+00:00"
   },
   "BRK-B": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-06T01:30:37.140725+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 574.27,
+    "precio": 574.62,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-11-06T01:30:37.140725+00:00"
   },
   "DOW": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-16T13:31:18.404981+00:00",
     "dias_verdes_consecutivos": 2,
@@ -863,18 +863,18 @@
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "LAR": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 3.38,
+    "precio": 3.37,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "BBD": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-28T18:35:45.065746+00:00",
     "dias_verdes_consecutivos": 2,
@@ -885,7 +885,7 @@
     "fecha_evento_gap": "2026-10-08T00:57:50.637657+00:00"
   },
   "FSLR": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-06T19:47:22.854515+00:00",
     "dias_verdes_consecutivos": 2,
@@ -896,7 +896,7 @@
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "GPRK": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-06T19:47:22.854515+00:00",
     "dias_verdes_consecutivos": 0,
@@ -907,40 +907,40 @@
     "fecha_evento_gap": "2026-10-12T19:31:21.211339+00:00"
   },
   "LLY": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-30T00:56:07.062547+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 1382.31,
+    "precio": 1382.75,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-10-30T18:21:17.609378+00:00"
   },
   "NIO": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 2.78,
+    "precio": 2.77,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "NU": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-28T18:35:45.065746+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 12.09,
+    "precio": 12.08,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "PAGS": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-28T18:35:45.065746+00:00",
     "dias_verdes_consecutivos": 2,
@@ -951,7 +951,7 @@
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "PEP": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-05T20:25:44.147976+00:00",
     "dias_verdes_consecutivos": 2,
@@ -962,7 +962,7 @@
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "PLTR": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-17T21:27:47.000684+00:00",
     "dias_verdes_consecutivos": 0,
@@ -973,7 +973,7 @@
     "fecha_evento_gap": "2026-10-12T13:01:52.179586+00:00"
   },
   "RIO": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-15T13:31:21.599930+00:00",
     "dias_verdes_consecutivos": 2,
@@ -984,7 +984,7 @@
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "SPCE": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "sacudon",
     "fecha_evento": "2026-11-13T20:12:15.061818+00:00",
     "dias_verdes_consecutivos": 0,
@@ -995,40 +995,40 @@
     "fecha_evento_gap": "2026-09-23T13:01:45.984673+00:00"
   },
   "SPOT": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-21T20:01:30.170160+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 605.81,
+    "precio": 605.84,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-11-06T01:01:51.374212+00:00"
   },
   "SPXL": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-17T21:27:47.000684+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 239.93,
+    "precio": 239.97,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "UNH": {
-    "ultima_fecha": "2026-11-18",
-    "estado": "stop_loss",
-    "fecha_evento": "2026-11-18T21:01:41.630531+00:00",
+    "ultima_fecha": "2026-11-19",
+    "estado": "deterioro",
+    "fecha_evento": "2026-11-19T02:31:01.719658+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 349.9,
+    "precio": 349.91,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-10-09T19:01:30.130531+00:00"
   },
   "URA": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-09-23T13:01:45.984673+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1039,29 +1039,29 @@
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "TGS": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-18T03:21:28.851860+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 20.3,
+    "precio": 20.27,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "PAM": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-20T14:01:30.213740+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 62.43,
+    "precio": 62.42,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "SUPV": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
@@ -1072,18 +1072,18 @@
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "BBAR": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-16T19:31:41.135191+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 9.77,
+    "precio": 9.76,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-16T19:31:41.135191+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "BBVA": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-02T22:02:24.020832+00:00",
     "dias_verdes_consecutivos": 0,
@@ -1094,7 +1094,7 @@
     "fecha_evento_gap": "2026-11-11T01:13:20.194504+00:00"
   },
   "TX": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "deterioro",
     "fecha_evento": "2026-11-18T21:01:41.630531+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1105,7 +1105,7 @@
     "fecha_evento_gap": "2026-09-18T01:19:17.688708+00:00"
   },
   "ARM": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-20T13:01:38.239263+00:00",
     "dias_verdes_consecutivos": 0,
@@ -1116,7 +1116,7 @@
     "fecha_evento_gap": "2026-09-23T19:01:41.323297+00:00"
   },
   "AVGO": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "recien_cruzo",
     "fecha_evento": "2026-11-18T21:01:41.630531+00:00",
     "dias_verdes_consecutivos": 1,
@@ -1127,7 +1127,7 @@
     "fecha_evento_gap": "2026-09-20T12:52:00.393901+00:00"
   },
   "IREN": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-06T20:01:45.391618+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1138,7 +1138,7 @@
     "fecha_evento_gap": "2026-09-23T15:01:49.182157+00:00"
   },
   "TXN": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-11T19:56:45.096852+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1149,7 +1149,7 @@
     "fecha_evento_gap": "2026-09-20T12:52:00.393901+00:00"
   },
   "AMAT": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-16T13:31:18.404981+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1160,7 +1160,7 @@
     "fecha_evento_gap": "2026-09-20T12:52:00.393901+00:00"
   },
   "SNDK": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-31T00:44:25.440018+00:00",
     "dias_verdes_consecutivos": 0,
@@ -1171,18 +1171,18 @@
     "fecha_evento_gap": "2026-10-30T00:56:07.062547+00:00"
   },
   "EDN": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-20T12:52:00.393901+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 12.92,
+    "precio": 12.96,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T12:52:00.393901+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T12:52:00.393901+00:00"
   },
   "KLAC": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-15T13:31:21.599930+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1193,18 +1193,18 @@
     "fecha_evento_gap": "2026-09-20T12:52:00.393901+00:00"
   },
   "DELL": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-14T01:25:43.950274+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 313.38,
+    "precio": 313.11,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-10-14T15:31:20.932467+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-10-08T00:57:50.637657+00:00"
   },
   "WDC": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-09T13:01:26.765404+00:00",
     "dias_verdes_consecutivos": 0,
@@ -1215,18 +1215,18 @@
     "fecha_evento_gap": "2026-09-20T12:52:00.393901+00:00"
   },
   "GEV": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-06T19:47:22.854515+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 772.52,
+    "precio": 772.22,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T12:52:00.393901+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T12:52:00.393901+00:00"
   },
   "TLN": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-09T22:49:00.392964+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1237,18 +1237,18 @@
     "fecha_evento_gap": "2026-09-20T12:52:00.393901+00:00"
   },
   "MS": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-06T01:01:51.374212+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 181.15,
+    "precio": 181.17,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T12:52:00.393901+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T12:52:00.393901+00:00"
   },
   "IBKR": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-30T00:56:07.062547+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1259,29 +1259,29 @@
     "fecha_evento_gap": "2026-09-20T12:52:00.393901+00:00"
   },
   "WELL": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-31T00:44:25.440018+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 247.0,
+    "precio": 247.25,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T12:52:00.393901+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T12:52:00.393901+00:00"
   },
   "PLD": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-24T14:01:50.491391+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 125.24,
+    "precio": 125.22,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T12:52:00.393901+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T12:52:00.393901+00:00"
   },
   "LIN": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-08T20:01:25.841798+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1292,18 +1292,18 @@
     "fecha_evento_gap": "2026-09-20T12:52:00.393901+00:00"
   },
   "SHW": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-02T22:02:24.020832+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 346.69,
+    "precio": 346.6,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T12:52:00.393901+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T12:52:00.393901+00:00"
   },
   "BP": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-02T13:01:45.811089+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1314,29 +1314,29 @@
     "fecha_evento_gap": "2026-09-20T17:43:08.881162+00:00"
   },
   "CAT": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-14T13:31:19.616455+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 558.82,
+    "precio": 558.77,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T17:43:08.881162+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T17:43:08.881162+00:00"
   },
   "CL": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-17T03:46:59.903081+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 98.82,
+    "precio": 98.85,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T17:43:08.881162+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T17:43:08.881162+00:00"
   },
   "COST": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-12T13:31:12.468165+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1347,18 +1347,18 @@
     "fecha_evento_gap": "2026-11-04T20:12:58.365604+00:00"
   },
   "CRM": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-18T21:01:41.630531+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 190.29,
+    "precio": 190.4,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-10-30T00:56:07.062547+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-10-22T18:31:18.299430+00:00"
   },
   "CRWD": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-22T13:31:20.141384+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1369,29 +1369,29 @@
     "fecha_evento_gap": "2026-10-06T15:31:41.959152+00:00"
   },
   "DE": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-09T22:49:00.392964+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 644.55,
+    "precio": 644.75,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T17:43:08.881162+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-23T14:01:42.384153+00:00"
   },
   "DHR": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-20T17:43:08.881162+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 228.46,
+    "precio": 228.58,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-11-17T21:27:47.000684+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-10-21T18:31:18.806023+00:00"
   },
   "EBAY": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-15T20:47:58.649033+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1402,18 +1402,18 @@
     "fecha_evento_gap": "2026-11-06T01:01:51.374212+00:00"
   },
   "ETSY": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-15T20:31:13.786207+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 85.01,
+    "precio": 84.98,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T17:43:08.881162+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-11-06T01:01:51.374212+00:00"
   },
   "GS": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-13T20:12:15.061818+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1424,18 +1424,18 @@
     "fecha_evento_gap": "2026-09-20T17:43:08.881162+00:00"
   },
   "IBM": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-16T22:41:12.533960+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 228.54,
+    "precio": 228.53,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T17:43:08.881162+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T17:43:08.881162+00:00"
   },
   "INTC": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-31T00:44:25.440018+00:00",
     "dias_verdes_consecutivos": 0,
@@ -1446,7 +1446,7 @@
     "fecha_evento_gap": "2026-09-24T19:01:43.215189+00:00"
   },
   "ISRG": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-18T21:01:41.630531+00:00",
     "dias_verdes_consecutivos": 0,
@@ -1457,29 +1457,29 @@
     "fecha_evento_gap": "2026-11-06T01:01:51.374212+00:00"
   },
   "MA": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-12T13:01:52.179586+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 643.23,
+    "precio": 643.37,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T17:43:08.881162+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T17:43:08.881162+00:00"
   },
   "MCD": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-28T18:35:45.065746+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 274.06,
+    "precio": 274.03,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T17:43:08.881162+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T17:43:08.881162+00:00"
   },
   "MDLZ": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-06T01:30:37.140725+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1490,7 +1490,7 @@
     "fecha_evento_gap": "2026-11-06T01:30:37.140725+00:00"
   },
   "META": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-17T21:27:47.000684+00:00",
     "dias_verdes_consecutivos": 0,
@@ -1501,18 +1501,18 @@
     "fecha_evento_gap": "2026-10-14T00:16:21.874681+00:00"
   },
   "MMM": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-05T00:57:28.887959+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 181.06,
+    "precio": 181.05,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T17:43:08.881162+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-11-06T01:01:51.374212+00:00"
   },
   "MRNA": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-20T17:43:08.881162+00:00",
     "dias_verdes_consecutivos": 0,
@@ -1523,7 +1523,7 @@
     "fecha_evento_gap": "2026-11-11T01:13:20.194504+00:00"
   },
   "MRVL": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-04T20:12:58.365604+00:00",
     "dias_verdes_consecutivos": 0,
@@ -1534,7 +1534,7 @@
     "fecha_evento_gap": "2026-10-08T00:57:50.637657+00:00"
   },
   "MU": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-17T21:27:47.000684+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1545,7 +1545,7 @@
     "fecha_evento_gap": "2026-10-28T18:35:45.065746+00:00"
   },
   "NKE": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-22T14:31:16.743063+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1556,18 +1556,18 @@
     "fecha_evento_gap": "2026-09-20T17:43:08.881162+00:00"
   },
   "NOW": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-02T22:02:24.020832+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 90.55,
+    "precio": 90.59,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T17:43:08.881162+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-10-15T14:31:20.517188+00:00"
   },
   "ORCL": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-04T00:18:44.949547+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1578,9 +1578,9 @@
     "fecha_evento_gap": "2026-09-20T17:43:08.881162+00:00"
   },
   "OXY": {
-    "ultima_fecha": "2026-11-18",
-    "estado": "stop_loss",
-    "fecha_evento": "2026-11-18T21:01:41.630531+00:00",
+    "ultima_fecha": "2026-11-19",
+    "estado": "deterioro",
+    "fecha_evento": "2026-11-19T02:31:01.719658+00:00",
     "dias_verdes_consecutivos": 2,
     "precio": 53.76,
     "lider_soporte_activo": false,
@@ -1589,7 +1589,7 @@
     "fecha_evento_gap": "2026-09-20T17:43:08.881162+00:00"
   },
   "PANW": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-27T18:30:01.396841+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1600,7 +1600,7 @@
     "fecha_evento_gap": "2026-10-08T00:57:50.637657+00:00"
   },
   "PATH": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-06T01:01:51.374212+00:00",
     "dias_verdes_consecutivos": 0,
@@ -1611,7 +1611,7 @@
     "fecha_evento_gap": "2026-10-15T19:01:34.439470+00:00"
   },
   "PG": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-22T19:01:32.999485+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1622,29 +1622,29 @@
     "fecha_evento_gap": "2026-11-06T01:01:51.374212+00:00"
   },
   "PINS": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-10T03:31:16.916089+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 17.7,
+    "precio": 17.69,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T17:43:08.881162+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-10-20T18:31:20.014510+00:00"
   },
   "PSX": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-20T17:43:08.881162+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 244.74,
+    "precio": 244.83,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-11-05T01:27:03.054405+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-10-14T13:01:39.765621+00:00"
   },
   "RBLX": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-06T19:47:22.854515+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1655,7 +1655,7 @@
     "fecha_evento_gap": "2026-09-20T17:43:08.881162+00:00"
   },
   "ROKU": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-06T01:30:37.140725+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1666,7 +1666,7 @@
     "fecha_evento_gap": "2026-09-20T17:43:08.881162+00:00"
   },
   "ROST": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-18T21:01:41.630531+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1677,7 +1677,7 @@
     "fecha_evento_gap": "2026-09-20T17:43:08.881162+00:00"
   },
   "SBUX": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-26T23:02:17.516813+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1688,29 +1688,29 @@
     "fecha_evento_gap": "2026-09-20T17:43:08.881162+00:00"
   },
   "SHEL": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-14T01:25:43.950274+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 94.35,
+    "precio": 97.24,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T17:43:08.881162+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-10-20T00:18:04.456428+00:00"
   },
   "SLB": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-18T21:01:41.630531+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 48.39,
+    "precio": 48.41,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T17:43:08.881162+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T17:43:08.881162+00:00"
   },
   "SNAP": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-10T03:31:16.916089+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1721,18 +1721,18 @@
     "fecha_evento_gap": "2026-10-22T16:01:30.533633+00:00"
   },
   "SNOW": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-18T21:01:41.630531+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 279.59,
+    "precio": 279.62,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-10-15T19:31:19.510484+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-10-09T14:31:16.934755+00:00"
   },
   "TEAM": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-18T21:01:41.630531+00:00",
     "dias_verdes_consecutivos": 0,
@@ -1743,29 +1743,29 @@
     "fecha_evento_gap": "2026-10-20T18:01:37.171478+00:00"
   },
   "TJX": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "recien_cruzo",
     "fecha_evento": "2026-11-18T21:01:41.630531+00:00",
     "dias_verdes_consecutivos": 1,
-    "precio": 140.34,
+    "precio": 140.3,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T17:43:08.881162+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T17:43:08.881162+00:00"
   },
   "TTE": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-18T02:52:30.936972+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 87.11,
+    "precio": 87.14,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T17:43:08.881162+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T17:43:08.881162+00:00"
   },
   "UAL": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-18T21:01:41.630531+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1776,18 +1776,18 @@
     "fecha_evento_gap": "2026-10-06T14:01:45.622992+00:00"
   },
   "UNP": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-21T13:31:18.640772+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 300.93,
+    "precio": 300.9,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T17:43:08.881162+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T17:43:08.881162+00:00"
   },
   "UPST": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-20T17:43:08.881162+00:00",
     "dias_verdes_consecutivos": 0,
@@ -1798,18 +1798,18 @@
     "fecha_evento_gap": "2026-09-20T17:43:08.881162+00:00"
   },
   "USB": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-04T20:12:58.365604+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 58.27,
+    "precio": 58.28,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T17:43:08.881162+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T17:43:08.881162+00:00"
   },
   "VRTX": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-31T00:44:25.440018+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1820,73 +1820,73 @@
     "fecha_evento_gap": "2026-09-20T17:43:08.881162+00:00"
   },
   "CVS": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-17T21:27:47.000684+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 81.34,
+    "precio": 81.35,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T17:43:08.881162+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-10-14T18:31:16.608472+00:00"
   },
   "DIS": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-05T01:27:03.054405+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 122.37,
+    "precio": 122.36,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T17:51:21.741965+00:00",
     "gap_alcista_activo": true,
     "fecha_evento_gap": "2026-11-18T21:01:41.630531+00:00"
   },
   "AAP": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-06T01:01:51.374212+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 46.23,
+    "precio": 46.22,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "ABBV": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-20T18:08:05.982142+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 285.96,
+    "precio": 286.01,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-11-06T01:01:51.374212+00:00"
   },
   "ABT": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-02T22:02:24.020832+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 104.49,
+    "precio": 104.48,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "ACN": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-01T13:01:42.262768+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 227.46,
+    "precio": 227.49,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "ADI": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-11T19:56:45.096852+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1897,7 +1897,7 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "ADP": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-22T20:31:16.727733+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1908,7 +1908,7 @@
     "fecha_evento_gap": "2026-10-22T20:31:16.727733+00:00"
   },
   "AEG": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-13T20:12:15.061818+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1919,18 +1919,18 @@
     "fecha_evento_gap": "2026-11-09T22:49:00.392964+00:00"
   },
   "AEM": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-16T22:41:12.533960+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 161.89,
+    "precio": 161.86,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-22T20:23:05.595632+00:00"
   },
   "AI": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-17T21:27:47.000684+00:00",
     "dias_verdes_consecutivos": 0,
@@ -1941,18 +1941,18 @@
     "fecha_evento_gap": "2026-10-27T00:24:00.799817+00:00"
   },
   "AIG": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-12T14:01:35.193085+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 80.64,
+    "precio": 80.62,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "ALAB": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-31T00:44:25.440018+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1963,18 +1963,18 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "ASR": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-22T14:31:16.743063+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 261.87,
+    "precio": 261.81,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "ASTS": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-12T14:01:35.193085+00:00",
     "dias_verdes_consecutivos": 2,
@@ -1985,73 +1985,73 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "AVY": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-16T13:31:18.404981+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 187.89,
+    "precio": 187.84,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "AXP": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-06T01:01:51.374212+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 315.38,
+    "precio": 315.4,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "AZN": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-15T13:31:21.599930+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 178.77,
+    "precio": 178.76,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "BA": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-20T18:08:05.982142+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 162.83,
+    "precio": 162.91,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "BAC": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-30T13:01:47.332785+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 48.9,
+    "precio": 48.91,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "BAK": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-19T14:31:18.545458+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 0.87,
+    "precio": 0.86,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "BB": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-09T22:49:00.392964+00:00",
     "dias_verdes_consecutivos": 2,
@@ -2062,29 +2062,29 @@
     "fecha_evento_gap": "2026-09-21T14:26:19.800811+00:00"
   },
   "BCS": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-30T13:01:47.332785+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 21.59,
+    "precio": 21.6,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "BHP": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-17T21:27:47.000684+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 70.32,
+    "precio": 70.33,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "BIDU": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-20T18:08:05.982142+00:00",
     "dias_verdes_consecutivos": 0,
@@ -2095,7 +2095,7 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "BIIB": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-20T18:08:05.982142+00:00",
     "dias_verdes_consecutivos": 0,
@@ -2106,7 +2106,7 @@
     "fecha_evento_gap": "2026-10-22T15:01:29.616267+00:00"
   },
   "BKNG": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-10T03:31:16.916089+00:00",
     "dias_verdes_consecutivos": 2,
@@ -2117,7 +2117,7 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "BKR": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-30T18:21:17.609378+00:00",
     "dias_verdes_consecutivos": 0,
@@ -2128,18 +2128,18 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "BMNR": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-21T20:01:30.170160+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 15.48,
+    "precio": 15.47,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-10-14T00:16:21.874681+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-23T13:01:45.984673+00:00"
   },
   "BMY": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-11T00:44:59.955075+00:00",
     "dias_verdes_consecutivos": 2,
@@ -2150,29 +2150,29 @@
     "fecha_evento_gap": "2026-10-21T23:59:18.917370+00:00"
   },
   "BX": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-12T20:35:06.097101+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 115.72,
+    "precio": 115.71,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "CAH": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-20T13:01:38.239263+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 278.35,
+    "precio": 278.32,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-11-06T01:01:51.374212+00:00"
   },
   "CAR": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-10T03:31:16.916089+00:00",
     "dias_verdes_consecutivos": 2,
@@ -2183,29 +2183,29 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "CCJ": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-20T18:08:05.982142+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 62.41,
+    "precio": 62.44,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "CCL": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-27T18:30:01.396841+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 28.98,
+    "precio": 28.97,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-11-06T01:01:51.374212+00:00"
   },
   "CDE": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-30T13:01:47.332785+00:00",
     "dias_verdes_consecutivos": 0,
@@ -2216,7 +2216,7 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "CEG": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-14T01:25:43.950274+00:00",
     "dias_verdes_consecutivos": 0,
@@ -2227,7 +2227,7 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "COIN": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-21T19:01:34.352090+00:00",
     "dias_verdes_consecutivos": 2,
@@ -2238,29 +2238,29 @@
     "fecha_evento_gap": "2026-09-23T13:01:45.984673+00:00"
   },
   "COP": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-13T20:12:15.061818+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 134.39,
+    "precio": 134.4,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "DECK": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "recien_cruzo",
     "fecha_evento": "2026-11-18T21:01:41.630531+00:00",
     "dias_verdes_consecutivos": 1,
-    "precio": 83.64,
+    "precio": 83.6,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "DEO": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-06T01:01:51.374212+00:00",
     "dias_verdes_consecutivos": 2,
@@ -2271,7 +2271,7 @@
     "fecha_evento_gap": "2026-11-06T01:01:51.374212+00:00"
   },
   "DOCU": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-20T18:08:05.982142+00:00",
     "dias_verdes_consecutivos": 0,
@@ -2282,29 +2282,29 @@
     "fecha_evento_gap": "2026-10-22T15:01:29.616267+00:00"
   },
   "ECL": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-05T01:27:03.054405+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 300.58,
+    "precio": 300.68,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-11-06T01:01:51.374212+00:00"
   },
   "EFX": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-29T18:45:05.542424+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 179.69,
+    "precio": 179.66,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-11-04T01:18:36.838003+00:00"
   },
   "EQNR": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-23T23:50:47.909123+00:00",
     "dias_verdes_consecutivos": 2,
@@ -2315,7 +2315,7 @@
     "fecha_evento_gap": "2026-10-27T00:24:00.799817+00:00"
   },
   "ERIC": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-18T21:01:41.630531+00:00",
     "dias_verdes_consecutivos": 2,
@@ -2326,29 +2326,29 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "GLW": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-14T13:01:39.765621+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 108.06,
+    "precio": 108.15,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "GRMN": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-10T03:31:16.916089+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 279.7,
+    "precio": 279.52,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "GSK": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-18T21:01:41.630531+00:00",
     "dias_verdes_consecutivos": 2,
@@ -2359,7 +2359,7 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "GT": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-20T18:08:05.982142+00:00",
     "dias_verdes_consecutivos": 0,
@@ -2370,7 +2370,7 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "HAL": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "sacudon",
     "fecha_evento": "2026-11-14T01:25:43.950274+00:00",
     "dias_verdes_consecutivos": 0,
@@ -2381,18 +2381,18 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "HD": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-22T14:01:32.639722+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 337.67,
+    "precio": 337.64,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "HDB": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-16T22:41:12.533960+00:00",
     "dias_verdes_consecutivos": 2,
@@ -2403,51 +2403,51 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "HL": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-30T13:01:47.332785+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 11.66,
+    "precio": 11.67,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "HMC": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-12T13:01:52.179586+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 33.69,
+    "precio": 33.68,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-10-02T00:44:50.906780+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "HMY": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-12T20:35:06.097101+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 13.79,
+    "precio": 13.78,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "HOG": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-30T00:56:07.062547+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 33.32,
+    "precio": 33.34,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-11-06T01:01:51.374212+00:00"
   },
   "HON": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-17T21:27:47.000684+00:00",
     "dias_verdes_consecutivos": 2,
@@ -2458,18 +2458,18 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "HPQ": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-22T13:01:33.101241+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 28.65,
+    "precio": 28.66,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-10-09T14:01:27.906152+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-10-06T14:31:38.345877+00:00"
   },
   "HSBC": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-27T18:30:01.396841+00:00",
     "dias_verdes_consecutivos": 2,
@@ -2480,18 +2480,18 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "HSY": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-11T19:56:45.096852+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 176.0,
+    "precio": 175.94,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "HUT": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-14T20:01:28.121313+00:00",
     "dias_verdes_consecutivos": 0,
@@ -2502,29 +2502,29 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "HWM": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "recien_cruzo",
     "fecha_evento": "2026-11-18T21:01:41.630531+00:00",
     "dias_verdes_consecutivos": 1,
-    "precio": 221.23,
+    "precio": 221.15,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "IBN": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-06T01:01:51.374212+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 34.9,
+    "precio": 34.89,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-11-06T01:01:51.374212+00:00"
   },
   "INFY": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-09T22:49:00.392964+00:00",
     "dias_verdes_consecutivos": 2,
@@ -2535,7 +2535,7 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "ING": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "deterioro",
     "fecha_evento": "2026-11-18T21:01:41.630531+00:00",
     "dias_verdes_consecutivos": 0,
@@ -2546,10 +2546,10 @@
     "fecha_evento_gap": "2026-11-11T01:13:20.194504+00:00"
   },
   "IP": {
-    "ultima_fecha": "2026-11-18",
-    "estado": "recien_cruzo",
-    "fecha_evento": "2026-11-18T21:01:41.630531+00:00",
-    "dias_verdes_consecutivos": 1,
+    "ultima_fecha": "2026-11-19",
+    "estado": "confirmado",
+    "fecha_evento": "2026-11-19T02:31:01.719658+00:00",
+    "dias_verdes_consecutivos": 2,
     "precio": 32.52,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
@@ -2557,18 +2557,18 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "JCI": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-14T01:25:43.950274+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 138.45,
+    "precio": 138.42,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "JD": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-13T20:12:15.061818+00:00",
     "dias_verdes_consecutivos": 2,
@@ -2579,18 +2579,18 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "KB": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-09T22:49:00.392964+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 114.52,
+    "precio": 114.33,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-11-13T20:12:15.061818+00:00"
   },
   "KMB": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-16T13:31:18.404981+00:00",
     "dias_verdes_consecutivos": 2,
@@ -2601,18 +2601,18 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "LMT": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-20T14:01:30.213740+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 578.05,
+    "precio": 578.19,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "LRCX": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-16T13:31:18.404981+00:00",
     "dias_verdes_consecutivos": 2,
@@ -2623,84 +2623,84 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "LVS": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-06T19:47:22.854515+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 39.28,
+    "precio": 39.27,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "LYG": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-02T22:02:24.020832+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 5.03,
+    "precio": 5.04,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "MDT": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-14T13:01:39.765621+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 100.69,
+    "precio": 100.72,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "MO": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-30T00:56:07.062547+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 76.25,
+    "precio": 76.26,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-10-31T00:44:25.440018+00:00"
   },
   "MOS": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-16T22:41:12.533960+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 19.94,
+    "precio": 19.93,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "MP": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-09-23T13:01:45.984673+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 35.94,
+    "precio": 35.95,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "MSI": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-05T01:27:03.054405+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 524.19,
+    "precio": 524.53,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-11-05T20:25:44.147976+00:00"
   },
   "MSTR": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-03T02:53:25.951241+00:00",
     "dias_verdes_consecutivos": 2,
@@ -2711,31 +2711,31 @@
     "fecha_evento_gap": "2026-10-21T17:01:31.891558+00:00"
   },
   "MUX": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-09-29T14:01:43.631998+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 10.39,
+    "precio": 10.4,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "NEE": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-23T23:50:47.909123+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 84.76,
+    "precio": 84.78,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "NEM": {
-    "ultima_fecha": "2026-11-18",
-    "estado": "stop_loss",
-    "fecha_evento": "2026-11-18T21:01:41.630531+00:00",
+    "ultima_fecha": "2026-11-19",
+    "estado": "deterioro",
+    "fecha_evento": "2026-11-19T02:31:01.719658+00:00",
     "dias_verdes_consecutivos": 2,
     "precio": 104.53,
     "lider_soporte_activo": false,
@@ -2744,73 +2744,73 @@
     "fecha_evento_gap": "2026-10-16T14:31:22.560658+00:00"
   },
   "NGG": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-20T13:31:18.622156+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 82.21,
+    "precio": 82.22,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "NMR": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-27T18:30:01.396841+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 9.24,
+    "precio": 9.23,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-23T13:01:45.984673+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-11-06T01:01:51.374212+00:00"
   },
   "NOK": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-14T13:01:39.765621+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 7.6,
+    "precio": 7.59,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-10-08T00:57:50.637657+00:00"
   },
   "NUE": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-17T03:46:59.903081+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 250.4,
+    "precio": 250.42,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-10-05T14:31:29.209201+00:00"
   },
   "NVO": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-11T19:56:45.096852+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 39.45,
+    "precio": 39.43,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "NVS": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-16T13:31:18.404981+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 155.26,
+    "precio": 155.21,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "NXE": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-09-23T13:01:45.984673+00:00",
     "dias_verdes_consecutivos": 2,
@@ -2821,18 +2821,18 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "O": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-17T21:27:47.000684+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 58.27,
+    "precio": 58.28,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "ORLY": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-09T22:49:00.392964+00:00",
     "dias_verdes_consecutivos": 2,
@@ -2843,7 +2843,7 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "PAAS": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-23T13:31:33.326076+00:00",
     "dias_verdes_consecutivos": 0,
@@ -2854,18 +2854,18 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "PBR": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-06T23:53:23.762003+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 16.74,
+    "precio": 16.73,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-10-16T19:31:16.707038+00:00"
   },
   "PCAR": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-20T18:08:05.982142+00:00",
     "dias_verdes_consecutivos": 0,
@@ -2876,7 +2876,7 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "PDD": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-04T20:12:58.365604+00:00",
     "dias_verdes_consecutivos": 2,
@@ -2887,7 +2887,7 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "PM": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-13T20:12:15.061818+00:00",
     "dias_verdes_consecutivos": 2,
@@ -2898,18 +2898,18 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "RACE": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "recien_cruzo",
     "fecha_evento": "2026-11-18T21:01:41.630531+00:00",
     "dias_verdes_consecutivos": 1,
-    "precio": 410.9,
+    "precio": 410.91,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "RGTI": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-09-30T15:31:30.118336+00:00",
     "dias_verdes_consecutivos": 2,
@@ -2920,7 +2920,7 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "RIOT": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "recien_cruzo",
     "fecha_evento": "2026-11-18T21:01:41.630531+00:00",
     "dias_verdes_consecutivos": 1,
@@ -2931,7 +2931,7 @@
     "fecha_evento_gap": "2026-09-23T18:31:30.849467+00:00"
   },
   "RKLB": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "sacudon",
     "fecha_evento": "2026-11-13T20:12:15.061818+00:00",
     "dias_verdes_consecutivos": 0,
@@ -2942,51 +2942,51 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "RTX": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-11T19:56:45.096852+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 197.52,
+    "precio": 197.45,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "SAP": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-20T18:08:05.982142+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 210.61,
+    "precio": 210.76,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-11-17T21:27:47.000684+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-11-04T20:12:58.365604+00:00"
   },
   "SCCO": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-31T00:44:25.440018+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 146.12,
+    "precio": 146.21,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "SE": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-20T18:08:05.982142+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 68.7,
+    "precio": 68.6,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "SONY": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-12T13:01:52.179586+00:00",
     "dias_verdes_consecutivos": 2,
@@ -2997,29 +2997,29 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "TM": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-05T20:25:44.147976+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 210.32,
+    "precio": 210.14,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-11-05T20:25:44.147976+00:00"
   },
   "TMO": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-09-20T18:08:05.982142+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 692.83,
+    "precio": 692.74,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-11-17T21:27:47.000684+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-11-11T01:13:20.194504+00:00"
   },
   "TMUS": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-11T19:56:45.096852+00:00",
     "dias_verdes_consecutivos": 2,
@@ -3030,7 +3030,7 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "TRIP": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-02T22:02:24.020832+00:00",
     "dias_verdes_consecutivos": 2,
@@ -3041,29 +3041,29 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "TV": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "sacudon",
     "fecha_evento": "2026-11-18T21:01:41.630531+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 2.26,
+    "precio": 2.27,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "TWLO": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-17T21:27:47.000684+00:00",
     "dias_verdes_consecutivos": 0,
-    "precio": 195.91,
+    "precio": 195.93,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-10-16T14:01:37.375729+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-10-03T00:27:24.411577+00:00"
   },
   "UGP": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-31T00:44:25.440018+00:00",
     "dias_verdes_consecutivos": 0,
@@ -3074,7 +3074,7 @@
     "fecha_evento_gap": "2026-10-20T16:01:35.054862+00:00"
   },
   "UL": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-10-15T13:31:21.599930+00:00",
     "dias_verdes_consecutivos": 2,
@@ -3085,7 +3085,7 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "URBN": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "recien_cruzo",
     "fecha_evento": "2026-11-18T21:01:41.630531+00:00",
     "dias_verdes_consecutivos": 1,
@@ -3096,7 +3096,7 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "VRSN": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-11-04T00:18:44.949547+00:00",
     "dias_verdes_consecutivos": 2,
@@ -3107,29 +3107,29 @@
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "VST": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": "confirmado",
     "fecha_evento": "2026-11-04T00:18:44.949547+00:00",
     "dias_verdes_consecutivos": 2,
-    "precio": 125.46,
+    "precio": 125.58,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-10-09T01:11:46.477291+00:00"
   },
   "VZ": {
-    "ultima_fecha": "2026-11-18",
-    "estado": "recien_cruzo",
-    "fecha_evento": "2026-11-18T21:01:41.630531+00:00",
-    "dias_verdes_consecutivos": 1,
-    "precio": 46.12,
+    "ultima_fecha": "2026-11-19",
+    "estado": "confirmado",
+    "fecha_evento": "2026-11-19T02:31:01.719658+00:00",
+    "dias_verdes_consecutivos": 2,
+    "precio": 46.13,
     "lider_soporte_activo": false,
     "fecha_evento_lider": "2026-09-20T18:08:05.982142+00:00",
     "gap_alcista_activo": false,
     "fecha_evento_gap": "2026-09-20T18:08:05.982142+00:00"
   },
   "AGRO": {
-    "ultima_fecha": "2026-11-18",
+    "ultima_fecha": "2026-11-19",
     "estado": null,
     "fecha_evento": "2026-10-15T13:31:21.599930+00:00",
     "dias_verdes_consecutivos": 2,
